@@ -8,7 +8,7 @@ export const links: LinksFunction = () => {
     { rel: "icon", href: mainIcon },
     {
       rel: "canonical",
-      href: "https://www.kinxori.com",
+      href: "https://kinxori.com",
     },
     {
       rel: "preconnect",
@@ -67,6 +67,39 @@ export const meta: V2_MetaFunction = () => {
     {
       property: "og:image",
       content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
+    {
+      property: "og:url",
+      content: "https://kinxori.com",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@kinxori",
+    },
+    {
+      name: "twitter:title",
+      content: "Kinxori - My Personal Website 💻",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
+    {
+      property: "og:site_name",
+      content: "Kinxori",
     },
   ];
 };
