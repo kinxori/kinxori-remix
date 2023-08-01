@@ -13,7 +13,7 @@ export default function Index() {
   const handleScroll = () => {
     const scrollHeigth = window.scrollY;
     const screenHeigth = window.innerHeight;
-    setTopButtonDisplay(scrollHeigth > screenHeigth * 1);
+    setTopButtonDisplay(scrollHeigth > screenHeigth / 5);
   };
 
   useEffect(() => {
@@ -31,13 +31,14 @@ export default function Index() {
     <article className="overflow-y-scroll overflow-x-hidden relative">
       <div>
         <LandingPage />
-        <img
-          src={mainLandingPageAsset}
-          alt="Purple Astro riding a bike - Kinxori landing page asset"
-          className={`border-white border fixed transition-all duration-[1s] 
-          top-[0%] left-[40%] w-[1000px] h-[1000px] object-contain 
+        <div className="absolute -z-10 top-[calc(100vh-320px)] left-[20%] w-[500px] object-contain    ">
+          <img
+            src={mainLandingPageAsset}
+            alt="Purple Astro riding a bike - Kinxori landing page asset"
+            className={`  transition-all duration-[1s]
           ${topButtonDisplay ? "opacity-0" : "opacity-100"} `}
-        />
+          />
+        </div>
       </div>
 
       <LandingPage />
