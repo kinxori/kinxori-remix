@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         mainColor: "hsl(266deg, 100%, 60%)",
-        idk: "#FFF",
+        white: "#FFF",
       },
     },
     screens: {

@@ -118,6 +118,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <script src="https://kit.fontawesome.com/71cfa127b4.js"></script>
       </body>
     </html>
   );

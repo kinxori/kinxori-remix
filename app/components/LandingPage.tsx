@@ -7,7 +7,7 @@ export default function LandingPage() {
     <article className="h-[100vh] w-[100%] mx-auto box-border p-10 overflow-hidden ">
       <div className="h-[100%] w-[100%] flex flex-col justify-center items-center">
         <div className="flex w-[100%] flex-wrap justify-around text-[60px] ">
-          <h1 className="text-idk font-extrabold ">K</h1>
+          <h1 className="text-white font-extrabold ">K</h1>
           <h1 className="text-white font-extrabold ">I</h1>
           <h1 className="text-white font-extrabold ">N</h1>
           <h1 className="text-white font-extrabold ">X</h1>
