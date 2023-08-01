@@ -53,6 +53,19 @@ export const meta: V2_MetaFunction = () => {
       name: "robots",
       content: "index, follow",
     },
+    {
+      property: "og:title",
+      content: "Kinxori - My personal website 💻",
+    },
+    {
+      property: "og:description",
+      content:
+        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+    },
+    {
+      property: "og:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
   ];
 };
 
