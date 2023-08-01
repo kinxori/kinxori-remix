@@ -1,15 +1,14 @@
 import { useState } from "react";
 // import Link from "@src/components/Buttons/Link";
-import { useLocation } from "react-router-dom";
-import { Link } from "@remix-run/react";
+import { Link, useLocation } from "@remix-run/react";
 
 export default function MobileNav() {
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState(location.pathname);
 
   return (
-    <nav className="flex flex-col bg-black">
-      <div className="">
+    <nav className="z-[1000px] fixed top-0 left-0 w-[100%]    ">
+      <div className="flex border-b h-[60px] w-[90%] mx-auto border-mainColor ">
         <Link
           className={currentPath === "/" ? "isActive" : "isIdle"}
           //   variant="ghostButton"

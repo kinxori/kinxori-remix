@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import MobileNav from "~/components/NavBar/MobileNavBar";
-import DesktopNav from "~/components/NavBar/DesktopNavBar";
+import MobileNavBar from "~/components/NavBar/MobileNavBar";
+import DesktopNavBar from "~/components/NavBar/DesktopNavBar";
 
 export default function NavBar() {
-  const [navComponent, setIsNavComponent] = useState(<MobileNav />);
+  const [navComponent, setIsNavComponent] = useState(<MobileNavBar />);
 
   useEffect(() => {
     const handleRezise = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth <= 1180) {
-        setIsNavComponent(<MobileNav />);
+        setIsNavComponent(<MobileNavBar />);
       } else {
-        setIsNavComponent(<DesktopNav />);
+        setIsNavComponent(<DesktopNavBar />);
       }
     };
     window.addEventListener("resize", handleRezise);

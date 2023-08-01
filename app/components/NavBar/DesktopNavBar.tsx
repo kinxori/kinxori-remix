@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import "./_NavBar.css";
+import { Link } from "@remix-run/react";
 // import LinkButton from "@src/components/Buttons/LinkButton";
 // import ButtonAnchor from "@src/components/Buttons/ButtonAnchor";
 // import resumeFilePDF from "@src/assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
