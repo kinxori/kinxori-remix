@@ -77,6 +77,10 @@ export const meta: V2_MetaFunction = () => {
       content: "website",
     },
     {
+      property: "og:site_name",
+      content: "Kinxori",
+    },
+    {
       name: "twitter:card",
       content: "summary_large_image",
     },
@@ -97,10 +101,6 @@ export const meta: V2_MetaFunction = () => {
       name: "twitter:image",
       content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
     },
-    {
-      property: "og:site_name",
-      content: "Kinxori",
-    },
   ];
 };
 
@@ -113,7 +113,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body id="root">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

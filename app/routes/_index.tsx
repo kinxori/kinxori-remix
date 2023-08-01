@@ -1,4 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/node";
+import LandingPage from "~/components/LandingPage";
+import mainLandingPageAsset from "~/assets/AstroAssets.png";
 
 // export const meta: V2_MetaFunction = () => {
 //   return [{ title: "Kinxori" }, { name: "description", content: "Welcome to Remix!" }];
@@ -6,8 +8,13 @@ import type { V2_MetaFunction } from "@remix-run/node";
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Kinxori hey there</h1>
-    </div>
+    <article className="overflow-y-scroll overflow-x-hidden w-auto h-auto">
+      <LandingPage />
+      <img
+        src={mainLandingPageAsset}
+        alt="Purple Astro riding a bike - Kinxori landing page asset"
+      />
+      <LandingPage />
+    </article>
   );
 }
