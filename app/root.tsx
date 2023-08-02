@@ -2,6 +2,7 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import mainIcon from "~/assets/Logos/new-logo-kinxori.ico";
 import stylesheet from "~/tailwind.css";
+import NavBar from "~/components/NavBar/NavBar";
 
 export const links: LinksFunction = () => {
   return [
@@ -114,6 +115,7 @@ export default function App() {
         <Links />
       </head>
       <body id="root">
+        <NavBar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -44,7 +44,7 @@ export default function MobileNav() {
       </div>
       <hr className=" w-[90%] mx-auto border-mainColor border-t-[2px] rounded-lg" />
       <div
-        className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-bgColor box-border p-10
+        className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-mainColor box-border p-10
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
         ${isSlideActive ? "right-0" : "right-[-100%]"}`}
       >
