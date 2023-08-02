@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { MouseEventHandler, ReactNode, RefAttributes } from "react";
 
 export default function Button({
   children,
@@ -8,8 +9,16 @@ export default function Button({
   target,
   variant = "mainButton",
   type,
-}: any) {
-  const classes: any = {
+}: {
+  children: ReactNode;
+  className?: string;
+  to: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  target?: string;
+  variant?: string;
+  type?: string | undefined;
+}) {
+  const classes: { [key: string]: string } = {
     mainButton: "mainButton",
     secButton: "secButton",
     ghostButton: "ghostButton",
@@ -18,8 +27,8 @@ export default function Button({
 
   return (
     <span className={className}>
-      <Link to={to} target={target}>
-        <button className={classes[variant]} onClick={onClick} type={type}>
+      <Link to={to} target={target} type={type}>
+        <button className={classes[variant]} onClick={onClick}>
           {children}
         </button>
       </Link>
