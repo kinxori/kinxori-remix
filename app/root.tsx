@@ -114,7 +114,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body id="root">
+      <body id="root" className="bg-bgColor">
         <NavBar />
         <Outlet />
         <ScrollRestoration />

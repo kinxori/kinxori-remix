@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
@@ -16,6 +17,33 @@ export default {
       dScreen: "1080px",
     },
   },
-  extend: {},
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase, addUtilities, theme, addComponents }: { [key: string]: any }) {
+      addBase({
+        b: {
+          color: theme("colors.mainColor"),
+          fontStyle: "bold",
+        },
+      });
+      addUtilities({
+        ".mainButton": {
+          backgroundColor: theme("colors.mainColor"),
+          border: "1px solid var(--mainColor)",
+          padding: "10px 20px",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          fontFamily: "inter",
+        },
+        ".secButton": {
+          backgroundColor: "var(--mainColor)",
+        },
+        ".ghostButton": {
+          backgroundColor: "var(--mainColor)",
+        },
+        ".linkButton": {
+          backgroundColor: "var(--mainColor)",
+        },
+      });
+    }),
+  ],
 } satisfies Config;

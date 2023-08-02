@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* This is the same as the tailwind modules inside plugins
+
 @layer base {
   b {
     @apply text-mainColor font-bold;
   }
-}
+} 
 
-@layer utilities {
+ @layer utilities {
   .mainButton {
     background-color: var(--mainColor);
     border: 1px solid var(--mainColor);
@@ -24,16 +26,18 @@
   .linkButton {
     background-color: var(--mainColor);
   }
-}
+} 
+
+*/
+
+/* :root {
+  /* --secColor: #181818; */
+/* --mainColor: hsl(266deg, 100%, 60%); */
+/* color-scheme: light dark; */
+/* background-color: var(--secColor); */
+/* } */
 
 * {
   margin: 0;
   padding: 0;
-}
-
-#root {
-  --secColor: #181818;
-  --mainColor: hsl(266deg, 100%, 60%);
-  color-scheme: dark;
-  background-color: var(--secColor);
 }
