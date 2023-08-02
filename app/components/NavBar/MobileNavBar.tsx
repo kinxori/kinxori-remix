@@ -15,7 +15,7 @@ export default function MobileNav() {
 
   return (
     <nav className="z-[1000px] fixed top-0 left-0 w-[100%] ">
-      <div className="flex h-[60px] w-[90%] mx-auto box-border p-[10px_0px] relative bg-bgColor ">
+      <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link to="/" className="h-[100%] ">
           <img
             className={`h-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
@@ -26,9 +26,13 @@ export default function MobileNav() {
         </Link>
         <div
           onClick={handleSlide}
-          className={`w-[30px] z-[100] h-[100%] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] 
+          className={`w-[30px] z-100 h-[100%] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] 
           transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-          ${isSlideActive ? "right-[90%] gap-[0px]" : "right-[0px] gap-[6px]"}`}
+          ${
+            isSlideActive
+              ? "right-[calc(100%-30px-5%)] gap-[0px] mr-[0]"
+              : "right-[0] gap-[6px] mr-[5%]"
+          }`}
         >
           <hr
             className={`border-mainColor border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]

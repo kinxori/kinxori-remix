@@ -9,7 +9,6 @@
 
 #root {
   --secColor: #181818;
-
   color-scheme: dark;
   background-color: var(--secColor);
 }
