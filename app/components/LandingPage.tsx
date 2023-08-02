@@ -4,7 +4,7 @@ import { Link } from "@remix-run/react";
 
 export default function LandingPage() {
   return (
-    <article className="h-[100vh] w-[100%] mx-auto box-border p-10 overflow-hidden ">
+    <article className="h-[100vh] w-[100%] mx-auto box-border p-10 overflow-hidden">
       <div className="h-[100%] w-[100%] flex flex-col justify-center items-center">
         <div className="flex w-[100%] flex-wrap justify-around text-[60px] ">
           <h1 className="text-white font-extrabold ">K</h1>
