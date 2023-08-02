@@ -1,6 +1,7 @@
 // import LinkButton from "@src/components/Buttons/LinkButton";
 
 import { Link } from "@remix-run/react";
+import Button from "../CustomButton/Button";
 
 export default function LandingPage({ id }: { id: string }) {
   return (
@@ -24,7 +25,7 @@ export default function LandingPage({ id }: { id: string }) {
             <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
           </p> */}
           <div className="landingPage-CTA">
-            <Link to="">Contact Me</Link>
+            <Button variant="mainButton">Contact Me</Button>
           </div>
         </div>
       </div>

@@ -8,6 +8,24 @@
   }
 }
 
+@layer utilities {
+  .mainButton {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .secButton {
+    background-color: var(--mainColor);
+  }
+  .ghostButton {
+    background-color: var(--mainColor);
+  }
+  .linkButton {
+    background-color: var(--mainColor);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +33,7 @@
 
 #root {
   --secColor: #181818;
+  --mainColor: hsl(266deg, 100%, 60%);
   color-scheme: dark;
   background-color: var(--secColor);
 }

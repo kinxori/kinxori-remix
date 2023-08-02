@@ -2,13 +2,11 @@ import { ReactEventHandler, ReactNode } from "react";
 
 export default function Button({
   children,
-  className,
   onClick,
   variant = "mainButton",
   type,
 }: {
   children: ReactNode;
-  className?: string | undefined;
   onClick?: ReactEventHandler<HTMLButtonElement>;
   variant?: string | undefined;
   type?: "submit" | "button" | "reset";
@@ -21,10 +19,8 @@ export default function Button({
   };
 
   return (
-    <span className={className}>
-      <button className={classes[variant]} onClick={onClick} type={type}>
-        {children}
-      </button>
-    </span>
+    <button className={classes[variant]} onClick={onClick} type={type}>
+      {children}
+    </button>
   );
 }
