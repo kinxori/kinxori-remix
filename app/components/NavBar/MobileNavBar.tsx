@@ -37,20 +37,20 @@ export default function MobileNav() {
           transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
         >
           <hr
-            className={`border-mainColor border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
             ${isSlideActive ? "rotate-45 absolute" : "rotate-0 relative"} `}
           />
           <hr
-            className={`border-mainColor border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
             ${isSlideActive ? "opacity-0" : "opacity-1"} `}
           />
           <hr
-            className={`border-mainColor border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
             ${isSlideActive ? "-rotate-45 absolute" : "rotate-0 relative"} `}
           />
         </div>
       </div>
-      <hr className=" w-[90%] mx-auto border-mainColor border-t-[2px] rounded-lg" />
+      <hr className=" w-[100%] mx-auto border-mainColor border-[1px]" />
       <div
         className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-bgColor box-border p-10 flex flex-col gap-3 justify-start items-end
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
