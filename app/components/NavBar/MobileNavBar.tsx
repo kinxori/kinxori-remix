@@ -50,16 +50,7 @@ export default function MobileNav() {
       >
         <h2 className="font-bold text-[30px] font-[rubik] text-white  ">Welcome to Kinxori!</h2>
         <hr className="border-[1px] border-white w-[100%] rounded-lg"></hr>
-        <Link
-          className={`text-white font-[inter] text-[16px] `}
-          //   variant="ghostButton"
-          to="/"
-          onClick={() => setCurrentPath("/")}
-        >
-          Home <i className="fa-solid fa-house"></i>
-        </Link>
-        <hr className="border-[1px] border-white w-[100%] rounded-lg mt-auto"></hr>
-        <div>
+        <div className="my-5 flex flex-col gap-3">
           <Link
             className={`text-white font-[inter] text-[16px] `}
             //   variant="ghostButton"
@@ -68,6 +59,34 @@ export default function MobileNav() {
           >
             Home <i className="fa-solid fa-house"></i>
           </Link>
+          <Link
+            className={`text-white font-[inter] text-[16px] `}
+            //   variant="ghostButton"
+            to="/"
+            onClick={() => setCurrentPath("/")}
+          >
+            Home <i className="fa-solid fa-house"></i>
+          </Link>
+          <Link
+            className={`text-white font-[inter] text-[16px] `}
+            //   variant="ghostButton"
+            to="/"
+            onClick={() => setCurrentPath("/")}
+          >
+            Home <i className="fa-solid fa-house"></i>
+          </Link>
+        </div>
+
+        <hr className="border-[1px] border-white w-[100%] rounded-lg mt-auto"></hr>
+        <div className="flex">
+          <a
+            className="w-[30px] h-[30px] text-mainColor bg-white rounded-full flex justify-center items-center"
+            href="/"
+            target="_blank"
+            onClick={handleSlide}
+          >
+            <i className="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </nav>
