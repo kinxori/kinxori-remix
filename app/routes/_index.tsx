@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LandingPage from "~/components/LandingPage";
+import LandingPage from "~/components/Pages/LandingPage";
 import mainLandingPageAsset from "~/assets/AstroAssets.png";
 
 export default function Index() {
