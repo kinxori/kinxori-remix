@@ -44,18 +44,31 @@ export default function MobileNav() {
       </div>
       <hr className=" w-[90%] mx-auto border-mainColor border-t-[2px] rounded-lg" />
       <div
-        className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-mainColor box-border p-10
+        className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-mainColor box-border p-10 flex flex-col gap-3 justify-start items-end
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
         ${isSlideActive ? "right-0" : "right-[-100%]"}`}
       >
+        <h2 className="font-bold text-[30px] font-[rubik] text-white  ">Welcome to Kinxori!</h2>
+        <hr className="border-[1px] border-white w-[100%] rounded-lg"></hr>
         <Link
-          className={`text-white `}
+          className={`text-white font-[inter] text-[16px] `}
           //   variant="ghostButton"
           to="/"
           onClick={() => setCurrentPath("/")}
         >
           Home <i className="fa-solid fa-house"></i>
         </Link>
+        <hr className="border-[1px] border-white w-[100%] rounded-lg mt-auto"></hr>
+        <div>
+          <Link
+            className={`text-white font-[inter] text-[16px] `}
+            //   variant="ghostButton"
+            to="/"
+            onClick={() => setCurrentPath("/")}
+          >
+            Home <i className="fa-solid fa-house"></i>
+          </Link>
+        </div>
       </div>
     </nav>
   );
