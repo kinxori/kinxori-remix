@@ -1,11 +1,19 @@
+import { ReactEventHandler, ReactNode } from "react";
+
 export default function Button({
   children,
   className,
   onClick,
   variant = "mainButton",
   type,
-}: any) {
-  const classes: any = {
+}: {
+  children: ReactNode;
+  className?: string | undefined;
+  onClick?: ReactEventHandler<HTMLButtonElement>;
+  variant?: string | undefined;
+  type?: "submit" | "button" | "reset";
+}) {
+  const classes: { [key: string]: string } = {
     mainButton: "mainButton",
     secButton: "secButton",
     ghostButton: "ghostButton",
