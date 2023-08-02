@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         mainColor: "hsl(266deg, 100%, 60%)",
+        bgColor: "#181818",
         white: "#FFF",
       },
     },

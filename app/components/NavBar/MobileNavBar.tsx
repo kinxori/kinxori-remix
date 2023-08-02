@@ -14,8 +14,8 @@ export default function MobileNav() {
   console.log(isSlideActive);
 
   return (
-    <nav className="z-[1000px] fixed top-0 left-0 w-[100%]">
-      <div className="flex h-[60px] w-[90%] mx-auto box-border p-[10px_0px] relative ">
+    <nav className="z-[1000px] fixed top-0 left-0 w-[100%] ">
+      <div className="flex h-[60px] w-[90%] mx-auto box-border p-[10px_0px] relative bg-bgColor ">
         <Link to="/" className="h-[100%] ">
           <img
             className={`h-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
@@ -43,16 +43,22 @@ export default function MobileNav() {
             ${isSlideActive ? "-rotate-45 absolute" : "rotate-0 relative"} `}
           />
         </div>
-        {/* <Link
-          className={currentPath === "/" ? "isActive" : "isIdle"}
+      </div>
+      <hr className=" w-[90%] mx-auto border-mainColor border-t-[2px] rounded-lg" />
+      <div
+        className={`w-[100%] z-100 fixed h-[calc(100vh-62px)] bg-mainColor
+        transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
+        ${isSlideActive ? "right-0" : "right-[-100%]"}`}
+      >
+        <Link
+          className={`absolute bottom-0 text-white`}
           //   variant="ghostButton"
           to="/"
           onClick={() => setCurrentPath("/")}
         >
           <i className="fa-solid fa-house"></i>
-        </Link> */}
+        </Link>
       </div>
-      <hr className=" w-[90%] mx-auto border-mainColor border-t-[2px] rounded-lg" />
     </nav>
   );
 }
