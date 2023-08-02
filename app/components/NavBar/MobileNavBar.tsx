@@ -7,11 +7,19 @@ export default function MobileNav() {
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState(location.pathname);
   const [isSlideActive, setSlideActive] = useState(false);
+  const [isClipboardCopied, setClipboardCopy] = useState(false);
 
   const handleSlide = () => {
     setSlideActive((current) => (current ? false : true));
   };
-  console.log(isSlideActive);
+
+  const handleClipboardState = () => {
+    navigator.clipboard.writeText("gustavoq26@gmail.com");
+    setClipboardCopy((current) => (current ? false : true));
+    setTimeout(() => {
+      setClipboardCopy(false);
+    }, 5000);
+  };
 
   return (
     <nav className="z-[1000] fixed top-0 left-0 w-[100%] ">
@@ -82,7 +90,7 @@ export default function MobileNav() {
             Schedule a Meeting <i className="fa-regular fa-calendar-days"></i>
           </a>
         </div>
-        <div className="flex gap-3 mt-auto ">
+        <div className="flex gap-3 mt-auto text-bgColor ">
           <a
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             href="https://linkedin.com/in/quinchori"
@@ -107,14 +115,16 @@ export default function MobileNav() {
           >
             <i className="fa-brands fa-twitter"></i>
           </a>
-          <a
+          <button
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href=""
-            target="_blank"
-            onClick={handleSlide}
+            onClick={handleClipboardState}
           >
-            <i className="fa-regular fa-envelope"></i>
-          </a>
+            {isClipboardCopied ? (
+              <i className="fa-solid fa-check"></i>
+            ) : (
+              <i className="fa-regular fa-envelope"></i>
+            )}
+          </button>
         </div>
       </div>
     </nav>
