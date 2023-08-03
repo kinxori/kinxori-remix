@@ -23,7 +23,7 @@ export default {
         b: {
           color: theme("colors.white"),
           fontFamily: "inter",
-          backgroundColor: theme("colors.mainColor"),
+          textDecoration: "underline",
         },
       });
       addUtilities({

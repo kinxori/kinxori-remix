@@ -17,7 +17,7 @@ export default function LandingPage({ id }: { id: string }) {
           <h1 className="text-white font-extrabold ">I</h1>
         </div>
         <div className="gap-10 w-[90%] flex flex-col justify-center items-center text-center text-white ">
-          <h2 className="opacity-75 text-[16px] leading-[18px]">
+          <h2 className="opacity-80 text-[16px] leading-[18px]">
             Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
           </h2>
           <div className="">

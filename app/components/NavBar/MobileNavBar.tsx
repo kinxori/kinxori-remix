@@ -26,7 +26,7 @@ export default function MobileNav() {
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link to="/" className="h-[100%] ">
           <img
-            className={`h-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] `}
+            className={`h-[100%] w-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] `}
             src={kinxoriLogo}
             alt="Kinxori Logo for mobile devices"
           />
@@ -96,6 +96,7 @@ export default function MobileNav() {
             href="https://linkedin.com/in/quinchori"
             target="_blank"
             onClick={handleSlide}
+            aria-label="You can visit my linkedin.com profile clicking this button."
           >
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
@@ -104,6 +105,7 @@ export default function MobileNav() {
             href="https://github.com/kinxori"
             target="_blank"
             onClick={handleSlide}
+            aria-label="You can visit my github.com profile clicking this button."
           >
             <i className="fa-brands fa-github"></i>
           </a>
@@ -112,12 +114,18 @@ export default function MobileNav() {
             href="https://twitter.com/kinxori"
             target="_blank"
             onClick={handleSlide}
+            aria-label="You can visit my twitter.com profile clicking this button."
           >
             <i className="fa-brands fa-twitter"></i>
           </a>
           <button
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             onClick={handleClipboardState}
+            aria-label={
+              isClipboardCopied
+                ? "Email address copied to clipboard"
+                : "Copy my email address to your clipboard"
+            }
           >
             {isClipboardCopied ? (
               <i className="fa-solid fa-check"></i>

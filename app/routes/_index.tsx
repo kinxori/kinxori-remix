@@ -12,7 +12,7 @@ export default function Index() {
         <img
           src={mainLandingPageAsset}
           alt="Purple Astro riding a bike - Kinxori landing page asset"
-          className={`  transition-all duration-[.5s] ease-linear`}
+          className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
         />
       </div>
       <LandingPage id="landingPage" />
