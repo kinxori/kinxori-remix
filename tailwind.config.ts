@@ -21,8 +21,9 @@ export default {
     plugin(function ({ addBase, addUtilities, theme, addComponents }: { [key: string]: any }) {
       addBase({
         b: {
-          color: theme("colors.mainColor"),
-          fontStyle: "bold",
+          color: theme("colors.white"),
+          fontFamily: "inter",
+          backgroundColor: theme("colors.mainColor"),
         },
       });
       addUtilities({

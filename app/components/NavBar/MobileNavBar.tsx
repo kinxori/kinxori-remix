@@ -33,20 +33,20 @@ export default function MobileNav() {
         </Link>
         <div
           onClick={handleSlide}
-          className={`w-[30px] z-[1000] h-[100%] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
+          className={`w-[30px] z-[1000] h-[25px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
           transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
         >
           <hr
-            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-            ${isSlideActive ? "rotate-45 absolute" : "rotate-0 relative"} `}
+            className={`border-white border-t-[4px] rounded-lg w-[100%] absolute transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            ${isSlideActive ? "rotate-45 top-[50%] translate-y-[-50%]    " : "rotate-0 top-0 "} `}
           />
           <hr
-            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
             ${isSlideActive ? "opacity-0" : "opacity-1"} `}
           />
           <hr
-            className={`border-white border-t-[4px] rounded-lg w-[100%] transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-            ${isSlideActive ? "-rotate-45 absolute" : "rotate-0 relative"} `}
+            className={`border-white border-t-[4px] rounded-lg w-[100%] absolute transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+            ${isSlideActive ? "-rotate-45 top-[50%] translate-y-[-50%] " : "rotate-0 bottom-0 "} `}
           />
         </div>
       </div>
