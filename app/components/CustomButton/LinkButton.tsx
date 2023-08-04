@@ -26,12 +26,10 @@ export default function Button({
   };
 
   return (
-    <span className={className}>
-      <Link to={to} target={target} type={type}>
-        <button className={classes[variant]} onClick={onClick}>
-          {children}
-        </button>
-      </Link>
-    </span>
+    <Link to={to} target={target} type={type} className={className}>
+      <button className={classes[variant]} onClick={onClick}>
+        {children}
+      </button>
+    </Link>
   );
 }

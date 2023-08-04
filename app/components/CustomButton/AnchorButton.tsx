@@ -27,10 +27,15 @@ export default function ButtonAnchor({
   };
 
   return (
-    <span className={className}>
-      <a href={href} download={download} onClick={onClick} target={target} type={type}>
-        <button className={classes[variant]}>{children}</button>
-      </a>
-    </span>
+    <a
+      href={href}
+      download={download}
+      onClick={onClick}
+      target={target}
+      type={type}
+      className={className}
+    >
+      <button className={classes[variant]}>{children}</button>
+    </a>
   );
 }
