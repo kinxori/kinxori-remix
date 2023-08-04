@@ -6,7 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: "hsl(266deg, 100%, 60%)",
+        mainColor: "hsl(266deg, 100%, 60%, 1)",
+        mainColor2: "hsl(266deg, 100%, 60%, .8)",
+        mainColor3: "hsl(266deg, 100%, 60%, .5)",
+        mainColor4: "hsl(266deg, 100%, 60%, .3)",
         bgColor: "#181818",
         white: "#FFF",
       },
@@ -34,6 +37,10 @@ export default {
           borderRadius: "10px",
           fontWeight: "bold",
           fontFamily: "inter",
+        },
+        ".mainButton:hover": {
+          backgroundColor: theme("colors.bgColor"),
+          scale: "1.05",
         },
         ".secButton": {
           backgroundColor: "var(--mainColor)",
