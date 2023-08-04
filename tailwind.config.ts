@@ -39,19 +39,39 @@ export default {
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
         },
+        ".secButton": {
+          backgroundColor: theme("colors.bgColor"),
+          border: `1px solid ${theme("colors.mainColor")}`,
+          padding: "10px 20px",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          fontFamily: "inter",
+          transition: "all .2s ease-in-out",
+        },
+        ".ghostButton": {
+          backgroundColor: "transparent",
+          border: `1px solid transparent`,
+          padding: "10px 20px",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          fontFamily: "inter",
+          transition: "all .2s ease-in-out",
+        },
+        ".linkButton": {
+          backgroundColor: "transparent",
+          border: `1px solid transparent`,
+          padding: "10px 20px",
+          borderRadius: "10px",
+          fontWeight: "bold",
+          fontStyle: "italic",
+          textDecoration: "underline",
+          fontFamily: "inter",
+          transition: "all .2s ease-in-out",
+        },
         ".mainButton:hover": {
           backgroundColor: theme("colors.mainColor2"),
           scale: "1.02",
           boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
-        },
-        ".secButton": {
-          backgroundColor: "var(--mainColor)",
-        },
-        ".ghostButton": {
-          backgroundColor: "var(--mainColor)",
-        },
-        ".linkButton": {
-          backgroundColor: "var(--mainColor)",
         },
       });
     }),
