@@ -20,8 +20,8 @@ export default function LandingPage({ id }: { id: string }) {
           <h2 className="opacity-80 text-[16px] leading-[18px]">
             Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
           </h2>
-          <div className="">
-            <Button variant="mainButton">Contact Me</Button>
+          <Button variant="mainButton">Contact Me</Button>
+          <div className="w-100 h-fit object-contain    ">
             {/* <p>
             Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a
             <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
