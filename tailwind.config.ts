@@ -32,15 +32,17 @@ export default {
       addUtilities({
         ".mainButton": {
           backgroundColor: theme("colors.mainColor"),
-          border: "1px solid var(--mainColor)",
+          border: `1px solid ${theme("colors.mainColor")}`,
           padding: "10px 20px",
           borderRadius: "10px",
           fontWeight: "bold",
           fontFamily: "inter",
+          transition: "all .2s ease-in-out",
         },
         ".mainButton:hover": {
-          backgroundColor: theme("colors.bgColor"),
-          scale: "1.05",
+          backgroundColor: theme("colors.mainColor2"),
+          scale: "1.02",
+          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
         },
         ".secButton": {
           backgroundColor: "var(--mainColor)",
