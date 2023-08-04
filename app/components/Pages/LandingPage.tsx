@@ -1,7 +1,4 @@
-// import LinkButton from "@src/components/Buttons/LinkButton";
-
-import { Link } from "@remix-run/react";
-import Button from "../CustomButton/Button";
+import ButtonAnchor from "../CustomButton/AnchorButton";
 
 export default function LandingPage({ id }: { id: string }) {
   return (
@@ -20,13 +17,13 @@ export default function LandingPage({ id }: { id: string }) {
           <h2 className="opacity-80 text-[16px] leading-[18px]">
             Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
           </h2>
-          <Button variant="mainButton">Contact Me</Button>
-          <div className="w-100 h-fit object-contain    ">
-            {/* <p>
-            Hi! I am Kinxori and <b>welcome</b> to my website! Developing myself as a
-            <b> web developer</b> and <b>motion designer.</b> Take a deep dive into my work!
-          </p> */}
-          </div>
+          <ButtonAnchor
+            variant="mainButton"
+            href="https://calendly.com/gustavoq26/30min"
+            target="_blank"
+          >
+            Contact Me
+          </ButtonAnchor>
         </div>
       </div>
     </article>
