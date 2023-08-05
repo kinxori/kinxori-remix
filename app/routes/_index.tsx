@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LandingPage from "~/components/Pages/LandingPage";
 import mainLandingPageAsset from "~/assets/AstroAssets.png";
+import AboutMe from "~/components/Pages/AboutMe";
 
 export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
@@ -15,7 +16,7 @@ export default function Index() {
           className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
         />
       </div>
-      <LandingPage id="landingPage" />
+      <AboutMe id="aboutMePage" />
       <LandingPage id="landingPage" />
       <LandingPage id="landingPage" />
       <LandingPage id="landingPage" />
