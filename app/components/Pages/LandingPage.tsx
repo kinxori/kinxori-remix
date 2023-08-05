@@ -27,9 +27,9 @@ export default function LandingPage({ id }: { id: string }) {
             I
           </h1>
         </div>
-        <h2 className="opacity-50 text-[16px] w-[90%] text-center text-white">
+        <h3 className="opacity-70 text-[16px] w-[90%] text-center text-white">
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
-        </h2>
+        </h3>
         <ButtonAnchor
           variant="mainButton"
           href="https://calendly.com/gustavoq26/30min"
