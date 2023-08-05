@@ -15,9 +15,9 @@ export default function AboutMe({ id }: { id: string }) {
             alt="Gustavo Quiroz - Kinxori"
           ></img>
         </div>
-        <div className="text-white flex flex-col gap-5 ">
+        <div className=" text-white flex flex-col gap-5 ">
           <h2 className="font-[rubik] font-bold text-[28px] text-center ">Hi, I'm Kinxori! ✌️</h2>
-          <div className="opacity-70 text-justify text-[16px] ">
+          <div className="text-justify text-[16px] text-white/60 ">
             <p>
               My name is Gustavo. I am a <b>web developer</b> with a passion for creating things. I
               used to be a <b>motion designer,</b> but now I'm using my love for art and design to{" "}

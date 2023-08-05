@@ -25,9 +25,6 @@ export default {
           fontFamily: "inter",
           textDecoration: `underline ${theme("colors.mainColor")}`,
         },
-        "b:hover": {
-          textDecoration: `underline ${theme("colors.mainColor")}`,
-        },
       });
       addUtilities({
         ".mainButton": {
