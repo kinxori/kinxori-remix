@@ -31,7 +31,7 @@ export default function LandingPage({ id }: { id: string }) {
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h2>
         <ButtonAnchor
-          variant="mainButton"
+          variant="linkButton"
           href="https://calendly.com/gustavoq26/30min"
           target="_blank"
         >

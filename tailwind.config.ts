@@ -77,6 +77,18 @@ export default {
           scale: "1.02",
           boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
         },
+        ".secButton:hover": {
+          scale: "1.02",
+          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
+        },
+        ".ghostButton:hover": {
+          scale: "1.02",
+          color: theme("colors.mainColor"),
+        },
+        ".linkButton:hover": {
+          scale: "1.02",
+          textDecoration: `underline ${theme("colors.mainColor")}`,
+        },
       });
     }),
   ],
