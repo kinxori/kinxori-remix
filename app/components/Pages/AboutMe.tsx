@@ -1,5 +1,4 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import mainAboutMeAsset from "~/assets/email-sent-asset.png";
 import imgAssetPFP from "~/assets/new-pfp-for-social-network.jpg";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import Button from "~/components/CustomButton/Button";
@@ -8,13 +7,8 @@ import Button from "~/components/CustomButton/Button";
 
 export default function AboutMe({ id }: { id: string }) {
   return (
-    <article id={id} className="w-[90%] mx-auto    ">
-      <div className="aboutMe-content">
-        <img
-          src={mainAboutMeAsset}
-          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
-          className="about-me-main-asset"
-        />
+    <article id={id} className="w-[100vw] mx-auto flex flex-col box-border p-10  ">
+      <div className="">
         <div className="aboutMe-copy">
           <h2>
             But... <b>Who is Kinxori?</b> 🤔
