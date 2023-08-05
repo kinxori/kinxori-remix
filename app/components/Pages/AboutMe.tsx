@@ -20,9 +20,9 @@ export default function AboutMe({ id }: { id: string }) {
           <h2 className="font-[rubik] font-bold text-[28px] text-center ">Hi, I'm Kinxori! ✌️</h2>
           <div className="opacity-70 text-justify text-[16px] ">
             <p>
-              My name is Gustavo. I am a <b>web developer </b> with a passion for creating things. I
-              used to be a <b>motion designer, </b> but now I'm using my love for art and design to
-              {""} <b>solve problems</b> in the web in a cool way.
+              My name is Gustavo. I am a <b>web developer</b> with a passion for creating things. I
+              used to be a <b>motion designer,</b> but now I'm using my love for art and design to{" "}
+              <b>solve problems</b> in the web in a cool way.
             </p>
           </div>
           <LinkButton to="/about" variant="secButton" className="ml-[auto]">
