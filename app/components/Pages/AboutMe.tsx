@@ -7,27 +7,30 @@ import Button from "~/components/CustomButton/Button";
 
 export default function AboutMe({ id }: { id: string }) {
   return (
-    <article id={id} className="w-[100vw] mx-auto flex flex-col box-border p-10  ">
-      <div className="">
-        <div className="aboutMe-copy">
-          <h2>
-            But... <b>Who is Kinxori?</b> 🤔
-          </h2>
-          <p>
-            My name is Gustavo, <b> front-end web developer </b> with a passion for creating things.
-            Formerly a <b> motion designer, </b> now using my love for creating to
-            <b> solve problems. </b>
-          </p>
+    <article id={id} className="w-[100vw] mx-auto box-border p-10 overflow-hidden relative">
+      <div className="flex flex-col justify-center items-center">
+        <div className="m-10 w-[50%] relative aspect-square rounded-full border-mainColor border-[5px] overflow-hidden">
+          <img
+            className="top-[-30px] absolute"
+            src={imgAssetPFP}
+            alt="Gustavo Quiroz - Kinxori"
+          ></img>
+        </div>
+        <div className="text-white flex flex-col gap-5 ">
+          <h2 className="font-bold text-[24px] text-center ">Hi, I'm Kinxori! ✌️</h2>
+          <div className="opacity-50 text-justify text-[16px] ">
+            <p>
+              My name is Gustavo. I am a <b>front-end web developer </b> with a passion for creating
+              things. I used to be a <b>motion designer, </b> now using my love for creating to
+              <b> solve problems. </b>
+            </p>
+          </div>
           <div className="aboutMe-CTA">
             <Button variant="secButton">heheh</Button>
           </div>
         </div>
       </div>
-
       <div className="about-me-read-more-body">
-        <div className="about-me-body-PFP">
-          <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img>
-        </div>
         <h2>Gustavo Q. O.</h2>
         <i>17 June 2023 / Mexico</i>
         <h3>Where do I come from? 🌎</h3>
