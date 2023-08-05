@@ -5,11 +5,13 @@ export default function Button({
   onClick,
   variant = "mainButton",
   type,
+  className,
 }: {
   children: ReactNode;
   onClick?: ReactEventHandler<HTMLButtonElement>;
   variant?: string | undefined;
   type?: "submit" | "button" | "reset";
+  className?: string | undefined;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
@@ -19,8 +21,10 @@ export default function Button({
   };
 
   return (
-    <button className={classes[variant]} onClick={onClick} type={type}>
-      {children}
-    </button>
+    <span className={className}>
+      <button className={classes[variant]} onClick={onClick} type={type}>
+        {children}
+      </button>
+    </span>
   );
 }

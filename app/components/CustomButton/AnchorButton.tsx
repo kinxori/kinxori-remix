@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactNode } from "react";
 
-export default function ButtonAnchor({
+export default function AnchorButton({
   children,
   className,
   onClick,

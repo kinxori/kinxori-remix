@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Link from "@src/components/Buttons/Link";
 import { Link, useLocation } from "@remix-run/react";
 import kinxoriLogo from "~/assets/Logos/new-logo-kinxori.ico";
 
