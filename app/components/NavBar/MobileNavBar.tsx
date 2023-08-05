@@ -23,17 +23,20 @@ export default function MobileNav() {
   return (
     <nav className="z-[1000] fixed top-0 left-0 w-[100%] ">
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
-        <Link to="/" className="h-[100%] ">
+        <Link
+          to="/"
+          className="h-[100%] hover:scale-[1.05] transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]"
+        >
           <img
-            className={`h-[100%] w-[100%] transition-all duration-[.3s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] `}
+            className={`h-[100%] w-[100%]`}
             src={kinxoriLogo}
             alt="Kinxori Logo for mobile devices"
           />
         </Link>
         <div
           onClick={handleSlide}
-          className={`w-[30px] z-[1000] h-[25px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
-          transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
+          className={`hover:scale-[1.05] w-[30px] z-[1000] h-[25px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
+          transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
         >
           <hr
             className={`border-white border-t-[4px] rounded-lg w-[100%] absolute transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
@@ -55,33 +58,33 @@ export default function MobileNav() {
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
         ${isSlideActive ? "right-0" : "right-[-100%]"}`}
       >
-        <h2 className="font-bold text-[30px] font-[rubik] text-white underline ">
-          Welcome to Kinxori!
+        <h2 className="decoration-mainColor font-bold text-[50px] font-[rubik] text-white underline ">
+          Welcome!
         </h2>
         <div className="my-5 flex flex-col gap-3 items-end text-[16px] font-bold   ">
           <Link
-            className={`text-white font-[inter] hover:scale-[1.05] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/"
             onClick={handleSlide}
           >
             Home Page <i className="fa-solid fa-house"></i>
           </Link>
           <Link
-            className={`text-white font-[inter] hover:scale-[1.05] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/about"
             onClick={handleSlide}
           >
             About Page <i className="fa-solid fa-user"></i>
           </Link>
           <Link
-            className={`text-white font-[inter] hover:scale-[1.05] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/contact"
             onClick={handleSlide}
           >
             Contact Page <i className="fa-solid fa-at"></i>
           </Link>
           <a
-            className={`text-white font-[inter] hover:scale-[1.05] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             target="_blank"
             href="https://calendly.com/gustavoq26/30min"
             onClick={() => setCurrentPath("/")}

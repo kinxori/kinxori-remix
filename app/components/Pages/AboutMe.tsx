@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import imgAssetPFP from "~/assets/new-pfp-for-social-network.jpg";
-import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import LinkButton from "~/components/CustomButton/LinkButton";
 
 // const VideoLoader = lazy(() => import("@src/components/VideoLoader/VideoLoader"));
