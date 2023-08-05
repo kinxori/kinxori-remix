@@ -6,10 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: "hsl(266deg, 100%, 60%, 1)",
-        mainColor2: "hsl(266deg, 100%, 60%, .8)",
-        mainColor3: "hsl(266deg, 100%, 60%, .5)",
-        mainColor4: "hsl(266deg, 100%, 60%, .3)",
+        mainColor: "hsl(266deg, 100%, 60%)",
         bgColor: "#181818",
         white: "#FFF",
       },
@@ -26,7 +23,7 @@ export default {
         b: {
           color: theme("colors.white"),
           fontFamily: "inter",
-          textDecoration: "underline",
+          textDecoration: `underline ${theme("colors.mainColor")}`,
         },
         "b:hover": {
           textDecoration: `underline ${theme("colors.mainColor")}`,
