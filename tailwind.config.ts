@@ -38,6 +38,7 @@ export default {
           fontWeight: "bold",
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
+          color: theme("colors.white"),
         },
         ".secButton": {
           backgroundColor: theme("colors.bgColor"),
@@ -47,6 +48,7 @@ export default {
           fontWeight: "bold",
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
+          color: theme("colors.white"),
         },
         ".ghostButton": {
           backgroundColor: "transparent",
@@ -56,6 +58,7 @@ export default {
           fontWeight: "bold",
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
+          color: theme("colors.white"),
         },
         ".linkButton": {
           backgroundColor: "transparent",
@@ -67,6 +70,7 @@ export default {
           textDecoration: "underline",
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
+          color: theme("colors.white"),
         },
         ".mainButton:hover": {
           backgroundColor: theme("colors.mainColor2"),
