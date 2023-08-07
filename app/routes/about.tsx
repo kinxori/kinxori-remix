@@ -4,7 +4,7 @@ import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function AboutMe() {
   return (
-    <article className="h-[calc(100vh-60px)] w-[100vw] flex flex-col mt-[60px]     ">
+    <article className="h-[calc(100vh-60px)] overflow-y-scroll w-[100vw] flex flex-col mt-[60px]     ">
       <div className="aboutMe-content">
         <img
           src={mainAboutMeAsset}
