@@ -21,7 +21,7 @@ export default function AboutMe({ id }: { id: string }) {
             <p>
               My name is Gustavo. I am a <b>web developer</b> with a passion for creating things. I
               used to be a <b>motion designer,</b> but now I'm using my love for art and design to{" "}
-              <b>solve problems</b> in the web in a cool way.
+              <b>solve problems</b> in a creative way.
             </p>
           </div>
           <LinkButton to="/about" variant="secButton" className="ml-[auto]">
