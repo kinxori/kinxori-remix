@@ -1,10 +1,10 @@
 import { Suspense } from "react";
 import mainAboutMeAsset from "~/assets/AboutmeAsset.png";
-import Button from "~/components/CustomButton/LinkButton";
+import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function AboutMe() {
   return (
-    <article className="h-[calc(100vh-60px)] w-[100vw]         ">
+    <article className="h-[calc(100vh-60px)] w-[100vw] flex flex-col mt-[60px]     ">
       <div className="aboutMe-content">
         <img
           src={mainAboutMeAsset}
@@ -21,13 +21,12 @@ export default function AboutMe() {
             <b> solve problems. </b>
           </p>
           <div className="aboutMe-CTA">
-            <Button to="" variant="secButton">
-              hehehe
-            </Button>
+            <LinkButton to="/" variant="mainButton">
+              Go Home
+            </LinkButton>
           </div>
         </div>
       </div>
-
       <div className="about-me-read-more-body">
         <div className="about-me-body-PFP">
           {/* <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img> */}
