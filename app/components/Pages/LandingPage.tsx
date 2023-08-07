@@ -27,7 +27,7 @@ export default function LandingPage({ id }: { id: string }) {
             I
           </h1>
         </div>
-        <h3 className=" text-[16px] w-[90%] text-center text-white/60">
+        <h3 className=" text-[16px] w-[90%] text-center font-light text-white">
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h3>
         <ButtonAnchor

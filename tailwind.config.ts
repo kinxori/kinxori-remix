@@ -23,6 +23,7 @@ export default {
         b: {
           color: "inherit",
           fontFamily: "inter",
+          fontWeight: "bold",
           textDecoration: `underline ${theme("colors.mainColor")}`,
         },
       });
