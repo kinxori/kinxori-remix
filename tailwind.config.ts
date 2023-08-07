@@ -21,7 +21,7 @@ export default {
     plugin(function ({ addBase, addUtilities, theme, addComponents }: { [key: string]: any }) {
       addBase({
         b: {
-          color: theme("colors.white"),
+          color: "inherit",
           fontFamily: "inter",
           textDecoration: `underline ${theme("colors.mainColor")}`,
         },
