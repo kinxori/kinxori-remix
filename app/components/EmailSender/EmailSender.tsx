@@ -54,7 +54,7 @@ export default function InputForm({ handlePopUp, popUp }: any) {
   };
 
   return (
-    <section className="   min-h-[300px] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]">
+    <section className="  w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]">
       <form onSubmit={handleSubmit} className="flex flex-col gap-1">
         <div className="flex flex-col gap-1">
           <label className="gap-1 flex flex-col font-bold text-bgColor">
@@ -90,10 +90,10 @@ export default function InputForm({ handlePopUp, popUp }: any) {
             placeholder="Enter your message here"
           />
         </label>
-        <Button type="submit" variant="mainButton" className="mt-5">
-          Submit
-        </Button>
       </form>
+      <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
+        Submit
+      </Button>
       {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
