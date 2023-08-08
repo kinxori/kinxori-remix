@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 //Note:
-// This only works if the parent component has height-auto/no attribute
+// This only works if the parent component has height-auto/No height set
 
 export default function ScrollTopButton() {
   const [isScrolled, setScrolled] = useState(false);

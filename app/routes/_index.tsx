@@ -7,9 +7,9 @@ export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
 
   return (
-    <article className="overflow-y-scroll overflow-x-hidden relative scroll-smooth">
+    <article className="w-100">
       <LandingPage id="landingPage" />
-      <div className="absolute -z-10 top-[calc(100vh-4%)] left-[60%] w-[150px] object-contain    ">
+      <div className="absolute -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
