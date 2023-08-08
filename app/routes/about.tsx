@@ -22,48 +22,48 @@ export default function AboutMe() {
           But... <b>Who is Kinxori?</b> 🤔
         </h2>
       </div>
-      <div className="flex flex-col gap-3 my-10 text-justify text-[16px]    ">
+      <div className="flex flex-col gap-3 my-10 text-justify text-[16px] ">
         <i className="text-white/50 text-[12px] ml-auto my-5 ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
-        <h4 className="text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
-        <p>
-          <b> Born in 1998, </b> I come from a small town near the central region of
-          <b> Mexico. </b>
-          Despite its size,the town has a <b>rich cultural heritage,</b>
-          with vibrant music and dance traditions, colorful festivals, and delicious local cuisine.
-          Growing up there
-          <b> has taught me </b> the value of
-          <b> community, hard work, and creativity, </b>
-          <b> which I carry with me </b> wherever I go.
-        </p>
-        <VideoLoader
-          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
-          loop={true}
-          autoPlay={true}
-          controls={false}
-          muted={true}
-          className="about-me-body-asset"
-        ></VideoLoader>
-        <h4 className="text-[24px] font-bold text-left ">Personality? 💆</h4>
-        <p>
-          I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
-          extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
-          like to
-          <b> make the most of it. </b> When I'm not socializing, I like to
-          <b> study and listen to music. </b> I strive to live a meaningful life, and I'm
-          <b> always looking for ways to improve myself </b> and my surroundings. However, that
-          doesn't mean I don't like going out. <b> I enjoy having dinner with friends </b> and
-          engaging in deep conversations.
-        </p>
-        <VideoLoader
-          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
-          loop={true}
-          autoPlay={true}
-          controls={false}
-          muted={true}
-          className="about-me-body-asset"
-        ></VideoLoader>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
+          <p>
+            <b>Born in 1998,</b> I come from a small town near the central region of <b>Mexico.</b>{" "}
+            Despite its size,the town has a <b>rich cultural heritage,</b> with vibrant music and
+            dance traditions, colorful festivals, and delicious local cuisine. Growing up there{" "}
+            <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which I
+            carry with me wherever I go.
+          </p>
+          <VideoLoader
+            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
+            loop={true}
+            autoPlay={true}
+            controls={false}
+            muted={true}
+            className="rounded-[10px] "
+          ></VideoLoader>
+        </div>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-[24px] font-bold text-left ">Personality? 💆</h4>
+          <p>
+            I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily
+            extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
+            like to <b>make the most of it.</b> When I'm not socializing, I like to{" "}
+            <b>study and listen to music.</b> I strive to live a meaningful life, and I'm{" "}
+            <b>always looking for ways to improve myself</b> and my surroundings. However, that
+            doesn't mean I don't like going out. <b>I enjoy having dinner with friends</b> and
+            engaging in deep conversations.
+          </p>
+          <VideoLoader
+            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
+            loop={true}
+            autoPlay={true}
+            controls={false}
+            muted={true}
+            className="rounded-[10px] "
+          ></VideoLoader>
+        </div>
         <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
         <p>
           Throughout my career path, I have pursued my
@@ -92,7 +92,7 @@ export default function AboutMe() {
           holds as I continue to
           <b> grow and evolve as a developer. </b>
         </p>
-        <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img>
+        <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
         <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
         <p>
           Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I also
@@ -106,9 +106,8 @@ export default function AboutMe() {
         <img
           src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
           alt="ADD ALT"
-          className="about-me-body-asset"
+          className="rounded-[10px] "
         ></img>
-
         <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
         <p>
           My main aspiration in life is to <b> achieve financial freedom, </b> not just for myself,
@@ -127,9 +126,9 @@ export default function AboutMe() {
           autoPlay={true}
           controls={false}
           muted={true}
-          className="about-me-body-asset"
+          className="rounded-[10px] "
         ></VideoLoader>
-        <h5>The end</h5>
+        <h5 className="text-center italic ">The end</h5>
       </div>
     </article>
   );
