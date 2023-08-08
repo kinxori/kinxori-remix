@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { MouseEventHandler, Suspense } from "react";
 
 interface VideoLoaderType {
   src?: string;
@@ -6,8 +6,8 @@ interface VideoLoaderType {
   autoPlay?: boolean;
   controls?: boolean;
   muted?: boolean;
-  preload: string;
-  className: string;
+  preload?: string;
+  className?: string;
   controlsList?: string;
   onClick?: MouseEventHandler<HTMLVideoElement>;
   disablePictureInPicture?: boolean;
@@ -26,17 +26,21 @@ export default function VideoLoader({
   disablePictureInPicture,
 }: VideoLoaderType) {
   return (
-    <video
-      src={src}
-      loop={loop}
-      autoPlay={autoPlay}
-      controls={controls}
-      muted={muted}
-      preload={preload}
-      className={className}
-      controlsList={controlsList}
-      onClick={onClick}
-      disablePictureInPicture={disablePictureInPicture}
-    ></video>
+    <Suspense
+      fallback={<h4 className="w-[100px] h-[100px] grid place-items-center">Loading video...</h4>}
+    >
+      <video
+        src={src}
+        loop={loop}
+        autoPlay={autoPlay}
+        controls={controls}
+        muted={muted}
+        preload={preload}
+        className={className}
+        controlsList={controlsList}
+        onClick={onClick}
+        disablePictureInPicture={disablePictureInPicture}
+      ></video>
+    </Suspense>
   );
 }

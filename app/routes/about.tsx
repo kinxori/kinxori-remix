@@ -1,6 +1,9 @@
-import { Suspense } from "react";
+import { lazy } from "react";
 import aboutMeAsset from "~/assets/AstroAssets.png";
 import LinkButton from "~/components/CustomButton/LinkButton";
+import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
+
+const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
 export default function AboutMe() {
   return (
@@ -20,7 +23,7 @@ export default function AboutMe() {
         </h2>
       </div>
       <div className="flex flex-col gap-3 my-10 text-justify text-[16px]    ">
-        <i className="text-white/50 text-[12px] ml-auto ">
+        <i className="text-white/50 text-[12px] ml-auto my-5 ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
         <h4 className="text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
@@ -34,16 +37,14 @@ export default function AboutMe() {
           <b> community, hard work, and creativity, </b>
           <b> which I carry with me </b> wherever I go.
         </p>
-        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
-          {/* <VideoLoader
-            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
-            loop={true}
-            autoPlay={true}
-            controls={false}
-            muted={true}
-            className="about-me-body-asset"
-          ></VideoLoader> */}
-        </Suspense>
+        <VideoLoader
+          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
+          loop={true}
+          autoPlay={true}
+          controls={false}
+          muted={true}
+          className="about-me-body-asset"
+        ></VideoLoader>
         <h4 className="text-[24px] font-bold text-left ">Personality? 💆</h4>
         <p>
           I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
@@ -55,16 +56,14 @@ export default function AboutMe() {
           doesn't mean I don't like going out. <b> I enjoy having dinner with friends </b> and
           engaging in deep conversations.
         </p>
-        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
-          {/* <VideoLoader
-            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
-            loop={true}
-            autoPlay={true}
-            controls={false}
-            muted={true}
-            className="about-me-body-asset"
-          ></VideoLoader> */}
-        </Suspense>
+        <VideoLoader
+          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
+          loop={true}
+          autoPlay={true}
+          controls={false}
+          muted={true}
+          className="about-me-body-asset"
+        ></VideoLoader>
         <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
         <p>
           Throughout my career path, I have pursued my
@@ -93,7 +92,7 @@ export default function AboutMe() {
           holds as I continue to
           <b> grow and evolve as a developer. </b>
         </p>
-        {/* <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img> */}
+        <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img>
         <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
         <p>
           Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I also
@@ -122,16 +121,14 @@ export default function AboutMe() {
           where I can enjoy the simple things in life and cherish the moments
           <b> spent with the people who matter most to me. </b>
         </p>
-        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
-          {/* <VideoLoader
-            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
-            loop={true}
-            autoPlay={true}
-            controls={false}
-            muted={true}
-            className="about-me-body-asset"
-          ></VideoLoader> */}
-        </Suspense>
+        <VideoLoader
+          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
+          loop={true}
+          autoPlay={true}
+          controls={false}
+          muted={true}
+          className="about-me-body-asset"
+        ></VideoLoader>
         <h5>The end</h5>
       </div>
     </article>
