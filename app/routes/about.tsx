@@ -6,9 +6,9 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
-export default function AboutMe() {
+export default function AboutMeRoute() {
   return (
-    <article className="box-border p-10 pt-[calc(10%+60px)] overflow-y-scroll w-[100vw] flex flex-col text-white     ">
+    <article className="box-border p-10 pt-[calc(10%+60px)] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <ScrollTopButton />
       <div className="flex flex-col gap-5">
         <LinkButton to="/" variant="secButton" className="mr-auto">

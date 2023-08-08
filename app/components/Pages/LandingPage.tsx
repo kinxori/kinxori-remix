@@ -1,4 +1,4 @@
-import ButtonAnchor from "../CustomButton/AnchorButton";
+import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function LandingPage({ id }: { id: string }) {
   return (
@@ -30,13 +30,9 @@ export default function LandingPage({ id }: { id: string }) {
         <h3 className=" text-[16px] w-[90%] text-center text-white">
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h3>
-        <ButtonAnchor
-          variant="mainButton"
-          href="https://calendly.com/gustavoq26/30min"
-          target="_blank"
-        >
+        <LinkButton variant="mainButton" to="/contact">
           Contact Me
-        </ButtonAnchor>
+        </LinkButton>
       </div>
     </article>
   );
