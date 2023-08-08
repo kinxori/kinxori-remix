@@ -1,11 +1,5 @@
-import {
-  FormEvent,
-  ReactEventHandler,
-  ReactNode,
-  SyntheticEvent,
-  useEffect,
-  useState,
-} from "react";
+import { Form } from "@remix-run/react";
+import { SyntheticEvent, useEffect, useState } from "react";
 import emailAsset from "~/assets/AboutmeAsset.png";
 import Button from "~/components/CustomButton/Button";
 
@@ -30,7 +24,7 @@ export default function InputForm() {
       setRandomEmojiGenerated(emoji);
     };
     fetchEmojiData();
-  }, [emailInput]);
+  }, []);
 
   const handleSubmit = async (event: SyntheticEvent<HTMLButtonElement, Event>) => {
     event.preventDefault();
@@ -65,46 +59,50 @@ export default function InputForm() {
     setPopUp((current) => (current === boolean ? false : boolean));
   };
 
-  console.log(popUp);
-
   return (
-    <section className="  w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]">
-      <form className="flex flex-col gap-1">
+    <section
+      className="hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
+    transition-all duration-35 ease-in-out"
+    >
+      <Form className="flex flex-col gap-1">
         <div className="flex flex-col gap-1">
           <label className="gap-1 flex flex-col font-bold text-bgColor">
             Email:
             <input
+              className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
               type="email"
-              value={emailInput}
               name="email"
-              onChange={(event) => setEmailInput(event.target.value)}
-              required
               placeholder="example@email.com"
+              value={emailInput}
+              onChange={(event) => setEmailInput(event.target.value)}
+              required={true}
             />
           </label>
           <label className="gap-1 flex flex-col font-bold text-bgColor">
             Subject
             <input
+              className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
               type="text"
-              value={subjectInput}
               name="subject"
-              onChange={(event) => setSubjectInput(event.target.value)}
-              required
               placeholder="Enter your subject"
+              value={subjectInput}
+              onChange={(event) => setSubjectInput(event.target.value)}
+              required={true}
             />
           </label>
         </div>
         <label className="gap-1 flex flex-col font-bold text-bgColor">
           Message:
           <textarea
-            required
-            value={messageInput}
+            className="resize-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] p-2 min-h-[100px] rounded-[10px]"
             name="message"
-            onChange={(event) => setMessageInput(event.target.value)}
             placeholder="Enter your message here"
+            value={messageInput}
+            onChange={(event) => setMessageInput(event.target.value)}
+            required={true}
           />
         </label>
-      </form>
+      </Form>
       <Button
         onClick={handleSubmit}
         type="submit"
