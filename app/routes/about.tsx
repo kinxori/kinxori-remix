@@ -64,34 +64,29 @@ export default function AboutMe() {
             className="rounded-[10px] "
           ></VideoLoader>
         </div>
-        <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
-        <p>
-          Throughout my career path, I have pursued my
-          <b> passion for creativity and visual arts. </b>
-          After graduating with a degree in
-          <b> Animation and Visual Effects in 2020, </b> I landed a job as a 2D Cut-Out Animator and
-          Background Illustrator from 2020-2021. This was just the start of my journey, as I
-          eventually progressed to become a<b> Lead Motion Designer </b> in a Canadian marketing
-          agency in <b> August, 2021. </b>
-        </p>
-        <p>
-          Although I had a great career in the visual arts industry,
-          <b>I felt the need to learn new skills and broaden my horizons.</b>
-          This is why in
-          <b> October 2022, </b> I decided to
-          <b> start learning web development. </b> My passion for
-          <b> problem-solving </b> and creating meaningful experiences through
-          <b> web design </b>
-          grew, and in <b> January 2023, </b> I made the decision to
-          <b> pursue web development as a full-time job. </b>
-        </p>
-        <p>
-          Currently, I am focusing on developing myself as a<b> Front-End Developer, </b> and I am
-          determined to become a<b> Full-Stack Developer </b> in the near future. My career journey
-          has been an exciting and fulfilling experience, and I look forward to what the future
-          holds as I continue to
-          <b> grow and evolve as a developer. </b>
-        </p>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
+          <p>
+            Throughout my career path, I have pursued my{" "}
+            <b>passion for creativity and visual arts.</b> After graduating with a degree in{" "}
+            <b>Animation and Visual Effects in 2020.</b> I spent 3 years working as an
+            Animator/MotionDesigner from 2020 to 2023.
+          </p>
+          <p>
+            Although I had a great career in the visual arts industry,{" "}
+            <b>I felt the need to learn new skills and broaden my horizons.</b> This is why in{" "}
+            <b>October 2022,</b> I decided to <b>start learning web development.</b> My passion for{" "}
+            <b>problem-solving</b> and creating meaningful experiences through <b>web design</b>{" "}
+            grew, and in <b>January 2023,</b> I made the decision to{" "}
+            <b>pursue web development as my full-time job.</b>
+          </p>
+          <p>
+            Currently, I am focusing on developing myself as a <b>Front-End Developer,</b> and I am
+            determined to become a <b>Full-Stack Developer</b> in the near future. My career journey
+            has been an exciting and fulfilling experience, and I look forward to what the future
+            holds as I continue to <b>grow and evolve as a developer.</b>
+          </p>
+        </div>
         <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
         <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
         <p>
