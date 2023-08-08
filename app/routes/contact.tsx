@@ -19,7 +19,7 @@ export default function ContactRoute() {
           <b>Contact</b>
         </h2>
       </div>
-      <div className=" bg-bgColor gap-5 flex-col flex p-10 box-border">
+      <div className=" bg-bgColor gap-10 flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">
           <h3 className="text-[30px] font-bold">
             Send me a message and <b>let's grab a virtual coffee!</b>

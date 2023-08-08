@@ -54,11 +54,11 @@ export default function InputForm({ handlePopUp, popUp }: any) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-root">
-      <div className="form-content">
-        <div className="form-content-inputs">
-          <div>
-            <h4>Email:</h4>
+    <section className="   min-h-[300px] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1">
+          <label className="gap-1 flex flex-col font-bold text-bgColor">
+            Email:
             <input
               type="email"
               value={emailInput}
@@ -67,9 +67,9 @@ export default function InputForm({ handlePopUp, popUp }: any) {
               required
               placeholder="example@email.com"
             />
-          </div>
-          <div>
-            <h4>Subject</h4>
+          </label>
+          <label className="gap-1 flex flex-col font-bold text-bgColor">
+            Subject
             <input
               type="text"
               value={subjectInput}
@@ -78,10 +78,10 @@ export default function InputForm({ handlePopUp, popUp }: any) {
               required
               placeholder="Enter your subject"
             />
-          </div>
+          </label>
         </div>
-        <div className="form-content-textareas">
-          <h4>Message:</h4>
+        <label className="gap-1 flex flex-col font-bold text-bgColor">
+          Message:
           <textarea
             required
             value={messageInput}
@@ -89,11 +89,11 @@ export default function InputForm({ handlePopUp, popUp }: any) {
             onChange={(event) => setMessageInput(event.target.value)}
             placeholder="Enter your message here"
           />
-        </div>
-        <button type="submit" className="mainButton form-button-CTA">
+        </label>
+        <Button type="submit" variant="mainButton" className="mt-5">
           Submit
-        </button>
-      </div>
+        </Button>
+      </form>
       {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
@@ -109,6 +109,6 @@ export default function InputForm({ handlePopUp, popUp }: any) {
           <div className="email-pop-up-background" onClick={() => handlePopUp(false)}></div>
         </div>
       )}
-    </form>
+    </section>
   );
 }
