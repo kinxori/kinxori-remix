@@ -17,7 +17,7 @@ export default function MobileNav() {
     setClipboardCopy((current) => (current ? false : true));
     setTimeout(() => {
       setClipboardCopy(false);
-    }, 5000);
+    }, 3000);
   };
 
   return (
