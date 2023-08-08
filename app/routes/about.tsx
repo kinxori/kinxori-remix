@@ -86,23 +86,26 @@ export default function AboutMe() {
             has been an exciting and fulfilling experience, and I look forward to what the future
             holds as I continue to <b>grow and evolve as a developer.</b>
           </p>
+          <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
         </div>
-        <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
-        <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
-        <p>
-          Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I also
-          enjoy <b> going to the beach </b> and spending time in nature. When I'm not outside, I
-          enjoy exploring my creative side through <b> music and craftsmanship. </b> I play guitar
-          and am interested in <b> learning the violin and saxophone. </b> I'm also
-          <b> interested in investing </b> and learning about global economy and tendencies in the
-          market. Overall, I'm someone who likes to
-          <b> keep learning and enjoy life's simple pleasures. </b>
-        </p>
-        <img
-          src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
-          alt="ADD ALT"
-          className="rounded-[10px] "
-        ></img>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
+          <p>
+            Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
+            enjoy <b>going to the beach</b> and spending time in nature. When I'm not outside, I
+            enjoy exploring my creative side through <b>music and craftsmanship.</b> I play guitar
+            and am interested in <b>learning the violin and saxophone.</b> I'm also{" "}
+            <b>interested in investing</b> and learning about global economy and tendencies in the
+            market. Overall, I'm someone who likes to{" "}
+            <b>keep learning and enjoy life's simple pleasures.</b>
+          </p>
+          <img
+            src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
+            alt="ADD ALT"
+            className="rounded-[10px] "
+          ></img>
+        </div>
+
         <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
         <p>
           My main aspiration in life is to <b> achieve financial freedom, </b> not just for myself,
