@@ -6,7 +6,7 @@ import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function AboutMe({ id }: { id: string }) {
   return (
-    <article id={id} className="w-[100vw] mx-auto box-border p-10 overflow-hidden relative">
+    <article id={id} className="w-[100vw] h-fit mx-auto box-border p-10 overflow-hidden relative">
       <div className="border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
         <div className="m-10 w-[70%] relative aspect-square rounded-full hover:border-mainColor border-white border-[5px] overflow-hidden transition-all duration-[.3s] ease-in-out    ">
           <img

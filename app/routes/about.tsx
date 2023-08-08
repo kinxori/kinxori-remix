@@ -1,13 +1,15 @@
-import { lazy } from "react";
+import { lazy, useEffect } from "react";
 import aboutMeAsset from "~/assets/AstroAssets.png";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
+import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
 export default function AboutMe() {
   return (
-    <article className="h-[calc(100vh-60px)] box-border p-10 overflow-y-scroll w-[100vw] flex flex-col mt-[60px] text-white     ">
+    <article className="box-border p-10 pt-[calc(10%+60px)] overflow-y-scroll w-[100vw] flex flex-col text-white     ">
+      <ScrollTopButton />
       <div className="flex flex-col gap-5">
         <LinkButton to="/" variant="secButton" className="mr-auto">
           <i className="fa-solid fa-arrow-left"></i>&#160;&#160;Go Back
@@ -22,13 +24,13 @@ export default function AboutMe() {
           But... <b>Who is Kinxori?</b> 🤔
         </h2>
       </div>
-      <div className="flex flex-col gap-3 my-10 text-justify text-[16px] ">
+      <div className="flex flex-col gap-5 my-10 text-justify text-[16px] ">
         <i className="text-white/50 text-[12px] ml-auto my-5 ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
-        <div className="flex flex-col gap-3">
-          <div>
-            <h4 className="text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
+        <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-3">
+            <h4 className="my-3 text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
             <p>
               <b>Born in 1998,</b> I come from a small town near the central region of{" "}
               <b>Mexico.</b> Despite its size,the town has a <b>rich cultural heritage,</b> with
@@ -47,8 +49,8 @@ export default function AboutMe() {
           ></VideoLoader>
         </div>
         <div className="flex flex-col gap-3">
-          <div>
-            <h4 className="text-[24px] font-bold text-left ">Personality? 💆</h4>
+          <div className="flex flex-col gap-3">
+            <h4 className="my-3 text-[24px] font-bold text-left ">Personality? 💆</h4>
             <p>
               I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily
               extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
@@ -69,8 +71,8 @@ export default function AboutMe() {
           ></VideoLoader>
         </div>
         <div className="flex flex-col gap-3">
-          <div>
-            <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
+          <div className="flex flex-col gap-3">
+            <h4 className="my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
             <p>
               Throughout my career path, I have pursued my{" "}
               <b>passion for creativity and visual arts.</b> After graduating with a degree in{" "}
@@ -95,8 +97,8 @@ export default function AboutMe() {
           <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
         </div>
         <div className="flex flex-col gap-3">
-          <div>
-            <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
+          <div className="flex flex-col gap-3">
+            <h4 className="my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
             <p>
               Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I
               also enjoy <b>going to the beach</b> and spending time in nature. When I'm not
@@ -113,8 +115,8 @@ export default function AboutMe() {
           ></img>
         </div>
         <div className="flex flex-col gap-3">
-          <div>
-            <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
+          <div className="flex flex-col gap-3">
+            <h4 className="my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
             <p>
               My main aspiration in life is to <b>achieve financial freedom,</b> not just for
               myself, but also to <b>share a comfortable life with my loved ones.</b> I believe that
@@ -136,7 +138,7 @@ export default function AboutMe() {
             className="rounded-[10px] "
           ></VideoLoader>
         </div>
-        <h5 className="text-center italic ">The end</h5>
+        <h5 className="text-center italic my-10">The end</h5>
       </div>
     </article>
   );

@@ -3,6 +3,7 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@re
 import mainIcon from "~/assets/Logos/new-logo-kinxori.ico";
 import stylesheet from "~/tailwind.css";
 import NavBar from "~/components/NavBar/NavBar";
+import { useEffect } from "react";
 
 export const links: LinksFunction = () => {
   return [
