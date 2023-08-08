@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import emailAsset from "~/assets/AboutmeAsset.png";
 import Button from "~/components/CustomButton/Button";
 
-export default function InputForm({ handlePopUp, popUp }: any) {
+export default function InputForm() {
   const [emailInput, setEmailInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
+  const [popUp, setPopUp] = useState(false);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -51,6 +52,10 @@ export default function InputForm({ handlePopUp, popUp }: any) {
     setEmailInput("");
     setMessageInput("");
     setSubjectInput("");
+  };
+
+  const handlePopUp = (boolean: boolean) => {
+    setPopUp((current) => (current === boolean ? false : boolean));
   };
 
   return (
