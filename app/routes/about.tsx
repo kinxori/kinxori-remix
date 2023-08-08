@@ -19,11 +19,11 @@ export default function AboutMe() {
           But... <b>Who is Kinxori?</b> 🤔
         </h2>
       </div>
-      <div className="flex flex-col gap-3 my-10">
-        <i className="text-white/50 text-[12px] ml-auto  ">
+      <div className="flex flex-col gap-3 my-10 text-justify text-[16px]    ">
+        <i className="text-white/50 text-[12px] ml-auto ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
-        <h4 className="text-[24px] font-bold text-left  ">Where do I come from? 🌎</h4>
+        <h4 className="text-[24px] font-bold text-left ">Where do I come from? 🌎</h4>
         <p>
           <b> Born in 1998, </b> I come from a small town near the central region of
           <b> Mexico. </b>
@@ -44,7 +44,7 @@ export default function AboutMe() {
             className="about-me-body-asset"
           ></VideoLoader> */}
         </Suspense>
-        <h4>Personality? 💆</h4>
+        <h4 className="text-[24px] font-bold text-left ">Personality? 💆</h4>
         <p>
           I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
           extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
@@ -65,7 +65,7 @@ export default function AboutMe() {
             className="about-me-body-asset"
           ></VideoLoader> */}
         </Suspense>
-        <h4>Career? 👨‍🎓</h4>
+        <h4 className="text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
         <p>
           Throughout my career path, I have pursued my
           <b> passion for creativity and visual arts. </b>
@@ -94,7 +94,7 @@ export default function AboutMe() {
           <b> grow and evolve as a developer. </b>
         </p>
         {/* <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img> */}
-        <h4>Hobbies? 🍿</h4>
+        <h4 className="text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
         <p>
           Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I also
           enjoy <b> going to the beach </b> and spending time in nature. When I'm not outside, I
@@ -110,7 +110,7 @@ export default function AboutMe() {
           className="about-me-body-asset"
         ></img>
 
-        <h4>Aspirations? ⏳</h4>
+        <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
         <p>
           My main aspiration in life is to <b> achieve financial freedom, </b> not just for myself,
           but also to <b> share a comfortable life with my loved ones. </b> I believe that personal
@@ -132,7 +132,7 @@ export default function AboutMe() {
             className="about-me-body-asset"
           ></VideoLoader> */}
         </Suspense>
-        <h4>The end</h4>
+        <h5>The end</h5>
       </div>
     </article>
   );
