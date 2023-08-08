@@ -1,4 +1,11 @@
-import { ReactNode, useEffect, useState } from "react";
+import {
+  FormEvent,
+  ReactEventHandler,
+  ReactNode,
+  SyntheticEvent,
+  useEffect,
+  useState,
+} from "react";
 import emailAsset from "~/assets/AboutmeAsset.png";
 import Button from "~/components/CustomButton/Button";
 
@@ -25,26 +32,26 @@ export default function InputForm() {
     fetchEmojiData();
   }, [emailInput]);
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: SyntheticEvent<HTMLButtonElement, Event>) => {
     event.preventDefault();
-    const { target } = event;
-    const form = {
-      email: target.email.value,
-      message: target.message.value,
-      subject: target.subject.value,
-      emoji: randomEmojiGenerated,
-    };
+    // const { target } = event;
+    // const form = {
+    //   email: target.email.value,
+    //   message: target.message.value,
+    //   subject: target.subject.value,
+    //   emoji: randomEmojiGenerated,
+    // };
 
-    const result = await fetch(
-      "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...form }),
-      }
-    );
+    // const result = await fetch(
+    //   "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ ...form }),
+    //   }
+    // );
     handlePopUp(true);
     setTimeout(() => {
       handlePopUp(false);
@@ -58,9 +65,11 @@ export default function InputForm() {
     setPopUp((current) => (current === boolean ? false : boolean));
   };
 
+  console.log(popUp);
+
   return (
     <section className="  w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-1">
+      <form className="flex flex-col gap-1">
         <div className="flex flex-col gap-1">
           <label className="gap-1 flex flex-col font-bold text-bgColor">
             Email:
@@ -96,7 +105,12 @@ export default function InputForm() {
           />
         </label>
       </form>
-      <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
+      <Button
+        onClick={handleSubmit}
+        type="submit"
+        variant="mainButton"
+        className="flex mt-5 justify-center"
+      >
         Submit
       </Button>
       {popUp === true && (

@@ -1,4 +1,4 @@
-import { ReactEventHandler, ReactNode } from "react";
+import { FormEvent, ReactEventHandler, ReactNode } from "react";
 
 export default function Button({
   children,
