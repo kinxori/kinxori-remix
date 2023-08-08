@@ -1,4 +1,5 @@
 import { useState } from "react";
+import EmailSender from "~/components/EmailSender/EmailSender";
 
 export default function ContactRoute() {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
@@ -97,7 +98,7 @@ export default function ContactRoute() {
             </button>
           </div>
         </div>
-        <div></div>
+        <EmailSender />
       </div>
     </article>
   );
