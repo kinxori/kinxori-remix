@@ -19,7 +19,6 @@ export default function AboutMeRoute() {
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
           className="mx-auto w-[80%]    "
         />
-
         <h2 className="text-[40px] font-bold font-[rubik] text-center      ">
           But... <b>Who is Kinxori?</b> 🤔
         </h2>

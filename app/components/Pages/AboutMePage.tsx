@@ -21,9 +21,9 @@ export default function AboutMe({ id }: { id: string }) {
           </h2>
           <div className="text-justify text-[16px] text-bgColor ">
             <p>
-              My name is Gustavo. I am a <b>web developer</b> with a passion for creating things. I
-              used to be a <b>motion designer,</b> but now I'm using my love for art and design to{" "}
-              <b>solve problems</b> in a creative way.
+              My name is Gustavo. I am a <b>web developer</b> with a passion for creating things.
+              With 3 years of background in <b>motion design,</b> now I'm using my love for art and
+              design to <b>solve problems</b> for the web in a creative way.
             </p>
           </div>
           <LinkButton to="/about" variant="mainButton" className="ml-[auto]">
