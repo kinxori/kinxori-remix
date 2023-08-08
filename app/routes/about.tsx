@@ -12,18 +12,18 @@ export default function AboutMe() {
         <img
           src={aboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
-          className="mx-auto w-[80%]"
-          style={{ transform: "rotationY(180)" }}
+          className="mx-auto w-[80%]    "
         />
 
-        <h2 className="text-[38px] font-bold font-[rubik] text-center      ">
+        <h2 className="text-[40px] font-bold font-[rubik] text-center      ">
           But... <b>Who is Kinxori?</b> 🤔
         </h2>
       </div>
       <div className="flex flex-col gap-3 my-10">
-        <h3 className="">Gustavo Q. O.</h3>
-        <i>17 June 2023 / Mexico</i>
-        <h3>Where do I come from? 🌎</h3>
+        <i className="text-white/50 text-[12px] ml-auto  ">
+          Gustavo Q.O. / 7th of August, 2023 / Mexico
+        </i>
+        <h4 className="text-[24px] font-bold text-left  ">Where do I come from? 🌎</h4>
         <p>
           <b> Born in 1998, </b> I come from a small town near the central region of
           <b> Mexico. </b>
@@ -34,7 +34,7 @@ export default function AboutMe() {
           <b> community, hard work, and creativity, </b>
           <b> which I carry with me </b> wherever I go.
         </p>
-        <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
+        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
           {/* <VideoLoader
             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
             loop={true}
@@ -44,7 +44,7 @@ export default function AboutMe() {
             className="about-me-body-asset"
           ></VideoLoader> */}
         </Suspense>
-        <h3>Personality? 💆</h3>
+        <h4>Personality? 💆</h4>
         <p>
           I'm a person who enjoys a <b> balanced lifestyle. </b> While I'm not necessarily
           extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
@@ -55,7 +55,7 @@ export default function AboutMe() {
           doesn't mean I don't like going out. <b> I enjoy having dinner with friends </b> and
           engaging in deep conversations.
         </p>
-        <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
+        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
           {/* <VideoLoader
             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
             loop={true}
@@ -65,7 +65,7 @@ export default function AboutMe() {
             className="about-me-body-asset"
           ></VideoLoader> */}
         </Suspense>
-        <h3>Career? 👨‍🎓</h3>
+        <h4>Career? 👨‍🎓</h4>
         <p>
           Throughout my career path, I have pursued my
           <b> passion for creativity and visual arts. </b>
@@ -94,7 +94,7 @@ export default function AboutMe() {
           <b> grow and evolve as a developer. </b>
         </p>
         {/* <img src={dogoCodingAsset} alt="ADD ALT" className="about-me-body-asset"></img> */}
-        <h3>Hobbies? 🍿</h3>
+        <h4>Hobbies? 🍿</h4>
         <p>
           Talking about hobbies, <b> biking and tennis are my favorite sport activities, </b> I also
           enjoy <b> going to the beach </b> and spending time in nature. When I'm not outside, I
@@ -110,7 +110,7 @@ export default function AboutMe() {
           className="about-me-body-asset"
         ></img>
 
-        <h3>Aspirations? ⏳</h3>
+        <h4>Aspirations? ⏳</h4>
         <p>
           My main aspiration in life is to <b> achieve financial freedom, </b> not just for myself,
           but also to <b> share a comfortable life with my loved ones. </b> I believe that personal
@@ -122,7 +122,7 @@ export default function AboutMe() {
           where I can enjoy the simple things in life and cherish the moments
           <b> spent with the people who matter most to me. </b>
         </p>
-        <Suspense fallback={<h3 className="about-me-asset-loader">Loading video...</h3>}>
+        <Suspense fallback={<h4 className="about-me-asset-loader">Loading video...</h4>}>
           {/* <VideoLoader
             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
             loop={true}

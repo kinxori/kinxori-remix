@@ -16,7 +16,7 @@ export default function AboutMe({ id }: { id: string }) {
           ></img>
         </div>
         <div className="flex flex-col gap-5 ">
-          <h2 className="font-[rubik] font-bold text-[28px] text-center text-mainColor ">
+          <h2 className=" font-[rubik] font-bold text-[28px] text-center text-mainColor ">
             Hi, I'm Kinxori! ✌️
           </h2>
           <div className="text-justify text-[16px] text-bgColor ">
