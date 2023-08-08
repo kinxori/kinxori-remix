@@ -94,10 +94,9 @@ export default function AboutMe() {
             Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
             enjoy <b>going to the beach</b> and spending time in nature. When I'm not outside, I
             enjoy exploring my creative side through <b>music and craftsmanship.</b> I play guitar
-            and am interested in <b>learning the violin and saxophone.</b> I'm also{" "}
-            <b>interested in investing</b> and learning about global economy and tendencies in the
-            market. Overall, I'm someone who likes to{" "}
-            <b>keep learning and enjoy life's simple pleasures.</b>
+            and am interested in <b>playing the violin and saxophone.</b> I'm also{" "}
+            <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
+            likes to <b>keep learning and enjoy life's simple pleasures.</b>
           </p>
           <img
             src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
@@ -105,27 +104,28 @@ export default function AboutMe() {
             className="rounded-[10px] "
           ></img>
         </div>
-
-        <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
-        <p>
-          My main aspiration in life is to <b> achieve financial freedom, </b> not just for myself,
-          but also to <b> share a comfortable life with my loved ones. </b> I believe that personal
-          growth is important, and I am <b> always eager to learn new things </b> and gain knowledge
-          to help me <b> reach my goals. </b> One of my passions is exploring new places and{" "}
-          <b> experiencing different cultures, </b> which is why I aspire to live a fulfilling life
-          where I can travel and <b> create unforgettable memories </b> with those closest to me.
-          Ultimately, what <b> I strive for is a peaceful and fulfilling life, </b>
-          where I can enjoy the simple things in life and cherish the moments
-          <b> spent with the people who matter most to me. </b>
-        </p>
-        <VideoLoader
-          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
-          loop={true}
-          autoPlay={true}
-          controls={false}
-          muted={true}
-          className="rounded-[10px] "
-        ></VideoLoader>
+        <div className="flex flex-col gap-3">
+          <h4 className="text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
+          <p>
+            My main aspiration in life is to <b>achieve financial freedom,</b> not just for myself,
+            but also to <b>share a comfortable life with my loved ones.</b> I believe that personal
+            growth is important, and I am <b>always eager to learn new things</b> and gain knowledge
+            to help me <b>reach my goals.</b> One of my passions is exploring new places and{" "}
+            <b>experiencing different cultures,</b> which is why I aspire to live a fulfilling life
+            where I can travel and <b>create unforgettable memories</b> with those closest to me.
+            Ultimately, what <b>I strive for is a peaceful and fulfilling life,</b> where I can
+            enjoy the simple things in life and cherish the moments{" "}
+            <b>spent with the people who matter most to me.</b>
+          </p>
+          <VideoLoader
+            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
+            loop={true}
+            autoPlay={true}
+            controls={false}
+            muted={true}
+            className="rounded-[10px] "
+          ></VideoLoader>
+        </div>
         <h5 className="text-center italic ">The end</h5>
       </div>
     </article>
