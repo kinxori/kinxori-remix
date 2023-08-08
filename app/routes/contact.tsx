@@ -28,7 +28,7 @@ export default function ContactRoute() {
           </p>
           <div className=" flex-col flex gap-5 font-extralight ">
             <a
-              className="hover:text-mainColor "
+              className="hover:text-mainColor w-fit"
               target="_blank"
               href="mailto:gustavoq26@gmail.com"
               aria-label="Hyperlink Mail Address"
@@ -37,7 +37,7 @@ export default function ContactRoute() {
               &#160;&#160;&#160;gustavoq26@gmail.com
             </a>
             <a
-              className="hover:text-mainColor "
+              className="hover:text-mainColor w-fit"
               target="_blank"
               href="https://goo.gl/maps/GyDBZkyXesTFHjuS8"
               aria-label="Hyperlink with México in Google Maps"
@@ -45,7 +45,7 @@ export default function ContactRoute() {
               <i className="w-5 h-5 fa-solid fa-location-dot"></i>&#160;&#160;&#160;México 🇲🇽
             </a>
             <a
-              className="hover:text-mainColor "
+              className="hover:text-mainColor w-fit"
               target="_blank"
               href="https://calendly.com/gustavoq26/30min"
               aria-label="Hyperlink to schedule a meeting through Calendly"
@@ -55,7 +55,7 @@ export default function ContactRoute() {
             </a>
           </div>
           <hr className="border-white/50"></hr>
-          <div className="my-5 text-bgColor flex gap-3">
+          <div className="text-bgColor flex gap-3">
             <a
               className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
               href="https://linkedin.com/in/quinchori"
@@ -97,10 +97,7 @@ export default function ContactRoute() {
             </button>
           </div>
         </div>
-        <form>
-          <input placeholder="emial"></input>
-          <input placeholder="name"></input>
-        </form>
+        <div></div>
       </div>
     </article>
   );
