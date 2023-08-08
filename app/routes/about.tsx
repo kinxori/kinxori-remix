@@ -1,37 +1,27 @@
 import { Suspense } from "react";
-import mainAboutMeAsset from "~/assets/AboutmeAsset.png";
+import aboutMeAsset from "~/assets/AstroAssets.png";
 import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function AboutMe() {
   return (
-    <article className="h-[calc(100vh-60px)] overflow-y-scroll w-[100vw] flex flex-col mt-[60px]     ">
-      <div className="aboutMe-content">
+    <article className="h-[calc(100vh-60px)] box-border p-10 overflow-y-scroll w-[100vw] flex flex-col mt-[60px] text-white     ">
+      <div className="flex flex-col gap-5">
+        <LinkButton to="/" variant="secButton" className="mr-auto">
+          <i className="fa-solid fa-arrow-left"></i>&#160;&#160;Go Back
+        </LinkButton>
         <img
-          src={mainAboutMeAsset}
+          src={aboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori about page"
-          className="about-me-main-asset"
+          className="mx-auto w-[80%]"
+          style={{ transform: "rotationY(180)" }}
         />
-        <div className="aboutMe-copy">
-          <h2>
-            But... <b>Who is Kinxori?</b> 🤔
-          </h2>
-          <p>
-            My name is Gustavo, <b> front-end web developer </b> with a passion for creating things.
-            Formerly a <b> motion designer, </b> now using my love for creating to
-            <b> solve problems. </b>
-          </p>
-          <div className="aboutMe-CTA">
-            <LinkButton to="/" variant="mainButton">
-              Go Home
-            </LinkButton>
-          </div>
-        </div>
+
+        <h2 className="text-[38px] font-bold font-[rubik] text-center      ">
+          But... <b>Who is Kinxori?</b> 🤔
+        </h2>
       </div>
-      <div className="about-me-read-more-body">
-        <div className="about-me-body-PFP">
-          {/* <img src={imgAssetPFP} alt="Gustavo Quiroz - Kinxori"></img> */}
-        </div>
-        <h2>Gustavo Q. O.</h2>
+      <div className="flex flex-col gap-3 my-10">
+        <h3 className="">Gustavo Q. O.</h3>
         <i>17 June 2023 / Mexico</i>
         <h3>Where do I come from? 🌎</h3>
         <p>

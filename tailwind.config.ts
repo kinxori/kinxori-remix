@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: "hsl(266deg, 100%, 60%)",
+        mainColor: "hsl(266deg, 100%, 60%, 1)",
+        mainColor2: "hsl(266deg, 100%, 60%, .5)",
         bgColor: "#181818",
         white: "#FFF",
       },
@@ -22,7 +23,7 @@ export default {
       addBase({
         b: {
           color: "inherit",
-          fontFamily: "inter",
+          fontFamily: "inherit",
           fontWeight: "bold",
           textDecoration: `underline ${theme("colors.mainColor")}`,
         },
@@ -75,13 +76,13 @@ export default {
           color: theme("colors.white"),
         },
         ".mainButton:hover": {
-          backgroundColor: theme("colors.mainColor2"),
+          backgroundColor: theme("colors.mainColor"),
           scale: "1.02",
-          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
+          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor2")}`,
         },
         ".secButton:hover": {
           scale: "1.02",
-          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor3")}`,
+          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor2")}`,
         },
         ".ghostButton:hover": {
           scale: "1.02",

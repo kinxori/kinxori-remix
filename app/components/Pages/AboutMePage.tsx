@@ -15,8 +15,10 @@ export default function AboutMe({ id }: { id: string }) {
             alt="Gustavo Quiroz - Kinxori"
           ></img>
         </div>
-        <div className=" text-bgColor flex flex-col gap-5 ">
-          <h2 className="font-[rubik] font-bold text-[28px] text-center ">Hi, I'm Kinxori! ✌️</h2>
+        <div className="flex flex-col gap-5 ">
+          <h2 className="font-[rubik] font-bold text-[28px] text-center text-mainColor ">
+            Hi, I'm Kinxori! ✌️
+          </h2>
           <div className="text-justify text-[16px] text-bgColor ">
             <p>
               My name is Gustavo. I am a <b>web developer</b> with a passion for creating things. I
@@ -25,7 +27,7 @@ export default function AboutMe({ id }: { id: string }) {
             </p>
           </div>
           <LinkButton to="/about" variant="mainButton" className="ml-[auto]">
-            Read More
+            Read More&#160;&#160;<i className="fa-solid fa-arrow-right"></i>
           </LinkButton>
         </div>
       </div>
