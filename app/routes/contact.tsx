@@ -1,6 +1,6 @@
 import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
-import Footer from "~/components/Pages/Footer";
+import Footer from "~/components/Pages/FooterPage";
 
 export default function ContactRoute() {
   return (

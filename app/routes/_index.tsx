@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import mainAboutMeAsset from "~/assets/email-sent-asset.png";
-import FooterPage from "~/components/Pages/Footer";
+import FooterPage from "~/components/Pages/FooterPage";
 
 export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
