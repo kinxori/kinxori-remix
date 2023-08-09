@@ -13,7 +13,7 @@ export default function FooterPage() {
   };
 
   return (
-    <section className="box-border px-5 bg-black w-[100vw] min-h-[200px] flex flex-col gap-3 justify-center items-center">
+    <section className="box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center">
       <div className="text-bgColor flex gap-3">
         <a
           className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "

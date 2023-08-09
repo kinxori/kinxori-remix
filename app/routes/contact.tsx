@@ -16,7 +16,7 @@ export default function ContactRoute() {
             Send me a message and <b>let's grab a virtual coffee!</b>
           </h3>
           <p className="text-justify">
-            Let's chat about web development, animation, art or just connect as friends!
+            We can chat about web development, animation, art or just connect as friends!
           </p>
           <div className=" flex-col flex gap-5 font-extralight ">
             <a
@@ -46,7 +46,7 @@ export default function ContactRoute() {
               &#160;&#160;&#160;Schedule a meeting
             </a>
           </div>
-          <hr className="border-white/50"></hr>
+          <hr className="border-white/50 my-5"></hr>
         </div>
         <EmailSender />
       </div>
