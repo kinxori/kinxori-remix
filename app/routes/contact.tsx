@@ -2,16 +2,6 @@ import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
 
 export default function ContactRoute() {
-  const [isClipboardCopied, setClipboardCopy] = useState(false);
-
-  const handleClipboardState = () => {
-    navigator.clipboard.writeText("gustavoq26@gmail.com");
-    setClipboardCopy((current) => (current ? false : true));
-    setTimeout(() => {
-      setClipboardCopy(false);
-    }, 3000);
-  };
-
   return (
     <article className="bg-white pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="box-border p-10">
@@ -19,7 +9,7 @@ export default function ContactRoute() {
           <b>Contact</b>
         </h2>
       </div>
-      <div className=" bg-bgColor gap-10 flex-col flex p-10 box-border">
+      <div className=" bg-bgColor gap-5 flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">
           <h3 className="text-[30px] font-bold">
             Send me a message and <b>let's grab a virtual coffee!</b>
@@ -58,48 +48,6 @@ export default function ContactRoute() {
           <hr className="border-white/50"></hr>
         </div>
         <EmailSender />
-        <hr className="border-white/50"></hr>
-        <div className="text-bgColor flex gap-3">
-          <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://linkedin.com/in/quinchori"
-            target="_blank"
-            aria-label="You can visit my linkedin.com profile clicking this button."
-          >
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://github.com/kinxori"
-            target="_blank"
-            aria-label="You can visit my github.com profile clicking this button."
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://twitter.com/kinxori"
-            target="_blank"
-            aria-label="You can visit my twitter.com profile clicking this button."
-          >
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <button
-            onClick={handleClipboardState}
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            aria-label={
-              isClipboardCopied
-                ? "Email address copied to clipboard"
-                : "Copy my email address to your clipboard"
-            }
-          >
-            {isClipboardCopied ? (
-              <i className="fa-solid fa-check"></i>
-            ) : (
-              <i className="fa-regular fa-envelope"></i>
-            )}
-          </button>
-        </div>
       </div>
     </article>
   );
