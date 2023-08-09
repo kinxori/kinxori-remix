@@ -7,7 +7,7 @@ export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
 
   return (
-    <article className="w-100">
+    <article>
       <LandingPage id="landingPage" />
       <div className="absolute -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
         <img
