@@ -1,7 +1,8 @@
 import { useState } from "react";
 import LinkButton from "~/components/CustomButton/LinkButton";
+import AnchorButton from "~/components/CustomButton/AnchorButton";
 
-export default function FooterPage() {
+export default function FooterPage({ id }: { id?: string }) {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
 
   const handleClipboardState = () => {
@@ -13,7 +14,10 @@ export default function FooterPage() {
   };
 
   return (
-    <section className="box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center">
+    <section
+      id={id}
+      className="box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center"
+    >
       <div className="text-bgColor flex gap-3">
         <a
           className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
@@ -67,6 +71,14 @@ export default function FooterPage() {
         <LinkButton to="/contact" variant="linkButton">
           Contact
         </LinkButton>
+        <span className="font-bold">&#183;</span>
+        <AnchorButton
+          target="_blank"
+          href="https://calendly.com/gustavoq26/30min"
+          variant="linkButton"
+        >
+          Meeting
+        </AnchorButton>
       </div>
       <i className="text-white/50 font-extralight text-[12px] ">
         © Kinxori 2023. All Rights Reserved.

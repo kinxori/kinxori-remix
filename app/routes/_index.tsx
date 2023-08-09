@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import mainAboutMeAsset from "~/assets/email-sent-asset.png";
+import FooterPage from "~/components/Pages/Footer";
 
 export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
@@ -17,9 +18,7 @@ export default function Index() {
         />
       </div>
       <AboutMePage id="aboutMePage" />
-      <LandingPage id="landingPage" />
-      <LandingPage id="landingPage" />
-      <LandingPage id="landingPage" />
+      <FooterPage id="footerPage" />
     </article>
   );
 }
