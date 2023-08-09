@@ -2,7 +2,7 @@ import { useState } from "react";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 
-export default function FooterPage({ id }: { id?: string }) {
+export default function FooterPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
 
   const handleClipboardState = () => {
@@ -16,7 +16,7 @@ export default function FooterPage({ id }: { id?: string }) {
   return (
     <section
       id={id}
-      className="box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center"
+      className={`box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center ${isObserved} `}
     >
       <div className="text-bgColor flex gap-3">
         <a

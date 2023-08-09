@@ -1,26 +1,52 @@
 import { useEffect, useState } from "react";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
-import mainAboutMeAsset from "~/assets/email-sent-asset.png";
 import FooterPage from "~/components/Pages/FooterPage";
 import SkillsPage from "~/components/Pages/SkillsPage";
 
 export default function Index() {
-  // const observer = new IntersectionObserver((entries) => {});
+  const [isLandingPage, setLandingPage] = useState(false);
+  const [isAboutMePage, setAboutMePage] = useState(false);
+  const [isSkillsPage, setSkillsPage] = useState(false);
+  const [isFooterPage, setFooterPage] = useState(false);
+
+  console.log("booleans", { isLandingPage, isAboutMePage, isSkillsPage, isFooterPage });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            console.log("id", id);
+            id === "landingPageID" ? setLandingPage(true) : setLandingPage(false);
+            id === "aboutMePageID" ? setAboutMePage(true) : setAboutMePage(false);
+            id === "skillsPageID" ? setSkillsPage(true) : setSkillsPage(false);
+            id === "footerPageID" ? setFooterPage(true) : setFooterPage(false);
+          }
+        });
+      },
+      {
+        rootMargin: "-100px",
+      }
+    );
+
+    const elementsToObserver = document.querySelectorAll(".observe");
+    elementsToObserver.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <article>
-      <LandingPage id="landingPage" />
-      <div className="absolute -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
-        <img
-          src={mainAboutMeAsset}
-          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
-        />
-      </div>
-      <AboutMePage id="aboutPage" />
-      <SkillsPage id="skillsPage" />
-      <FooterPage id="footerPage" />
+      <LandingPage id="landingPageID" isObserved="observe" />
+      <AboutMePage id="aboutMePageID" isObserved="observe" />
+      <SkillsPage id="skillsPageID" isObserved="observe" />
+      <FooterPage id="footerPageID" isObserved="observe" />
     </article>
   );
 }

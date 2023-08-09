@@ -1,8 +1,19 @@
 import LinkButton from "~/components/CustomButton/LinkButton";
+import mainAboutMeAsset from "~/assets/email-sent-asset.png";
 
-export default function LandingPage({ id }: { id: string }) {
+export default function LandingPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
-    <article id={id} className="h-[100vh] w-[100vw] mx-auto box-border p-10 overflow-hidden">
+    <article
+      id={id}
+      className={`h-[100vh] w-[100vw] mx-auto box-border p-10 overflow-hidden ${isObserved} `}
+    >
+      <div className="absolute -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
+        <img
+          src={mainAboutMeAsset}
+          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
+          className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
+        />
+      </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
         <div className="text-white h-[50px] leading-none font-extrabold text-[60px] justify-around font-[rubik] flex w-[100%] ">
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">

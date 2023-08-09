@@ -9,12 +9,16 @@ import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import skillsAsset from "~/assets/AstroAssets.png";
+import { MouseEventHandler, ReactEventHandler } from "react";
 
 // AGREGAR INTERSECTION OBSERVER TO ANIMATE ASSET
 
-export default function Skills({ id }: { id?: string }) {
+export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
-    <section id={id} className="w-[100vw] flex flex-col justify-center items-center  ">
+    <section
+      id={id}
+      className={`w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+    >
       <div className="bg-mainColor box-border p-10 w-[100%] relative">
         <h2 className="font-[rubik] font-bold text-[50px]">Skills</h2>
         <img
