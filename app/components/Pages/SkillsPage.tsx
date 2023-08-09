@@ -8,12 +8,19 @@ import mongoDBLogo from "~/assets/Logos/mongodb-color-logo.png";
 import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
+import skillsAsset from "~/assets/AstroAssets.png";
+
+// AGREGAR INTERSECTION OBSERVER TO ANIMATE ASSET
 
 export default function Skills({ id }: { id?: string }) {
   return (
-    <section id={id} className="w-[100vw] flex-col justify-center items-center  ">
-      <div className="bg-mainColor box-border p-10 ">
+    <section id={id} className="w-[100vw] flex flex-col justify-center items-center  ">
+      <div className="bg-mainColor box-border p-10 w-[100%] relative">
         <h2 className="font-[rubik] font-bold text-[50px]">Skills</h2>
+        <img
+          src={skillsAsset}
+          className="absolute right-0 top-[50%] translate-y-[-50%] -translate-x-[20%] h-[120px] "
+        />
       </div>
       <div className="box-border p-10 flex flex-col">
         <div className="">
