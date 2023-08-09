@@ -1,5 +1,6 @@
 import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
+import Footer from "~/components/Pages/Footer";
 
 export default function ContactRoute() {
   return (
@@ -49,6 +50,7 @@ export default function ContactRoute() {
         </div>
         <EmailSender />
       </div>
+      <Footer />
     </article>
   );
 }

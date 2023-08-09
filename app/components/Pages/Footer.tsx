@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function FooterPage() {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
@@ -12,8 +13,7 @@ export default function FooterPage() {
   };
 
   return (
-    <section>
-      <hr className="border-white/50"></hr>
+    <section className="box-border px-5 bg-black w-[100vw] min-h-[200px] flex flex-col gap-3 justify-center items-center">
       <div className="text-bgColor flex gap-3">
         <a
           className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
@@ -55,6 +55,22 @@ export default function FooterPage() {
           )}
         </button>
       </div>
+      <div className="text-[12px] font-light flex items-center">
+        <LinkButton to="/" variant="linkButton">
+          Home
+        </LinkButton>
+        <span className="font-bold">&#183;</span>
+        <LinkButton to="/about" variant="linkButton">
+          About
+        </LinkButton>
+        <span className="font-bold">&#183;</span>
+        <LinkButton to="/contact" variant="linkButton">
+          Contact
+        </LinkButton>
+      </div>
+      <i className="text-white/50 font-extralight text-[12px] ">
+        © Kinxori 2023. All Rights Reserved.
+      </i>
     </section>
   );
 }
