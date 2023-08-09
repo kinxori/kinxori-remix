@@ -1,14 +1,11 @@
-import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
 
 export default function ContactRoute() {
   return (
-    <article className="bg-white pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
+    <article className="bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="box-border p-10">
-        <h2 className="  text-bgColor font-[rubik] font-bold text-[50px]">
-          <b>Contact</b>
-        </h2>
+        <h2 className="  text-white font-[rubik] font-bold text-[50px]">Contact</h2>
       </div>
       <div className=" bg-bgColor gap-5 flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">

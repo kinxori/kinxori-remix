@@ -3,6 +3,7 @@ import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import mainAboutMeAsset from "~/assets/email-sent-asset.png";
 import FooterPage from "~/components/Pages/FooterPage";
+import SkillsPage from "~/components/Pages/SkillsPage";
 
 export default function Index() {
   // const observer = new IntersectionObserver((entries) => {});
@@ -17,7 +18,8 @@ export default function Index() {
           className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
         />
       </div>
-      <AboutMePage id="aboutMePage" />
+      <AboutMePage id="aboutPage" />
+      <SkillsPage id="skillsPage" />
       <FooterPage id="footerPage" />
     </article>
   );
