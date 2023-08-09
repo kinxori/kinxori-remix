@@ -7,12 +7,12 @@ export default function ContactRoute() {
       <div className="box-border p-10">
         <h2 className="  text-white font-[rubik] font-bold text-[50px]">Contact</h2>
       </div>
-      <div className=" bg-bgColor gap-5 flex-col flex p-10 box-border">
-        <div className="flex flex-col gap-5">
+      <div className=" bg-bgColor flex-col flex p-10 box-border">
+        <div className="flex flex-col">
           <h3 className="text-[30px] font-bold">
             Send me a message and <b>let's grab a virtual coffee!</b>
           </h3>
-          <p className="text-justify">
+          <p className="text-justify my-5">
             We can chat about web development, animation, art or just connect as friends!
           </p>
           <div className=" flex-col flex gap-5 font-extralight ">
@@ -43,7 +43,7 @@ export default function ContactRoute() {
               &#160;&#160;&#160;Schedule a meeting
             </a>
           </div>
-          <hr className="border-white/50 my-5"></hr>
+          <hr className="border-white/50 my-10"></hr>
         </div>
         <EmailSender />
       </div>
