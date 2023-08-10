@@ -27,7 +27,7 @@ export default function AboutMe({ id, isObserved }: { id: string; isObserved?: s
               way.
             </p>
           </div>
-          <LinkButton to="/about" variant="mainButton" className="ml-[auto]">
+          <LinkButton prefetch="intent" to="/about" variant="mainButton" className="ml-[auto]">
             Read More&#160;&#160;<i className="fa-solid fa-arrow-right"></i>
           </LinkButton>
         </div>
