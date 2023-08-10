@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  color-scheme: dark;
+}
+
 /* This is the same as the tailwind modules inside plugins
 
 @layer base {
@@ -29,9 +35,3 @@
 } 
 
 */
-
-* {
-  margin: 0;
-  padding: 0;
-  color-scheme: dark;
-}

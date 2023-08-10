@@ -5,9 +5,9 @@ export default function LandingPage({ id, isObserved }: { id?: string; isObserve
   return (
     <article
       id={id}
-      className={`h-[100vh] w-[100vw] mx-auto box-border p-10 overflow-hidden ${isObserved} `}
+      className={` h-[100vh] w-[100vw] box-border p-10 overflow-hidden ${isObserved} `}
     >
-      <div className="absolute -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
+      <div className="fixed -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"

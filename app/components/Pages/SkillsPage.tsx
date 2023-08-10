@@ -17,7 +17,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
   return (
     <section
       id={id}
-      className={`w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+      className={` w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative">
         <h2 className="font-[rubik] font-bold text-[50px]">Skills</h2>

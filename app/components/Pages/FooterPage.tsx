@@ -16,7 +16,7 @@ export default function FooterPage({ id, isObserved }: { id?: string; isObserved
   return (
     <section
       id={id}
-      className={`box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center ${isObserved} `}
+      className={` box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center ${isObserved} `}
     >
       <div className="text-bgColor flex gap-3">
         <a
