@@ -40,12 +40,12 @@ export default function AboutMeRoute() {
         </div>
         <hr className="border-white/50 my-10"></hr>
         <section className="justify-between min-h-[700px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
-          {pageNumber !== 3 && <WhereIComeFrom pageNumber={pageNumber} />}
-          {pageNumber !== 4 && <Personality pageNumber={pageNumber} />}
-          {pageNumber !== 5 && <Career1 pageNumber={pageNumber} />}
-          {pageNumber !== 6 && <Career2 pageNumber={pageNumber} />}
-          {pageNumber !== 7 && <Hobbies pageNumber={pageNumber} />}
-          {pageNumber !== 8 && <Aspirations pageNumber={pageNumber} />}
+          {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
+          {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
+          {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
+          {pageNumber >= 3 && pageNumber <= 5 && <Career2 pageNumber={pageNumber} />}
+          {pageNumber >= 4 && pageNumber <= 6 && <Hobbies pageNumber={pageNumber} />}
+          {pageNumber >= 5 && <Aspirations pageNumber={pageNumber} />}
           <div className="flex justify-between items-center">
             <span>Page {pageNumber}</span>
             <div className="flex gap-1">
@@ -88,14 +88,14 @@ function WhereIComeFrom({ pageNumber }: { pageNumber?: number }) {
           <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which I
           carry with me wherever I go.
         </p>
-        <VideoLoader
+        {/* <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader>
+        ></VideoLoader> */}
       </div>
     </div>
   );
@@ -118,14 +118,14 @@ function Personality({ pageNumber }: { pageNumber?: number }) {
           doesn't mean I don't like going out. <b>I enjoy having dinner with friends</b> and
           engaging in deep conversations.
         </p>
-        <VideoLoader
+        {/* <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader>
+        ></VideoLoader> */}
       </div>
     </div>
   );
@@ -137,7 +137,7 @@ function Career1({ pageNumber }: { pageNumber?: number }) {
       className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 3 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
-      <h4 className="my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
+      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
       <div className="flex flex-col gap-3">
         <p>
           Throughout my career path, I have pursued my{" "}
@@ -181,7 +181,7 @@ function Hobbies({ pageNumber }: { pageNumber?: number }) {
       className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 5 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
-      <h4 className="my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
+      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
       <div className="flex flex-col gap-3">
         <p>
           Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
@@ -207,7 +207,7 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
       className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 6 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
-      <h4 className="my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
+      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
       <div className="flex flex-col gap-3">
         <p>
           My main aspiration in life is to <b>achieve financial freedom,</b> not just for myself,
@@ -220,16 +220,16 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
           the simple things in life and cherish the moments{" "}
           <b>spent with the people who matter most to me.</b>
         </p>
-        <VideoLoader
+        {/* <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader>
+        ></VideoLoader> */}
       </div>
-      <h5 className="text-center italic my-10">The end</h5>
+      <h5 className="text-center italic my-5">The end</h5>
     </div>
   );
 }
