@@ -86,11 +86,11 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
       </h4>
       <div className="flex flex-col gap-3">
         <p>
-          <b>Born in 1998,</b> I come from a small town near the central region of <b>Mexico.</b>{" "}
-          Despite its size,the town has a <b>rich cultural heritage,</b> with vibrant music and
-          dance traditions, colorful festivals, and delicious local cuisine. Growing up there{" "}
-          <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which I
-          carry with me wherever I go.
+          <b>Born in 1998,</b> I come from a small town near the central region of <b>Mexico,</b>{" "}
+          called Pachuca. This town is surrounded with a very <b>rich cultural heritage,</b> vibrant
+          music and dance traditions, colorful festivals, and delicious local cuisine. Growing up
+          there <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which
+          I carry with me wherever I go.
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
@@ -120,13 +120,14 @@ function Personality({ pageNumber }: { pageNumber: number }) {
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
-          I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily
-          extroverted, I enjoy my time at home. I find peace and serenity in my surroundings and
-          like to <b>make the most of it.</b> When I'm not socializing, I like to{" "}
+          I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily in
+          introverted, I enjoy my time at home. I find peace and serenity in my surroundings and
+          like to <b>make the most of it.</b> When I'm home, I like to{" "}
           <b>study and listen to music.</b> I strive to live a meaningful life, and I'm{" "}
           <b>always looking for ways to improve myself</b> and my surroundings. However, that
-          doesn't mean I don't like going out. <b>I enjoy having dinner with friends</b> and
-          engaging in deep conversations.
+          doesn't mean I don't like going out. <b>I love having dinner with friends</b>, share time
+          with my family and pets, engaging into deep conversations, but most importantly,{" "}
+          <b>enjoy it.</b>
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
@@ -157,8 +158,8 @@ function Career1({ pageNumber }: { pageNumber: number }) {
       <div className="flex flex-col gap-3">
         <p>
           Throughout my career path, I have pursued my{" "}
-          <b>passion for creativity and visual arts.</b> After graduating with a degree in{" "}
-          <b>Animation and Visual Effects in 2020.</b> I spent 3 years working as an
+          <b>passion for creativity and visual arts.</b> After graduating as an Engineer with a
+          major in <b>Animation and Visual Effects in 2020.</b> I spent 3 years working as an
           Animator/MotionDesigner from 2020 to 2023.
         </p>
         <p>
@@ -187,10 +188,10 @@ function Career2({ pageNumber }: { pageNumber: number }) {
       }`}
     >
       <p>
-        Currently, I am focusing on developing myself as a <b>Front-End Developer,</b> and I am
-        determined to become a <b>Full-Stack Developer</b> in the near future. My career journey has
-        been an exciting and fulfilling experience, and I look forward to what the future holds as I
-        continue to <b>grow and evolve as a developer.</b>
+        Currently, I am focusing on developing myself as a <b>Web Developer,</b> and I am determined
+        to become a <b>Full-Stack Developer</b> in the near future. My career journey has been an
+        exciting experience, and I look forward to what the future holds as I continue to{" "}
+        <b>grow and evolve as a developer.</b>
       </p>
       <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
     </div>
@@ -213,11 +214,11 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
       <div className="flex flex-col gap-3">
         <p>
           Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
-          enjoy <b>going to the beach</b> and spending time in nature. When I'm not outside, I enjoy
+          enjoy going to the beach and <b>spending time in nature.</b> When I'm not outside, I enjoy
           exploring my creative side through <b>music and craftsmanship.</b> I play guitar and{" "}
           <b>I am interested in playing the violin and saxophone.</b> I'm also{" "}
           <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
-          likes to <b>keep learning and enjoy life's simple pleasures.</b>
+          can't stay still. I am <b>always learning something new!</b>
         </p>
         <img
           src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
@@ -241,10 +242,10 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
           I believe that personal growth is important, and I am{" "}
           <b>always eager to learn new things</b> and gain knowledge to help me{" "}
           <b>reach my goals.</b> One of my dreams is exploring new places and{" "}
-          <b>experiencing different cultures,</b> which is why I aspire to live a fulfilling life
-          where I can travel and <b>create unforgettable memories</b>. Overall, what{" "}
-          <b>I strive for is a peaceful and fulfilling life,</b> where I can enjoy the simple things
-          in life and cherish the moments <b>spent with the people who matter most to me.</b>
+          <b>experience different cultures,</b> which is why I aspire to live a fulfilling life
+          where I can travel and <b>create unforgettable memories</b>. What{" "}
+          <b>I strive for is a peaceful life</b> where I can enjoy the simple things in life and
+          cherish the moments <b>spent with the people who matter most to me.</b>
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
