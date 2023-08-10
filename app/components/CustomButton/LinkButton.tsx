@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import { MouseEventHandler, ReactNode } from "react";
 
-export default function Button({
+export default function LinkButton({
   children,
   className,
   to,

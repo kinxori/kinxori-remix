@@ -52,7 +52,7 @@ export default function LandingPage({
         <h3 className=" text-[16px] w-[90%] text-center text-white">
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h3>
-        <LinkButton variant="mainButton" to="/contact">
+        <LinkButton prefetch="intent" variant="mainButton" to="/contact">
           Contact Me
         </LinkButton>
       </div>
