@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { Link, useLocation } from "@remix-run/react";
+import { Link } from "@remix-run/react";
 import kinxoriLogo from "~/assets/Logos/new-logo-kinxori.ico";
 
 export default function MobileNav() {
-  const location = useLocation();
-  const [currentPath, setCurrentPath] = useState(location.pathname);
   const [isSlideActive, setSlideActive] = useState(false);
   const [isClipboardCopied, setClipboardCopy] = useState(false);
 
@@ -61,35 +59,37 @@ export default function MobileNav() {
         <h2 className="decoration-mainColor font-bold text-[50px] font-[rubik] text-white underline ">
           Welcome!
         </h2>
-        <div className="my-5 flex flex-col gap-3 items-end text-[16px] font-bold   ">
+        <div className="my-5 flex flex-col gap-3 items-end text-[16px] font-normal   ">
           <Link
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/"
             onClick={handleSlide}
           >
-            Home Page <i className="fa-solid fa-house"></i>
+            Home Page&#160;&#160;<i className="fa-solid fa-house text-[20px] "></i>
           </Link>
           <Link
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/about"
             onClick={handleSlide}
           >
-            About Page <i className="fa-solid fa-user"></i>
+            About Page&#160;&#160;<i className="fa-solid fa-user text-[20px]"></i>
           </Link>
           <Link
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/contact"
             onClick={handleSlide}
           >
-            Contact Page <i className="fa-solid fa-at"></i>
+            Contact Page&#160;&#160;<i className="fa-solid fa-at text-[20px]"></i>
           </Link>
           <a
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             target="_blank"
             href="https://calendly.com/gustavoq26/30min"
-            onClick={() => setCurrentPath("/")}
+            onClick={handleSlide}
           >
-            Schedule a Meeting <i className="fa-regular fa-calendar-days"></i>
+            <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+            &#160;&#160;Schedule a Meeting&#160;&#160;
+            <i className="fa-regular fa-calendar-days text-[20px]"></i>
           </a>
         </div>
         <div className="flex gap-3 mt-auto text-bgColor ">
