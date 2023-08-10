@@ -9,9 +9,7 @@ import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import skillsAsset from "~/assets/AstroAssets.png";
-import { MouseEventHandler, ReactEventHandler } from "react";
-
-// AGREGAR INTERSECTION OBSERVER TO ANIMATE ASSET
+import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -34,7 +32,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           </p>
         </div>
         <hr className="my-10 border-white/50"></hr>
-        <div className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-around">
+        <div className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={reactLogo} alt="" className="h-[50px] object-contain " />
             <span>React</span>
@@ -54,6 +52,10 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={cssLogo} alt="" className="h-[50px] object-contain " />
             <span>CSS3</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={tailwindcssLogo} alt="" className="h-[50px] object-contain " />
+            <span>TailwindCSS</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={remixLogo} alt="" className="h-[50px] object-contain " />
