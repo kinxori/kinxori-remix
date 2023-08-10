@@ -3,6 +3,7 @@ import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
 import Button from "~/components/CustomButton/Button";
+import FooterPage from "~/components/Pages/FooterPage";
 
 const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
@@ -39,14 +40,14 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="justify-between min-h-[700px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="justify-between min-h-[720px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
           {pageNumber >= 3 && pageNumber <= 5 && <Career2 pageNumber={pageNumber} />}
           {pageNumber >= 4 && pageNumber <= 6 && <Hobbies pageNumber={pageNumber} />}
           {pageNumber >= 5 && <Aspirations pageNumber={pageNumber} />}
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mt-auto">
             <span>Page {pageNumber}</span>
             <div className="flex gap-1">
               {pageNumber > 1 && (
@@ -68,15 +69,16 @@ export default function AboutMeRoute() {
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
       </div>
+      <FooterPage />
     </article>
   );
 }
 
-function WhereIComeFrom({ pageNumber }: { pageNumber?: number }) {
+function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-      ${pageNumber === 1 ? "translate-x-[0%] relative" : "translate-x-[-120%] absolute"}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ${pageNumber === 1 ? "translate-x-[0%] " : "translate-x-[-120%] "}
       `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">
@@ -103,11 +105,17 @@ function WhereIComeFrom({ pageNumber }: { pageNumber?: number }) {
   );
 }
 
-function Personality({ pageNumber }: { pageNumber?: number }) {
+function Personality({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 2 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ${
+        pageNumber < 2
+          ? "translate-x-[120%] "
+          : pageNumber === 2
+          ? " translate-x-[0%]"
+          : pageNumber > 2 && "translate-x-[-120%] "
+      } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
@@ -133,11 +141,17 @@ function Personality({ pageNumber }: { pageNumber?: number }) {
   );
 }
 
-function Career1({ pageNumber }: { pageNumber?: number }) {
+function Career1({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 3 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ${
+        pageNumber < 3
+          ? "translate-x-[120%] "
+          : pageNumber === 3
+          ? " translate-x-[0%]"
+          : pageNumber > 3 && "translate-x-[-120%] "
+      } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
       <div className="flex flex-col gap-3">
@@ -160,11 +174,17 @@ function Career1({ pageNumber }: { pageNumber?: number }) {
   );
 }
 
-function Career2({ pageNumber }: { pageNumber?: number }) {
+function Career2({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 4 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ${
+        pageNumber < 4
+          ? "translate-x-[120%] "
+          : pageNumber === 4
+          ? " translate-x-[0%]"
+          : pageNumber > 4 && "translate-x-[-120%] "
+      }`}
     >
       <p>
         Currently, I am focusing on developing myself as a <b>Front-End Developer,</b> and I am
@@ -177,11 +197,17 @@ function Career2({ pageNumber }: { pageNumber?: number }) {
   );
 }
 
-function Hobbies({ pageNumber }: { pageNumber?: number }) {
+function Hobbies({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 5 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${
+      pageNumber < 5
+        ? "translate-x-[120%] "
+        : pageNumber === 5
+        ? " translate-x-[0%]"
+        : pageNumber > 5 && "translate-x-[-120%] "
+    } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
       <div className="flex flex-col gap-3">
@@ -206,8 +232,8 @@ function Hobbies({ pageNumber }: { pageNumber?: number }) {
 function Aspirations({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 6 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${pageNumber === 6 ? " translate-x-[0%]" : "translate-x-[120%] "} `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
       <div className="flex flex-col gap-3">
@@ -222,14 +248,14 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
           the simple things in life and cherish the moments{" "}
           <b>spent with the people who matter most to me.</b>
         </p>
-        {/* <VideoLoader
+        <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader> */}
+        ></VideoLoader>
       </div>
       <h5 className="text-center italic my-5">The end</h5>
     </div>
