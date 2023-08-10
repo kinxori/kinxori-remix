@@ -10,7 +10,7 @@ export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
 
   const handlePageAddition = () => {
-    setPageNumber((current) => current + 1);
+    pageNumber <= 5 ? setPageNumber((current) => current + 1) : null;
   };
 
   const handlePageSubstraction = () => {
@@ -42,6 +42,10 @@ export default function AboutMeRoute() {
         <section className="justify-between min-h-[700px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber !== 3 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber !== 4 && <Personality pageNumber={pageNumber} />}
+          {pageNumber !== 5 && <Career1 pageNumber={pageNumber} />}
+          {pageNumber !== 6 && <Career2 pageNumber={pageNumber} />}
+          {pageNumber !== 7 && <Hobbies pageNumber={pageNumber} />}
+          {pageNumber !== 8 && <Aspirations pageNumber={pageNumber} />}
           <div className="flex justify-between items-center">
             <span>Page {pageNumber}</span>
             <div className="flex gap-1">
@@ -54,57 +58,15 @@ export default function AboutMeRoute() {
                   Past
                 </Button>
               )}
-              <Button onClick={handlePageAddition}>Next</Button>
+              <Button onClick={handlePageAddition} disabled={pageNumber <= 5 ? false : true}>
+                Next
+              </Button>
             </div>
           </div>
         </section>
         <i className="my-10 text-white/50 text-[12px] ml-auto ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
-
-        <div className="flex flex-col gap-3">
-          <div className="flex flex-col gap-3">
-            <h4 className="my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
-            <p>
-              Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I
-              also enjoy <b>going to the beach</b> and spending time in nature. When I'm not
-              outside, I enjoy exploring my creative side through <b>music and craftsmanship.</b> I
-              play guitar and am interested in <b>playing the violin and saxophone.</b> I'm also{" "}
-              <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
-              likes to <b>keep learning and enjoy life's simple pleasures.</b>
-            </p>
-          </div>
-          <img
-            src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
-            alt="ADD ALT"
-            className="rounded-[10px] "
-          ></img>
-        </div>
-        <div className="flex flex-col gap-3">
-          <div className="flex flex-col gap-3">
-            <h4 className="my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
-            <p>
-              My main aspiration in life is to <b>achieve financial freedom,</b> not just for
-              myself, but also to <b>share a comfortable life with my loved ones.</b> I believe that
-              personal growth is important, and I am <b>always eager to learn new things</b> and
-              gain knowledge to help me <b>reach my goals.</b> One of my passions is exploring new
-              places and <b>experiencing different cultures,</b> which is why I aspire to live a
-              fulfilling life where I can travel and <b>create unforgettable memories</b> with those
-              closest to me. Ultimately, what <b>I strive for is a peaceful and fulfilling life,</b>{" "}
-              where I can enjoy the simple things in life and cherish the moments{" "}
-              <b>spent with the people who matter most to me.</b>
-            </p>
-          </div>
-          <VideoLoader
-            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
-            loop={true}
-            autoPlay={true}
-            controls={false}
-            muted={true}
-            className="rounded-[10px] "
-          ></VideoLoader>
-        </div>
-        <h5 className="text-center italic my-10">The end</h5>
       </div>
     </article>
   );
@@ -171,7 +133,10 @@ function Personality({ pageNumber }: { pageNumber?: number }) {
 
 function Career1({ pageNumber }: { pageNumber?: number }) {
   return (
-    <div className="flex flex-col gap-5">
+    <div
+      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${pageNumber === 3 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+    >
       <h4 className="my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
       <div className="flex flex-col gap-3">
         <p>
@@ -195,7 +160,10 @@ function Career1({ pageNumber }: { pageNumber?: number }) {
 
 function Career2({ pageNumber }: { pageNumber?: number }) {
   return (
-    <div className="flex flex-col gap-5">
+    <div
+      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${pageNumber === 4 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+    >
       <p>
         Currently, I am focusing on developing myself as a <b>Front-End Developer,</b> and I am
         determined to become a <b>Full-Stack Developer</b> in the near future. My career journey has
@@ -203,6 +171,65 @@ function Career2({ pageNumber }: { pageNumber?: number }) {
         continue to <b>grow and evolve as a developer.</b>
       </p>
       <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
+    </div>
+  );
+}
+
+function Hobbies({ pageNumber }: { pageNumber?: number }) {
+  return (
+    <div
+      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${pageNumber === 5 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+    >
+      <h4 className="my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
+      <div className="flex flex-col gap-3">
+        <p>
+          Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
+          enjoy <b>going to the beach</b> and spending time in nature. When I'm not outside, I enjoy
+          exploring my creative side through <b>music and craftsmanship.</b> I play guitar and am
+          interested in <b>playing the violin and saxophone.</b> I'm also{" "}
+          <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
+          likes to <b>keep learning and enjoy life's simple pleasures.</b>
+        </p>
+        <img
+          src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
+          alt="ADD ALT"
+          className="rounded-[10px] "
+        ></img>
+      </div>
+    </div>
+  );
+}
+
+function Aspirations({ pageNumber }: { pageNumber?: number }) {
+  return (
+    <div
+      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+    ${pageNumber === 6 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
+    >
+      <h4 className="my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
+      <div className="flex flex-col gap-3">
+        <p>
+          My main aspiration in life is to <b>achieve financial freedom,</b> not just for myself,
+          but also to <b>share a comfortable life with my loved ones.</b> I believe that personal
+          growth is important, and I am <b>always eager to learn new things</b> and gain knowledge
+          to help me <b>reach my goals.</b> One of my passions is exploring new places and{" "}
+          <b>experiencing different cultures,</b> which is why I aspire to live a fulfilling life
+          where I can travel and <b>create unforgettable memories</b> with those closest to me.
+          Ultimately, what <b>I strive for is a peaceful and fulfilling life,</b> where I can enjoy
+          the simple things in life and cherish the moments{" "}
+          <b>spent with the people who matter most to me.</b>
+        </p>
+        <VideoLoader
+          src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
+          loop={true}
+          autoPlay={true}
+          controls={false}
+          muted={true}
+          className="rounded-[10px] "
+        ></VideoLoader>
+      </div>
+      <h5 className="text-center italic my-10">The end</h5>
     </div>
   );
 }

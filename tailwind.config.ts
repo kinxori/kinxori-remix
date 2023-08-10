@@ -92,6 +92,18 @@ export default {
           scale: "1.02",
           textDecoration: `underline ${theme("colors.mainColor")}`,
         },
+        ".mainButton:disabled": {
+          opacity: "0.5",
+        },
+        ".secButton:disabled": {
+          opacity: "0.5",
+        },
+        ".ghostButton:disabled": {
+          opacity: "0.5",
+        },
+        ".linkButton:disabled": {
+          opacity: "0.5",
+        },
       });
     }),
   ],
