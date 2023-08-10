@@ -21,7 +21,7 @@ export default function MobileNav() {
   };
 
   return (
-    <nav className="z-[1000] fixed top-0 left-0 w-[100%] ">
+    <nav className="z-[1000] fixed top-0 left-0 w-[100vw] ">
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link
           to="/"

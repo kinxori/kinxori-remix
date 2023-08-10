@@ -1,4 +1,5 @@
-import { MouseEventHandler, Suspense } from "react";
+import { MouseEventHandler } from "react";
+import { useNavigation } from "@remix-run/react";
 
 interface VideoLoaderType {
   src?: string;
@@ -25,22 +26,28 @@ export default function VideoLoader({
   onClick,
   disablePictureInPicture,
 }: VideoLoaderType) {
+  const navigation = useNavigation();
+
+  if (navigation.state === "loading") {
+    return (
+      <h4 className="w-[100%] h-[100px] rounded-[10px] border-dotted border-mainColor border-[2px] grid place-items-center">
+        Loading video...
+      </h4>
+    );
+  }
+
   return (
-    <Suspense
-      fallback={<h4 className="w-[100px] h-[100px] grid place-items-center">Loading video...</h4>}
-    >
-      <video
-        src={src}
-        loop={loop}
-        autoPlay={autoPlay}
-        controls={controls}
-        muted={muted}
-        preload={preload}
-        className={className}
-        controlsList={controlsList}
-        onClick={onClick}
-        disablePictureInPicture={disablePictureInPicture}
-      ></video>
-    </Suspense>
+    <video
+      src={src}
+      loop={loop}
+      autoPlay={autoPlay}
+      controls={controls}
+      muted={muted}
+      preload={preload}
+      className={className}
+      controlsList={controlsList}
+      onClick={onClick}
+      disablePictureInPicture={disablePictureInPicture}
+    ></video>
   );
 }

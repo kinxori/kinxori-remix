@@ -115,7 +115,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body id="root" className="bg-bgColor w-[100vw] overflow-x-hidden">
+      <body id="root">
         <NavBar />
         <Outlet />
         <ScrollRestoration />

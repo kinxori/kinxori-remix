@@ -40,7 +40,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="hover:scale-[1.0] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -92,14 +92,14 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
           <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which I
           carry with me wherever I go.
         </p>
-        {/* <VideoLoader
+        <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader> */}
+        ></VideoLoader>
       </div>
     </div>
   );
@@ -128,14 +128,14 @@ function Personality({ pageNumber }: { pageNumber: number }) {
           doesn't mean I don't like going out. <b>I enjoy having dinner with friends</b> and
           engaging in deep conversations.
         </p>
-        {/* <VideoLoader
+        <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
           loop={true}
           autoPlay={true}
           controls={false}
           muted={true}
           className="rounded-[10px] "
-        ></VideoLoader> */}
+        ></VideoLoader>
       </div>
     </div>
   );
