@@ -60,7 +60,7 @@ export default {
           fontFamily: "inter",
           fontSize: "14px",
           transition: "all .2s ease-in-out",
-          color: theme("colors.white"),
+          color: "inherit",
         },
         ".linkButton": {
           backgroundColor: "transparent",
