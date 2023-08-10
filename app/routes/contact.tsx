@@ -10,10 +10,10 @@ export default function ContactRoute() {
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col">
           <h3 className="text-[30px] font-bold">
-            Send me a message and <b>let's grab a virtual coffee!</b>
+            Hey there! <b>let's grab a virtual coffee.</b> ☕️
           </h3>
           <p className="text-justify my-5">
-            We can chat about web development, animation, art or just connect as friends!
+            We can chat about web development, animation, art or just connect as friends.
           </p>
           <div className=" flex-col flex gap-5 font-extralight ">
             <a
@@ -23,7 +23,8 @@ export default function ContactRoute() {
               aria-label="Hyperlink Mail Address"
             >
               <i className="w-5 h-5 fa-regular fa-envelope"></i>
-              &#160;&#160;&#160;gustavoq26@gmail.com
+              &#160;&#160;&#160;gustavoq26@gmail.com&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             </a>
             <a
               className="hover:text-mainColor w-fit"
@@ -31,7 +32,9 @@ export default function ContactRoute() {
               href="https://goo.gl/maps/GyDBZkyXesTFHjuS8"
               aria-label="Hyperlink with México in Google Maps"
             >
-              <i className="w-5 h-5 fa-solid fa-location-dot"></i>&#160;&#160;&#160;México 🇲🇽
+              <i className="w-5 h-5 fa-solid fa-location-dot"></i>&#160;&#160;&#160;México
+              🇲🇽&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             </a>
             <a
               className="hover:text-mainColor w-fit"
@@ -40,7 +43,8 @@ export default function ContactRoute() {
               aria-label="Hyperlink to schedule a meeting through Calendly"
             >
               <i className="w-5 h-5 fa-regular fa-calendar-days"></i>
-              &#160;&#160;&#160;Schedule a meeting
+              &#160;&#160;&#160;Schedule a meeting&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             </a>
           </div>
           <hr className="border-white/50 my-10"></hr>
