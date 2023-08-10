@@ -22,6 +22,7 @@ export default function MobileNav() {
     <nav className="z-[1000] fixed top-0 left-0 w-[100vw] ">
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link
+          prefetch="intent"
           to="/"
           className="h-[100%] hover:scale-[1.05] transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]"
         >
@@ -61,25 +62,28 @@ export default function MobileNav() {
         </h2>
         <div className="my-5 flex flex-col gap-3 items-end text-[16px] font-normal   ">
           <Link
+            prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/"
             onClick={handleSlide}
           >
-            Home Page&#160;&#160;<i className="fa-solid fa-house text-[20px] "></i>
+            Home Page&#160;&#160;<i className="fa-solid fa-house text-[24px] "></i>
           </Link>
           <Link
+            prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/about"
             onClick={handleSlide}
           >
-            About Page&#160;&#160;<i className="fa-solid fa-user text-[20px]"></i>
+            About Page&#160;&#160;<i className="fa-solid fa-user text-[24px]"></i>
           </Link>
           <Link
+            prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/contact"
             onClick={handleSlide}
           >
-            Contact Page&#160;&#160;<i className="fa-solid fa-at text-[20px]"></i>
+            Contact Page&#160;&#160;<i className="fa-solid fa-at text-[24px]"></i>
           </Link>
           <a
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
@@ -89,7 +93,7 @@ export default function MobileNav() {
           >
             <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             &#160;&#160;Schedule a Meeting&#160;&#160;
-            <i className="fa-regular fa-calendar-days text-[20px]"></i>
+            <i className="fa-regular fa-calendar-days text-[24px]"></i>
           </a>
         </div>
         <div className="flex gap-3 mt-auto text-bgColor ">
