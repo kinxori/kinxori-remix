@@ -8,7 +8,7 @@ import FooterPage from "~/components/Pages/FooterPage";
 const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
 export default function AboutMeRoute() {
-  const [pageNumber, setPageNumber] = useState(6);
+  const [pageNumber, setPageNumber] = useState(1);
 
   const handlePageAddition = () => {
     pageNumber <= 5 ? setPageNumber((current) => current + 1) : null;
@@ -214,8 +214,8 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
         <p>
           Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
           enjoy <b>going to the beach</b> and spending time in nature. When I'm not outside, I enjoy
-          exploring my creative side through <b>music and craftsmanship.</b> I play guitar and am
-          interested in <b>playing the violin and saxophone.</b> I'm also{" "}
+          exploring my creative side through <b>music and craftsmanship.</b> I play guitar and{" "}
+          <b>I am interested in playing the violin and saxophone.</b> I'm also{" "}
           <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
           likes to <b>keep learning and enjoy life's simple pleasures.</b>
         </p>

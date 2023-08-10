@@ -1,17 +1,28 @@
 import LinkButton from "~/components/CustomButton/LinkButton";
 import mainAboutMeAsset from "~/assets/email-sent-asset.png";
 
-export default function LandingPage({ id, isObserved }: { id?: string; isObserved?: string }) {
+export default function LandingPage({
+  id,
+  isObserved,
+  isActive,
+}: {
+  id?: string;
+  isObserved?: string;
+  isActive?: boolean;
+}) {
   return (
     <article
       id={id}
-      className={` h-[100vh] w-[100vw] box-border p-10 overflow-hidden ${isObserved} `}
+      className={`${isObserved} relative h-[100vh] w-[100vw] box-border p-10 overflow-hidden `}
     >
-      <div className="fixed -z-10 top-[calc(100vh-150px)] left-[calc(100vw-120px)] w-[150px] object-contain    ">
+      <div
+        className={`absolute -z-10 bottom-0 right-0 w-[150px] object-contain  transition-all duration-[.3s] ease-linear
+        ${isActive ? "translate-x-0" : " translate-x-[100%] "}`}
+      >
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={`  transition-all duration-[.5s] ease-linear w-fit h-max`}
+          className={`w-fit`}
         />
       </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">

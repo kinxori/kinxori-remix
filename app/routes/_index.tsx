@@ -27,7 +27,8 @@ export default function Index() {
         });
       },
       {
-        rootMargin: "-200px 0px -100px 0px ",
+        // rootMargin: "-200px 0px -500px 0px ",
+        threshold: 0.9,
       }
     );
 
@@ -42,8 +43,8 @@ export default function Index() {
   }, []);
 
   return (
-    <article>
-      <LandingPage id="landingPageID" isObserved="observe" />
+    <article className="relative flex flex-col gap-10">
+      <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
       <AboutMePage id="aboutMePageID" isObserved="observe" />
       <SkillsPage id="skillsPageID" isObserved="observe" />
       <FooterPage id="footerPageID" isObserved="observe" />
