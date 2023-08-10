@@ -8,7 +8,7 @@ import FooterPage from "~/components/Pages/FooterPage";
 const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
 
 export default function AboutMeRoute() {
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(6);
 
   const handlePageAddition = () => {
     pageNumber <= 5 ? setPageNumber((current) => current + 1) : null;
@@ -40,7 +40,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="justify-between min-h-[720px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -65,7 +65,7 @@ export default function AboutMeRoute() {
             </div>
           </div>
         </section>
-        <i className="my-10 text-white/50 text-[12px] ml-auto ">
+        <i className="my-10 text-white/50 text-[12px] mx-auto ">
           Gustavo Q.O. / 7th of August, 2023 / Mexico
         </i>
       </div>
@@ -78,7 +78,7 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-      ${pageNumber === 1 ? "translate-x-[0%] " : "translate-x-[-120%] "}
+      ${pageNumber === 1 ? "translate-x-[0%] opacity-100 " : "translate-x-[-120%] opacity-0"}
       `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">
@@ -111,10 +111,10 @@ function Personality({ pageNumber }: { pageNumber: number }) {
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${
         pageNumber < 2
-          ? "translate-x-[120%] "
+          ? "translate-x-[120%] opacity-0 "
           : pageNumber === 2
-          ? " translate-x-[0%]"
-          : pageNumber > 2 && "translate-x-[-120%] "
+          ? " translate-x-[0%] opacity-100"
+          : pageNumber > 2 && "translate-x-[-120%] opacity-0"
       } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">Personality? 💆</h4>
@@ -147,10 +147,10 @@ function Career1({ pageNumber }: { pageNumber: number }) {
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${
         pageNumber < 3
-          ? "translate-x-[120%] "
+          ? "translate-x-[120%] opacity-0"
           : pageNumber === 3
-          ? " translate-x-[0%]"
-          : pageNumber > 3 && "translate-x-[-120%] "
+          ? " translate-x-[0%] opacity-100"
+          : pageNumber > 3 && "translate-x-[-120%] opacity-0"
       } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
@@ -180,10 +180,10 @@ function Career2({ pageNumber }: { pageNumber: number }) {
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${
         pageNumber < 4
-          ? "translate-x-[120%] "
+          ? "translate-x-[120%] opacity-0"
           : pageNumber === 4
-          ? " translate-x-[0%]"
-          : pageNumber > 4 && "translate-x-[-120%] "
+          ? " translate-x-[0%] opacity-100"
+          : pageNumber > 4 && "translate-x-[-120%] opacity-0"
       }`}
     >
       <p>
@@ -203,10 +203,10 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${
       pageNumber < 5
-        ? "translate-x-[120%] "
+        ? "translate-x-[120%] opacity-0"
         : pageNumber === 5
-        ? " translate-x-[0%]"
-        : pageNumber > 5 && "translate-x-[-120%] "
+        ? " translate-x-[0%] opacity-100"
+        : pageNumber > 5 && "translate-x-[-120%] opacity-0"
     } `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
@@ -233,20 +233,18 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
-    ${pageNumber === 6 ? " translate-x-[0%]" : "translate-x-[120%] "} `}
+    ${pageNumber === 6 ? "translate-x-[0%] opacity-100" : "translate-x-[120%] opacity-0"} `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
       <div className="flex flex-col gap-3">
         <p>
-          My main aspiration in life is to <b>achieve financial freedom,</b> not just for myself,
-          but also to <b>share a comfortable life with my loved ones.</b> I believe that personal
-          growth is important, and I am <b>always eager to learn new things</b> and gain knowledge
-          to help me <b>reach my goals.</b> One of my passions is exploring new places and{" "}
+          I believe that personal growth is important, and I am{" "}
+          <b>always eager to learn new things</b> and gain knowledge to help me{" "}
+          <b>reach my goals.</b> One of my dreams is exploring new places and{" "}
           <b>experiencing different cultures,</b> which is why I aspire to live a fulfilling life
-          where I can travel and <b>create unforgettable memories</b> with those closest to me.
-          Ultimately, what <b>I strive for is a peaceful and fulfilling life,</b> where I can enjoy
-          the simple things in life and cherish the moments{" "}
-          <b>spent with the people who matter most to me.</b>
+          where I can travel and <b>create unforgettable memories</b>. Overall, what{" "}
+          <b>I strive for is a peaceful and fulfilling life,</b> where I can enjoy the simple things
+          in life and cherish the moments <b>spent with the people who matter most to me.</b>
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
@@ -257,7 +255,6 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
           className="rounded-[10px] "
         ></VideoLoader>
       </div>
-      <h5 className="text-center italic my-5">The end</h5>
     </div>
   );
 }
