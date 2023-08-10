@@ -10,6 +10,14 @@ export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
   const [pageAnimation, setPageAnimation] = useState(false);
 
+  const handlePageAddition = () => {
+    setPageNumber((current) => current + 1);
+  };
+
+  const handlePageSubstraction = () => {
+    pageNumber > 1 ? setPageNumber((current) => current - 1) : null;
+  };
+
   return (
     <article className="bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <ScrollTopButton />
@@ -32,8 +40,11 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className=" gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
-          <div className="flex flex-col gap-10">
+        <section className="relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+          <div
+            className={`flex flex-col gap-10 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+          ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-120%]"}`}
+          >
             <div className="flex flex-col gap-3">
               <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">
                 Where do I come from? 🌎
@@ -46,24 +57,28 @@ export default function AboutMeRoute() {
                 <b>community, hard work, and creativity,</b> which I carry with me wherever I go.
               </p>
             </div>
-            <div className="flex flex-col gap-3">
-              <VideoLoader
-                src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
-                loop={true}
-                autoPlay={true}
-                controls={false}
-                muted={true}
-                className="rounded-[10px] "
-              ></VideoLoader>
-            </div>
+            <VideoLoader
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
+              loop={true}
+              autoPlay={true}
+              controls={false}
+              muted={true}
+              className="rounded-[10px] "
+            ></VideoLoader>
           </div>
           <div className="flex justify-between items-center">
             <span>Page {pageNumber}</span>
             <div className="flex gap-1">
-              <Button variant="ghostButton" className="text-bgColor">
-                Past
-              </Button>
-              <Button>Next</Button>
+              {pageNumber > 1 && (
+                <Button
+                  onClick={handlePageSubstraction}
+                  variant="ghostButton"
+                  className="text-bgColor hover:text-mainColor"
+                >
+                  Past
+                </Button>
+              )}
+              <Button onClick={handlePageAddition}>Next</Button>
             </div>
           </div>
         </section>

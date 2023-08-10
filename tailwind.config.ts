@@ -49,7 +49,7 @@ export default {
           fontFamily: "inter",
           fontSize: "14px",
           transition: "all .2s ease-in-out",
-          color: theme("colors.white"),
+          color: "inherit",
         },
         ".ghostButton": {
           backgroundColor: "transparent",
@@ -73,7 +73,7 @@ export default {
           textDecoration: "underline",
           fontFamily: "inter",
           transition: "all .2s ease-in-out",
-          color: theme("colors.white"),
+          color: "inherit",
         },
         ".mainButton:hover": {
           backgroundColor: theme("colors.mainColor"),
@@ -86,7 +86,7 @@ export default {
         },
         ".ghostButton:hover": {
           scale: "1.02",
-          color: theme("colors.mainColor"),
+          color: "inherit",
         },
         ".linkButton:hover": {
           scale: "1.02",
