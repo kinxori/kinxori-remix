@@ -12,7 +12,7 @@ export default function AboutMe({ id, isObserved }: { id: string; isObserved?: s
           <img
             className="top-[-30px] absolute"
             src={imgAssetPFP}
-            alt="Gustavo Quiroz - Kinxori"
+            alt="Picture of Gustavo Quiroz / Kinxori"
           ></img>
         </div>
         <div className="flex flex-col gap-5 ">

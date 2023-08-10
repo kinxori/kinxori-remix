@@ -9,7 +9,7 @@ export default function ScrollTopButton() {
   const handleScroll = () => {
     const scrollHeigth = window.scrollY;
     const screenHeigth = window.innerHeight;
-    setScrolled(scrollHeigth > screenHeigth);
+    setScrolled(scrollHeigth > screenHeigth / 2);
   };
 
   useEffect(() => {
