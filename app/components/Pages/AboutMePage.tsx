@@ -22,8 +22,9 @@ export default function AboutMe({ id, isObserved }: { id: string; isObserved?: s
           <div className="text-justify text-[16px] text-bgColor ">
             <p>
               My name is Gustavo. I am a <b>web developer</b> with a passion for creating things.
-              With 3 years of background experience in <b>motion design,</b> now I'm using my love
-              for art and design to <b>solve problems</b> for the web in a creative way.
+              With 3 years of background experience in <b>motion design and animation,</b> now I'm
+              using my love for art and design to <b>solve problems</b> for the web in a creative
+              way.
             </p>
           </div>
           <LinkButton to="/about" variant="mainButton" className="ml-[auto]">
