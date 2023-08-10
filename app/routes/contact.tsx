@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
+import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 export default function ContactRoute() {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
@@ -14,6 +15,7 @@ export default function ContactRoute() {
   };
   return (
     <article className="bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
+      <ScrollTopButton />
       <div className="box-border p-10">
         <h2 className="  text-white font-[rubik] font-bold text-[50px]">Contact</h2>
       </div>

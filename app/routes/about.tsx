@@ -1,4 +1,4 @@
-import { lazy, useState } from "react";
+import { useState } from "react";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
