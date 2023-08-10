@@ -75,11 +75,13 @@ export default function AboutMeRoute() {
 function WhereIComeFrom({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${pageNumber === 1 ? "translate-x-[0%] relative" : "translate-x-[-120%] absolute"}
       `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold">Where do I come from? 🌎</h4>
+      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">
+        Where do I come from? 🌎
+      </h4>
       <div className="flex flex-col gap-3">
         <p>
           <b>Born in 1998,</b> I come from a small town near the central region of <b>Mexico.</b>{" "}
@@ -104,10 +106,10 @@ function WhereIComeFrom({ pageNumber }: { pageNumber?: number }) {
 function Personality({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 2 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Personality? 💆</h4>
+      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
           I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily
@@ -134,7 +136,7 @@ function Personality({ pageNumber }: { pageNumber?: number }) {
 function Career1({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 3 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
@@ -161,7 +163,7 @@ function Career1({ pageNumber }: { pageNumber?: number }) {
 function Career2({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 4 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
       <p>
@@ -178,7 +180,7 @@ function Career2({ pageNumber }: { pageNumber?: number }) {
 function Hobbies({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 5 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
@@ -204,7 +206,7 @@ function Hobbies({ pageNumber }: { pageNumber?: number }) {
 function Aspirations({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 6 ? "relative translate-x-[0%]" : "translate-x-[120%] absolute"} `}
     >
       <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
