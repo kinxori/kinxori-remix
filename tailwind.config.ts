@@ -65,7 +65,7 @@ export default {
         ".linkButton": {
           backgroundColor: "transparent",
           border: `1px solid transparent`,
-          padding: "10px 20px",
+          padding: "inherit",
           borderRadius: "10px",
           fontWeight: "bold",
           fontStyle: "italic",

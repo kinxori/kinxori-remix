@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 
@@ -16,9 +16,28 @@ export default function FooterPage({ id, isObserved }: { id?: string; isObserved
   return (
     <section
       id={id}
-      className={` box-border p-10 bg-black w-[100vw] flex flex-col gap-3 justify-center items-center ${isObserved} `}
+      className={` box-border p-10 bg-black w-[100vw] flex flex-col gap-7 justify-center items-center ${isObserved} `}
     >
-      <div className="text-bgColor flex gap-3">
+      <div className="text-[12px] w-[100%] gap-3 justify-center font-light flex-wrap flex items-center">
+        <LinkButton to="/" variant="linkButton">
+          Home
+        </LinkButton>
+        <LinkButton to="/about" variant="linkButton">
+          About
+        </LinkButton>
+        <LinkButton to="/contact" variant="linkButton">
+          Contact
+        </LinkButton>
+        <AnchorButton
+          target="_blank"
+          href="https://calendly.com/gustavoq26/30min"
+          variant="linkButton"
+        >
+          Schedule a Meeting&#160;&#160;
+          <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+        </AnchorButton>
+      </div>
+      <div className="text-bgColor w-[100%] flex gap-5 justify-center ">
         <a
           className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
           href="https://linkedin.com/in/quinchori"
@@ -59,29 +78,8 @@ export default function FooterPage({ id, isObserved }: { id?: string; isObserved
           )}
         </button>
       </div>
-      <div className="text-[12px] font-light flex items-center">
-        <LinkButton to="/" variant="linkButton">
-          Home
-        </LinkButton>
-        <span className="font-bold">&#183;</span>
-        <LinkButton to="/about" variant="linkButton">
-          About
-        </LinkButton>
-        <span className="font-bold">&#183;</span>
-        <LinkButton to="/contact" variant="linkButton">
-          Contact
-        </LinkButton>
-        <span className="font-bold">&#183;</span>
-        <AnchorButton
-          target="_blank"
-          href="https://calendly.com/gustavoq26/30min"
-          variant="linkButton"
-        >
-          Meeting
-        </AnchorButton>
-      </div>
       <i className="text-white/50 font-extralight text-[12px] ">
-        © Kinxori 2023. All Rights Reserved.
+        © 2023 Kinxori. All Rights Reserved.
       </i>
     </section>
   );

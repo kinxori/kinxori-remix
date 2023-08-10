@@ -1,7 +1,17 @@
+import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
 
 export default function ContactRoute() {
+  const [isClipboardCopied, setClipboardCopy] = useState(false);
+
+  const handleClipboardState = () => {
+    navigator.clipboard.writeText("gustavoq26@gmail.com");
+    setClipboardCopy((current) => (current ? false : true));
+    setTimeout(() => {
+      setClipboardCopy(false);
+    }, 3000);
+  };
   return (
     <article className="bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="box-border p-10">
@@ -16,16 +26,22 @@ export default function ContactRoute() {
             We can chat about web development, animation, art or just connect as friends.
           </p>
           <div className=" flex-col flex gap-5 font-extralight ">
-            <a
+            <button
               className="hover:text-mainColor w-fit"
-              target="_blank"
-              href="mailto:gustavoq26@gmail.com"
-              aria-label="Hyperlink Mail Address"
+              aria-label={
+                isClipboardCopied
+                  ? "Email address copied to clipboard"
+                  : "Copy my email address to your clipboard"
+              }
+              onClick={handleClipboardState}
             >
-              <i className="w-5 h-5 fa-regular fa-envelope"></i>
-              &#160;&#160;&#160;gustavoq26@gmail.com&#160;&#160;
-              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
-            </a>
+              {isClipboardCopied ? (
+                <i className="fa-solid fa-check"></i>
+              ) : (
+                <i className="fa-regular fa-envelope"></i>
+              )}
+              &#160;&#160;&#160;gustavoq26@gmail.com
+            </button>
             <a
               className="hover:text-mainColor w-fit"
               target="_blank"
