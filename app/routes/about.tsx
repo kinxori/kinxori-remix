@@ -4,8 +4,7 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
 import Button from "~/components/CustomButton/Button";
 import FooterPage from "~/components/Pages/FooterPage";
-
-const VideoLoader = lazy(() => import("~/components/VideoLoader/VideoLoader"));
+import VideoLoader from "~/components/VideoLoader/VideoLoader";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
