@@ -1,4 +1,4 @@
-import { Link, PrefetchBehavior } from "@remix-run/react";
+import { Link, PrefetchBehavior } from "@remix-run/react"; //   not exported !!
 import { MouseEventHandler, ReactNode } from "react";
 
 export default function LinkButton({
