@@ -16,9 +16,9 @@ const transport = nodemailer.createTransport({
 transport
   .verify()
   .then(() => {
-    console.log("SMTP server connection successful (envioment variables loaded correctly) 🚀");
+    console.log("SMTP server connection successful (enviorment variables loaded correctly) 🚀");
   })
-  .catch((error: ErrorEvent) => {
+  .catch((error: Error) => {
     console.error(
       "SMTP server connection error (enviorment variables are possibly undefined) 🥺:",
       error
@@ -36,11 +36,9 @@ const sendContactForm = (form: any) => {
         <p> Message: ${form?.message} </p>
         `,
     })
-    .then((r: any) => {
-      console.log("Sender Function Working 🤝", r.accepted);
-      console.log("Sender Function Rejected👺", r.rejected);
-    })
-    .catch((e: any) => console.log("If you see this, sender function is not working 🥲", e));
+    .catch((error: Error) =>
+      console.log("If you see this, sender function is not working 🥲", error)
+    );
 };
 
 exports.formFunction = functions.https.onRequest((request: any, response: any) => {
@@ -48,12 +46,8 @@ exports.formFunction = functions.https.onRequest((request: any, response: any) =
   response.set("Access-Control-Allow-Methods", "POST");
   response.set("Access-Control-Allow-Headers", "Content-Type");
 
-  console.log("body 🤪", request.body);
-
-  if (request.method === "OPTIONS") {
-    response.status(204).send("🥲");
-  } else {
+  if (request.body.emoji !== undefined) {
     sendContactForm(request.body);
-    return response.json({ message: "Email sent!" });
-  }
+    return response.json({ message: "Email sent succesfully! 🙌" });
+  } else return response.json({ message: "Some values inside body might be undefined 🥲" });
 });

@@ -20,7 +20,6 @@ export default function InputForm() {
       const randomEmojiIndex = Math.floor(Math.random() * emojiData.length);
       const randomEmojiSelected = emojiData[randomEmojiIndex];
       const emoji = String.fromCodePoint(parseInt(randomEmojiSelected.codePoint, 16));
-      // console.log(emoji);
       setRandomEmojiGenerated(emoji);
     };
     fetchEmojiData();
@@ -35,8 +34,6 @@ export default function InputForm() {
       subject: target.subject.value,
       emoji: randomEmojiGenerated,
     };
-
-    console.log("is data received? 🥲", form);
 
     const result = await fetch(
       "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
@@ -66,7 +63,7 @@ export default function InputForm() {
       className="hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
     transition-all duration-35 ease-in-out"
     >
-      <Form onSubmit={handleSubmit} className="flex flex-col">
+      <form onSubmit={handleSubmit} className="flex flex-col">
         <div>
           <div className="flex flex-col gap-1">
             <label className="gap-1 flex flex-col font-bold text-bgColor ">
@@ -109,8 +106,7 @@ export default function InputForm() {
         <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
           Submit
         </Button>
-      </Form>
-
+      </form>
       {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
