@@ -42,10 +42,6 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>JavaScript</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={typescriptLogo} alt="typescript Logo" className="h-[50px] object-contain " />
-            <span>TypeScript</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={htmlLogo} alt="html5 Logo" className="h-[50px] object-contain " />
             <span>HTML5</span>
           </div>
@@ -54,11 +50,11 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>CSS3</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img
-              src={tailwindcssLogo}
-              alt="tailwindcss Logo"
-              className="h-[50px] object-contain "
-            />
+            <img src={typescriptLogo} alt="typescript Logo" className="h-[50px] object-contain " />
+            <span>TypeScript</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={tailwindcssLogo} alt="tailwindcss Logo" className="h-[50px] object-contain" />
             <span>TailwindCSS</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
@@ -70,16 +66,16 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>MongoDB</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={restAPILogo} alt="restAPI Logo" className="h-[50px] object-contain " />
+            <span>Rest API</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={prismaLogo} alt="prisma Logo" className="h-[50px] object-contain " />
             <span>Prisma</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={firebaseLogo} alt="firebase Logo" className="h-[50px] object-contain " />
             <span>Firebase</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={restAPILogo} alt="restAPI Logo" className="h-[50px] object-contain " />
-            <span>Rest API</span>
           </div>
         </div>
       </div>
