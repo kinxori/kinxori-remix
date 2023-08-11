@@ -70,7 +70,7 @@ export default function Index() {
     };
   }, []);
 
-  console.log("scroll position", { isScrolled, screenHeight });
+  // console.log("scroll position", { isScrolled, screenHeight });
 
   return (
     <article className="relative flex flex-col gap-10">
