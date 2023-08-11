@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, PrefetchBehavior } from "@remix-run/react";
 import { MouseEventHandler, ReactNode } from "react";
 
 export default function LinkButton({
@@ -16,7 +16,7 @@ export default function LinkButton({
   onClick?: MouseEventHandler<HTMLButtonElement>;
   target?: string;
   variant?: string;
-  prefetch?: "intent" | "none" | "render" | "viewport" | undefined;
+  prefetch?: PrefetchBehavior | undefined;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
