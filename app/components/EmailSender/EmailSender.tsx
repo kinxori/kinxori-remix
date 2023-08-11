@@ -1,5 +1,5 @@
 import { Form } from "@remix-run/react";
-import { SyntheticEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import emailAsset from "~/assets/AboutmeAsset.png";
 import Button from "~/components/CustomButton/Button";
 
@@ -20,32 +20,34 @@ export default function InputForm() {
       const randomEmojiIndex = Math.floor(Math.random() * emojiData.length);
       const randomEmojiSelected = emojiData[randomEmojiIndex];
       const emoji = String.fromCodePoint(parseInt(randomEmojiSelected.codePoint, 16));
-      console.log(emoji);
+      // console.log(emoji);
       setRandomEmojiGenerated(emoji);
     };
     fetchEmojiData();
   }, []);
 
-  const handleSubmit = async (event: SyntheticEvent<HTMLButtonElement, Event>) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
-    // const { target } = event;
-    // const form = {
-    //   email: target.email.value,
-    //   message: target.message.value,
-    //   subject: target.subject.value,
-    //   emoji: randomEmojiGenerated,
-    // };
+    const { target } = event;
+    const form = {
+      email: target.email.value,
+      message: target.message.value,
+      subject: target.subject.value,
+      emoji: randomEmojiGenerated,
+    };
 
-    // const result = await fetch(
-    //   "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
-    //   {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({ ...form }),
-    //   }
-    // );
+    console.log("is data received?", event);
+
+    const result = await fetch(
+      "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...form }),
+      }
+    );
     handlePopUp(true);
     setTimeout(() => {
       handlePopUp(false);
@@ -66,10 +68,10 @@ export default function InputForm() {
     >
       <Form className="flex flex-col gap-1">
         <div className="flex flex-col gap-1">
-          <label className="gap-1 flex flex-col font-bold text-bgColor">
+          <label className="gap-1 flex flex-col font-bold text-bgColor ">
             Email:
             <input
-              className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
+              className="text-[14px] bg-bgColor/10  text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
               type="email"
               name="email"
               placeholder="example@email.com"
