@@ -36,7 +36,7 @@ export default function InputForm() {
       emoji: randomEmojiGenerated,
     };
 
-    console.log("is data received?", event);
+    console.log("is data received? 🥲", form);
 
     const result = await fetch(
       "https://us-central1-myportfolio-70cb1.cloudfunctions.net/formFunction",
@@ -49,12 +49,12 @@ export default function InputForm() {
       }
     );
     handlePopUp(true);
-    setTimeout(() => {
-      handlePopUp(false);
-    }, 5000);
     setEmailInput("");
     setMessageInput("");
     setSubjectInput("");
+    setTimeout(() => {
+      handlePopUp(false);
+    }, 5000);
   };
 
   const handlePopUp = (boolean: boolean) => {
@@ -66,53 +66,51 @@ export default function InputForm() {
       className="hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
     transition-all duration-35 ease-in-out"
     >
-      <Form className="flex flex-col gap-1">
-        <div className="flex flex-col gap-1">
-          <label className="gap-1 flex flex-col font-bold text-bgColor ">
-            Email:
-            <input
-              className="text-[14px] bg-bgColor/10  text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
-              type="email"
-              name="email"
-              placeholder="example@email.com"
-              value={emailInput}
-              onChange={(event) => setEmailInput(event.target.value)}
-              required={true}
-            />
-          </label>
+      <Form onSubmit={handleSubmit} className="flex flex-col">
+        <div>
+          <div className="flex flex-col gap-1">
+            <label className="gap-1 flex flex-col font-bold text-bgColor ">
+              Email:
+              <input
+                className="text-[14px] bg-bgColor/10  text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
+                type="email"
+                name="email"
+                placeholder="example@email.com"
+                value={emailInput}
+                onChange={(event) => setEmailInput(event.target.value)}
+                required={true}
+              />
+            </label>
+            <label className="gap-1 flex flex-col font-bold text-bgColor">
+              Subject
+              <input
+                className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
+                type="text"
+                name="subject"
+                placeholder="Enter your subject"
+                value={subjectInput}
+                onChange={(event) => setSubjectInput(event.target.value)}
+                required={true}
+              />
+            </label>
+          </div>
           <label className="gap-1 flex flex-col font-bold text-bgColor">
-            Subject
-            <input
-              className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
-              type="text"
-              name="subject"
-              placeholder="Enter your subject"
-              value={subjectInput}
-              onChange={(event) => setSubjectInput(event.target.value)}
+            Message:
+            <textarea
+              className="resize-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] p-2 min-h-[100px] rounded-[10px]"
+              name="message"
+              placeholder="Enter your message here"
+              value={messageInput}
+              onChange={(event) => setMessageInput(event.target.value)}
               required={true}
             />
           </label>
         </div>
-        <label className="gap-1 flex flex-col font-bold text-bgColor">
-          Message:
-          <textarea
-            className="resize-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] p-2 min-h-[100px] rounded-[10px]"
-            name="message"
-            placeholder="Enter your message here"
-            value={messageInput}
-            onChange={(event) => setMessageInput(event.target.value)}
-            required={true}
-          />
-        </label>
+        <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
+          Submit
+        </Button>
       </Form>
-      <Button
-        onClick={handleSubmit}
-        type="submit"
-        variant="mainButton"
-        className="flex mt-5 justify-center"
-      >
-        Submit
-      </Button>
+
       {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
