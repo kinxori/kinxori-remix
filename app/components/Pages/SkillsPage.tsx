@@ -8,7 +8,7 @@ import mongoDBLogo from "~/assets/Logos/mongodb-color-logo.png";
 import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
-import skillsAsset from "~/assets/AstroAssets.png";
+import skillsAsset from "~/assets/email-sent-asset.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
@@ -17,11 +17,13 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
       id={id}
       className={` w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
-      <div className="bg-mainColor box-border p-10 w-[100%] relative">
-        <h2 className="font-[rubik] font-bold text-[50px]">Skills</h2>
+      <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
+        <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left">
+          Skills
+        </h2>
         <img
           src={skillsAsset}
-          className="absolute right-0 top-[50%] translate-y-[-50%] -translate-x-[20%] h-[120px] "
+          className="opacity-30 z-[0] absolute right-[0] bottom-[-20%] h-[300px] "
         />
       </div>
       <div className="box-border p-10 flex flex-col">

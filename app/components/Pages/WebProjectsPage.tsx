@@ -23,7 +23,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </h2>
         <img
           src={projectsAsset}
-          className="mix-blend-soft-light z-[0] absolute left-[-10%] bottom-[-100%] h-[400px] "
+          className="opacity-30 z-[0] absolute left-[-10%] bottom-[-100%] h-[400px] "
         />
       </div>
       <div className="box-border p-10 flex flex-col">
