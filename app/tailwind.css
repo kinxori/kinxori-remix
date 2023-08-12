@@ -8,6 +8,11 @@
   color-scheme: dark;
 }
 
+#emailSenderEmailID:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #e7e7e7 inset;
+  -webkit-text-fill-color: #181818;
+}
+
 /* This is the same as the tailwind modules inside plugins
 
 @layer base {

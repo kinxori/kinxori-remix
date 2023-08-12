@@ -63,13 +63,14 @@ export default function InputForm() {
       className="hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
     transition-all duration-35 ease-in-out"
     >
-      <form onSubmit={handleSubmit} className="flex flex-col">
+      <Form onSubmit={handleSubmit} className="flex flex-col">
         <div>
           <div className="flex flex-col gap-1">
             <label className="gap-1 flex flex-col font-bold text-bgColor ">
-              Email:
+              <span>Email:</span>
               <input
-                className="text-[14px] bg-bgColor/10  text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
+                id="emailSenderEmailID"
+                className="focus:outline-none text-[14px] bg-bgColor/10  text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
                 type="email"
                 name="email"
                 placeholder="example@email.com"
@@ -79,22 +80,23 @@ export default function InputForm() {
               />
             </label>
             <label className="gap-1 flex flex-col font-bold text-bgColor">
-              Subject
+              <span>Subject:</span>
               <input
-                className="text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
+                className="focus:outline-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
                 type="text"
                 name="subject"
                 placeholder="Enter your subject"
                 value={subjectInput}
                 onChange={(event) => setSubjectInput(event.target.value)}
                 required={true}
+                autoComplete="off"
               />
             </label>
           </div>
           <label className="gap-1 flex flex-col font-bold text-bgColor">
-            Message:
+            <span>Message:</span>
             <textarea
-              className="resize-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] p-2 min-h-[100px] rounded-[10px]"
+              className="focus:outline-none resize-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] p-2 min-h-[100px] rounded-[10px]"
               name="message"
               placeholder="Enter your message here"
               value={messageInput}
@@ -106,7 +108,7 @@ export default function InputForm() {
         <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
           Submit
         </Button>
-      </form>
+      </Form>
       {popUp === true && (
         <div className="email-pop-up-root">
           <div className="email-pop-up-content">
