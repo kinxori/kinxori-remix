@@ -1,5 +1,5 @@
 import LinkButton from "~/components/CustomButton/LinkButton";
-import mainAboutMeAsset from "~/assets/email-sent-asset.png";
+import mainAboutMeAsset from "~/assets/AstroAssets.png";
 
 export default function LandingPage({
   id,
@@ -13,16 +13,13 @@ export default function LandingPage({
   return (
     <article
       id={id}
-      className={`${isObserved} relative h-[100vh] w-[100vw] box-border p-10 overflow-hidden `}
+      className={`${isObserved} relative h-[100vh] w-[100vw] box-border p-10 overflow-hidden`}
     >
-      <div
-        className={`absolute -z-10 bottom-0 right-0 w-[150px] object-contain  transition-all duration-[.3s] ease-linear
-        ${isActive ? "translate-x-0" : " translate-x-[100%] "}`}
-      >
+      <div className="absolute top-0 left-0 z-[-10] h-[100%] w-[100%] overflow-hidden">
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={`w-fit`}
+          className={`opacity-10 absolute bottom-0 right-[-10%] scale-[300%] object-contain`}
         />
       </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">

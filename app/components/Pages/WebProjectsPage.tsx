@@ -19,7 +19,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
         <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-right">
-          Web Projects
+          Projects
         </h2>
         <img
           src={projectsAsset}
