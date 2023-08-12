@@ -34,7 +34,7 @@ export default function AboutMeRoute() {
             web without dying in the process. I tend to enjoy a lot of activities and topics, but
             once I get passionate about it. I can turn into a total nerd (no regrets). 👀
           </p>
-          <div className="hover:customShadow w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
+          <div className="w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
             <img
               alt="Gustavo Quiroz PFP - Kinxori.com"
               className="absolute z-10 h-[130%] top-[50%] translate-y-[-50%] object-contain"
@@ -44,7 +44,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="hover:scale-[1.0] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="hover:customShadowMainColor2  hover:scale-[1.0] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}

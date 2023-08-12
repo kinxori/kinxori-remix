@@ -104,8 +104,11 @@ export default {
         ".linkButton:disabled": {
           opacity: "0.5",
         },
-        ".customShadow": {
-          boxShadow: `0px 0px 20px 0px ${theme("colors.mainColor2")}`,
+        ".customShadowMainColor1": {
+          boxShadow: `0px 0px 30px 0px ${theme("colors.mainColor")}`,
+        },
+        ".customShadowMainColor2": {
+          boxShadow: `0px 0px 30px 0px ${theme("colors.mainColor2")}`,
         },
       });
     }),
