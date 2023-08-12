@@ -7,7 +7,7 @@ export default function AboutMe({ id, isObserved }: { id: string; isObserved?: s
       id={id}
       className={` w-[100vw] h-fit mx-auto box-border p-10 overflow-hidden relative ${isObserved} `}
     >
-      <div className="border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
+      <div className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
         <div className="m-10 w-[70%] relative aspect-square rounded-full hover:border-mainColor border-white border-[5px] overflow-hidden transition-all duration-[.3s] ease-in-out    ">
           <img
             className="top-[-30px] absolute"

@@ -60,7 +60,7 @@ export default function InputForm() {
 
   return (
     <section
-      className="hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
+      className="hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
     transition-all duration-35 ease-in-out"
     >
       <Form onSubmit={handleSubmit} className="flex flex-col">
