@@ -5,6 +5,7 @@ import meAsset from "~/assets/new-pfp-for-social-network.jpg";
 import Button from "~/components/CustomButton/Button";
 import FooterPage from "~/components/Pages/FooterPage";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
+import bgAsset from "~/assets/kinxori-background-for-assets-template.png";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -26,16 +27,20 @@ export default function AboutMeRoute() {
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">
           <h3 className="text-[30px] font-bold font-[rubik] ">
-            Hi, <b>I am Kinxori!</b>
+            Hi, <b>I am Kinxori!</b> ✌️
           </h3>
           <p className="text-justify  ">
-            My name is <b>Gustavo.</b> I used to be a Motion Designer. Now, I'm{" "}
-            <b>figuring out how to code web without dying in the process.</b> I tend to enjoy a lot
-            of activities and topics, but once I get passionate about it. I can turn into a total
-            nerd <b>(no regrets).</b> 👀
+            My name is Gustavo. I used to be a Motion Designer. Now, I'm figuring out how to code
+            web without dying in the process. I tend to enjoy a lot of activities and topics, but
+            once I get passionate about it. I can turn into a total nerd (no regrets). 👀
           </p>
-          <div className="h-[300px] overflow-hidden rounded-[10px] relative ">
-            <img className="scale-[1.2] absolute top-[-50px] " src={meAsset} />
+          <div className="hover:customShadow w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
+            <img
+              alt="Gustavo Quiroz PFP - Kinxori.com"
+              className="absolute z-10 h-[130%] top-[50%] translate-y-[-50%] object-contain"
+              src={meAsset}
+            />
+            <img className="absolute z-0 min-h-[100%] object-cover top-0 " src={bgAsset} />
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
