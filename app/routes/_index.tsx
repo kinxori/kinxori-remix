@@ -3,6 +3,7 @@ import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import FooterPage from "~/components/Pages/FooterPage";
 import SkillsPage from "~/components/Pages/SkillsPage";
+import WebProjectsPage from "~/components/Pages/WebProjectsPage";
 
 export default function Index() {
   const [isLandingPage, setLandingPage] = useState(false);
@@ -77,6 +78,7 @@ export default function Index() {
       <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
       <AboutMePage id="aboutMePageID" isObserved="observe" />
       <SkillsPage id="skillsPageID" isObserved="observe" />
+      <WebProjectsPage id="webProjectsPageID" />
       <FooterPage id="footerPageID" isObserved="observe" />
     </article>
   );

@@ -110,6 +110,12 @@ export default {
         ".customShadowMainColor2": {
           boxShadow: `0px 0px 30px 0px ${theme("colors.mainColor2")}`,
         },
+        ".customTextShadowMainColor1": {
+          textShadow: `0px 3px 5px ${theme("colors.mainColor")}`,
+        },
+        ".customTextShadowMainColor2": {
+          textShadow: `0px 3px 5px ${theme("colors.mainColor2")}`,
+        },
       });
     }),
   ],
