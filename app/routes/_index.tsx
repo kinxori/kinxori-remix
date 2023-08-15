@@ -58,6 +58,25 @@ export default function Index() {
 
   // TEsting
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = window.scrollY;
+      const screenHeight = window.innerHeight;
+      const scrolled = (scrollHeight / screenHeight) * 100; // Convert to percentage
+
+      const root = document.documentElement;
+      root.style.setProperty("--scrolledPosition", `${Math.min(scrolled, 100)}%`);
+    };
+
+    // Attach the event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleScroll = () => {
     const scrollHeigth = window.scrollY;
     const screenHeigth = window.innerHeight;
@@ -70,8 +89,6 @@ export default function Index() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // console.log("scroll position", { scrolledPosition, screenHeight });
 
   return (
     <article className="relative flex flex-col gap-10">

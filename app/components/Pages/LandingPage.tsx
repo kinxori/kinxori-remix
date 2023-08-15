@@ -28,7 +28,7 @@ export default function LandingPage({
     idk();
   }, [scrolledPosition]);
 
-  console.log("number", fak);
+  // console.log("number", fak);
 
   return (
     <article
@@ -39,7 +39,7 @@ export default function LandingPage({
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={` opacity-[5%]  bottom-0 absolute  right-[-10%] scale-[300%] object-contain`}
+          className={` opacity-[calc(var(--scrolledPosition))]  bottom-0 absolute  right-[-10%] scale-[300%] object-contain`}
         />
       </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
