@@ -66,7 +66,7 @@ export default function InputForm() {
         className={`${
           isPopUp && "pointer-events-none"
         } hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
-      transition-all duration-35 ease-in-out`}
+      transition-all duration-[.3s] ease-in-out`}
       >
         <Form onSubmit={handleSubmit} className="flex flex-col ">
           <div>
@@ -126,7 +126,8 @@ export default function InputForm() {
           <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
               src={emailPopUpAsset}
-              className="object-contain w-[60%] "
+              className="object-contain w-[60%] hover:scale-[1.02] 
+              transition-all duration-35 ease-in-out"
               alt="purple box mail smiling with a cellphone in its right hand with a email notification - Kinxori.com"
             ></img>
             <h2 className="text-[20px] font-bold text-bgColor text-center ">

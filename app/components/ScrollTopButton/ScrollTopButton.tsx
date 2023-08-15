@@ -28,10 +28,10 @@ export default function ScrollTopButton() {
         ${isScrolled ? "opacity-100" : "opacity-0"}`}
       >
         <button
-          className="m-5 w-[50px] h-[50px] text-black rounded-[10px] bg-white text-[30px] border-black border-[2px] transition-all ease-in-out duration-[.3s] hover:border-mainColor hover:rounded-[100%] ts:w-[60px] ts:h-[60px] ts:text-[35px] ts:border-[3px] "
+          className="hover:text-mainColor m-5 w-[50px] h-[50px] text-black rounded-[100%] bg-white text-[30px] border-black border-[2px] transition-all ease-in-out duration-[.3s] hover:border-mainColor ts:w-[60px] ts:h-[60px] ts:text-[35px] ts:border-[3px] "
           onClick={handleClick}
         >
-          <i className="fa-solid fa-arrow-up"></i>
+          <i className=" fa-solid fa-arrow-up"></i>
         </button>
       </div>
     </>

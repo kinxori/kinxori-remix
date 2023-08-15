@@ -4,6 +4,7 @@ import AboutMePage from "~/components/Pages/AboutMePage";
 import FooterPage from "~/components/Pages/FooterPage";
 import SkillsPage from "~/components/Pages/SkillsPage";
 import WebProjectsPage from "~/components/Pages/WebProjectsPage";
+import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 export default function Index() {
   const [isLandingPage, setLandingPage] = useState(false);
@@ -55,6 +56,7 @@ export default function Index() {
 
   return (
     <article className="relative flex flex-col gap-10">
+      <ScrollTopButton />
       <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
       <AboutMePage id="aboutMePageID" isObserved="observe" isActive={isAboutMePage} />
       <SkillsPage id="skillsPageID" isObserved="observe" />
