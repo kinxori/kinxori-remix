@@ -125,14 +125,11 @@ function Personality({ pageNumber }: { pageNumber: number }) {
       <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
-          I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily in
-          introverted, I enjoy my time at home. I find peace and serenity in my surroundings and
-          like to <b>make the most of it.</b> When I'm home, I like to{" "}
-          <b>study and listen to music.</b> I strive to live a meaningful life, and I'm{" "}
-          <b>always looking for ways to improve myself</b> and my surroundings. However, that
-          doesn't mean I don't like going out. <b>I love having dinner with friends</b>, share time
-          with my family and pets, engaging into deep conversations, but most importantly,{" "}
-          <b>enjoy it.</b>
+          I'm a very calm person. While <b>I'm not necessarily an introverted</b>, I enjoy my time
+          at home. I really like to <b>study while listening to music</b>. However, that doesn't
+          mean I dislike going out. <b>I love having dinner with friends</b>, spending time with my
+          family and engaging into deep conversations. I am{" "}
+          <b>always looking for ways to improve myself</b> and my surroundings.
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
