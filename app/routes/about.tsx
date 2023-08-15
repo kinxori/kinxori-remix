@@ -125,11 +125,11 @@ function Personality({ pageNumber }: { pageNumber: number }) {
       <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
-          I'm a very calm person. While <b>I'm not necessarily an introverted</b>, I enjoy my time
-          at home. I really like to <b>study while listening to music</b>. However, that doesn't
-          mean I dislike going out. <b>I love having dinner with friends</b>, spending time with my
-          family and engaging into deep conversations. I am{" "}
-          <b>always looking for ways to improve myself</b> and my surroundings.
+          I'm a very calm person. While <b>I'm not necessarily an introverted</b>, I really enjoy my
+          time at home. I like to <b>study or learn new things</b> where ever I go. Anything that
+          makes me doubt will go into a 30 minute research minimum. However,{" "}
+          <b>that doesn't mean I dislike going out</b>. I love having dinner with friends, spending
+          time with my family and pets, or engaging into deep conversations.
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/guy_talking_with_monkey_720p.mp4?alt=media&token=c17586c4-0d0d-4930-93fc-800ecaa7e099"
@@ -160,17 +160,16 @@ function Career1({ pageNumber }: { pageNumber: number }) {
       <div className="flex flex-col gap-3">
         <p>
           Throughout my career path, I have pursued my{" "}
-          <b>passion for creativity and visual arts.</b> After graduating as an Engineer with a
-          major in <b>Animation and Visual Effects in 2020.</b> I spent 3 years working as an
-          Animator/MotionDesigner from 2020 to 2023.
+          <b>passion for creativity and visual arts.</b> After graduating as an Engineer in{" "}
+          <b>Animation and Visual Effects in 2020</b>. I spent 3 years working as an Animator/Motion
+          Designer from 2020 to 2023. Although I had a great career in the visual arts industry,{" "}
+          <b>I felt the need to learn new skills and broaden my horizons</b>.
         </p>
         <p>
-          Although I had a great career in the visual arts industry,{" "}
-          <b>I felt the need to learn new skills and broaden my horizons.</b> This is why in{" "}
-          <b>October 2022,</b> I decided to <b>start learning web development.</b> My passion for{" "}
-          <b>problem-solving</b> and creating meaningful experiences through <b>web design</b> grew,
-          and in <b>January 2023,</b> I made the decision to{" "}
-          <b>pursue web development as my full-time job.</b>
+          That's why, <b>in October 2022,</b> I decided to embark on a journey of{" "}
+          <b>learning web development and coding</b>. My passion for <b>problem-solving</b> and
+          creating <b>meaningful web experiences</b> grew. Finally in <b>January 2023,</b> I made
+          the decision to <b>pursue web development as my full-time job.</b>
         </p>
       </div>
     </div>
