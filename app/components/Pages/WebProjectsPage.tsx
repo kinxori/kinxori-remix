@@ -23,12 +23,12 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </h2>
         <img
           src={projectsAsset}
-          className="opacity-30 z-[0] absolute left-[-10%] bottom-[-100%] h-[400px] "
+          className="opacity-30 z-[0] absolute left-[-20%] bottom-[-100%] h-[400px] "
         />
       </div>
       <div className="box-border p-10 flex flex-col">
         <div>
-          <p className="font-[inter] font-normal ">
+          <p className="font-[inter] font-normal text-justify ">
             Throughout my journey in web development, I've been continuously refining my toolkit to
             create impactful and efficient web projects.
           </p>

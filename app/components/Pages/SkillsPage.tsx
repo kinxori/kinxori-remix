@@ -28,7 +28,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
       </div>
       <div className="box-border p-10 flex flex-col">
         <div className="">
-          <p className="font-[inter] font-normal ">
+          <p className="font-[inter] font-normal text-justify">
             Throughout my journey in web development, I've been continuously refining my toolkit to
             create impactful and efficient web projects.
           </p>

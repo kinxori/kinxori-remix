@@ -26,13 +26,14 @@ export default function AboutMeRoute() {
       </div>
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">
-          <h3 className="text-[30px] font-bold font-[rubik] ">
+          <h3 className="text-[30px] font-bold font-[inter] ">
             Hi, <b>I am Kinxori!</b> ✌️
           </h3>
-          <p className="text-justify  ">
-            My name is Gustavo. I used to be a Motion Designer. Now, I'm figuring out how to code
-            web without dying in the process. I tend to enjoy a lot of activities and topics, but
-            once I get passionate about it. I can turn into a total nerd (no regrets). 👀
+          <p className="text-justify font-[inter] ">
+            My name is Gustavo. From Motion Design to Web Development. Now, I'm figuring out how to
+            develop web without dying in the process. I tend to enjoy a lot of activities and
+            topics, but once I get passionate about it. I can turn into a total nerd (no regrets).
+            👀
           </p>
           <div className="w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
             <img
@@ -44,7 +45,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="hover:customShadowMainColor2  hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="hover:customShadowMainColor2  hover:scale-[1.01] transition-all duration-[.3] font-[inter] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -85,16 +86,16 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
       ${pageNumber === 1 ? "translate-x-[0%] opacity-100 " : "translate-x-[-120%] opacity-0"}
       `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">
+      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">
         Where do I come from? 🌎
       </h4>
       <div className="flex flex-col gap-3">
         <p>
-          <b>Born in 1998,</b> I come from a small town near the central region of <b>Mexico,</b>{" "}
-          called Pachuca. This town is surrounded with a very <b>rich cultural heritage,</b> vibrant
-          music and dance traditions, colorful festivals, and delicious local cuisine. Growing up
-          there <b>has taught me</b> the value of <b>community, hard work, and creativity,</b> which
-          I carry with me wherever I go.
+          <b>Born in 1998 in México,</b> I come from a small town called <b>Pachuca, Hidalgo</b>.
+          This town is surrounded with a very rich cultural heritage, vibrant music and dance
+          traditions, colorful festivals, and delicious local cuisine. Growing up there{" "}
+          <b>has taught me the value of community, hard work, and creativity,</b> which I carry with
+          me wherever I go.
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/mexico-city-asset.mp4?alt=media&token=9fb7e7bb-a985-41e7-ac12-53fa2a9a37e0"
@@ -121,7 +122,7 @@ function Personality({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 2 && "translate-x-[-120%] opacity-0"
       } `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left">Personality? 💆</h4>
+      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
           I'm a person who enjoys a <b>balanced lifestyle.</b> While I'm not necessarily in
@@ -158,7 +159,7 @@ function Career1({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 3 && "translate-x-[-120%] opacity-0"
       } `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Career? 👨‍🎓</h4>
+      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Career? 👨‍🎓</h4>
       <div className="flex flex-col gap-3">
         <p>
           Throughout my career path, I have pursued my{" "}
@@ -214,7 +215,7 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
         : pageNumber > 5 && "translate-x-[-120%] opacity-0"
     } `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Hobbies? 🍿</h4>
+      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Hobbies? 🍿</h4>
       <div className="flex flex-col gap-3">
         <p>
           Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
@@ -240,7 +241,7 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 6 ? "translate-x-[0%] opacity-100" : "translate-x-[120%] opacity-0"} `}
     >
-      <h4 className="text-mainColor my-3 text-[24px] font-bold text-left ">Aspirations? ⏳</h4>
+      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Aspirations? ⏳</h4>
       <div className="flex flex-col gap-3">
         <p>
           I believe that personal growth is important, and I am{" "}
