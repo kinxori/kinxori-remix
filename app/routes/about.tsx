@@ -162,8 +162,8 @@ function Career1({ pageNumber }: { pageNumber: number }) {
           Throughout my career path, I have pursued my{" "}
           <b>passion for creativity and visual arts.</b> After graduating as an Engineer in{" "}
           <b>Animation and Visual Effects in 2020</b>. I spent 3 years working as an Animator/Motion
-          Designer from 2020 to 2023. Although I had a great career in the visual arts industry,{" "}
-          <b>I felt the need to learn new skills and broaden my horizons</b>.
+          Designer <b>from 2020 to 2023</b>. Although I had a great career in the visual arts
+          industry, <b>I felt the need to learn new skills and broaden my horizons</b>.
         </p>
         <p>
           That's why, <b>in October 2022,</b> I decided to embark on a journey of{" "}
@@ -189,10 +189,10 @@ function Career2({ pageNumber }: { pageNumber: number }) {
       }`}
     >
       <p>
-        Currently, I am focusing on developing myself as a <b>Web Developer,</b> and I am determined
-        to become a <b>Full-Stack Developer</b> in the near future. My career journey has been an
-        exciting experience, and I look forward to what the future holds as I continue to{" "}
-        <b>grow and evolve as a developer.</b>
+        Currently, I am developing myself as a <b>Web Developer,</b> and I am determined to become a{" "}
+        <b>Full-Stack Developer</b> in the near future. My career journey has been an exciting
+        experience, and I look forward to what the future holds as I continue to{" "}
+        <b>grow and evolve as a developer</b>.
       </p>
       <img src={dogoCodingAsset} alt="ADD ALT" className="rounded-[10px] "></img>
     </div>
