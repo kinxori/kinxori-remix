@@ -202,7 +202,7 @@ function Career2({ pageNumber }: { pageNumber: number }) {
 function Hobbies({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${
       pageNumber < 5
         ? "translate-x-[120%] opacity-0"
@@ -211,15 +211,15 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
         : pageNumber > 5 && "translate-x-[-120%] opacity-0"
     } `}
     >
-      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Hobbies? 🍿</h4>
+      <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left ">Hobbies? 🍿</h4>
       <div className="flex flex-col gap-3">
         <p>
-          Talking about hobbies, <b>biking and tennis are my favorite sport activities,</b> I also
-          enjoy going to the beach and <b>spending time in nature.</b> When I'm not outside, I enjoy
-          exploring my creative side through <b>music and craftsmanship.</b> I play guitar and{" "}
-          <b>I am interested in playing the violin and saxophone.</b> I'm also{" "}
-          <b>interested in investing</b> and tendencies in the market. Overall, I'm someone who
-          can't stay still. I am <b>always learning something new!</b>
+          Talking about hobbies, <b>biking and tennis are my favorite sport activities</b>. I love
+          the beach and I am working to live by the beach one day. I enjoy exploring my creative
+          side through <b>music and craftsmanship</b>. I am interested in playing the saxophone
+          soon. I'm also <b>into investing</b>, reading charts and financial reports pretending I
+          know what I'm doing is my passion. Overall, I'm someone who can't stay still.{" "}
+          <b>I am always learning something new!</b>
         </p>
         <img
           src="https://i.giphy.com/media/iqRgU7mFDGeUU/giphy.webp"
