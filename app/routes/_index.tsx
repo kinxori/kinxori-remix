@@ -6,7 +6,7 @@ import SkillsPage from "~/components/Pages/SkillsPage";
 import WebProjectsPage from "~/components/Pages/WebProjectsPage";
 
 export default function Index() {
-  const [isLandingPage, setLandingPage] = useState(false);
+  const [isLandingPage] = useState(false);
   const [isAboutMePage, setAboutMePage] = useState(false);
   const [isSkillsPage, setSkillsPage] = useState(false);
   const [isFooterPage, setFooterPage] = useState(false);
@@ -19,17 +19,14 @@ export default function Index() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
-            // console.log("id", id);
-            id === "landingPageID" ? setLandingPage(true) : setLandingPage(false);
-            id === "aboutMePageID" ? setAboutMePage(true) : setAboutMePage(false);
+            id === "aboutMePageID" && setAboutMePage(true);
             id === "skillsPageID" ? setSkillsPage(true) : setSkillsPage(false);
             id === "footerPageID" ? setFooterPage(true) : setFooterPage(false);
           }
         });
       },
       {
-        rootMargin: "0px",
-        // threshold: 0.01,
+        threshold: 0,
       }
     );
     const elementsToObserver = document.querySelectorAll(".observe");
@@ -54,7 +51,7 @@ export default function Index() {
     };
   }, []);
 
-  // console.log("booleans", { isLandingPage, isAboutMePage, isSkillsPage, isFooterPage });
+  // console.log("booleans", { isAboutMePage });
 
   // Scroll CSS variable
 

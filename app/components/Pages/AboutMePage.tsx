@@ -13,9 +13,11 @@ export default function AboutMe({
   return (
     <article
       id={id}
-      className={` w-[100vw] h-fit mx-auto box-border p-10 overflow-hidden relative ${isObserved} `}
+      className={` w-[100vw] h-fit mx-auto box-border p-10 overflow-hidden relative transition-all duration-[.5s]
+      ${isObserved} 
+      ${isActive === true ? "opacity-100 translate-x-0 " : "opacity-0 translate-x-[-50%]"} `}
     >
-      <div className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
+      <div className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
         <div className="m-10 w-[70%] relative aspect-square rounded-full hover:border-mainColor border-white border-[5px] overflow-hidden transition-all duration-[.3s] ease-in-out    ">
           <img
             className="top-[-30px] absolute"
@@ -39,8 +41,8 @@ export default function AboutMe({
             prefetch="intent"
             to="/about"
             variant="mainButton"
-            className={` ml-[auto] transition-all duration-[.5s]
-            ${!isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-50%] "} `}
+            className={` ml-[auto] transition-all duration-[.5s] delay-[1s]
+            ${isActive === true ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-50%] "} `}
           >
             Read More&#160;&#160;<i className="fa-solid fa-arrow-right"></i>
           </LinkButton>
