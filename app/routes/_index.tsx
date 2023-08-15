@@ -10,7 +10,7 @@ export default function Index() {
   const [isAboutMePage, setAboutMePage] = useState(false);
   const [isSkillsPage, setSkillsPage] = useState(false);
   const [isFooterPage, setFooterPage] = useState(false);
-  const [isScrolled, setScrolled] = useState(0);
+  const [scrolledPosition, setScrolled] = useState(0);
   const [screenHeight, setScreenHeight] = useState(0);
 
   useEffect(() => {
@@ -71,11 +71,17 @@ export default function Index() {
     };
   }, []);
 
-  // console.log("scroll position", { isScrolled, screenHeight });
+  // console.log("scroll position", { scrolledPosition, screenHeight });
 
   return (
     <article className="relative flex flex-col gap-10">
-      <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
+      <LandingPage
+        id="landingPageID"
+        scrolledPosition={scrolledPosition}
+        screenHeight={screenHeight}
+        isObserved="observe"
+        isActive={isLandingPage}
+      />
       <AboutMePage id="aboutMePageID" isObserved="observe" />
       <SkillsPage id="skillsPageID" isObserved="observe" />
       <WebProjectsPage id="webProjectsPageID" />
