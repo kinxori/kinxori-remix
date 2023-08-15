@@ -1,7 +1,15 @@
 import imgAssetPFP from "~/assets/new-pfp-for-social-network.jpg";
 import LinkButton from "~/components/CustomButton/LinkButton";
 
-export default function AboutMe({ id, isObserved }: { id: string; isObserved?: string }) {
+export default function AboutMe({
+  id,
+  isObserved,
+  isActive,
+}: {
+  id: string;
+  isObserved?: string;
+  isActive?: boolean;
+}) {
   return (
     <article
       id={id}
@@ -27,7 +35,13 @@ export default function AboutMe({ id, isObserved }: { id: string; isObserved?: s
               way.
             </p>
           </div>
-          <LinkButton prefetch="intent" to="/about" variant="mainButton" className="ml-[auto]">
+          <LinkButton
+            prefetch="intent"
+            to="/about"
+            variant="mainButton"
+            className={` ml-[auto] transition-all duration-[.5s]
+            ${!isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-50%] "} `}
+          >
             Read More&#160;&#160;<i className="fa-solid fa-arrow-right"></i>
           </LinkButton>
         </div>

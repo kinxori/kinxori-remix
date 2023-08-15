@@ -6,30 +6,11 @@ export default function LandingPage({
   id,
   isObserved,
   isActive,
-  screenHeight,
-  scrolledPosition,
 }: {
   id?: string;
   isObserved?: string;
   isActive?: boolean;
-  scrolledPosition: number;
-  screenHeight: number;
 }) {
-  const [fak, setFak] = useState(0);
-  const idk = () => {
-    if (scrolledPosition || screenHeight) {
-      const calc = (scrolledPosition * 100) / screenHeight;
-      const newValue = Math.round(calc);
-      setFak(newValue);
-    }
-  };
-
-  useEffect(() => {
-    idk();
-  }, [scrolledPosition]);
-
-  // console.log("number", fak);
-
   return (
     <article
       id={id}
@@ -39,7 +20,7 @@ export default function LandingPage({
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={` opacity-[calc(var(--scrolledPosition))]  bottom-0 absolute  right-[-10%] scale-[300%] object-contain`}
+          className={`opacity-[5%]  bottom-0 absolute  right-[-10%] scale-[300%] object-contain`}
         />
       </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
