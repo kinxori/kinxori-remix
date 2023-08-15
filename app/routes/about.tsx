@@ -31,9 +31,8 @@ export default function AboutMeRoute() {
           </h3>
           <p className="text-justify font-[inter] ">
             My name is Gustavo. From Motion Design to Web Development. Now, I'm figuring out how to
-            develop web without dying in the process. I tend to enjoy a lot of activities and
-            topics, but once I get passionate about it. I can turn into a total nerd (no regrets).
-            👀
+            code without dying in the process. I tend to enjoy a lot of activities and topics, but
+            once I get passionate about it. I can turn into a total nerd (no regrets). 👀
           </p>
           <div className="w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
             <img
@@ -45,7 +44,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="hover:customShadowMainColor2  hover:scale-[1.01] transition-all duration-[.3] font-[inter] justify-between min-h-[740px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <section className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] font-[inter] justify-between min-h-[700px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -53,7 +52,7 @@ export default function AboutMeRoute() {
           {pageNumber >= 4 && pageNumber <= 6 && <Hobbies pageNumber={pageNumber} />}
           {pageNumber >= 5 && <Aspirations pageNumber={pageNumber} />}
           <div className="flex justify-between items-center mt-auto">
-            <span>Page {pageNumber}</span>
+            <span>Page {pageNumber} of 6</span>
             <div className="flex gap-1">
               {pageNumber > 1 && (
                 <Button
@@ -71,7 +70,7 @@ export default function AboutMeRoute() {
           </div>
         </section>
         <i className="my-10 text-white/50 text-[12px] mx-auto ">
-          Gustavo Q.O. / 7th of August, 2023 / Mexico
+          Gustavo Q.O. / 15th of August, 2023 / México
         </i>
       </div>
       <FooterPage />
