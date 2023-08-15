@@ -51,7 +51,12 @@ export default function LandingPage({
         <h3 className=" text-[16px] w-[90%] text-center text-white">
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h3>
-        <LinkButton prefetch="intent" variant="mainButton" to="/contact">
+        <LinkButton
+          className=" animate-[textOpacity_2s_ease,_translateY_2s_ease] "
+          prefetch="intent"
+          variant="mainButton"
+          to="/contact"
+        >
           Contact Me
         </LinkButton>
       </div>

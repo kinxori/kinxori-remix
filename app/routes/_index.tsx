@@ -52,7 +52,7 @@ export default function Index() {
     };
   }, []);
 
-  console.log("booleans", { isAboutMePage });
+  // console.log("booleans", { isAboutMePage });
 
   // Scroll CSS variable
 
