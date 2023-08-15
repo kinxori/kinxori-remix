@@ -68,7 +68,7 @@ export default function InputForm() {
         } hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
       transition-all duration-[.3s] ease-in-out`}
       >
-        <Form onSubmit={handleSubmit} className="flex flex-col ">
+        <Form onSubmit={handleSubmit} className="flex flex-col font-[inter]">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-2">
               <label className="gap-1 flex flex-col font-bold text-bgColor ">
