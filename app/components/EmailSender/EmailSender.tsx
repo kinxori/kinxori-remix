@@ -8,7 +8,7 @@ export default function InputForm() {
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
-  const [isPopUp, setPopUp] = useState(true);
+  const [isPopUp, setPopUp] = useState(false);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -69,8 +69,8 @@ export default function InputForm() {
       transition-all duration-[.3s] ease-in-out`}
       >
         <Form onSubmit={handleSubmit} className="flex flex-col ">
-          <div>
-            <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <label className="gap-1 flex flex-col font-bold text-bgColor ">
                 <span>Email:</span>
                 <input
@@ -121,7 +121,7 @@ export default function InputForm() {
           onClick={(event) => {
             if (event.target === popUpRef.current) handlePopUp(false);
           }}
-          className=" z-[1000] top-0 left-0 fixed bg-bgColor/50 h-screen w-screen flex justify-center items-center "
+          className=" z-[1000] top-0 left-0 fixed bg-bgColor/80 h-screen w-screen flex justify-center items-center "
         >
           <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
