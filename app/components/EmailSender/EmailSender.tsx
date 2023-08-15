@@ -126,7 +126,7 @@ export default function InputForm() {
               alt="purple box mail smiling with a cellphone in its right hand with a email notification - Kinxori.com"
             ></img>
             <h2 className="text-[20px] font-bold text-bgColor text-center ">
-              Message sent succesufully! 👨‍💻
+              Message sent succesfully! 👨‍💻
             </h2>
             <Button variant="mainButton" onClick={() => handlePopUp(false)}>
               Close
