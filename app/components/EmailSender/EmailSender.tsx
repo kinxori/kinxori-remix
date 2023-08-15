@@ -112,10 +112,10 @@ export default function InputForm() {
         </Button>
       </Form>
       {popUp === true && (
-        <div
+        <section
           ref={popUpRef}
           onClick={(event) => {
-            if (event.target === popUpRef.current) handlePopUp;
+            if (event.target === popUpRef.current) handlePopUp(false);
           }}
           className="z-[1000] top-0 left-0 fixed bg-bgColor/50 h-screen w-screen flex justify-center items-center "
         >
@@ -132,7 +132,7 @@ export default function InputForm() {
               Close
             </Button>
           </div>
-        </div>
+        </section>
       )}
     </section>
   );
