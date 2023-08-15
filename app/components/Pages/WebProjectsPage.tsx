@@ -1,15 +1,6 @@
-import reactLogo from "~/assets/Logos/react-color-logo.png";
-import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
-import typescriptLogo from "~/assets/Logos/typescript-color-logo.png";
-import htmlLogo from "~/assets/Logos/html-color-logo.png";
-import cssLogo from "~/assets/Logos/css-color-logo.png";
-import remixLogo from "~/assets/Logos/remix-color-logo.png";
-import mongoDBLogo from "~/assets/Logos/mongodb-color-logo.png";
-import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
-import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
-import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import projectsAsset from "~/assets/projects-asset.png";
-import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
+import VideoLoader from "../VideoLoader/VideoLoader";
+import { Link } from "@remix-run/react";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -29,56 +20,42 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       <div className="box-border p-10 flex flex-col">
         <div>
           <p className="font-[inter] font-normal text-justify ">
-            Throughout my journey in web development, I've been continuously refining my toolkit to
-            create impactful and efficient web projects.
+            Explore a collection of my web projects and delve into the world of my development
+            practices. From crafting engaging user interfaces to crafting elegant code, these
+            projects showcase my journey as a web developer.
           </p>
         </div>
         <hr className="my-10 border-white/50"></hr>
-        <div className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={reactLogo} alt="reactjs Logo" className="h-[50px] object-contain " />
-            <span>React</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={javascriptLogo} alt="javascript Logo" className="h-[50px] object-contain " />
-            <span>JavaScript</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={htmlLogo} alt="html5 Logo" className="h-[50px] object-contain " />
-            <span>HTML5</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={cssLogo} alt="css3 Logo" className="h-[50px] object-contain " />
-            <span>CSS3</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={typescriptLogo} alt="typescript Logo" className="h-[50px] object-contain " />
-            <span>TypeScript</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={tailwindcssLogo} alt="tailwindcss Logo" className="h-[50px] object-contain" />
-            <span>TailwindCSS</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={remixLogo} alt="remix Logo" className="h-[50px] object-contain " />
-            <span>Remix</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={mongoDBLogo} alt="mongoDB Logo" className="h-[50px] object-contain " />
-            <span>MongoDB</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={restAPILogo} alt="restAPI Logo" className="h-[50px] object-contain " />
-            <span>Rest API</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={prismaLogo} alt="prisma Logo" className="h-[50px] object-contain " />
-            <span>Prisma</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={firebaseLogo} alt="firebase Logo" className="h-[50px] object-contain " />
-            <span>Firebase</span>
-          </div>
+        <div className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
+          <Link prefetch="intent" to="" className="w-[100%] h-[60px] flex justify-between">
+            <div>
+              <h3 className="text-mainColor font-bold text-[20px] ">El Diablito 13</h3>
+              <p className="text-justify">This project bla bla bla</p>
+            </div>
+            <VideoLoader
+              className="h-[100%] rounded-[10px]"
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
+            />
+          </Link>
+          <hr className="my-5 border-bgColor/20 w-[100%]"></hr>{" "}
+          <Link
+            prefetch="intent"
+            to=""
+            className="w-[100%] min-h-[60px] gap-3 flex flex-col items-start justify-between"
+          >
+            <div className="w-[100%] gap-1 flex flex-col ">
+              <h3 className="text-mainColor font-bold text-[20px] ">Music Player</h3>
+              <p className="text-justify">
+                This project bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repredis aliquam quasi eligendi soluta.
+              </p>
+            </div>
+            <VideoLoader
+              className="rounded-[10px]"
+              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
+            />
+          </Link>
+          <hr className="my-5 border-bgColor/20 w-[100%]"></hr>
         </div>
       </div>
     </section>

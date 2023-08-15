@@ -15,7 +15,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
   return (
     <section
       id={id}
-      className={` w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+      className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
         <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left">
@@ -28,7 +28,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
       </div>
       <div className="box-border p-10 flex flex-col">
         <div className="">
-          <p className="font-[inter] font-normal text-justify">
+          <p className="text-justify">
             Throughout my journey in web development, I've been continuously refining my toolkit to
             create impactful and efficient web projects.
           </p>
