@@ -1,6 +1,6 @@
 import { Form } from "@remix-run/react";
 import { useEffect, useState } from "react";
-import emailAsset from "~/assets/AboutmeAsset.png";
+import emailAsset from "~/assets/contactAsset.png";
 import Button from "~/components/CustomButton/Button";
 
 export default function InputForm() {
@@ -111,12 +111,15 @@ export default function InputForm() {
       </Form>
       {popUp === true && (
         <div className="z-[1000] top-0 left-0 fixed bg-bgColor/50 h-screen w-screen flex justify-center items-center ">
-          <div className=" box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[80%] h-[400px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
+          <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
               src={emailAsset}
-              alt="purple cup of coffee with a delivery backpack riding a scooter with glasses on its way to deliver something - Kinxori.com"
+              className="object-contain w-[60%] "
+              alt="purple box mail smiling with a cellphone in its right hand with a email notification - Kinxori.com"
             ></img>
-            <h2>Email sent! 👨‍💻</h2>
+            <h2 className="text-[20px] font-bold text-bgColor text-center ">
+              Message sent succesufully! 👨‍💻
+            </h2>
             <Button variant="mainButton" onClick={() => handlePopUp(false)}>
               Close
             </Button>
