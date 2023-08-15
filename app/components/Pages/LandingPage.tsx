@@ -25,7 +25,11 @@ export default function LandingPage({
         />
       </div>
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
-        <div className="text-white h-[50px] leading-none font-extrabold text-[60px] justify-around font-[rubik] flex w-[100%] ">
+        <div
+          className={`text-white h-[50px] leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
+          delay-[1s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          ${isActive ? "gap-2 translate-y-0" : "gap-0 translate-y-[80px] "}`}
+        >
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
             K
           </h1>
@@ -48,11 +52,16 @@ export default function LandingPage({
             I
           </h1>
         </div>
-        <h3 className=" text-[16px] w-[90%] text-center text-white">
+        <h3
+          className={`text-[16px] w-[90%] text-center text-white
+          delay-[1s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+        ${isActive ? "opacity-1 translate-y-0" : "opacity-0 translate-y-[80px] "}`}
+        >
           Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
         </h3>
         <LinkButton
-          className=" animate-[textOpacity_2s_ease,_translateY_2s_ease] "
+          className={`delay-[2s] transition-[opacity] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          ${isActive ? "opacity-1 " : "opacity-0"}`}
           prefetch="intent"
           variant="mainButton"
           to="/contact"

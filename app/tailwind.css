@@ -13,23 +13,6 @@
   -webkit-text-fill-color: #181818;
 }
 
-@keyframes textOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes translateY {
-  from {
-    transform: translateY(20%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
 /* This is the same as the tailwind modules inside plugins
 
 @layer base {
