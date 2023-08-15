@@ -11,6 +11,8 @@ export default function Index() {
   const [isSkillsPage, setSkillsPage] = useState(false);
   const [isProjectsPage, setProjectsPage] = useState(false);
 
+  // console.log("booleans", { isAboutMePage });
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -25,7 +27,7 @@ export default function Index() {
         });
       },
       {
-        threshold: 0,
+        threshold: 0.1,
       }
     );
     const elementsToObserver = document.querySelectorAll(".observe");
@@ -37,23 +39,17 @@ export default function Index() {
     };
   }, []);
 
-  // console.log("booleans", { isAboutMePage });
-
-  // Scroll CSS variable
-
   useEffect(() => {
-    const scrollVariable = () => {
+    const scrollValueCSSVariable = () => {
       const scrollHeight = window.scrollY;
       const screenHeight = window.innerHeight;
       const scrolled = (scrollHeight / screenHeight) * 100; // Convert to percentage
       const root = document.documentElement;
       root.style.setProperty("--scrolledPosition", `${Math.min(scrolled, 100)}%`);
     };
-    // Attach the event listener when the component mounts
-    window.addEventListener("scroll", scrollVariable);
-    // Clean up the event listener when the component unmounts
+    window.addEventListener("scroll", scrollValueCSSVariable);
     return () => {
-      window.removeEventListener("scroll", scrollVariable);
+      window.removeEventListener("scroll", scrollValueCSSVariable);
     };
   }, []);
 
