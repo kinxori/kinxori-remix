@@ -82,11 +82,11 @@ export default function AboutMeRoute() {
 function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${pageNumber === 1 ? "translate-x-[0%] opacity-100 " : "translate-x-[-120%] opacity-0"}
       `}
     >
-      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">
+      <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left">
         Where do I come from? 🌎
       </h4>
       <div className="flex flex-col gap-3">
@@ -113,7 +113,7 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
 function Personality({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${
         pageNumber < 2
           ? "translate-x-[120%] opacity-0 "
@@ -122,7 +122,7 @@ function Personality({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 2 && "translate-x-[-120%] opacity-0"
       } `}
     >
-      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left">Personality? 💆</h4>
+      <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left">Personality? 💆</h4>
       <div className="flex flex-col gap-3">
         <p>
           I'm a very calm person. While <b>I'm not necessarily an introverted</b>, I really enjoy my
@@ -147,7 +147,7 @@ function Personality({ pageNumber }: { pageNumber: number }) {
 function Career1({ pageNumber }: { pageNumber: number }) {
   return (
     <div
-      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
       ${
         pageNumber < 3
           ? "translate-x-[120%] opacity-0"
@@ -156,7 +156,7 @@ function Career1({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 3 && "translate-x-[-120%] opacity-0"
       } `}
     >
-      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Career? 👨‍🎓</h4>
+      <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left ">Career? 👨‍🎓</h4>
       <div className="flex flex-col gap-3">
         <p>
           Throughout my career path, I have pursued my{" "}
@@ -234,19 +234,18 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
 function Aspirations({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
-      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
     ${pageNumber === 6 ? "translate-x-[0%] opacity-100" : "translate-x-[120%] opacity-0"} `}
     >
-      <h4 className="text-mainColor my-3 text-[28px] font-bold text-left ">Aspirations? ⏳</h4>
+      <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left ">Aspirations? ⏳</h4>
       <div className="flex flex-col gap-3">
         <p>
           I believe that personal growth is important, and I am{" "}
           <b>always eager to learn new things</b> and gain knowledge to help me{" "}
-          <b>reach my goals.</b> One of my dreams is exploring new places and{" "}
-          <b>experience different cultures,</b> which is why I aspire to live a fulfilling life
-          where I can travel and <b>create unforgettable memories</b>. What{" "}
-          <b>I strive for is a peaceful life</b> where I can enjoy the simple things in life and
-          cherish the moments <b>spent with the people who matter most to me.</b>
+          <b>reach my goals</b>. One of my dreams is to give back to my loved ones at least a little
+          bit of what they have done for me. <b>I strive for a peaceful and fulfilling life</b>{" "}
+          where I can enjoy the simple things in life and cherish the moments{" "}
+          <b>spent with the people who matter most to me</b>.
         </p>
         <VideoLoader
           src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/never-give-up-asset.mp4?alt=media&token=7074d124-acc4-478e-9021-ed34a6f1b406"
