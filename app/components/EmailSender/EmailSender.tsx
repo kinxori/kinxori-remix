@@ -110,8 +110,8 @@ export default function InputForm() {
         </Button>
       </Form>
       {popUp === true && (
-        <div className="email-pop-up-root">
-          <div className="email-pop-up-content">
+        <div className="z-[1000] top-0 left-0 fixed bg-bgColor/50 h-screen w-screen flex justify-center items-center ">
+          <div className=" box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[80%] h-[400px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
               src={emailAsset}
               alt="purple cup of coffee with a delivery backpack riding a scooter with glasses on its way to deliver something - Kinxori.com"
@@ -121,7 +121,6 @@ export default function InputForm() {
               Close
             </Button>
           </div>
-          <div className="email-pop-up-background" onClick={() => handlePopUp(false)}></div>
         </div>
       )}
     </section>
