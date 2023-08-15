@@ -22,7 +22,7 @@ export default function ContactRoute() {
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col">
           <h3 className="text-[30px] font-bold  ">
-            Hey there! <b>let's grab a virtual coffee.</b> ☕️
+            Hey there! <b>Let's grab a virtual coffee.</b> ☕️
           </h3>
           <p className="text-justify my-5">
             We can chat about web development, animation, art, stocks or just connect as friends.
