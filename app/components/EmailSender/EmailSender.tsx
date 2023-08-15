@@ -1,6 +1,6 @@
 import { Form } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
-import emailAsset from "~/assets/contactAsset.png";
+import emailPopUpAsset from "~/assets/contactAsset.png";
 import Button from "~/components/CustomButton/Button";
 
 export default function InputForm() {
@@ -9,8 +9,6 @@ export default function InputForm() {
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
   const [popUp, setPopUp] = useState(true);
-
-  const popUpRef = useRef(null);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -59,6 +57,8 @@ export default function InputForm() {
   const handlePopUp = (boolean: boolean) => {
     setPopUp((current) => (current === boolean ? false : boolean));
   };
+
+  const popUpRef = useRef(null);
 
   return (
     <section
@@ -121,7 +121,7 @@ export default function InputForm() {
         >
           <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
-              src={emailAsset}
+              src={emailPopUpAsset}
               className="object-contain w-[60%] "
               alt="purple box mail smiling with a cellphone in its right hand with a email notification - Kinxori.com"
             ></img>
