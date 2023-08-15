@@ -9,9 +9,7 @@ export default function Index() {
   const [isLandingPage, setLandingPage] = useState(false);
   const [isAboutMePage, setAboutMePage] = useState(false);
   const [isSkillsPage, setSkillsPage] = useState(false);
-  const [isFooterPage, setFooterPage] = useState(false);
-  const [scrolledPosition, setScrolled] = useState(0);
-  const [screenHeight, setScreenHeight] = useState(0);
+  const [isProjectsPage, setProjectsPage] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -21,8 +19,8 @@ export default function Index() {
             const id = entry.target.getAttribute("id");
             id === "landingPageID" && setLandingPage(true);
             id === "aboutMePageID" && setAboutMePage(true);
-            id === "skillsPageID" ? setSkillsPage(true) : setSkillsPage(false);
-            id === "footerPageID" ? setFooterPage(true) : setFooterPage(false);
+            id === "skillsPageID" && setSkillsPage(true);
+            id === "projectsPageID" && setProjectsPage(true);
           }
         });
       },
@@ -36,19 +34,6 @@ export default function Index() {
     });
     return () => {
       observer.disconnect();
-    };
-  }, []);
-
-  const handleScroll = () => {
-    const scrollHeigth = window.scrollY;
-    const screenHeigth = window.innerHeight;
-    setScrolled(scrollHeigth);
-    setScreenHeight(screenHeigth);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
