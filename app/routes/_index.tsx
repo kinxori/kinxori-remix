@@ -6,7 +6,7 @@ import SkillsPage from "~/components/Pages/SkillsPage";
 import WebProjectsPage from "~/components/Pages/WebProjectsPage";
 
 export default function Index() {
-  const [isLandingPage] = useState(false);
+  const [isLandingPage, setLandingPage] = useState(false);
   const [isAboutMePage, setAboutMePage] = useState(false);
   const [isSkillsPage, setSkillsPage] = useState(false);
   const [isFooterPage, setFooterPage] = useState(false);
@@ -19,6 +19,7 @@ export default function Index() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
+            id === "landingPageID" && setLandingPage(true);
             id === "aboutMePageID" && setAboutMePage(true);
             id === "skillsPageID" ? setSkillsPage(true) : setSkillsPage(false);
             id === "footerPageID" ? setFooterPage(true) : setFooterPage(false);
@@ -51,7 +52,7 @@ export default function Index() {
     };
   }, []);
 
-  // console.log("booleans", { isAboutMePage });
+  console.log("booleans", { isAboutMePage });
 
   // Scroll CSS variable
 
