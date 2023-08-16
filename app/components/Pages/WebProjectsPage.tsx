@@ -1,6 +1,8 @@
 import projectsAsset from "~/assets/projects-asset.png";
-import VideoLoader from "../VideoLoader/VideoLoader";
+import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import { Link } from "@remix-run/react";
+import AnchorButton from "~/components/CustomButton/AnchorButton";
+import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -26,36 +28,32 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           </p>
         </div>
         <hr className="my-10 border-white/50"></hr>
-        <div className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center">
-          <Link prefetch="intent" to="" className="w-[100%] h-[60px] flex justify-between">
-            <div>
-              <h3 className="text-mainColor font-bold text-[20px] ">El Diablito 13</h3>
-              <p className="text-justify">This project bla bla bla</p>
-            </div>
-            <VideoLoader
-              className="h-[100%] rounded-[10px]"
-              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
-            />
-          </Link>
-          <hr className="my-5 border-bgColor/20 w-[100%]"></hr>{" "}
-          <Link
-            prefetch="intent"
-            to=""
-            className="w-[100%] min-h-[60px] gap-3 flex flex-col items-start justify-between"
-          >
-            <div className="w-[100%] gap-1 flex flex-col ">
-              <h3 className="text-mainColor font-bold text-[20px] ">Music Player</h3>
-              <p className="text-justify">
-                This project bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repredis aliquam quasi eligendi soluta.
-              </p>
-            </div>
-            <VideoLoader
-              className="rounded-[10px]"
-              src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
-            />
-          </Link>
-          <hr className="my-5 border-bgColor/20 w-[100%]"></hr>
+        <div
+          className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+          border-mainColor w-[100%] min-h-[450px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+        >
+          <h3 className="mb-3 text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
+          <p className="text-justify">
+            This project bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repredi
+          </p>
+          <VideoLoader
+            loop={true}
+            autoPlay={true}
+            controls={false}
+            muted={true}
+            className="rounded-[10px] my-5"
+            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
+          />
+          <div className="w-[100%] my-5 flex gap-2 justify-center ">
+            <AnchorButton aria-label="idk" href="facebook.com" variant="secButton">
+              Github Repo&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+            </AnchorButton>
+            <LinkButton to="facebook.com" variant="mainButton">
+              More Details
+            </LinkButton>
+          </div>
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ export default {
       addUtilities({
         ".mainButton": {
           backgroundColor: theme("colors.mainColor"),
-          border: `1px solid ${theme("colors.mainColor")}`,
+          border: `2px solid ${theme("colors.mainColor")}`,
           padding: "10px 20px",
           borderRadius: "10px",
           fontWeight: "bold",
@@ -41,8 +41,8 @@ export default {
           color: theme("colors.white"),
         },
         ".secButton": {
-          backgroundColor: theme("colors.bgColor"),
-          border: `1px solid ${theme("colors.mainColor")}`,
+          backgroundColor: "inherit",
+          border: `2px solid ${theme("colors.mainColor")}`,
           padding: "10px 20px",
           borderRadius: "10px",
           fontWeight: "bold",
@@ -53,7 +53,7 @@ export default {
         },
         ".ghostButton": {
           backgroundColor: "transparent",
-          border: `1px solid transparent`,
+          border: `2px solid transparent`,
           padding: "10px 20px",
           borderRadius: "10px",
           fontWeight: "bold",
@@ -64,7 +64,7 @@ export default {
         },
         ".linkButton": {
           backgroundColor: "transparent",
-          border: `1px solid transparent`,
+          border: `2px solid transparent`,
           padding: "inherit",
           borderRadius: "10px",
           fontWeight: "bold",
