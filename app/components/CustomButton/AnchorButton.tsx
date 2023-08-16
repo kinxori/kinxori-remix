@@ -10,6 +10,7 @@ export default function AnchorButton({
   href,
   download,
   ariaLabel,
+  disabled,
 }: {
   children: ReactNode;
   className?: string;
@@ -20,6 +21,7 @@ export default function AnchorButton({
   href?: string;
   download?: boolean | string;
   ariaLabel?: string;
+  disabled?: boolean;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
@@ -37,7 +39,7 @@ export default function AnchorButton({
       type={type}
       className={className}
     >
-      <button aria-label={ariaLabel} className={classes[variant]}>
+      <button disabled={disabled} aria-label={ariaLabel} className={classes[variant]}>
         {children}
       </button>
     </a>

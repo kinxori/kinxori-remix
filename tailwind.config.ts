@@ -104,6 +104,22 @@ export default {
         ".linkButton:disabled": {
           opacity: "0.5",
         },
+        ".mainButton:hover:disabled": {
+          scale: "none",
+          boxShadow: "none",
+        },
+        ".secButton:hover:disabled": {
+          scale: "none",
+          boxShadow: "none",
+        },
+        ".ghostButton:hover:disabled": {
+          scale: "none",
+          boxShadow: "none",
+        },
+        ".linkButton:hover:disabled": {
+          scale: "none",
+          boxShadow: "none",
+        },
         ".customShadowMainColor1": {
           boxShadow: `0px 0px 30px 0px ${theme("colors.mainColor")}`,
         },
