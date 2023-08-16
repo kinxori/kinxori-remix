@@ -9,6 +9,7 @@ export default function LinkButton({
   target,
   variant = "mainButton",
   prefetch,
+  ariaLabel,
 }: {
   children: ReactNode;
   className?: string;
@@ -17,6 +18,7 @@ export default function LinkButton({
   target?: string;
   variant?: string;
   prefetch?: PrefetchBehavior | undefined;
+  ariaLabel?: string;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
@@ -27,7 +29,7 @@ export default function LinkButton({
 
   return (
     <Link prefetch={prefetch} to={to} target={target} className={className}>
-      <button className={classes[variant]} onClick={onClick}>
+      <button aria-label={ariaLabel} className={classes[variant]} onClick={onClick}>
         {children}
       </button>
     </Link>

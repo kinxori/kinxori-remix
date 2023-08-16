@@ -46,13 +46,21 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
           />
           <div className="w-[100%] my-5 flex gap-2 justify-center ">
-            <AnchorButton aria-label="idk" href="facebook.com" variant="secButton">
-              Github Repo&#160;&#160;
-              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
-            </AnchorButton>
-            <LinkButton to="facebook.com" variant="mainButton">
+            <LinkButton
+              ariaLabel="Call to action button to open El Diablito 13 route with more details about the project"
+              to="facebook.com"
+              variant="secButton"
+            >
               More Details
             </LinkButton>
+            <AnchorButton
+              ariaLabel="Hyperlink to visit El Diablito's 13 github repository."
+              href="Live project"
+              variant="mainButton"
+            >
+              Live Project&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+            </AnchorButton>
           </div>
         </div>
       </div>

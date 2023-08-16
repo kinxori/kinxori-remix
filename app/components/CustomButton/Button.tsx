@@ -7,6 +7,7 @@ export default function Button({
   type,
   className,
   disabled,
+  ariaLabel,
 }: {
   children: ReactNode;
   onClick?: ReactEventHandler<HTMLButtonElement>;
@@ -14,6 +15,7 @@ export default function Button({
   type?: "submit" | "button" | "reset";
   className?: string | undefined;
   disabled?: boolean;
+  ariaLabel?: string;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
@@ -24,7 +26,13 @@ export default function Button({
 
   return (
     <span className={className}>
-      <button disabled={disabled} className={classes[variant]} onClick={onClick} type={type}>
+      <button
+        aria-label={ariaLabel}
+        disabled={disabled}
+        className={classes[variant]}
+        onClick={onClick}
+        type={type}
+      >
         {children}
       </button>
     </span>
