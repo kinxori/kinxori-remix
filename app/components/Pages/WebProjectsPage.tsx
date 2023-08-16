@@ -3,8 +3,12 @@ import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import { Link } from "@remix-run/react";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import LinkButton from "~/components/CustomButton/LinkButton";
+import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
+import { useState } from "react";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
+  const [idk, setIdk] = useState(<ElDiablit13 />);
+
   return (
     <section
       id={id}
@@ -30,40 +34,41 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         <hr className="my-10 border-white/50"></hr>
         <div
           className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-          border-mainColor w-[100%] min-h-[450px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+          border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
         >
-          <h3 className="mb-3 text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
-          <p className="text-justify">
-            This project bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repredi
-          </p>
-          <VideoLoader
-            loop={true}
-            autoPlay={true}
-            controls={false}
-            muted={true}
-            className="rounded-[10px] my-5"
-            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/fetch-API-asset-with-logo.mp4?alt=media&token=42709b9f-dcf2-42d1-ab42-e78d8744a729"
-          />
-          <div className="w-[100%] my-5 flex gap-2 justify-center ">
-            <LinkButton
-              ariaLabel="Call to action button to open El Diablito 13 route with more details about the project"
-              to="facebook.com"
-              variant="secButton"
-            >
-              More Details
-            </LinkButton>
-            <AnchorButton
-              ariaLabel="Hyperlink to visit El Diablito's 13 github repository."
-              href="Live project"
-              variant="mainButton"
-            >
-              Live Project&#160;&#160;
-              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
-            </AnchorButton>
-          </div>
+          <select className="w-[30%]  ">
+            <option>El Diablito 13</option>
+            <option>Media Music Player</option>
+          </select>
+          {idk}
         </div>
       </div>
     </section>
+  );
+}
+
+function ElDiablit13() {
+  return (
+    <div>
+      <Link to="">
+        <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
+        <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
+        <p className="text-justify text-[14px] ">
+          SPA website for a Mexican Illustrator called "El Diablito 13".
+        </p>
+      </Link>
+      <AnchorButton
+        className="mt-5 ml-auto"
+        ariaLabel="Hyperlink to visit El Diablito's 13 github repository."
+        href="Live project"
+        variant="mainButton"
+      >
+        Live Project&#160;&#160;
+        <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+      </AnchorButton>
+      <LinkButton to="" className="mt-2 ml-auto" variant="secButton">
+        More Details
+      </LinkButton>
+    </div>
   );
 }
