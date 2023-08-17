@@ -15,6 +15,7 @@ import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
+import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [idk, setIdk] = useState(<ElDiablito13 />);
@@ -111,6 +112,12 @@ function MusicMediaPlayer() {
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={tailwindcssLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={viteJslogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src="" />
           </div>
         </div>
       </div>

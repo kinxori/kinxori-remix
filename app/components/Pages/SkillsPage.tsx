@@ -10,6 +10,7 @@ import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
+import githubLogo from "~/assets/Logos/github-white-logo.png";
 import skillsAsset from "~/assets/email-sent-asset.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
@@ -45,6 +46,10 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>JavaScript</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={typescriptLogo} alt="typescript Logo" className="h-[50px] object-contain " />
+            <span>TypeScript</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={htmlLogo} alt="html5 Logo" className="h-[50px] object-contain " />
             <span>HTML5</span>
           </div>
@@ -53,12 +58,12 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>CSS3</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
-            <img src={typescriptLogo} alt="typescript Logo" className="h-[50px] object-contain " />
-            <span>TypeScript</span>
-          </div>
-          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={tailwindcssLogo} alt="tailwindcss Logo" className="h-[50px] object-contain" />
             <span>TailwindCSS</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={githubLogo} alt="github Logo" className="h-[50px] object-contain " />
+            <span>Github</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={viteJslogo} alt="vite js Logo" className="h-[50px] object-contain " />
