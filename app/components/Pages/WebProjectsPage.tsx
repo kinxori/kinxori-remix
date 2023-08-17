@@ -44,13 +44,13 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             projects showcase my journey as a web developer.
           </p>
         </div>
-        <hr className="my-10 border-white/50"></hr>
-        <section className="flex flex-col gap-5">
-          <ElDiablito13 />
-          <MusicMediaPlayer />
-          <TechnicalTest1 />
-        </section>
+        <hr className="mt-10 border-white/50"></hr>
       </div>
+      <section className="w-[100vw] h-[460px] border-mainColor border-[2px] flex relative justify-center items-start ">
+        <ElDiablito13 />
+        <MusicMediaPlayer />
+        <TechnicalTest1 />
+      </section>
     </section>
   );
 }
@@ -59,7 +59,7 @@ function ElDiablito13() {
   return (
     <div
       className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
@@ -113,7 +113,7 @@ function MusicMediaPlayer() {
   return (
     <div
       className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
@@ -164,7 +164,7 @@ function TechnicalTest1() {
   return (
     <div
       className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={technicalTest1} />
@@ -200,7 +200,7 @@ function TechnicalTest1() {
       <AnchorButton
         className="mt-5 ml-auto"
         ariaLabel="Hyperlink to visit El Diablito 13's official website."
-        href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
+        href="https://kinxori.github.io/technical-test-1/"
         target="_blank"
         variant="mainButton"
       >
