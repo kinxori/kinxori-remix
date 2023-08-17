@@ -168,8 +168,8 @@ function TechnicalTest1() {
     >
       <div>
         <img className="rounded-[10px] mb-5" src={technicalTest1} />
-        <i className="text-[12px] text-mainColor">#Technical Test</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left"> Contacts Manager</h3>
+        <i className="text-[12px] text-mainColor">#TechnicalTest</i>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager Feature</h3>
         <p className="text-[14px] ">
           Technical test for a frontend Jr role.{" "}
           <Link to="" className="underline italic text-mainColor ">
