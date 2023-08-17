@@ -6,6 +6,7 @@ import Button from "~/components/CustomButton/Button";
 import FooterPage from "~/components/Pages/FooterPage";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import bgAsset from "~/assets/kinxori-background-for-assets-template.png";
+import cowDesktopAsset from "~/assets/cow-desktop-asset.png";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -21,8 +22,14 @@ export default function AboutMeRoute() {
   return (
     <article className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <ScrollTopButton />
-      <div className="box-border p-10 ">
-        <h2 className="  text-white font-[rubik] font-bold text-[50px]">About</h2>
+      <div className="relative overflow-hidden box-border p-10 ">
+        <h2 className=" z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
+          About
+        </h2>
+        <img
+          src={cowDesktopAsset}
+          className="opacity-30 z-[0] absolute right-[0] bottom-[-70%] h-[300px] "
+        />
       </div>
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col gap-5">
