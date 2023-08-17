@@ -5,6 +5,16 @@ import AnchorButton from "~/components/CustomButton/AnchorButton";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import musicMediaPlayerAsset from "~/assets/music-media-player-practice-ss.png";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
+import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
+import typescriptLogo from "~/assets/Logos/typescript-color-logo.png";
+import htmlLogo from "~/assets/Logos/html-color-logo.png";
+import cssLogo from "~/assets/Logos/css-color-logo.png";
+import remixLogo from "~/assets/Logos/remix-color-logo.png";
+import mongoDBLogo from "~/assets/Logos/mongodb-color-logo.png";
+import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
+import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
+import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
+import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [idk, setIdk] = useState(<ElDiablito13 />);
@@ -90,15 +100,24 @@ function MusicMediaPlayer() {
           </Link>
         </p>
         <div className="flex gap-2 mt-2">
-          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-1 ">
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={javascriptLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={htmlLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={tailwindcssLogo} />
           </div>
         </div>
       </div>
       <AnchorButton
         className="mt-5 mr-auto"
         ariaLabel="Hyperlink to visit El Diablito 13's official website."
-        href="https://el-diablito-13-b8034.firebaseapp.com/"
+        href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
         target="_blank"
         variant="mainButton"
       >

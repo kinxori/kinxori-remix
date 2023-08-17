@@ -8,8 +8,8 @@ import mongoDBLogo from "~/assets/Logos/mongodb-color-logo.png";
 import prismaLogo from "~/assets/Logos/prisma-color-logo.png";
 import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
-import skillsAsset from "~/assets/email-sent-asset.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
+import skillsAsset from "~/assets/email-sent-asset.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
