@@ -1,10 +1,10 @@
-import projectsAsset from "~/assets/projects-asset.png";
-import VideoLoader from "~/components/VideoLoader/VideoLoader";
-import { Link } from "@remix-run/react";
-import AnchorButton from "~/components/CustomButton/AnchorButton";
-import LinkButton from "~/components/CustomButton/LinkButton";
-import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import { useState } from "react";
+import { Link } from "@remix-run/react";
+import projectsAsset from "~/assets/projects-asset.png";
+import AnchorButton from "~/components/CustomButton/AnchorButton";
+import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
+import musicMediaPlayerAsset from "~/assets/music-media-player-practice-ss.png";
+import reactLogo from "~/assets/Logos/react-color-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [idk, setIdk] = useState(<ElDiablito13 />);
@@ -34,7 +34,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         <hr className="my-10 border-white/50"></hr>
         <section className="flex flex-col gap-5">
           <ElDiablito13 />
-          <ElDiablito13 />
+          <MusicMediaPlayer />
         </section>
       </div>
     </section>
@@ -58,6 +58,42 @@ function ElDiablito13() {
             Read more
           </Link>
         </p>
+      </div>
+      <AnchorButton
+        className="mt-5 mr-auto"
+        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        href="https://el-diablito-13-b8034.firebaseapp.com/"
+        target="_blank"
+        variant="mainButton"
+      >
+        Live Project&#160;&#160;
+        <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+      </AnchorButton>
+    </div>
+  );
+}
+
+function MusicMediaPlayer() {
+  return (
+    <div
+      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    >
+      <div>
+        <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
+        <i className="text-[14px] text-mainColor">#Practice</i>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
+        <p className="text-justify text-[14px] ">
+          Creating a music media player.{" "}
+          <Link to="" className="underline italic text-mainColor ">
+            Read more
+          </Link>
+        </p>
+        <div className="flex gap-2 mt-2">
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-1 ">
+            <img src={reactLogo} />
+          </div>
+        </div>
       </div>
       <AnchorButton
         className="mt-5 mr-auto"
