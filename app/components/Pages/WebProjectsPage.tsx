@@ -61,9 +61,8 @@ function ElDiablito13() {
     >
       <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
-        <i className="text-[14px] text-mainColor">#Project</i>
+        <i className="text-[12px] text-mainColor">#Project</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
-
         <p className="text-[14px] ">
           El Diablito 13's official website.{" "}
           <Link to="" className="underline italic text-mainColor ">
@@ -95,7 +94,7 @@ function ElDiablito13() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 mr-auto"
+        className="mt-5 ml-auto"
         ariaLabel="Hyperlink to visit El Diablito 13's official website."
         href="https://el-diablito-13-b8034.firebaseapp.com/"
         target="_blank"
@@ -116,7 +115,7 @@ function MusicMediaPlayer() {
     >
       <div>
         <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
-        <i className="text-[14px] text-mainColor">#Practice</i>
+        <i className="text-[12px] text-mainColor">#Practice</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
         <p className="text-[14px] ">
           Creating a music media player.{" "}
@@ -146,7 +145,7 @@ function MusicMediaPlayer() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 mr-auto"
+        className="mt-5 ml-auto"
         ariaLabel="Hyperlink to visit El Diablito 13's official website."
         href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
         target="_blank"
