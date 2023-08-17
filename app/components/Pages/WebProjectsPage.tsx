@@ -17,6 +17,7 @@ import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
+import technicalTest1 from "~/assets/technical-test-1-ss.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [idk, setIdk] = useState(<ElDiablito13 />);
@@ -47,6 +48,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         <section className="flex flex-col gap-5">
           <ElDiablito13 />
           <MusicMediaPlayer />
+          <TechnicalTest1 />
         </section>
       </div>
     </section>
@@ -119,6 +121,57 @@ function MusicMediaPlayer() {
         <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
         <p className="text-[14px] ">
           Creating a music media player.{" "}
+          <Link to="" className="underline italic text-mainColor ">
+            Read more.
+          </Link>
+        </p>
+        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={reactLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={javascriptLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={htmlLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={tailwindcssLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={viteJslogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={githubLogo} />
+          </div>
+        </div>
+      </div>
+      <AnchorButton
+        className="mt-5 ml-auto"
+        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
+        target="_blank"
+        variant="mainButton"
+      >
+        Live Project&#160;&#160;
+        <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+      </AnchorButton>
+    </div>
+  );
+}
+
+function TechnicalTest1() {
+  return (
+    <div
+      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    >
+      <div>
+        <img className="rounded-[10px] mb-5" src={technicalTest1} />
+        <i className="text-[12px] text-mainColor">#Technical Test</i>
+        <h3 className="text-mainColor font-bold text-[20px] text-left"> Contacts Manager</h3>
+        <p className="text-[14px] ">
+          Technical test for a frontend Jr role.{" "}
           <Link to="" className="underline italic text-mainColor ">
             Read more.
           </Link>
