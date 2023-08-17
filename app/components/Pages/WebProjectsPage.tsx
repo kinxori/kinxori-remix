@@ -46,7 +46,10 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </div>
         <hr className="mt-10 border-white/50"></hr>
       </div>
-      <section className="overflow-x-scroll w-[100vw] pl-[10%] flex gap-5 relative items-start ">
+      <section
+        id="carrouselProjects"
+        className="overflow-x-scroll w-[100vw] pl-[10%] flex gap-5 relative items-start "
+      >
         <ElDiablito13 />
         <MusicMediaPlayer />
         <TechnicalTest1 />

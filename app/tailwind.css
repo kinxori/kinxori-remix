@@ -13,6 +13,10 @@
   -webkit-text-fill-color: #181818;
 }
 
+#carrouselProjects::-webkit-scrollbar {
+  width: 0;
+}
+
 /* This is the same as the tailwind modules inside plugins
 
 @layer base {
