@@ -48,7 +48,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       </div>
       <section
         id="carrouselProjects"
-        className="overflow-x-scroll w-[100vw] pl-[10%] flex gap-5 relative items-start "
+        className="overflow-x-scroll snap-x w-[100vw] px-[10%]  flex gap-7 relative items-start "
       >
         <ElDiablito13 />
         <MusicMediaPlayer />
@@ -62,7 +62,7 @@ function ElDiablito13() {
   return (
     <div
       className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
@@ -116,7 +116,7 @@ function MusicMediaPlayer() {
   return (
     <div
       className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
@@ -167,7 +167,7 @@ function TechnicalTest1() {
   return (
     <div
       className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={technicalTest1} />
