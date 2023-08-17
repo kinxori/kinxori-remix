@@ -7,7 +7,7 @@ import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import { useState } from "react";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
-  const [idk, setIdk] = useState(<ElDiablit13 />);
+  const [idk, setIdk] = useState(<ElDiablito13 />);
 
   return (
     <section
@@ -32,43 +32,43 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           </p>
         </div>
         <hr className="my-10 border-white/50"></hr>
-        <div
-          className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-          border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
-        >
-          <select className="w-[30%]  ">
-            <option>El Diablito 13</option>
-            <option>Media Music Player</option>
-          </select>
-          {idk}
-        </div>
+        <section className="flex flex-col gap-5">
+          <ElDiablito13 />
+          <ElDiablito13 />
+        </section>
       </div>
     </section>
   );
 }
 
-function ElDiablit13() {
+function ElDiablito13() {
   return (
-    <div>
-      <Link to="">
+    <div
+      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    >
+      <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
+        <i className="text-[14px] text-mainColor">#Project</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
+
         <p className="text-justify text-[14px] ">
-          SPA website for a Mexican Illustrator called "El Diablito 13".
+          El Diablito 13's official website.{" "}
+          <Link to="" className="underline italic text-mainColor ">
+            Read more
+          </Link>
         </p>
-      </Link>
+      </div>
       <AnchorButton
-        className="mt-5 ml-auto"
-        ariaLabel="Hyperlink to visit El Diablito's 13 github repository."
-        href="Live project"
+        className="mt-5 mr-auto"
+        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        href="https://el-diablito-13-b8034.firebaseapp.com/"
+        target="_blank"
         variant="mainButton"
       >
         Live Project&#160;&#160;
         <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
       </AnchorButton>
-      <LinkButton to="" className="mt-2 ml-auto" variant="secButton">
-        More Details
-      </LinkButton>
     </div>
   );
 }
