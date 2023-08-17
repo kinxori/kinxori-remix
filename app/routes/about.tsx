@@ -28,6 +28,7 @@ export default function AboutMeRoute() {
         </h2>
         <img
           src={cowDesktopAsset}
+          alt="A purple cow sitting in a chair in a chill way watching something in the computer in front."
           className="opacity-30 z-[0] absolute right-[0] bottom-[-70%] h-[300px] "
         />
       </div>

@@ -11,7 +11,7 @@ import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
-import skillsAsset from "~/assets/email-sent-asset.png";
+import skillsAsset from "~/assets/motion-projects-asset.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -24,8 +24,9 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           Skills
         </h2>
         <img
+          alt="A purple and green bulb running to the left in a fast way giving the illusion of light-speed."
           src={skillsAsset}
-          className="opacity-30 z-[0] absolute right-[0] bottom-[-20%] h-[300px] "
+          className="opacity-30 z-[0] absolute right-[-5%] bottom-[-20%] h-[250px] "
         />
       </div>
       <div className="box-border p-10 flex flex-col">

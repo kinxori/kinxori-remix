@@ -22,6 +22,7 @@ export default function ContactRoute() {
           Contact
         </h2>
         <img
+          alt="purple box mail smiling with a cellphone in its right hand with a email notification"
           src={contactAsset}
           className="opacity-30 z-[0] absolute right-[-10%] bottom-[-60%] h-[300px] "
         />

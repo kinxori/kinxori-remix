@@ -128,7 +128,7 @@ export default function InputForm() {
               src={emailPopUpAsset}
               className="object-contain w-[60%] hover:scale-[1.02] 
               transition-all duration-35 ease-in-out"
-              alt="purple box mail smiling with a cellphone in its right hand with a email notification - Kinxori.com"
+              alt="A purple cup of coffee riding a scooter with a backpack delivering emails"
             ></img>
             <h2 className="text-[20px] font-bold text-bgColor text-center ">
               Message sent succesfully! 👨‍💻
