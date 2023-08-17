@@ -1,6 +1,6 @@
 import { Form } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
-import emailPopUpAsset from "~/assets/contactAsset.png";
+import emailPopUpAsset from "~/assets/AboutmeAsset.png";
 import Button from "~/components/CustomButton/Button";
 
 export default function InputForm() {
