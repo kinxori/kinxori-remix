@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
+import contactAsset from "~/assets/contactAsset.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 export default function ContactRoute() {
@@ -16,8 +17,14 @@ export default function ContactRoute() {
   return (
     <article className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <ScrollTopButton />
-      <div className="box-border p-10">
-        <h2 className="  text-white font-[rubik] font-bold text-[50px]">Contact</h2>
+      <div className="box-border p-10 relative overflow-hidden">
+        <h2 className="z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
+          Contact
+        </h2>
+        <img
+          src={contactAsset}
+          className="opacity-30 z-[0] absolute right-[-10%] bottom-[-60%] h-[300px] "
+        />
       </div>
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col">

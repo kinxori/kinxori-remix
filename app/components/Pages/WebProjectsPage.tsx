@@ -48,7 +48,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       </div>
       <section
         id="carrouselProjects"
-        className="overflow-x-scroll w-[100vw] px-[40px] py-10 flex gap-5 items-start"
+        className="overflow-x-scroll w-[100vw] px-10 py-10 flex gap-5 items-start"
       >
         <ElDiablito13 />
         <MusicMediaPlayer />
@@ -224,7 +224,7 @@ function TechnicalTest2() {
       <div>
         <img className="rounded-[10px] mb-5" src={technicalTest1} />
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Modal</h3>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">User's Details Modal</h3>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.{" "}
           <Link to="" className="underline italic text-mainColor ">
