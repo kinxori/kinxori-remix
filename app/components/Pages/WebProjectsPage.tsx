@@ -16,6 +16,7 @@ import firebaseLogo from "~/assets/Logos/firebase-color-logo.png";
 import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
+import githubLogo from "~/assets/Logos/github-white-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   const [idk, setIdk] = useState(<ElDiablito13 />);
@@ -63,12 +64,35 @@ function ElDiablito13() {
         <i className="text-[14px] text-mainColor">#Project</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
 
-        <p className="text-justify text-[14px] ">
+        <p className="text-[14px] ">
           El Diablito 13's official website.{" "}
           <Link to="" className="underline italic text-mainColor ">
-            Read more
+            Read more.
           </Link>
         </p>
+        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={reactLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={javascriptLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={htmlLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={cssLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={viteJslogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={githubLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={firebaseLogo} />
+          </div>
+        </div>
       </div>
       <AnchorButton
         className="mt-5 mr-auto"
@@ -94,13 +118,13 @@ function MusicMediaPlayer() {
         <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
         <i className="text-[14px] text-mainColor">#Practice</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
-        <p className="text-justify text-[14px] ">
+        <p className="text-[14px] ">
           Creating a music media player.{" "}
           <Link to="" className="underline italic text-mainColor ">
-            Read more
+            Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} />
           </div>
@@ -117,7 +141,7 @@ function MusicMediaPlayer() {
             <img src={viteJslogo} />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src="" />
+            <img src={githubLogo} />
           </div>
         </div>
       </div>
