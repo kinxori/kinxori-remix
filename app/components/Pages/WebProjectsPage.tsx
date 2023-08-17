@@ -46,7 +46,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </div>
         <hr className="mt-10 border-white/50"></hr>
       </div>
-      <section className="w-[100vw] h-[460px] border-mainColor border-[2px] flex relative justify-center items-start ">
+      <section className="overflow-x-scroll w-[100vw] pl-[10%] flex gap-5 relative items-start ">
         <ElDiablito13 />
         <MusicMediaPlayer />
         <TechnicalTest1 />
@@ -58,8 +58,8 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
 function ElDiablito13() {
   return (
     <div
-      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
@@ -112,8 +112,8 @@ function ElDiablito13() {
 function MusicMediaPlayer() {
   return (
     <div
-      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={musicMediaPlayerAsset} />
@@ -163,8 +163,8 @@ function MusicMediaPlayer() {
 function TechnicalTest1() {
   return (
     <div
-      className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[80%] absolute text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[90%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={technicalTest1} />
