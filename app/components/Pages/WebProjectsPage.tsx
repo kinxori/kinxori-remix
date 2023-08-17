@@ -36,7 +36,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           className="opacity-30 z-[0] absolute left-[-20%] bottom-[-100%] h-[400px] "
         />
       </div>
-      <div className="box-border p-10 flex flex-col">
+      <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
         <div>
           <p className="font-[inter] font-normal text-justify ">
             Explore a collection of my web projects and delve into the world of my development
@@ -48,11 +48,12 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       </div>
       <section
         id="carrouselProjects"
-        className="overflow-x-scroll scroll-smooth snap-x w-[100vw] px-[40px] flex box-border gap-5 relative items-start "
+        className="overflow-x-scroll w-[100vw] px-[40px] py-10 flex gap-5 items-start"
       >
         <ElDiablito13 />
         <MusicMediaPlayer />
         <TechnicalTest1 />
+        <TechnicalTest2 />
       </section>
     </section>
   );
@@ -61,8 +62,8 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
 function ElDiablito13() {
   return (
     <div
-      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      className="flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
         <img className="rounded-[10px] mb-5" src={elDiablito13Asset} />
@@ -174,7 +175,58 @@ function TechnicalTest1() {
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager Feature</h3>
         <p className="text-[14px] ">
-          Technical test for a frontend Jr role.{" "}
+          Technical test for a Frontend Jr role.{" "}
+          <Link to="" className="underline italic text-mainColor ">
+            Read more.
+          </Link>
+        </p>
+        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={reactLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={javascriptLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={htmlLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={tailwindcssLogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={viteJslogo} />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={githubLogo} />
+          </div>
+        </div>
+      </div>
+      <AnchorButton
+        className="mt-5 ml-auto"
+        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        href="https://kinxori.github.io/technical-test-1/"
+        target="_blank"
+        variant="mainButton"
+      >
+        Live Project&#160;&#160;
+        <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+      </AnchorButton>
+    </div>
+  );
+}
+
+function TechnicalTest2() {
+  return (
+    <div
+      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    >
+      <div>
+        <img className="rounded-[10px] mb-5" src={technicalTest1} />
+        <i className="text-[12px] text-mainColor">#TechnicalTest</i>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Modal</h3>
+        <p className="text-[14px] ">
+          Technical test for a Frontend Jr role.{" "}
           <Link to="" className="underline italic text-mainColor ">
             Read more.
           </Link>

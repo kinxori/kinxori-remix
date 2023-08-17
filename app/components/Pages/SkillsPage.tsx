@@ -67,7 +67,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={viteJslogo} alt="vite js Logo" className="h-[50px] object-contain " />
-            <span>Vite.js</span>
+            <span>Vite</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={remixLogo} alt="remix Logo" className="h-[50px] object-contain " />
