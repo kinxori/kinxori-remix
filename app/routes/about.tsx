@@ -270,5 +270,12 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
 }
 
 export const meta: V2_MetaFunction = () => {
-  return [{ title: "About - Kinxori" }];
+  return [
+    { title: "About - Kinxori" },
+    {
+      name: "description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
+  ];
 };
