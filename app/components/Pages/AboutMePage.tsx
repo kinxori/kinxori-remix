@@ -31,10 +31,10 @@ export default function AboutMe({
           </h2>
           <div className="text-justify text-[16px] text-bgColor ">
             <p>
-              My name is Gustavo. I am a <b>web developer</b> with a passion for creating things.
-              With 3 years of background experience in <b>motion design and animation,</b> now I'm
-              using my love for art and design to <b>solve problems</b> for the web in a creative
-              way.
+              I am a <b>web developer</b> with a passion for creating things. With{" "}
+              <b>3 years of background experience</b> as a <b>motion designer and animation,</b> now
+              I'm using my love for art and technology to <b>solve problems</b> for the web in a
+              creative way.
             </p>
           </div>
           <LinkButton
