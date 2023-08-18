@@ -20,7 +20,7 @@ export default function LandingPage({
         <img
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={` transition-all duration-[1s] bottom-0 absolute  right-[-10%] scale-[300%] object-contain
+          className={` transition-all duration-[1s] bottom-0 absolute  right-[-10%] scale-[200%] object-contain
           ${isActive ? "opacity-[5%]" : "opacity-[0%]"}`}
         />
       </div>
