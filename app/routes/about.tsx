@@ -277,5 +277,30 @@ export const meta: V2_MetaFunction = () => {
       content:
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
+    {
+      charSet: "utf-8",
+    },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    },
+    {
+      name: "keywords",
+      content:
+        "Web develope, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, HTML developer, Front end freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
+      name: "author",
+      content: "Gustavo Quiroz, Kinxori, @kinxori",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      property: "og:description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
   ];
 };
