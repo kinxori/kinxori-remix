@@ -1,12 +1,37 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
-import mainIcon from "~/assets/Logos/new-logo-kinxori.ico";
+import kinxoriHomeIcon from "~/assets/Logos/new-logo-kinxori.ico";
 import stylesheet from "~/tailwind.css";
 import NavBar from "~/components/NavBar/NavBar";
 
+export default function App() {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <Meta />
+        <Links />
+      </head>
+      <body id="root" className="bg-bgColor">
+        <NavBar />
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+        <script
+          defer
+          src="https://kit.fontawesome.com/71cfa127b4.js"
+          crossOrigin="anonymous"
+        ></script>
+      </body>
+    </html>
+  );
+}
+
 export const links: LinksFunction = () => {
   return [
-    { rel: "icon", href: mainIcon },
+    { rel: "icon", href: kinxoriHomeIcon },
     {
       rel: "canonical",
       href: "https://kinxori.com",
@@ -104,28 +129,3 @@ export const meta: V2_MetaFunction = () => {
     },
   ];
 };
-
-export default function App() {
-  return (
-    <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body id="root" className="bg-bgColor">
-        <NavBar />
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-        <script
-          defer
-          src="https://kit.fontawesome.com/71cfa127b4.js"
-          crossOrigin="anonymous"
-        ></script>
-      </body>
-    </html>
-  );
-}

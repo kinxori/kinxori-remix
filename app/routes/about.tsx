@@ -1,5 +1,6 @@
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
-import mainIcon from "~/assets/Logos/new-logo-kinxori.ico";
+import kinxoriAboutIcon from "~/assets/Logos/kinxori-about-route-logo.png";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
@@ -8,8 +9,6 @@ import FooterPage from "~/components/Pages/FooterPage";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import bgAsset from "~/assets/kinxori-background-for-assets-template.png";
 import cowDesktopAsset from "~/assets/cow-desktop-asset.png";
-import { LinksFunction, MetaFunction } from "@remix-run/node";
-import { V2_MetaFunction } from "@remix-run/react";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -308,6 +307,6 @@ export const links: LinksFunction = () => {
       rel: "canonical",
       href: "https://kinxori.com/about",
     },
-    { rel: "icon", href: mainIcon },
+    { rel: "icon", href: kinxoriAboutIcon },
   ];
 };

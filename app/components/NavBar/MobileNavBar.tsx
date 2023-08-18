@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@remix-run/react";
-import kinxoriLogo from "~/assets/Logos/new-logo-kinxori.ico";
+import kinxoriLogo from "~/assets/Logos/kinxori-logo-100x100.png";
 
 export default function MobileNav() {
   const [isSlideActive, setSlideActive] = useState(false);
