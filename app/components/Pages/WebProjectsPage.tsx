@@ -185,8 +185,8 @@ function TechnicalTest1() {
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager Feature</h3>
         <p className="text-[14px] ">
-          Technical test for a Frontend Jr role.{" "}
-          <Link to="" className="underline italic text-mainColor ">
+          Technical test for a Frontend Jr role.
+          <Link to="/contacts-manager-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
