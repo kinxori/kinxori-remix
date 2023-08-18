@@ -1,8 +1,7 @@
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import { useState } from "react";
-import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
-import contactAsset from "~/assets/contactAsset.png";
+import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 
 export default function ElDiablito13() {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
@@ -26,6 +25,7 @@ export default function ElDiablito13() {
             Let's take a deep dive into the process of creation of this project. From start to
             finish.
           </p>
+          <img className="rounded-[10px] mt-5" src={elDiablito13Asset} />
         </div>
         <hr className="border-white/50 my-10"></hr>
       </div>
