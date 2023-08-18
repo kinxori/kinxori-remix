@@ -16,14 +16,12 @@ export default function LandingPage({
       id={id}
       className={`${isObserved} relative h-[100vh] w-[100vw] box-border p-10 overflow-hidden`}
     >
-      <div className="absolute top-0 left-0 z-[-10] h-[100%] w-[100%] overflow-hidden">
-        <img
-          src={mainAboutMeAsset}
-          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-          className={` transition-all duration-[1s] bottom-0 absolute  right-[-10%] scale-[200%] object-contain
-          ${isActive ? "opacity-[5%]" : "opacity-[0%]"}`}
-        />
-      </div>
+      <img
+        src={mainAboutMeAsset}
+        alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
+        className={` transition-all duration-[1s] top-[28%] absolute right-[0] scale-[200%] z-[-10]
+          ${isActive ? "translate-x-0 opacity-[5%]" : "translate-x-[50%] opacity-[0%]"}`}
+      />
       <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
         <div
           className={`text-white h-[50px] leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
