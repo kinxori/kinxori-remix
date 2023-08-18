@@ -1,6 +1,5 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
-import kinxoriAboutIcon from "~/assets/Logos/kinxori-about-route-logo.png";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
@@ -273,7 +272,7 @@ export const links: LinksFunction = () => {
       rel: "canonical",
       href: "https://kinxori.com/about",
     },
-    { type: "image/png", sizes: "100x100", rel: "icon", href: kinxoriAboutIcon },
+    { type: "image/png", sizes: "100x100", rel: "icon", href: "/kinxori-about-route-logo.png" },
   ];
 };
 

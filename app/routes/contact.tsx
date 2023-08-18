@@ -88,7 +88,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "canonical",
-      href: "https://kinxori.com/about",
+      href: "https://kinxori.com/contact",
     },
     { type: "image/png", sizes: "100x100", rel: "icon", href: kinxoriAboutIcon },
   ];
