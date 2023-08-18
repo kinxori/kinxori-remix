@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
-import kinxoriHomeIcon from "~/assets/Logos/new-logo-kinxori.png";
+import kinxoriHomeIcon from "~/assets/Logos/kinxori-home-route-logo.png";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import FooterPage from "~/components/Pages/FooterPage";
