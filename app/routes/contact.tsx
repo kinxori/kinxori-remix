@@ -100,30 +100,30 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "description",
       content:
-        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+        "Connect with me: Let's grab a virtual coffee ☕️. Use the email form or schedule an interview. Reach out today!",
     },
     {
       name: "keywords",
       content:
-        "Contact Route, Where do I come From?, Personality, Aspirations, Hobbies, Career, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "Contact Route, Kinxori's Email Address, México, Schedule a meeting with Kinxori, Email form to send Kinxori an email, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:description",
       content:
-        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+        "Connect with me: Let's grab a virtual coffee ☕️. Use the email form or schedule an interview. Reach out today!",
     },
     {
       property: "og:url",
-      content: "https://kinxori.com/about",
+      content: "https://kinxori.com/contact",
     },
     {
       name: "twitter:title",
-      content: "About - Kinxori",
+      content: "Contact - Kinxori",
     },
     {
       name: "twitter:description",
       content:
-        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+        "Connect with me: Let's grab a virtual coffee ☕️. Use the email form or schedule an interview. Reach out today!",
     },
   ];
 };
