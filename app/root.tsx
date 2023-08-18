@@ -31,7 +31,7 @@ export default function App() {
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "icon", href: kinxoriHomeIcon },
+    { rel: "icon", href: kinxoriHomeIcon, type: "image/ico", sizes: "98x98" },
     {
       rel: "canonical",
       href: "https://kinxori.com",
