@@ -7,6 +7,8 @@ import FooterPage from "~/components/Pages/FooterPage";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import bgAsset from "~/assets/kinxori-background-for-assets-template.png";
 import cowDesktopAsset from "~/assets/cow-desktop-asset.png";
+import { MetaFunction } from "@remix-run/node";
+import { V2_MetaFunction } from "@remix-run/react";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -266,3 +268,7 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
     </div>
   );
 }
+
+export const meta: V2_MetaFunction = () => {
+  return [{ title: "About - Kinxori" }];
+};
