@@ -1,4 +1,6 @@
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
+import kinxoriAboutIcon from "~/assets/Logos/kinxori-about-route-logo.png";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
 import contactAsset from "~/assets/contactAsset.png";
@@ -81,3 +83,47 @@ export default function ContactRoute() {
     </article>
   );
 }
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "canonical",
+      href: "https://kinxori.com/about",
+    },
+    { type: "image/png", sizes: "100x100", rel: "icon", href: kinxoriAboutIcon },
+  ];
+};
+
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: "Contact - Kinxori" },
+    {
+      name: "description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
+    {
+      name: "keywords",
+      content:
+        "Contact Route, Where do I come From?, Personality, Aspirations, Hobbies, Career, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
+      property: "og:description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
+    {
+      property: "og:url",
+      content: "https://kinxori.com/about",
+    },
+    {
+      name: "twitter:title",
+      content: "About - Kinxori",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
+  ];
+};
