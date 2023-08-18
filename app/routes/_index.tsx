@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import kinxoriHomeIcon from "~/assets/Logos/new-logo-kinxori.png";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
 import FooterPage from "~/components/Pages/FooterPage";
@@ -6,7 +8,6 @@ import SkillsPage from "~/components/Pages/SkillsPage";
 import WebProjectsPage from "~/components/Pages/WebProjectsPage";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import ExperiencePage from "~/components/Pages/ExperiencePage";
-import { LinksFunction } from "@remix-run/node";
 
 export default function Index() {
   const [isLandingPage, setLandingPage] = useState(false);
@@ -73,9 +74,66 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: "/new-logo-kinxori.png",
+      href: kinxoriHomeIcon,
       type: "image/png",
       sizes: "98x98",
+    },
+  ];
+};
+
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: "Kinxori" },
+    {
+      name: "description",
+      content:
+        "My personal website showcases my career as a web developer. It provides visitors with an in-depth look at my projects, skills, and hobbies. If you share similar interests and like what you see, we can connect to be friends, share knowledge, or collaborate on a project.",
+    },
+    {
+      property: "og:title",
+      content: "Kinxori - My personal website 💻",
+    },
+    {
+      property: "og:description",
+      content:
+        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+    },
+    {
+      property: "og:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
+    {
+      property: "og:url",
+      content: "https://kinxori.com",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:site_name",
+      content: "Kinxori",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@kinxori",
+    },
+    {
+      name: "twitter:title",
+      content: "Kinxori - My Personal Website 💻",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
     },
   ];
 };
