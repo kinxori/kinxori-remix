@@ -302,5 +302,42 @@ export const meta: V2_MetaFunction = () => {
       content:
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
+    {
+      property: "og:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
+    {
+      property: "og:url",
+      content: "https://kinxori.com/about",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:site_name",
+      content: "Kinxori",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@kinxori",
+    },
+    {
+      name: "twitter:title",
+      content: "Kinxori - My Personal Website 💻",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
+    },
+    {
+      name: "twitter:image",
+      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+    },
   ];
 };
