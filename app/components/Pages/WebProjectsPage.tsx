@@ -73,7 +73,7 @@ function ElDiablito13() {
         <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
         <p className="text-[14px] ">
           El Diablito 13's official website.{" "}
-          <Link to="/eldiablito13-project" className="underline italic text-mainColor ">
+          <Link to="/el-diablito-13-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
@@ -131,7 +131,7 @@ function MusicMediaPlayer() {
         <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
         <p className="text-[14px] ">
           Creating a music media player.{" "}
-          <Link to="" className="underline italic text-mainColor ">
+          <Link to="/music-media-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
