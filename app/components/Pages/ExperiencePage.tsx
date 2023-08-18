@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@remix-run/react";
-import projectsAsset from "~/assets/projects-asset.png";
+import projectsAsset from "~/assets/email-sent-asset.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import musicMediaPlayerAsset from "~/assets/music-media-player-practice-ss.png";
@@ -33,7 +33,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </h2>
         <img
           src={projectsAsset}
-          className="opacity-30 z-[0] absolute left-[-20%] bottom-[-100%] h-[400px] "
+          className="opacity-30 z-[0] absolute right-[-5%] bottom-[-35%] h-[300px] "
         />
       </div>
       <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
