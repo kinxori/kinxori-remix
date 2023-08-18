@@ -278,24 +278,9 @@ export const meta: V2_MetaFunction = () => {
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
     {
-      charSet: "utf-8",
-    },
-    {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1.0",
-    },
-    {
       name: "keywords",
       content:
-        "Web develope, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, HTML developer, Front end freelancer, Kinxori, Gustavo Quiroz",
-    },
-    {
-      name: "author",
-      content: "Gustavo Quiroz, Kinxori, @kinxori",
-    },
-    {
-      name: "robots",
-      content: "index, follow",
+        "About Route, Where do I come From?, Personality, Aspirations, Hobbies, Career, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:description",
@@ -303,41 +288,17 @@ export const meta: V2_MetaFunction = () => {
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
     {
-      property: "og:image",
-      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
-    },
-    {
       property: "og:url",
       content: "https://kinxori.com/about",
     },
     {
-      property: "og:type",
-      content: "website",
-    },
-    {
-      property: "og:site_name",
-      content: "Kinxori",
-    },
-    {
-      name: "twitter:card",
-      content: "summary_large_image",
-    },
-    {
-      name: "twitter:site",
-      content: "@kinxori",
-    },
-    {
       name: "twitter:title",
-      content: "Kinxori - My Personal Website 💻",
+      content: "About - Kinxori",
     },
     {
       name: "twitter:description",
       content:
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
-    },
-    {
-      name: "twitter:image",
-      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
     },
   ];
 };

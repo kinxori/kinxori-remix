@@ -47,7 +47,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "Web develope, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, HTML developer, Front end freelancer, Kinxori, Gustavo Quiroz",
+        "Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       name: "author",
