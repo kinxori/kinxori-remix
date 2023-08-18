@@ -238,10 +238,10 @@ function TechnicalTest2() {
           src={technicalTest1}
         />
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">User's Details Modal</h3>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">User Details</h3>
         <p className="text-[14px] ">
-          Technical test for a Frontend Jr role.{" "}
-          <Link to="" className="underline italic text-mainColor ">
+          Technical test for a Frontend Jr role.
+          <Link to="/user-details-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
