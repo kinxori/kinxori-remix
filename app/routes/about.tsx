@@ -1,6 +1,6 @@
-import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
-import kinxoriAboutIcon from "~/assets/Logos/magical-voxel-logo.png";
+import kinxoriAboutIcon from "~/assets/Logos/kinxori-about-route-logo.png";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
@@ -267,6 +267,16 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
   );
 }
 
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "canonical",
+      href: "https://kinxori.com/about",
+    },
+    { type: "image/png", sizes: "100x100", rel: "icon", href: kinxoriAboutIcon },
+  ];
+};
+
 export const meta: V2_MetaFunction = () => {
   return [
     { title: "About - Kinxori" },
@@ -298,15 +308,5 @@ export const meta: V2_MetaFunction = () => {
       content:
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
-  ];
-};
-
-export const links: LinksFunction = () => {
-  return [
-    {
-      rel: "canonical",
-      href: "https://kinxori.com/about",
-    },
-    { type: "image/png", sizes: "1028x1028", rel: "icon", href: kinxoriAboutIcon },
   ];
 };

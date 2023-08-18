@@ -1,6 +1,6 @@
-import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
-import kinxoriHomeIcon from "~/assets/Logos/new-logo-kinxori.ico";
+import kinxoriHomeIcon from "~/assets/Logos/new-logo-kinxori.png";
 import stylesheet from "~/tailwind.css";
 import NavBar from "~/components/NavBar/NavBar";
 
@@ -31,7 +31,7 @@ export default function App() {
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "icon", href: kinxoriHomeIcon, type: "image/ico", sizes: "98x98" },
+    { rel: "icon", href: kinxoriHomeIcon, type: "image/png", sizes: "98x98" },
     {
       rel: "canonical",
       href: "https://kinxori.com",
