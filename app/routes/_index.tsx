@@ -6,6 +6,7 @@ import SkillsPage from "~/components/Pages/SkillsPage";
 import WebProjectsPage from "~/components/Pages/WebProjectsPage";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import ExperiencePage from "~/components/Pages/ExperiencePage";
+import { LinksFunction } from "@remix-run/node";
 
 export default function Index() {
   const [isLandingPage, setLandingPage] = useState(false);
@@ -67,3 +68,14 @@ export default function Index() {
     </article>
   );
 }
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "icon",
+      href: "/new-logo-kinxori.png",
+      type: "image/png",
+      sizes: "98x98",
+    },
+  ];
+};

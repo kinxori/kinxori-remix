@@ -31,12 +31,6 @@ export default function App() {
 export const links: LinksFunction = () => {
   return [
     {
-      rel: "icon",
-      href: "/new-logo-kinxori.png",
-      type: "image/png",
-      sizes: "98x98",
-    },
-    {
       rel: "canonical",
       href: "https://kinxori.com",
     },
