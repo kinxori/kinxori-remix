@@ -1,4 +1,5 @@
 import { useState } from "react";
+import mainIcon from "~/assets/Logos/new-logo-kinxori.ico";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import meAsset from "~/assets/new-pfp-for-social-network.jpg";
@@ -7,16 +8,14 @@ import FooterPage from "~/components/Pages/FooterPage";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import bgAsset from "~/assets/kinxori-background-for-assets-template.png";
 import cowDesktopAsset from "~/assets/cow-desktop-asset.png";
-import { MetaFunction } from "@remix-run/node";
+import { LinksFunction, MetaFunction } from "@remix-run/node";
 import { V2_MetaFunction } from "@remix-run/react";
 
 export default function AboutMeRoute() {
   const [pageNumber, setPageNumber] = useState(1);
-
   const handlePageAddition = () => {
     pageNumber <= 5 ? setPageNumber((current) => current + 1) : null;
   };
-
   const handlePageSubstraction = () => {
     pageNumber > 1 ? setPageNumber((current) => current - 1) : null;
   };
@@ -300,5 +299,15 @@ export const meta: V2_MetaFunction = () => {
       content:
         "Discover Kinxori: A creative mind transitioning from Motion Design to Web Development. Learn about his background, aspirations, and the unique blend of skills he brings to the world of technology.",
     },
+  ];
+};
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "canonical",
+      href: "https://kinxori.com/about",
+    },
+    { rel: "icon", href: mainIcon },
   ];
 };
