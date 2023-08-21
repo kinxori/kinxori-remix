@@ -18,6 +18,7 @@ import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.p
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import technicalTest1 from "~/assets/technical-test-1-ss.png";
+import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -60,7 +61,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
 function ElDiablito13() {
   return (
     <div
-      className="flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
@@ -72,32 +73,35 @@ function ElDiablito13() {
         <i className="text-[12px] text-mainColor">#Project</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
         <p className="text-[14px] ">
-          El Diablito 13's official website.{" "}
+          El Diablito 13's official website.&#xa0;
           <Link to="/el-diablito-13-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={reactLogo} />
+            <img src={reactLogo} alt="react js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={javascriptLogo} />
+            <img src={javascriptLogo} alt="javascript logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={htmlLogo} />
+            <img src={htmlLogo} alt="html5 logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={cssLogo} />
+            <img src={cssLogo} alt="css3 logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={viteJslogo} />
+            <img src={viteJslogo} alt="vite js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={githubLogo} />
+            <img src={githubLogo} alt="github logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={firebaseLogo} />
+            <img src={firebaseLogo} alt="firebase logo" />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={nodejsLogo} alt="node js logo" />
           </div>
         </div>
       </div>
@@ -118,7 +122,7 @@ function ElDiablito13() {
 function MusicMediaPlayer() {
   return (
     <div
-      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
@@ -130,29 +134,32 @@ function MusicMediaPlayer() {
         <i className="text-[12px] text-mainColor">#Practice</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
         <p className="text-[14px] ">
-          Creating a music media player.{" "}
+          Creating a music media player.&#xa0;
           <Link to="/music-media-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={reactLogo} />
+            <img src={reactLogo} alt="react js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={javascriptLogo} />
+            <img src={typescriptLogo} alt="typescript logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={htmlLogo} />
+            <img src={htmlLogo} alt="html5 logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={tailwindcssLogo} />
+            <img src={tailwindcssLogo} alt="tailwind css logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={viteJslogo} />
+            <img src={viteJslogo} alt="vite js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={githubLogo} />
+            <img src={githubLogo} alt="github logo" />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={nodejsLogo} alt="node js logo" />
           </div>
         </div>
       </div>
@@ -173,7 +180,7 @@ function MusicMediaPlayer() {
 function TechnicalTest1() {
   return (
     <div
-      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
@@ -185,29 +192,32 @@ function TechnicalTest1() {
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
         <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager Feature</h3>
         <p className="text-[14px] ">
-          Technical test for a Frontend Jr role.
+          Technical test for a Frontend Jr role.&#xa0;
           <Link to="/contacts-manager-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={reactLogo} />
+            <img src={reactLogo} alt="react js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={javascriptLogo} />
+            <img src={javascriptLogo} alt="javascript logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={htmlLogo} />
+            <img src={htmlLogo} alt="html5 logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={tailwindcssLogo} />
+            <img src={tailwindcssLogo} alt="tailwind css logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={viteJslogo} />
+            <img src={viteJslogo} alt="vitejs logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={githubLogo} />
+            <img src={githubLogo} alt="github logo" />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={nodejsLogo} alt="nodejs Logo" />
           </div>
         </div>
       </div>
@@ -228,7 +238,7 @@ function TechnicalTest1() {
 function TechnicalTest2() {
   return (
     <div
-      className="  flex-shrink-0 snap-center hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <div>
@@ -238,31 +248,34 @@ function TechnicalTest2() {
           src={technicalTest1}
         />
         <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">User Details</h3>
+        <h3 className="text-mainColor font-bold text-[20px] text-left">User Details Feature</h3>
         <p className="text-[14px] ">
-          Technical test for a Frontend Jr role.
+          Technical test for a Frontend Jr role.&#xa0;
           <Link to="/user-details-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-2 flex-wrap w-[80%]">
+        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={reactLogo} />
+            <img src={reactLogo} alt="react js logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={javascriptLogo} />
+            <img src={javascriptLogo} alt="javascript logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={htmlLogo} />
+            <img src={htmlLogo} alt="html5 logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={tailwindcssLogo} />
+            <img src={tailwindcssLogo} alt="tailwind css logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={viteJslogo} />
+            <img src={viteJslogo} alt="vitejs logo" />
           </div>
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
-            <img src={githubLogo} />
+            <img src={githubLogo} alt="github logo" />
+          </div>
+          <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
+            <img src={nodejsLogo} alt="nodejs Logo" />
           </div>
         </div>
       </div>

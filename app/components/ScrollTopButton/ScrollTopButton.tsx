@@ -24,7 +24,7 @@ export default function ScrollTopButton() {
   return (
     <>
       <div
-        className={`transition-all ease-in-out duration-[.5s] fixed right-0 bottom-0 z-10 
+        className={`transition-all ease-in-out duration-[.5s] fixed right-0 bottom-0 z-[100]
         ${isScrolled ? "opacity-100" : "opacity-0"}`}
       >
         <button
