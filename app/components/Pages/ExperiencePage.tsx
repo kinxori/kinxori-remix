@@ -17,18 +17,22 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         />
       </div>
       <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
-        <div>
-          <p className="font-[inter] font-normal text-justify ">
+        <div className="font-[inter] font-normal text-justify flex flex-col gap-3 ">
+          <p>
             During my journey from Motion Designer to Web Developer, I've had the privilege of
             diving into a vibrant array of projects. My path has led me to collaborate with local
             and international teams, engage directly with clients in sales, and craft captivating
             video ads from the comfort of my own home.
           </p>
-          <p className="font-[inter] font-normal text-justify ">
-            I thrive on adapting swiftly and absorbing knowledge like a sponge, allowing me to
-            evolve seamlessly in this ever-changing landscape.
-          </p>
-          <p className="font-[inter] font-normal text-justify ">
+          <p>Some of my best soft skills are:</p>
+          <ul className="list-disc pl-5">
+            <li>Communication</li>
+            <li>Problem-solving</li>
+            <li>Adaptability</li>
+            <li>Team Work</li>
+            <li>Time Management</li>
+          </ul>
+          <p>
             Take a look at my career path and if you feel we are a good match. Let's connect and
             explore the possibilities. Feel free to download my latest resume.
           </p>
