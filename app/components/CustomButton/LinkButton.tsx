@@ -11,6 +11,7 @@ export default function LinkButton({
   prefetch,
   ariaLabel,
   disabled,
+  download,
 }: {
   children: ReactNode;
   className?: string;
@@ -21,6 +22,7 @@ export default function LinkButton({
   prefetch?: PrefetchBehavior | undefined;
   ariaLabel?: string;
   disabled?: boolean;
+  download?: boolean;
 }) {
   const classes: { [key: string]: string } = {
     mainButton: "mainButton",
@@ -30,7 +32,7 @@ export default function LinkButton({
   };
 
   return (
-    <Link prefetch={prefetch} to={to} target={target} className={className}>
+    <Link download={download} prefetch={prefetch} to={to} target={target} className={className}>
       <button
         disabled={disabled}
         aria-label={ariaLabel}
