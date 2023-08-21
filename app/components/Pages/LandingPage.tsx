@@ -1,6 +1,5 @@
 import LinkButton from "~/components/CustomButton/LinkButton";
 import mainAboutMeAsset from "~/assets/AstroAssets.png";
-import { useEffect, useState } from "react";
 
 export default function LandingPage({
   id,
@@ -12,17 +11,16 @@ export default function LandingPage({
   isActive?: boolean;
 }) {
   return (
-    <article
-      id={id}
-      className={`${isObserved} relative h-[100vh] w-[100vw] box-border p-10 overflow-hidden`}
-    >
-      <img
-        src={mainAboutMeAsset}
-        alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
-        className={` transition-all duration-[1s] top-[28%] absolute right-[0] scale-[200%] z-[-10]
-          ${isActive ? "translate-x-0 opacity-[5%]" : "translate-x-[50%] opacity-[0%]"}`}
-      />
-      <div className="h-[100%] gap-5 w-[100%] flex flex-col justify-center items-center">
+    <article id={id} className={`${isObserved} relative h-[100vh] w-[100vw] overflow-hidden`}>
+      <div className=" h-screen w-screen flex items-end absolute bottom-0">
+        <img
+          src={mainAboutMeAsset}
+          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
+          className={`h-[100%] object-cover z-[-10] transition-all duration-[1s] delay-[1s]
+          ${isActive ? "opacity-[5%]" : "pl-[100%] opacity-[0%]"}`}
+        />
+      </div>
+      <div className="h-[100%] gap-5 w-[100%] box-border p-10 flex flex-col justify-center items-center">
         <div
           className={`text-white h-[50px] leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
           delay-[1s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]

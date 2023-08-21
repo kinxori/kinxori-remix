@@ -1,5 +1,7 @@
 import projectsAsset from "~/assets/email-sent-asset.png";
-import resumeAsset from "~/assets/resume-ss.png";
+import resumePDF from "../assets/FrontEnd-GustavoQuiroz-Resume-June-2023.pdf";
+import AnchorButton from "../CustomButton/AnchorButton";
+import { Link } from "@remix-run/react";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -34,7 +36,18 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           </p>
         </div>
         <hr className="mt-10 border-white/50"></hr>
-        <img className="mt-10 rounded-[10px] " src={resumeAsset} />
+        <div className="flex flex-col">
+          <iframe
+            src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/FrontEnd%20-%20Gustavo%20Quiroz%20-%20Resume.pdf?alt=media&token=7ca9df80-d374-4152-8146-33c7f05f4d05"
+            className="h-[500px] mt-10 rounded-[10px]"
+            title="resumePDF"
+            allowFullScreen={true}
+            sandbox="allow-downloads"
+          />
+          <Link target="_blank" download to="/resumePDF" className="mainButton mx-auto my-5">
+            Download
+          </Link>
+        </div>
       </div>
     </section>
   );
