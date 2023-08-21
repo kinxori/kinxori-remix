@@ -22,9 +22,9 @@ export default function LandingPage({
       </div>
       <div className="h-[100%] gap-5 w-[100%] box-border p-10 flex flex-col justify-center items-center">
         <div
-          className={`text-white h-[50px] leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
+          className={`text-white relative leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
           delay-[1s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
-          ${isActive ? "gap-2 translate-y-0" : "gap-0 translate-y-[80px] "}`}
+          ${isActive ? "gap-2 translate-y-[10px] " : "gap-0  translate-y-[60px]"}`}
         >
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
             K
@@ -49,7 +49,7 @@ export default function LandingPage({
           </h1>
         </div>
         <h3
-          className={`text-[16px] w-[90%] text-center text-white
+          className={`text-[16px] w-[90%] text-center text-white 
           delay-[1s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
         ${isActive ? "opacity-1 translate-y-0" : "opacity-0 translate-y-[80px] "}`}
         >
