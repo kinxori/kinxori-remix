@@ -12,6 +12,7 @@ import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.p
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import skillsAsset from "~/assets/motion-projects-asset.png";
+import nodejslogo from "~/assets/Logos/nodejs-color-logo.png";
 
 export default function Skills({ id, isObserved }: { id?: string; isObserved?: string }) {
   return (
@@ -67,8 +68,12 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <span>Github</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
+            <img src={nodejslogo} alt="nodejslogo Logo" className="h-[50px] object-contain " />
+            <span>NodeJs</span>
+          </div>
+          <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={viteJslogo} alt="vite js Logo" className="h-[50px] object-contain " />
-            <span>Vite</span>
+            <span>ViteJs</span>
           </div>
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={remixLogo} alt="remix Logo" className="h-[50px] object-contain " />

@@ -41,7 +41,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         <div className="flex flex-col">
           <iframe
             src="https://drive.google.com/file/d/1E58dGD4DXtm7rFEFjSFe_CAEGrXRQz7W/preview"
-            className="h-[500px] mt-10 rounded-[10px]"
+            className="h-[510px] mt-10 rounded-[10px]"
             allow="autoplay"
           ></iframe>
           <LinkButton
