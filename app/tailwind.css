@@ -17,6 +17,17 @@
   width: 0;
 }
 
+@keyframes introNavBar {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 /* This is the same as the tailwind modules inside plugins
 
 @layer base {

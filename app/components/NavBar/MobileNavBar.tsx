@@ -19,7 +19,7 @@ export default function MobileNav() {
   };
 
   return (
-    <nav className="z-[1000] fixed top-0 left-0 w-[100vw] ">
+    <nav className="z-[1000] fixed top-0 left-0 w-[100vw]  animate-[introNavBar_1s_ease-in-out_1s_backwards]  ">
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link
           prefetch="intent"
