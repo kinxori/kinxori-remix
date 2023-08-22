@@ -45,16 +45,27 @@ export default function ElDiablito13() {
           </div>
         </div>
         <hr className="border-white/50 my-10 "></hr>
-        <div className="flex flex-col gap-3 text-justify">
+        <div className="flex flex-col gap-5 text-justify">
           <h3 className="text-[20px] font-bold text-left ">
-            <b>What's the purpose?</b>
+            <b>What is the purpose of this project?</b>
           </h3>
           <p>
-            The main purpose of the creation of this page was to consolidate the branding and the
-            internet presence of El Diablito 13.
+            The main purpose of this project was to consolidate the branding and the internet
+            presence of El Diablito 13.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
-            <b>What is El Diablito 13?</b>
+            <b>What was done for this project?</b>
+          </h3>
+          <p>
+            For this project I had the opportunity to work as a UX/UI designer and Frontend
+            Developer at the same time.
+          </p>
+          <p>
+            Creating, designing and implementing all the fundamentals I've learned over my Motion
+            Designer career as well as in the Frontend.
+          </p>
+          <h3 className="text-[20px] font-bold text-left ">
+            <b>Implementation</b>
           </h3>
         </div>
       </div>
