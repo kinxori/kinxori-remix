@@ -29,19 +29,18 @@ export default function ElDiablito13() {
   );
 }
 
-let currentIcon = elDiablitoLogo;
-
-setInterval(() => {
-  currentIcon === elDiablitoLogo ? treceLogo : elDiablitoLogo;
-}, 2000);
-
 export const links: LinksFunction = () => {
+  let currentIcon = elDiablitoLogo;
+  setInterval(() => {
+    currentIcon === elDiablitoLogo ? treceLogo : elDiablitoLogo;
+  }, 100);
+  console.log("icon?? 🙌 ", currentIcon);
   return [
     {
       rel: "icon",
       href: currentIcon,
       type: "image/png",
-      sizes: "98x98",
+      sizes: "100x100",
     },
   ];
 };
