@@ -29,27 +29,17 @@ export default function ElDiablito13() {
   );
 }
 
-const diablitoRouteDynamicIcon = () => {
-  const [routeIcon, setRouteIcon] = useState(elDiablitoLogo);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRouteIcon(routeIcon === elDiablitoLogo ? treceLogo : elDiablitoLogo);
-    }, 2000);
+let currentIcon = elDiablitoLogo;
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, [routeIcon]);
-  return routeIcon;
-};
-
-diablitoRouteDynamicIcon();
+setInterval(() => {
+  currentIcon === elDiablitoLogo ? treceLogo : elDiablitoLogo;
+}, 2000);
 
 export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: routeIcon,
+      href: currentIcon,
       type: "image/png",
       sizes: "98x98",
     },
