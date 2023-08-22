@@ -30,21 +30,14 @@ export default function ElDiablito13() {
 }
 
 export const links: LinksFunction = () => {
-  let currentIcon = {
-    rel: "icon",
-    href: elDiablitoLogo,
-    type: "image/png",
-    sizes: "100x100",
-  };
-
-  const changeIcon = () => {
-    currentIcon.href = currentIcon.href === elDiablitoLogo ? treceLogo : elDiablitoLogo;
-    console.log("icon??? 😁", currentIcon);
-  };
-
-  setInterval(changeIcon, 2000);
-  changeIcon(); // Initial call
-  return [currentIcon];
+  return [
+    {
+      rel: "icon",
+      href: elDiablitoLogo,
+      type: "image/png",
+      sizes: "100x100",
+    },
+  ];
 };
 
 export const meta: V2_MetaFunction = () => {
