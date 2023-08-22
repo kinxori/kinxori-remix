@@ -13,7 +13,7 @@ export default function App() {
         <Links />
       </head>
       <body id="root" className="bg-bgColor">
-        {/* <NavBar /> */}
+        <NavBar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

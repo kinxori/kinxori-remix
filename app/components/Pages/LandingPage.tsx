@@ -20,11 +20,13 @@ export default function LandingPage({
           ${isActive ? "opacity-[5%]" : "pl-[100%] opacity-[0%]"}`}
         />
       </div>
-      <div className="h-[100%] gap-5 w-[100%] box-border p-10 flex flex-col justify-center items-center">
+      <div className="relative h-[100%] w-[100%] flex justify-center">
         <div
-          className={`text-white relative leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
+          className={`absolute text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
           delay-[1s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
-          ${isActive ? "gap-2 translate-y-[10px] " : "gap-0  translate-y-[60px]"}`}
+          ${
+            isActive ? "gap-2 top-[50%] translate-y-[-140%]" : "gap-0 top-[50%] translate-y-[-50%]"
+          }`}
         >
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
             K
@@ -48,22 +50,24 @@ export default function LandingPage({
             I
           </h1>
         </div>
-        <h3
-          className={`text-[16px] w-[90%] text-center text-white 
-          delay-[1s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
-        ${isActive ? "opacity-1 translate-y-0" : "opacity-0 translate-y-[80px] "}`}
-        >
-          Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
-        </h3>
-        <LinkButton
-          className={`delay-[2s] transition-[opacity] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
-          ${isActive ? "opacity-1 " : "opacity-0"}`}
-          prefetch="intent"
-          variant="mainButton"
-          to="/contact"
-        >
-          Contact Me
-        </LinkButton>
+        <div className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]">
+          <h3
+            className={`text-[16px] w-[90%] text-center text-white 
+          delay-[1.2s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+        ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px] "}`}
+          >
+            Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
+          </h3>
+          <LinkButton
+            className={`delay-[1.2s] transition-[opacity, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px]"}`}
+            prefetch="intent"
+            variant="mainButton"
+            to="/contact"
+          >
+            Contact Me
+          </LinkButton>
+        </div>
       </div>
     </article>
   );
