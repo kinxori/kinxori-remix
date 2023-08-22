@@ -37,9 +37,13 @@ export const links: LinksFunction = () => {
     sizes: "100x100",
   };
 
-  setInterval(() => {
+  const changeIcon = () => {
     currentIcon.href = currentIcon.href === elDiablitoLogo ? treceLogo : elDiablitoLogo;
-  }, 2000);
+    console.log("icon??? 😁", currentIcon);
+  };
+
+  setInterval(changeIcon, 2000);
+  changeIcon(); // Initial call
   return [currentIcon];
 };
 
