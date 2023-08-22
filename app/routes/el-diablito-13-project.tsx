@@ -4,6 +4,7 @@ import treceLogo from "~/assets/Logos/kinxori-el-diablito-route-dynamic-icon.png
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
+import AnchorButton from "~/components/CustomButton/AnchorButton";
 
 export default function ElDiablito13() {
   return (
@@ -12,6 +13,11 @@ export default function ElDiablito13() {
       <div className="  flex-col flex p-10 box-border">
         <div className="flex flex-col">
           <div className="flex flex-col">
+            <img
+              className="rounded-[10px] mb-5"
+              src={elDiablito13Asset}
+              alt="el diablito trece landing page screenshot"
+            />
             <h3 className="text-[30px] font-bold ">
               <b>El Diablito 13</b> 👺
             </h3>
@@ -20,22 +26,36 @@ export default function ElDiablito13() {
               and immerse yourself in the intricacies of this remarkable project. From concept to
               creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
             </p>
+            <div className="mt-5 mx-auto flex gap-2">
+              <AnchorButton
+                variant="secButton"
+                href="https://github.com/kinxori/el-diablito-13"
+                target="_blank"
+              >
+                Github Repo
+              </AnchorButton>
+              <AnchorButton
+                variant="mainButton"
+                href="https://el-diablito-13-b8034.firebaseapp.com/"
+                target="_blank"
+              >
+                Live Page
+              </AnchorButton>
+            </div>
           </div>
-          <img
-            className="rounded-[10px] mt-5"
-            src={elDiablito13Asset}
-            alt="el diablito trece landing page screenshot"
-          />
         </div>
         <hr className="border-white/50 my-10 "></hr>
         <div className="flex flex-col gap-3 text-justify">
           <h3 className="text-[20px] font-bold text-left ">
-            <b>What's the purpose</b>?
+            <b>What's the purpose?</b>
           </h3>
           <p>
             The main purpose of the creation of this page was to consolidate the branding and the
-            internet presence of El Diablito 13. But who is El Diablito 13?
+            internet presence of El Diablito 13.
           </p>
+          <h3 className="text-[20px] font-bold text-left ">
+            <b>What is El Diablito 13?</b>
+          </h3>
         </div>
       </div>
       <Footer />
@@ -48,7 +68,7 @@ export const links: LinksFunction = () => {
     {
       rel: "icon",
       href: treceLogo,
-      // type: "image/png",
+      type: "image/png",
       sizes: "100x100",
     },
   ];
