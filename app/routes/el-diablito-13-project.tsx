@@ -44,24 +44,25 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "description",
       content:
-        "My personal website showcases my career as a web developer. It provides visitors with an in-depth look at my projects, skills, and hobbies. If you share similar interests and like what you see, we can connect to be friends, share knowledge, or collaborate on a project.",
+        "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
     },
     {
       property: "og:title",
-      content: "Kinxori - My personal website 💻",
+      content: "El Diablito 13 - Project",
     },
     {
       property: "og:description",
       content:
-        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+        "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
     },
     {
       property: "og:image",
-      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+      content:
+        "https://el-diablito-13-b8034.firebaseapp.com/assets/New_Logo_Diablo-edited-20b357a7.png",
     },
     {
       property: "og:url",
-      content: "https://kinxori.com",
+      content: "https://kinxori.com/el-diablito-13-project",
     },
     {
       property: "og:type",
@@ -81,16 +82,17 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:title",
-      content: "Kinxori - My Personal Website 💻",
+      content: "El Diablito 13 - Project",
     },
     {
       name: "twitter:description",
       content:
-        "Kinxori is my personal website where you can have a deep dive in who I am, what I do and what I enjoy.",
+        "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
     },
     {
       name: "twitter:image",
-      content: "https://pbs.twimg.com/profile_images/1659370175546765314/NQtKyiWa_400x400.jpg",
+      content:
+        "https://el-diablito-13-b8034.firebaseapp.com/assets/New_Logo_Diablo-edited-20b357a7.png",
     },
   ];
 };
