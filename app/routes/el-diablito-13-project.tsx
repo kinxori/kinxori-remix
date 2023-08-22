@@ -1,8 +1,10 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
-import kinxoriHomeIcon from "~/assets/Logos/kinxori-home-route-logo.png";
+import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
+import treceLogo from "~/assets/Logos/kinxori-13-route-logo.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
+import { useEffect, useState } from "react";
 
 export default function ElDiablito13() {
   return (
@@ -27,11 +29,27 @@ export default function ElDiablito13() {
   );
 }
 
+const diablitoRouteDynamicIcon = () => {
+  const [routeIcon, setRouteIcon] = useState(elDiablitoLogo);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRouteIcon(routeIcon === elDiablitoLogo ? treceLogo : elDiablitoLogo);
+    }, 2000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [routeIcon]);
+  return routeIcon;
+};
+
+diablitoRouteDynamicIcon();
+
 export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: kinxoriHomeIcon,
+      href: routeIcon,
       type: "image/png",
       sizes: "98x98",
     },
