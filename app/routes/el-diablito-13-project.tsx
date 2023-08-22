@@ -1,28 +1,42 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
-import treceLogo from "~/assets/Logos/kinxori-13-route-logo.png";
+import treceLogo from "~/assets/Logos/kinxori-el-diablito-route-dynamic-icon.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
-import { useEffect, useState } from "react";
 
 export default function ElDiablito13() {
   return (
-    <article className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
+    <article className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <ScrollTopButton />
-      <div className=" bg-bgColor flex-col flex p-10 box-border">
+      <div className="  flex-col flex p-10 box-border">
         <div className="flex flex-col">
-          <h3 className="text-[30px] font-bold  ">
-            <b>El Diablito 13</b> 👺
-          </h3>
-          <p className="text-justify mt-5">
-            Discover the very essence that fuels its existence, delve into its unique features, and
-            immerse yourself in the intricacies of this remarkable project. From concept to
-            creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
-          </p>
-          <img className="rounded-[10px] mt-5" src={elDiablito13Asset} />
+          <div className="flex flex-col">
+            <h3 className="text-[30px] font-bold ">
+              <b>El Diablito 13</b> 👺
+            </h3>
+            <p className="text-justify mt-5">
+              Discover the very essence that fuels its existence, delve into its unique features,
+              and immerse yourself in the intricacies of this remarkable project. From concept to
+              creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
+            </p>
+          </div>
+          <img
+            className="rounded-[10px] mt-5"
+            src={elDiablito13Asset}
+            alt="el diablito trece landing page screenshot"
+          />
         </div>
-        <hr className="border-white/50 my-10"></hr>
+        <hr className="border-white/50 my-10 "></hr>
+        <div className="flex flex-col gap-3 text-justify">
+          <h3 className="text-[20px] font-bold text-left ">
+            <b>What's the purpose</b>?
+          </h3>
+          <p>
+            The main purpose of the creation of this page was to consolidate the branding and the
+            internet presence of El Diablito 13. But who is El Diablito 13?
+          </p>
+        </div>
       </div>
       <Footer />
     </article>
@@ -33,8 +47,8 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: elDiablitoLogo,
-      type: "image/png",
+      href: treceLogo,
+      // type: "image/png",
       sizes: "100x100",
     },
   ];
