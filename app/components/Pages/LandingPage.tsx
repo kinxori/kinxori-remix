@@ -23,7 +23,7 @@ export default function LandingPage({
       <div className="relative h-[100%] w-[100%] flex justify-center">
         <div
           className={`absolute text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
-          delay-[1s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          delay-[1.2s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
           ${
             isActive ? "gap-2 top-[50%] translate-y-[-140%]" : "gap-0 top-[50%] translate-y-[-50%]"
           }`}

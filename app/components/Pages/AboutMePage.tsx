@@ -41,7 +41,7 @@ export default function AboutMe({
             prefetch="intent"
             to="/about"
             variant="mainButton"
-            className={` ml-[auto] transition-all duration-[.5s] delay-[1s]
+            className={` ml-[auto] transition-all duration-[.5s] delay-[.5s]
             ${isActive === true ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-50%] "} `}
           >
             Read More&#160;&#160;<i className="fa-solid fa-arrow-right"></i>
