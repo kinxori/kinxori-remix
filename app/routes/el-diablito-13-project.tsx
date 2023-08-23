@@ -87,7 +87,14 @@ export default function ElDiablito13() {
             This navigation bar has 2 versions. 1 is used for smartphone and tablet devices. The
             second version is for desktop devices such as laptops or PCs. Having a dedicated
             navigation bar improves the responsive design and experiece of the user regardles of the
-            method they use to explote the website.
+            device they use to explore the website.
+          </p>
+          <h4 className="text-[16px] font-bold text-left ">Email Form</h4>
+          <p>
+            This is a custom functionality to send a message to any chosen email address. The way
+            this works is by using Firebase Functions, EmailSender library and Google Auth services.
+            All working together to have an email sender allowing each user to have communication
+            with the author in a efficient and easy way.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Design and User Experience</b>
