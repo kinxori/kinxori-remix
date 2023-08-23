@@ -50,11 +50,6 @@ export default function ElDiablito13() {
             <b>Project Overview</b>
           </h3>
           <p>
-            "El Diablito 13" is a project centered around the expression of unconventional ideas,
-            with the primary objective of providing entertainment through a distinctive perspective
-            on the world.
-          </p>
-          <p>
             The primary aim in creating this webpage was to solidify the branding of "El Diablito
             13", while concurrently enhancing its online presence to foster increased web
             interaction.
@@ -63,16 +58,23 @@ export default function ElDiablito13() {
             <b>Brand Identity and Concept</b>
           </h3>
           <p>
-            For this project I had the opportunity to work as a UX/UI designer and Frontend
-            Developer at the same time.
+            "El Diablito 13" is a project centered around the expression of unconventional ideas,
+            with the primary objective of providing entertainment through a distinctive perspective
+            on the world.
           </p>
           <p>
-            Creating, designing and implementing all the fundamentals I've learned over my Motion
-            Designer career as well as in the Frontend.
+            Meticulously crafting everything, from the branding core to adapting the main theme of
+            "El Diablito 13," ensuring a seamless UX/UI design. This involves adhering to specific
+            color palettes and font types to maintain a consistent and cohesive aura from start to
+            finish.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Website Features and Functionality</b>
           </h3>
+          <p>
+            Keeping the best practices for SEO optimization and implementing great practices in the
+            Front-end. Writing clean and easy to update code.
+          </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Design and User Experience</b>
           </h3>
