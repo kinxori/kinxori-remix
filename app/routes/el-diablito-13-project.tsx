@@ -1,6 +1,5 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
-import treceLogo from "~/assets/Logos/kinxori-el-diablito-route-dynamic-icon.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
@@ -268,7 +267,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: treceLogo,
+      href: elDiablitoLogo,
       type: "image/png",
       sizes: "100x100",
     },
