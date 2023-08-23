@@ -54,6 +54,11 @@ export default function ElDiablito13() {
             with the primary objective of providing entertainment through a distinctive perspective
             on the world.
           </p>
+          <p>
+            The primary aim in creating this webpage was to solidify the branding of "El Diablito
+            13", while concurrently enhancing its online presence to foster increased web
+            interaction.
+          </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Brand Identity and Concept</b>
           </h3>
