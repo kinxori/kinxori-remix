@@ -17,12 +17,12 @@ export default function ElDiablito13() {
       <ScrollTopButton />
       <div className="  flex-col flex p-10 box-border">
         <div className="flex flex-col">
+          <img
+            className="rounded-[10px] mb-5"
+            src={elDiablito13Asset}
+            alt="el diablito trece landing page screenshot"
+          />
           <div className="flex flex-col">
-            <img
-              className="rounded-[10px] mb-5"
-              src={elDiablito13Asset}
-              alt="el diablito trece landing page screenshot"
-            />
             <h3 className="text-[30px] font-bold ">
               <b>El Diablito 13</b> 👺
             </h3>
@@ -31,7 +31,8 @@ export default function ElDiablito13() {
               and immerse yourself in the intricacies of this remarkable project. From concept to
               creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
             </p>
-            <div className="mt-5 mx-auto flex gap-2">
+
+            <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
                 variant="secButton"
                 href="https://github.com/kinxori/el-diablito-13"
