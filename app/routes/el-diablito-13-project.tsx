@@ -162,8 +162,19 @@ export default function ElDiablito13() {
             </li>
           </ul>
           <p>
-            Keeping the best practices for SEO optimization and implementing great practices in the
-            Front-end. Writing clean and easy to update code.
+            At this point, "El Diablito 13" doesn't need more complexity such as databases, login
+            authentication just to give an example. This doesn't mean it won't have any of those
+            features in the near future. Using Firebase to storage all the assets and have an easy
+            time fetching resources.
+          </p>
+          <p>
+            Recognizing the diversity of devices used to access the website, a responsive design
+            approach has been employed. All of this following the "Mobile First" methodology to
+            improve times in development and decreasing CSS unused code lines.
+          </p>
+          <p>
+            Also keeping the best practices for SEO optimization and implementing great practices in
+            the Front-end. Writing clean and easy to maintain code.
           </p>
         </div>
       </div>
