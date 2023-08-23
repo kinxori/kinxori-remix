@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "@remix-run/react";
+import { Link, useLocation } from "@remix-run/react";
 import kinxoriLogo from "~/assets/Logos/kinxori-logo-100x100.png";
 
 export default function MobileNav() {
@@ -18,8 +18,13 @@ export default function MobileNav() {
     }, 3000);
   };
 
+  const location = useLocation();
+
   return (
-    <nav className="z-[1000] fixed top-0 left-0 w-[100vw] animate-[introNavBar_1s_1.2s_backwards]  ">
+    <nav
+      className={`z-[1000] fixed top-0 left-0 w-[100vw] 
+      ${location.pathname !== "/" ? "" : "animate-[introNavBar_1s_1.2s_backwards]"}`}
+    >
       <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link
           prefetch="intent"
