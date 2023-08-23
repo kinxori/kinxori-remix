@@ -71,9 +71,23 @@ export default function ElDiablito13() {
           <h3 className="text-[20px] font-bold text-left ">
             <b>Website Features and Functionality</b>
           </h3>
+          <p>This project has 3 features that are worth to highlight:</p>
+          <ul className="list-disc pl-5">
+            <li>Intro</li>
+            <li>Navigation Bar</li>
+            <li>Email Form</li>
+          </ul>
+          <h4 className="text-[16px] font-bold text-left ">Intro</h4>
           <p>
-            Keeping the best practices for SEO optimization and implementing great practices in the
-            Front-end. Writing clean and easy to update code.
+            A big message will appear saying "Clickeame" which means "click on me". This will load
+            the full website content and make this Intro Page disapear.
+          </p>
+          <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
+          <p>
+            This navigation bar has 2 versions. 1 is used for smartphone and tablet devices. The
+            second version is for desktop devices such as laptops or PCs. Having a dedicated
+            navigation bar improves the responsive design and experiece of the user regardles of the
+            method they use to explote the website.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Design and User Experience</b>
@@ -81,6 +95,10 @@ export default function ElDiablito13() {
           <h3 className="text-[20px] font-bold text-left ">
             <b>Technical Implementation</b>
           </h3>
+          <p>
+            Keeping the best practices for SEO optimization and implementing great practices in the
+            Front-end. Writing clean and easy to update code.
+          </p>
         </div>
       </div>
       <Footer />
