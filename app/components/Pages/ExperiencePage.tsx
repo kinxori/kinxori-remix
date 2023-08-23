@@ -5,7 +5,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
   return (
     <section
       id={id}
-      className={` w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+      className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
         <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left">
@@ -16,8 +16,8 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           className="opacity-30 z-[0] absolute right-[-5%] bottom-[-35%] h-[300px] "
         />
       </div>
-      <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
-        <div className="font-[inter] font-normal text-justify flex flex-col gap-3 ">
+      <div className="box-border p-10 flex flex-col">
+        <div className="font-normal text-justify flex flex-col gap-5 ">
           <p>
             During my journey from Motion Designer to Web Developer, I've had the privilege of
             diving into a vibrant array of projects. My path has led me to collaborate with local
@@ -36,24 +36,24 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             If you feel we are a good match. Let's connect and explore the possibilities. Feel free
             to download my latest resume.
           </p>
+          <LinkButton
+            variant="mainButton"
+            target="_blank"
+            download={true}
+            to="/resumePDF"
+            className="ml-auto"
+          >
+            Download
+          </LinkButton>
         </div>
         <hr className="mt-10 border-white/50"></hr>
-        <div className="flex flex-col">
+        <article className="flex flex-col">
           <iframe
             src="https://drive.google.com/file/d/1E58dGD4DXtm7rFEFjSFe_CAEGrXRQz7W/preview"
             className="h-[510px] mt-10 rounded-[10px]"
             allow="autoplay"
           ></iframe>
-          <LinkButton
-            variant="mainButton"
-            target="_blank"
-            download
-            to="/resumePDF"
-            className=" mx-auto my-5"
-          >
-            Download
-          </LinkButton>
-        </div>
+        </article>
       </div>
     </section>
   );

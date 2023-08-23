@@ -24,7 +24,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
   return (
     <section
       id={id}
-      className={` w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+      className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
         <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-right">
@@ -37,7 +37,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       </div>
       <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
         <div>
-          <p className="font-[inter] font-normal text-justify ">
+          <p className=" font-normal text-justify ">
             Explore a collection of my web projects and delve into the world of my development
             practices. From crafting engaging user interfaces to crafting elegant code, these
             projects showcase my journey as a web developer.
@@ -60,7 +60,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
 
 function ElDiablito13() {
   return (
-    <div
+    <article
       className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
@@ -115,13 +115,13 @@ function ElDiablito13() {
         Live Project&#160;&#160;
         <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
       </AnchorButton>
-    </div>
+    </article>
   );
 }
 
 function MusicMediaPlayer() {
   return (
-    <div
+    <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
@@ -173,13 +173,13 @@ function MusicMediaPlayer() {
         Live Project&#160;&#160;
         <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
       </AnchorButton>
-    </div>
+    </article>
   );
 }
 
 function TechnicalTest1() {
   return (
-    <div
+    <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
@@ -231,13 +231,13 @@ function TechnicalTest1() {
         Live Project&#160;&#160;
         <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
       </AnchorButton>
-    </div>
+    </article>
   );
 }
 
 function TechnicalTest2() {
   return (
-    <div
+    <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
@@ -289,6 +289,6 @@ function TechnicalTest2() {
         Live Project&#160;&#160;
         <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
       </AnchorButton>
-    </div>
+    </article>
   );
 }

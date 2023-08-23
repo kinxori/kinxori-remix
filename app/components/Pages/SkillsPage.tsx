@@ -38,7 +38,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           </p>
         </div>
         <hr className="my-10 border-white/50"></hr>
-        <div className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
+        <article className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={reactLogo} alt="reactjs Logo" className="h-[50px] object-contain " />
             <span>React</span>
@@ -95,7 +95,7 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
             <img src={firebaseLogo} alt="firebase Logo" className="h-[50px] object-contain " />
             <span>Firebase</span>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );

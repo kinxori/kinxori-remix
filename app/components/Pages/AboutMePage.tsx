@@ -11,9 +11,9 @@ export default function AboutMe({
   isActive?: boolean;
 }) {
   return (
-    <article
+    <section
       id={id}
-      className={` w-[100vw] h-fit mx-auto box-border p-10 relative transition-all duration-[.5s]
+      className={`font-[inter] w-[100vw] h-fit mx-auto box-border p-10 relative transition-all duration-[.5s]
       ${isObserved} 
       ${isActive === true ? "opacity-100 translate-x-0 " : "opacity-0 translate-x-[-50%]"} `}
     >
@@ -48,6 +48,6 @@ export default function AboutMe({
           </LinkButton>
         </div>
       </div>
-    </article>
+    </section>
   );
 }

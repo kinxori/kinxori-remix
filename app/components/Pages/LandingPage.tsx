@@ -11,7 +11,7 @@ export default function LandingPage({
   isActive?: boolean;
 }) {
   return (
-    <article id={id} className={`${isObserved} relative h-[100vh] w-[100vw]`}>
+    <section id={id} className={`font-[inter] relative h-[100vh] w-[100vw] ${isObserved}`}>
       <div className=" h-screen w-screen flex items-end absolute bottom-0">
         <img
           src={mainAboutMeAsset}
@@ -51,13 +51,13 @@ export default function LandingPage({
           </h1>
         </div>
         <div className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]">
-          <h3
+          <p
             className={`text-[16px] w-[90%] text-center text-white 
           delay-[1.2s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
         ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px] "}`}
           >
             Combining <b>code</b> and <b>creativity</b> to make things happen 🚀
-          </h3>
+          </p>
           <LinkButton
             className={`delay-[1.2s] transition-[opacity, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
           ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px]"}`}
@@ -69,6 +69,6 @@ export default function LandingPage({
           </LinkButton>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
