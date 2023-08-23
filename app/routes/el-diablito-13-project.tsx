@@ -71,7 +71,7 @@ export default function ElDiablito13() {
           <h3 className="text-[20px] font-bold text-left ">
             <b>Website Features and Functionality</b>
           </h3>
-          <p>This project has 3 features that are worth to highlight:</p>
+          <p>This project boasts three noteworthy features:</p>
           <ul className="list-disc pl-5">
             <li>Intro</li>
             <li>Navigation Bar</li>
@@ -79,8 +79,8 @@ export default function ElDiablito13() {
           </ul>
           <h4 className="text-[16px] font-bold text-left ">Intro</h4>
           <p>
-            A big message will appear saying "Clickeame" which means "click on me". This will load
-            the full website content and make this Intro Page disapear.
+            A prominent message will be displayed, encouraging users to "Click me." This action will
+            load the full website content and cause the Intro Page to disappear.
           </p>
           <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
           <p>
@@ -91,10 +91,11 @@ export default function ElDiablito13() {
           </p>
           <h4 className="text-[16px] font-bold text-left ">Email Form</h4>
           <p>
-            This is a custom functionality to send a message to any chosen email address. The way
-            this works is by using Firebase Functions, EmailSender library and Google Auth services.
-            All working together to have an email sender allowing each user to have communication
-            with the author in a efficient and easy way.
+            An intricate custom functionality has been implemented to facilitate the sending of
+            messages to a chosen email address. This mechanism leverages Firebase Functions, the
+            EmailSender library, and Google Auth services. These components collaborate seamlessly
+            to establish an email sender, enabling each user to effortlessly communicate with the
+            author in an efficient and user-friendly manner.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Design and User Experience</b>
