@@ -18,7 +18,7 @@ export default function ElDiablito13() {
   const handleSubject = (subject: number) => {
     selectedSubject !== subject ? setSelectedSubject(subject) : null;
   };
-  console.log("number", selectedSubject);
+  // console.log("number", selectedSubject);
 
   return (
     <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
@@ -63,19 +63,39 @@ export default function ElDiablito13() {
           <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
-            <Button variant="ghostButton" onClick={() => handleSubject(1)}>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(1)}
+            >
               1. Project Overview
             </Button>
-            <Button variant="ghostButton" onClick={() => handleSubject(2)}>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(2)}
+            >
               2. Brand Identity and Concept
             </Button>
-            <Button variant="ghostButton" onClick={() => handleSubject(3)}>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(3)}
+            >
               3. Features and Functionality
             </Button>
-            <Button variant="ghostButton" onClick={() => handleSubject(4)}>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(4)}
+            >
               4. Design and User Experience
             </Button>
-            <Button variant="ghostButton" onClick={() => handleSubject(5)}>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(5)}
+            >
               5. Technical Implementation
             </Button>
           </div>
