@@ -50,8 +50,9 @@ export default function ElDiablito13() {
             <b>Project Overview</b>
           </h3>
           <p>
-            The main purpose of this project was to consolidate the branding and the internet
-            presence of El Diablito 13.
+            "El Diablito 13" is a project centered around the expression of unconventional ideas,
+            with the primary objective of providing entertainment through a distinctive perspective
+            on the world.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Brand Identity and Concept</b>
