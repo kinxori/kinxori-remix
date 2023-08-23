@@ -101,13 +101,14 @@ export default function ElDiablito13() {
             <b>Design and User Experience</b>
           </h3>
           <p>
-            The design of this project was a simple but consice SPA (Single Page Application). This
-            is because at this point, our main necessity to cover is showcasing what "El Diablito
-            13" is and share the art projects that have been crafted along the project's journey.
+            The design approach for this project revolved around creating a simple yet concise
+            Single Page Application (SPA). This decision was rooted in our primary need to
+            effectively showcase the essence of "El Diablito 13" and exhibit the art projects that
+            have been crafted throughout the project's evolution.
           </p>
           <p>
-            The user experience we were looking for was a simple scrollable page, allowing the user
-            to have as few intereactions and have a intuitive navigation.
+            In terms of user experience, our goal was to offer a streamlined scrollable page that
+            minimizes interactions while ensuring intuitive navigation for users.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
             <b>Technical Implementation</b>
