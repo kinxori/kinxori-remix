@@ -59,13 +59,13 @@ export default function Index() {
 
   return (
     <article className="relative flex flex-col gap-10">
-      <ScrollTopButton />
       <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
       <AboutMePage id="aboutMePageID" isObserved="observe" isActive={isAboutMePage} />
+      <ExperiencePage id="experiencePageID" isObserved="observe" />
       <SkillsPage id="skillsPageID" isObserved="observe" />
       <WebProjectsPage id="webProjectsPageID" isObserved="observe" />
-      <ExperiencePage id="experiencePageID" isObserved="observe" />
       <FooterPage id="footerPageID" isObserved="observe" />
+      <ScrollTopButton />
     </article>
   );
 }

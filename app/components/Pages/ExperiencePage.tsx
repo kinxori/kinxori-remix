@@ -24,7 +24,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             and international teams, engage directly with clients in sales, and craft captivating
             video ads from the comfort of my own home.
           </p>
-          <p>Some of my best soft skills are:</p>
+          <p>My top 5 best soft skills:</p>
           <ul className="list-disc pl-5">
             <li>Communication</li>
             <li>Problem-solving</li>
@@ -33,8 +33,8 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             <li>Time Management</li>
           </ul>
           <p>
-            Take a look at my career path and if you feel we are a good match. Let's connect and
-            explore the possibilities. Feel free to download my latest resume.
+            If you feel we are a good match. Let's connect and explore the possibilities. Feel free
+            to download my latest resume.
           </p>
         </div>
         <hr className="mt-10 border-white/50"></hr>

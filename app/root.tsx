@@ -12,7 +12,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body id="root" className="bg-bgColor">
+      <body id="root" className="bg-bgColor overflow-x-hidden overflow-y-scroll scroll-smooth">
         <NavBar />
         <Outlet />
         <ScrollRestoration />

@@ -11,7 +11,7 @@ export default function LandingPage({
   isActive?: boolean;
 }) {
   return (
-    <article id={id} className={`${isObserved} relative h-[100vh] w-[100vw] overflow-hidden`}>
+    <article id={id} className={`${isObserved} relative h-[100vh] w-[100vw]`}>
       <div className=" h-screen w-screen flex items-end absolute bottom-0">
         <img
           src={mainAboutMeAsset}
