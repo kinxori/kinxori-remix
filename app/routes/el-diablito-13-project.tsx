@@ -5,6 +5,11 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
+import reactLogo from "~/assets/Logos/react-color-logo.png";
+import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
+import htmlLogo from "~/assets/Logos/html-color-logo.png";
+import cssLogo from "~/assets/Logos/css-color-logo.png";
+import githubLogo from "~/assets/Logos/github-white-logo.png";
 
 export default function ElDiablito13() {
   return (
@@ -113,6 +118,49 @@ export default function ElDiablito13() {
           <h3 className="text-[20px] font-bold text-left ">
             <b>Technical Implementation</b>
           </h3>
+          <p>For the creation of this project, the 5 main technologies were:</p>
+          <ul className="list-disc pl-5">
+            <li className="relative">
+              &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
+              <img
+                className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
+                src={reactLogo}
+                alt="react js logo"
+              />
+            </li>
+            <li className="relative">
+              &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript
+              <img
+                className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
+                src={javascriptLogo}
+                alt="javascript logo"
+              />
+            </li>
+            <li className="relative">
+              &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;HTML5
+              <img
+                className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
+                src={htmlLogo}
+                alt="html5 logo"
+              />
+            </li>
+            <li className="relative">
+              &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;CSS3
+              <img
+                className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
+                src={cssLogo}
+                alt="CSS3 logo"
+              />
+            </li>
+            <li className="relative">
+              &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Github
+              <img
+                className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
+                src={githubLogo}
+                alt="github logo"
+              />
+            </li>
+          </ul>
           <p>
             Keeping the best practices for SEO optimization and implementing great practices in the
             Front-end. Writing clean and easy to update code.
