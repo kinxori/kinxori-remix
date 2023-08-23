@@ -23,9 +23,12 @@ export default function ElDiablito13() {
   return (
     <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="p-10 box-border">
-        <h3 className="text-[30px] mb-10 font-bold">
-          <b>El Diablito 13</b> 👺
-        </h3>
+        <div className="mb-10">
+          <h3 className="text-[30px] font-bold">
+            <b>El Diablito 13</b>
+          </h3>
+          <i className="text-white/50 font-light text-[14px]">#Project</i>
+        </div>
         <div className="flex flex-col gap-5">
           <img
             className="rounded-[10px]"
