@@ -11,14 +11,13 @@ import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 export default function ElDiablito13() {
-  const [selectedSubject, setSelectedSubject] = useState<number | undefined>(1);
+  const [selectedSubject, setSelectedSubject] = useState(1);
   const handleSubject = (subject: number) => {
-    selectedSubject !== subject ? setSelectedSubject(subject) : undefined;
+    selectedSubject !== subject ? setSelectedSubject(subject) : null;
   };
-
   console.log("number", selectedSubject);
 
   return (
@@ -86,9 +85,18 @@ export default function ElDiablito13() {
                   <b>Project Overview</b>
                 </h3>
                 <p>
-                  The primary aim in creating this webpage was to solidify the branding of "El
-                  Diablito 13", while concurrently enhancing its online presence to foster increased
-                  web interaction.
+                  Focusing on showcasing some of the key art projects developed by 'El Diablito 13,'
+                  our objective is to not only reinforce its branding but also amplify its online
+                  reach, fostering greater engagement within the artistic community. Through this
+                  platform, we aim to encourage collaboration on new projects and facilitate the
+                  sharing of creative endeavors.
+                </p>
+                <p>
+                  "El Diablito 13" fosters a lively community for artists to share, collaborate, and
+                  amplify their creations. This space encourages connections, showcasing work,
+                  exchanging insights, and nurturing innovation. A global platform igniting
+                  friendships, kindling ideas, and fueling creativity as diverse voices contribute
+                  their artistic flair to a limitless canvas.
                 </p>
               </div>
             )}
