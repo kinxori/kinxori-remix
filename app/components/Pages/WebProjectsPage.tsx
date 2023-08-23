@@ -46,7 +46,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </div>
         <section
           id="carrouselProjects"
-          className="overflow-x-scroll w-[100vw] px-10 py-10 flex gap-5 items-start"
+          className="overflow-x-scroll w-[100vw] p-10 flex gap-5 items-start"
         >
           <ElDiablito13 />
           <MusicMediaPlayer />
@@ -62,23 +62,25 @@ function ElDiablito13() {
   return (
     <article
       className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
-      <div>
-        <img
-          alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
-          className="rounded-[10px] mb-5"
-          src={elDiablito13Asset}
-        />
-        <i className="text-[12px] text-mainColor">#Project</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
+      <img
+        alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
+        className="rounded-[10px]"
+        src={elDiablito13Asset}
+      />
+      <div className="my-5 flex flex-col gap-5">
+        <div>
+          <i className="text-[12px] text-mainColor">#Project</i>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">El Diablito 13</h3>
+        </div>
         <p className="text-[14px] ">
           El Diablito 13's official website.&#xa0;
           <Link to="/el-diablito-13-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
+        <div className="flex gap-2 flex-wrap w-[70%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -123,23 +125,25 @@ function MusicMediaPlayer() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
-      <div>
-        <img
-          alt="Screenshot of Kinxori's project named Music Media Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
-          className="rounded-[10px] mb-5"
-          src={musicMediaPlayerAsset}
-        />
-        <i className="text-[12px] text-mainColor">#Practice</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
+      <img
+        alt="Screenshot of Kinxori's project named Music Media Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
+        className="rounded-[10px]"
+        src={musicMediaPlayerAsset}
+      />
+      <div className="my-5 flex flex-col gap-5">
+        <div>
+          <i className="text-[12px] text-mainColor">#Practice</i>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
+        </div>
         <p className="text-[14px] ">
           Creating a music media player.&#xa0;
           <Link to="/music-media-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
+        <div className="flex gap-2 flex-wrap w-[70%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -181,23 +185,27 @@ function TechnicalTest1() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
-      <div>
-        <img
-          alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
-          className="rounded-[10px] mb-5"
-          src={technicalTest1}
-        />
-        <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager Feature</h3>
+      <img
+        alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
+        className="rounded-[10px]"
+        src={technicalTest1}
+      />
+      <div className="my-5 flex flex-col gap-5">
+        <div>
+          <i className="text-[12px] text-mainColor">#TechnicalTest</i>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">
+            Contact Manager Feature
+          </h3>
+        </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
           <Link to="/contacts-manager-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
+        <div className="flex gap-2 flex-wrap w-[70%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -239,23 +247,25 @@ function TechnicalTest2() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[310px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
-      <div>
-        <img
-          alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
-          className="rounded-[10px] mb-5"
-          src={technicalTest1}
-        />
-        <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-        <h3 className="text-mainColor font-bold text-[20px] text-left">User Details Feature</h3>
+      <img
+        alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
+        className="rounded-[10px]"
+        src={technicalTest1}
+      />
+      <div className="my-5 flex flex-col gap-5">
+        <div>
+          <i className="text-[12px] text-mainColor">#TechnicalTest</i>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">User Details Feature</h3>
+        </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
           <Link to="/user-details-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 mt-3 flex-wrap w-[80%]">
+        <div className="flex gap-2 flex-wrap w-[70%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
