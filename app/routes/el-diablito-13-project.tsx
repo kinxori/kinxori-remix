@@ -118,7 +118,7 @@ export default function ElDiablito13() {
           <h3 className="text-[20px] font-bold text-left ">
             <b>Technical Implementation</b>
           </h3>
-          <p>For the creation of this project, the 5 main technologies were:</p>
+          <p>In the creation of this project, five main technologies took center stage: :</p>
           <ul className="list-disc pl-5">
             <li className="relative">
               &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
@@ -162,19 +162,20 @@ export default function ElDiablito13() {
             </li>
           </ul>
           <p>
-            At this point, "El Diablito 13" doesn't need more complexity such as databases, login
-            authentication just to give an example. This doesn't mean it won't have any of those
-            features in the near future. Using Firebase to storage all the assets and have an easy
-            time fetching resources.
+            While "El Diablito 13" does not currently demand added complexities such as databases or
+            login authentication, it is important to note that this stance doesn't preclude the
+            potential incorporation of such features in the near future.
           </p>
           <p>
-            Recognizing the diversity of devices used to access the website, a responsive design
-            approach has been employed. All of this following the "Mobile First" methodology to
-            improve times in development and decreasing CSS unused code lines.
+            Acknowledging the diversity of devices used to access the website, we have embraced a
+            responsive design approach. Our commitment to the "Mobile First" methodology has
+            expedited development and minimized CSS code redundancy.
           </p>
           <p>
-            Also keeping the best practices for SEO optimization and implementing great practices in
-            the Front-end. Writing clean and easy to maintain code.
+            Furthermore, maintaining a steadfast dedication to best practices for SEO optimization,
+            ensuring optimal visibility across search engines. In the realm of Front-end
+            development, we continue to uphold exemplary practices, producing clean and maintainable
+            code that contributes to an optimal user experience.
           </p>
         </div>
       </div>
