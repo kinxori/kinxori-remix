@@ -47,14 +47,14 @@ export default function ElDiablito13() {
         <hr className="border-white/50 my-10 "></hr>
         <div className="flex flex-col gap-5 text-justify">
           <h3 className="text-[20px] font-bold text-left ">
-            <b>What is the purpose of this project?</b>
+            <b>Project Overview</b>
           </h3>
           <p>
             The main purpose of this project was to consolidate the branding and the internet
             presence of El Diablito 13.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
-            <b>What was done for this project?</b>
+            <b>Brand Identity and Concept</b>
           </h3>
           <p>
             For this project I had the opportunity to work as a UX/UI designer and Frontend
@@ -65,7 +65,13 @@ export default function ElDiablito13() {
             Designer career as well as in the Frontend.
           </p>
           <h3 className="text-[20px] font-bold text-left ">
-            <b>Implementation</b>
+            <b>Website Features and Functionality</b>
+          </h3>
+          <h3 className="text-[20px] font-bold text-left ">
+            <b>Design and User Experience</b>
+          </h3>
+          <h3 className="text-[20px] font-bold text-left ">
+            <b>Technical Implementation</b>
           </h3>
         </div>
       </div>
