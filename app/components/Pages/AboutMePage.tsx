@@ -13,7 +13,7 @@ export default function AboutMe({
   return (
     <section
       id={id}
-      className={`font-[inter] w-[100vw] h-fit mx-auto box-border p-10 relative transition-all duration-[.5s]
+      className={`font-[inter] w-[100vw] mx-auto box-border p-10 relative transition-all duration-[.5s]
       ${isObserved} 
       ${isActive === true ? "opacity-100 translate-x-0 " : "opacity-0 translate-x-[-50%]"} `}
     >

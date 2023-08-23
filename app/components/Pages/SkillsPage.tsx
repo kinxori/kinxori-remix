@@ -31,12 +31,10 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
         />
       </div>
       <div className="box-border p-10 flex flex-col">
-        <div className="">
-          <p className="text-justify">
-            Throughout my journey in web development, I've been continuously refining my toolkit to
-            create impactful and efficient web projects.
-          </p>
-        </div>
+        <p className="text-justify">
+          Throughout my journey in web development, I've been continuously refining my toolkit to
+          create impactful and efficient web projects.
+        </p>
         <hr className="my-10 border-white/50"></hr>
         <article className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">

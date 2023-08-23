@@ -35,25 +35,25 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           className="opacity-30 z-[0] absolute left-[-20%] bottom-[-100%] h-[400px] "
         />
       </div>
-      <div className="box-border pl-10 pt-10 pr-10 flex flex-col">
-        <div>
+      <div className="w-[100vw] flex flex-col">
+        <div className="box-border p-10 pb-0">
           <p className=" font-normal text-justify ">
             Explore a collection of my web projects and delve into the world of my development
             practices. From crafting engaging user interfaces to crafting elegant code, these
             projects showcase my journey as a web developer.
           </p>
+          <hr className="mt-10 border-white/50"></hr>
         </div>
-        <hr className="mt-10 border-white/50"></hr>
+        <section
+          id="carrouselProjects"
+          className="overflow-x-scroll w-[100vw] px-10 py-10 flex gap-5 items-start"
+        >
+          <ElDiablito13 />
+          <MusicMediaPlayer />
+          <TechnicalTest1 />
+          <TechnicalTest2 />
+        </section>
       </div>
-      <section
-        id="carrouselProjects"
-        className="overflow-x-scroll w-[100vw] px-10 py-10 flex gap-5 items-start"
-      >
-        <ElDiablito13 />
-        <MusicMediaPlayer />
-        <TechnicalTest1 />
-        <TechnicalTest2 />
-      </section>
     </section>
   );
 }
