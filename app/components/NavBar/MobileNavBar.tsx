@@ -25,7 +25,7 @@ export default function MobileNav() {
       className={`z-[1000] fixed top-0 left-0 w-[100vw] 
       ${location.pathname !== "/" ? "" : "animate-[introNavBar_1s_1.2s_backwards]"}`}
     >
-      <div className="flex h-[60px] w-[100%] mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
+      <div className="flex h-[60px] w-[100%] border-b-[2px] border-mainColor mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
         <Link
           prefetch="intent"
           to="/"
@@ -56,9 +56,8 @@ export default function MobileNav() {
           />
         </div>
       </div>
-      <hr className=" w-[100%] mx-auto border-mainColor border-[1px]" />
       <div
-        className={`w-[100%] z-[1000] fixed h-[calc(100vh-62px)] bg-bgColor box-border p-10 flex flex-col gap-3 justify-start items-end
+        className={`w-[100vw] z-[1000] fixed h-[calc(100vh-60px)] bg-bgColor box-border p-10 flex flex-col gap-3 justify-start items-end
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
         ${isSlideActive ? "right-0" : "right-[-100%]"}`}
       >
@@ -90,6 +89,41 @@ export default function MobileNav() {
           >
             Contact Page&#160;&#160;<i className="fa-solid fa-at text-[24px]"></i>
           </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/el-diablito-13-project"
+            onClick={handleSlide}
+          >
+            El Diablito 13 - Project&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/music-media-player-project"
+            onClick={handleSlide}
+          >
+            Music Media Player - Project&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/contact-manager-project"
+            onClick={handleSlide}
+          >
+            Contact Manager - Project&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/user-details-project"
+            onClick={handleSlide}
+          >
+            User Details - Project&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
           <a
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             target="_blank"
@@ -101,7 +135,8 @@ export default function MobileNav() {
             <i className="fa-regular fa-calendar-days text-[24px]"></i>
           </a>
         </div>
-        <div className="flex gap-3 mt-auto text-bgColor ">
+        <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>
+        <div className="flex gap-3 text-bgColor ">
           <a
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             href="https://linkedin.com/in/quinchori"

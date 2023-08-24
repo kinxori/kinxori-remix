@@ -15,6 +15,7 @@ export default function ContactRoute() {
       setClipboardCopy(false);
     }, 3000);
   };
+
   return (
     <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="box-border p-10 relative overflow-hidden">

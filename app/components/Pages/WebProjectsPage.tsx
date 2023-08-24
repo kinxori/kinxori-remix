@@ -17,7 +17,7 @@ import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
-import technicalTest1 from "~/assets/technical-test-1-ss.png";
+import contactManager from "~/assets/technical-test-1-ss.png";
 import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
@@ -50,8 +50,8 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         >
           <ElDiablito13 />
           <MusicMediaPlayer />
-          <TechnicalTest1 />
-          <TechnicalTest2 />
+          <ContactManager />
+          <UserDetails />
         </section>
       </div>
     </section>
@@ -181,7 +181,7 @@ function MusicMediaPlayer() {
   );
 }
 
-function TechnicalTest1() {
+function ContactManager() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -190,7 +190,7 @@ function TechnicalTest1() {
       <img
         alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
         className="rounded-[10px]"
-        src={technicalTest1}
+        src={contactManager}
       />
       <div className="my-5 flex flex-col gap-5">
         <div>
@@ -201,7 +201,7 @@ function TechnicalTest1() {
         </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
-          <Link to="/contacts-manager-project" className="underline italic text-mainColor ">
+          <Link to="/contact-manager-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
@@ -243,7 +243,7 @@ function TechnicalTest1() {
   );
 }
 
-function TechnicalTest2() {
+function UserDetails() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -252,7 +252,7 @@ function TechnicalTest2() {
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
         className="rounded-[10px]"
-        src={technicalTest1}
+        src={contactManager}
       />
       <div className="my-5 flex flex-col gap-5">
         <div>
