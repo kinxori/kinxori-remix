@@ -11,6 +11,7 @@ import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import { useState } from "react";
+import VideoLoader from "~/components/VideoLoader/VideoLoader";
 
 export default function ElDiablito13() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -24,7 +25,7 @@ export default function ElDiablito13() {
       <div className="p-10 box-border ">
         <div className="mb-10">
           <h3 className="text-[30px] font-bold">
-            <b>El Diablito 13</b>
+            <b>El Diablito 13</b> 👹
           </h3>
           <i className="text-white/50 font-light text-[14px]">#Project</i>
         </div>
@@ -118,6 +119,12 @@ export default function ElDiablito13() {
                   friendships, kindling ideas, and fueling creativity as diverse voices contribute
                   their artistic flair to a limitless canvas.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-overview-project-asset.mp4?alt=media&token=f8dfd4cc-4fc4-4a00-b9d9-a66297626b38"
+                />
               </div>
             )}
             {selectedSubject === 2 && (
