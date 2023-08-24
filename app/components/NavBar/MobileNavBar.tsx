@@ -59,7 +59,7 @@ export default function MobileNav() {
       <div
         className={`w-[100vw] z-[1000] fixed h-[calc(100vh-60px)] bg-bgColor box-border p-10 flex flex-col gap-3 justify-start items-end
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
-        ${isSlideActive ? "right-0" : "right-[-100%]"}`}
+        ${isSlideActive ? "right-0 opacity-1" : "right-[-110%] opacity-0"}`}
       >
         <h2 className="decoration-mainColor font-bold text-[50px] font-[rubik] text-white underline ">
           Welcome!
