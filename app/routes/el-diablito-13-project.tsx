@@ -12,6 +12,7 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import { useState } from "react";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
+import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
 
 export default function ElDiablito13() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -143,6 +144,11 @@ export default function ElDiablito13() {
                   adhering to specific color palettes and font types to maintain a consistent and
                   cohesive aura from start to finish.
                 </p>
+                <img
+                  alt="Collage of 8 art illustrations made by El Diablito 13 - having a real picture of the author in the middle."
+                  className="rounded-[10px]"
+                  src={diablitoBrand}
+                />
               </div>
             )}
             {selectedSubject === 3 && (
@@ -161,6 +167,12 @@ export default function ElDiablito13() {
                   A prominent message will be displayed, encouraging users to "Click me." This
                   action will load the full website content and cause the Intro Page to disappear.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
+                />
                 <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
                 <p>
                   This navigation bar has 2 versions. 1 is used for smartphone and tablet devices.
@@ -168,6 +180,12 @@ export default function ElDiablito13() {
                   dedicated navigation bar improves the responsive design and experiece of the user
                   regardles of the device they use to explore the website.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-nav-bar-asset.mp4?alt=media&token=67683ce2-c127-4efb-9be1-ece8568e2722"
+                />
                 <h4 className="text-[16px] font-bold text-left ">Email Form</h4>
                 <p>
                   An intricate custom functionality has been implemented to facilitate the sending
@@ -176,6 +194,12 @@ export default function ElDiablito13() {
                   collaborate seamlessly to establish an email sender, enabling each user to
                   effortlessly communicate with the author in an efficient and user-friendly manner.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-nav-bar-asset.mp4?alt=media&token=67683ce2-c127-4efb-9be1-ece8568e2722"
+                />
               </div>
             )}
             {selectedSubject === 4 && (
