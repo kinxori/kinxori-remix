@@ -62,7 +62,7 @@ export default function InputForm() {
 
   return (
     <>
-      <section
+      <article
         className={`${
           isPopUp && "pointer-events-none"
         } hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
@@ -114,14 +114,14 @@ export default function InputForm() {
             Submit
           </Button>
         </Form>
-      </section>
+      </article>
       {isPopUp === true && (
-        <section
+        <article
           ref={popUpRef}
           onClick={(event) => {
             if (event.target === popUpRef.current) handlePopUp(false);
           }}
-          className=" z-[1000] top-0 left-0 fixed bg-bgColor/80 h-screen w-screen flex justify-center items-center "
+          className=" z-[2000] top-0 left-0 fixed bg-bgColor/80 h-screen w-screen flex justify-center items-center "
         >
           <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
             <img
@@ -137,7 +137,7 @@ export default function InputForm() {
               Close
             </Button>
           </div>
-        </section>
+        </article>
       )}
     </>
   );

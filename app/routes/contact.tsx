@@ -8,7 +8,6 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 
 export default function ContactRoute() {
   const [isClipboardCopied, setClipboardCopy] = useState(false);
-
   const handleClipboardState = () => {
     navigator.clipboard.writeText("gustavoq26@gmail.com");
     setClipboardCopy((current) => (current ? false : true));
@@ -17,8 +16,7 @@ export default function ContactRoute() {
     }, 3000);
   };
   return (
-    <article className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
-      <ScrollTopButton />
+    <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="box-border p-10 relative overflow-hidden">
         <h2 className="z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
           Contact
@@ -57,11 +55,21 @@ export default function ContactRoute() {
             <a
               className="hover:text-mainColor w-fit text-left"
               target="_blank"
-              href="https://goo.gl/maps/GyDBZkyXesTFHjuS8"
-              aria-label="Hyperlink with México in Google Maps"
+              href="https://linkedin.com/in/quinchori/"
+              aria-label="Hyperlink to Gustavo's Linkeding profile"
             >
-              <i className="w-5 h-5 fa-solid fa-location-dot"></i>
-              &#160;&#160;México&#160;&#160;
+              <i className="w-5 h-5 fa-brands fa-linkedin-in"></i>
+              &#160;&#160;LinkedIn&#160;&#160;
+              <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+            </a>
+            <a
+              className="hover:text-mainColor w-fit text-left"
+              target="_blank"
+              href="https://github.com/kinxori/"
+              aria-label="Hyperlink to Kinxori's Github profile"
+            >
+              <i className="w-5 h-5 fa-brands fa-github"></i>
+              &#160;&#160;Github&#160;&#160;
               <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             </a>
             <a
@@ -79,8 +87,9 @@ export default function ContactRoute() {
         <hr className="border-white/50 my-10"></hr>
         <EmailSender />
       </div>
+      <ScrollTopButton />
       <Footer />
-    </article>
+    </section>
   );
 }
 

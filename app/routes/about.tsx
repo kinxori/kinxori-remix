@@ -20,8 +20,7 @@ export default function AboutMeRoute() {
   };
 
   return (
-    <article className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
-      <ScrollTopButton />
+    <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="relative overflow-hidden box-border p-10 ">
         <h2 className=" z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
           About
@@ -52,7 +51,7 @@ export default function AboutMeRoute() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
-        <section className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[700px] relative overflow-hidden gap-5 flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <article className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[700px] relative overflow-hidden flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -76,13 +75,14 @@ export default function AboutMeRoute() {
               </Button>
             </div>
           </div>
-        </section>
+        </article>
         <i className="my-10 text-white/50 text-[12px] mx-auto ">
           Gustavo Q.O. / 15th of August, 2023 / México
         </i>
       </div>
+      <ScrollTopButton />
       <FooterPage />
-    </article>
+    </section>
   );
 }
 
