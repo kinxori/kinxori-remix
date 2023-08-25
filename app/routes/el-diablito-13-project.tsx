@@ -61,7 +61,7 @@ export default function ElDiablito13() {
           </div>
         </div>
         <hr className="border-white/50 my-10 "></hr>
-        <article>
+        <article className="flex flex-col">
           <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
