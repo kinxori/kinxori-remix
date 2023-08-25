@@ -2,6 +2,8 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
+import { LinksFunction } from "@remix-run/node";
+import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 
 export default function MusicMediaPlayer() {
   return (
@@ -46,3 +48,14 @@ export default function MusicMediaPlayer() {
     </section>
   );
 }
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "icon",
+      href: elDiablitoLogo,
+      type: "image/png",
+      sizes: "100x100",
+    },
+  ];
+};
