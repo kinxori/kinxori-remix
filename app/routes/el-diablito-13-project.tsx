@@ -124,6 +124,7 @@ export default function ElDiablito13() {
                   className="rounded-[10px]"
                   autoPlay
                   muted
+                  loop
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-overview-project-asset.mp4?alt=media&token=f8dfd4cc-4fc4-4a00-b9d9-a66297626b38"
                 />
               </div>
@@ -171,6 +172,7 @@ export default function ElDiablito13() {
                   className="rounded-[10px]"
                   autoPlay
                   muted
+                  loop
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
                 />
                 <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
@@ -184,6 +186,7 @@ export default function ElDiablito13() {
                   className="rounded-[10px]"
                   autoPlay
                   muted
+                  loop
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-nav-bar-asset.mp4?alt=media&token=67683ce2-c127-4efb-9be1-ece8568e2722"
                 />
                 <h4 className="text-[16px] font-bold text-left ">Email Form</h4>
@@ -198,6 +201,7 @@ export default function ElDiablito13() {
                   className="rounded-[10px]"
                   autoPlay
                   muted
+                  loop
                   src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-email-sender-asset.mp4?alt=media&token=cc66445c-fdc6-47e1-8a21-43c523755e73"
                 />
               </div>
@@ -217,6 +221,13 @@ export default function ElDiablito13() {
                   In terms of user experience, our goal was to offer a streamlined scrollable page
                   that minimizes interactions while ensuring intuitive navigation for users.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
+                />
               </div>
             )}
             {selectedSubject === 5 && (
