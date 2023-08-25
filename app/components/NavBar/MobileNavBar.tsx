@@ -89,41 +89,6 @@ export default function MobileNav() {
           >
             Contact Page&#160;&#160;<i className="fa-solid fa-at text-[24px]"></i>
           </Link>
-          <Link
-            prefetch="intent"
-            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/el-diablito-13-project"
-            onClick={handleSlide}
-          >
-            El Diablito 13 - Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
-          </Link>
-          <Link
-            prefetch="intent"
-            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/music-media-player-project"
-            onClick={handleSlide}
-          >
-            Music Media Player - Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
-          </Link>
-          <Link
-            prefetch="intent"
-            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/contact-manager-project"
-            onClick={handleSlide}
-          >
-            Contact Manager - Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
-          </Link>
-          <Link
-            prefetch="intent"
-            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/user-details-project"
-            onClick={handleSlide}
-          >
-            User Details - Project&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
-          </Link>
           <a
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             target="_blank"
@@ -134,6 +99,41 @@ export default function MobileNav() {
             &#160;&#160;Schedule a Meeting&#160;&#160;
             <i className="fa-regular fa-calendar-days text-[24px]"></i>
           </a>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/el-diablito-13-project"
+            onClick={handleSlide}
+          >
+            Project - El Diablito 13&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/music-media-player-project"
+            onClick={handleSlide}
+          >
+            Project - Music Media Player&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/contact-manager-project"
+            onClick={handleSlide}
+          >
+            Project - Contact Manager&#160;&#160;
+            <i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
+          <Link
+            prefetch="intent"
+            className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
+            to="/user-details-project"
+            onClick={handleSlide}
+          >
+            Project - User Details&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
+          </Link>
         </div>
         <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>
         <div className="flex gap-3 text-bgColor ">
