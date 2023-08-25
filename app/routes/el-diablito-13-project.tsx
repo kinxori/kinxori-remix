@@ -227,6 +227,11 @@ export default function ElDiablito13() {
                   In terms of user experience, our goal was to offer a streamlined scrollable page
                   that minimizes interactions while ensuring intuitive navigation for users.
                 </p>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={diablitoDesignAsset}
+                />
               </div>
             )}
             {selectedSubject === 5 && (
