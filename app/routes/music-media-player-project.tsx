@@ -4,8 +4,15 @@ import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import { LinksFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
+import { useState } from "react";
+import Button from "~/components/CustomButton/Button";
 
 export default function MusicMediaPlayer() {
+  const [selectedSubject, setSelectedSubject] = useState(1);
+  const handleSubject = (subject: number) => {
+    selectedSubject !== subject ? setSelectedSubject(subject) : null;
+  };
+  // console.log("number", selectedSubject);
   return (
     <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className=" bg-bgColor flex-col flex p-10 box-border">
@@ -42,6 +49,47 @@ export default function MusicMediaPlayer() {
           </div>
         </div>
         <hr className="border-white/50 my-10"></hr>
+        <article>
+          <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
+            <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
+            <hr className="border-bgColor/50 my-3 "></hr>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(1)}
+            >
+              1. Project Overview
+            </Button>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(2)}
+            >
+              2. Brand Identity and Concept
+            </Button>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(3)}
+            >
+              3. Features and Functionality
+            </Button>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(4)}
+            >
+              4. Design and User Experience
+            </Button>
+            <Button
+              className="hover:text-mainColor"
+              variant="ghostButton"
+              onClick={() => handleSubject(5)}
+            >
+              5. Technical Implementation
+            </Button>
+          </div>
+        </article>
       </div>
       <ScrollTopButton />
       <Footer />
