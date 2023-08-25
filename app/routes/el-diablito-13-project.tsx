@@ -13,6 +13,7 @@ import Button from "~/components/CustomButton/Button";
 import { useState } from "react";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
+import diablitoDesignAsset from "~/assets/diablito-13-design-and-experience-asset.png";
 
 export default function ElDiablito13() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -139,6 +140,11 @@ export default function ElDiablito13() {
                   ideas, with the primary objective of providing entertainment through a distinctive
                   perspective on the world.
                 </p>
+                <img
+                  alt="Collage of 8 art illustrations made by El Diablito 13 - having a real picture of the author in the middle."
+                  className="rounded-[10px]"
+                  src={diablitoBrand}
+                />
                 <p>
                   Meticulously crafting everything, from the branding core to adapting the main
                   theme of "El Diablito 13," ensuring a seamless UX/UI design. This involves
@@ -146,9 +152,9 @@ export default function ElDiablito13() {
                   cohesive aura from start to finish.
                 </p>
                 <img
-                  alt="Collage of 8 art illustrations made by El Diablito 13 - having a real picture of the author in the middle."
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
-                  src={diablitoBrand}
+                  src={diablitoDesignAsset}
                 />
               </div>
             )}
@@ -221,13 +227,6 @@ export default function ElDiablito13() {
                   In terms of user experience, our goal was to offer a streamlined scrollable page
                   that minimizes interactions while ensuring intuitive navigation for users.
                 </p>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
-                />
               </div>
             )}
             {selectedSubject === 5 && (
