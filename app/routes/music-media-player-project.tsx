@@ -205,25 +205,24 @@ export const meta: V2_MetaFunction = () => {
     { title: "Music Media Player - Project" },
     {
       name: "description",
-      content: "Generic",
+      content: "Generic - FIX 👺",
     },
     {
       property: "og:title",
-      content: "El Diablito 13 - Project",
+      content: "Music Media Player - Project",
     },
     {
       property: "og:description",
-      content:
-        "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
+      content: "Generic - FIX 👺",
     },
     {
       property: "og:image",
       content:
-        "https://el-diablito-13-b8034.firebaseapp.com/assets/New_Logo_Diablo-edited-20b357a7.png",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=8a6209ae-f768-4216-94d6-4f573efe386a",
     },
     {
       property: "og:url",
-      content: "https://kinxori.com/el-diablito-13-project",
+      content: "https://kinxori.com/music-media-player-project",
     },
     {
       property: "og:type",
@@ -243,17 +242,16 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:title",
-      content: "El Diablito 13 - Project",
+      content: "Music Media Player - Project",
     },
     {
       name: "twitter:description",
-      content:
-        "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
+      content: "Generic - FIX 👺",
     },
     {
       name: "twitter:image",
       content:
-        "https://el-diablito-13-b8034.firebaseapp.com/assets/New_Logo_Diablo-edited-20b357a7.png",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=8a6209ae-f768-4216-94d6-4f573efe386a",
     },
   ];
 };
