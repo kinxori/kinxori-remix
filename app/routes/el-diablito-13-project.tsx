@@ -294,6 +294,13 @@ export default function ElDiablito13() {
                   embraced a responsive design approach. Our commitment to the "Mobile First"
                   methodology has expedited development and minimized CSS code redundancy.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-responsive-design-asset.mp4?alt=media&token=486ea978-ae50-49d4-ae01-3996989a0f94"
+                />
                 <p>
                   Furthermore, maintaining a steadfast dedication to best practices for SEO
                   optimization, ensuring optimal visibility across search engines. In the realm of
