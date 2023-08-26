@@ -115,7 +115,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "Contact Route, Kinxori's Email Address, México, Schedule a meeting with Kinxori, Email form to send Kinxori an email, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "Contact Route, Kinxori's github profile, Kinxori's linkedIn profile, Kinxori's Email Address, México, Schedule a meeting with Kinxori, Email form to send Kinxori an email, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:description",
