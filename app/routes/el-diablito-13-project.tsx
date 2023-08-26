@@ -329,6 +329,11 @@ export const meta: V2_MetaFunction = () => {
         "Discover the very essence that fuels its existence, delve into its unique features, and immerse yourself in the intricacies of this remarkable project. From concept to creation, join me as I unveil the story behind El Diablito 13 and its creative allure.",
     },
     {
+      name: "keywords",
+      content:
+        "El Diablito 13 brand identity and concept, El Diablito 13 Project, Portfolio, El Diablito 13 project overview, Kinxori's project, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
       property: "og:title",
       content: "El Diablito 13 - Project",
     },
