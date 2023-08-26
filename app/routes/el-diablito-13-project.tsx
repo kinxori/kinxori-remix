@@ -331,7 +331,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "El Diablito 13 brand identity and concept, El Diablito 13 Project, Portfolio, El Diablito 13 project overview, Kinxori's project, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "El Diablito 13 github repository, El Diablito 13 Technical Implementations, El Diablito 13 Design and User Experience, El Diablito 13 Features and Functionality, El Diablito 13 Brand Identity and Concept, El Diablito 13 Project, Portfolio, El Diablito 13 Project Cverview, Kinxori's project, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:title",
