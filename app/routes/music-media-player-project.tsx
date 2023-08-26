@@ -210,7 +210,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "Kinxori's Music Media Player Github Repository, Kinxori's Music Media Player Project Overview, Kinxori's Music Media Player Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "Kinxori's Music Media Player Live Project URL, Kinxori's Music Media Player Technical Implementation, Kinxori's Music Media Player Design and User Experience, Kinxori's Music Media Player Features and Functionality, Kinxori's Music Media Player Github Repository URL, Kinxori's Music Media Player Project Overview, Kinxori's Music Media Player Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:title",
