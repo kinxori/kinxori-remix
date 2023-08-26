@@ -307,6 +307,13 @@ export default function ElDiablito13() {
                   Front-end development, we continue to uphold exemplary practices, producing clean
                   and maintainable code that contributes to an optimal user experience.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-google-search-asset.mp4?alt=media&token=85854b18-af37-46b3-8fd0-ce0fbe919a82"
+                />
               </div>
             )}
           </div>
