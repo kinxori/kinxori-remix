@@ -90,6 +90,11 @@ export const meta: V2_MetaFunction = () => {
         "My personal website showcases my career as a web developer. It provides visitors with an in-depth look at my projects, skills, and hobbies. If you share similar interests and like what you see, we can connect to be friends, share knowledge, or collaborate on a project.",
     },
     {
+      name: "keywords",
+      content:
+        "Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
       property: "og:title",
       content: "Kinxori - My personal website 💻",
     },
