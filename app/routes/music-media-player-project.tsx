@@ -208,6 +208,11 @@ export const meta: V2_MetaFunction = () => {
       content: "Generic - FIX 👺",
     },
     {
+      name: "keywords",
+      content:
+        "Kinxori's Music Media Player Github Repository, Kinxori's Music Media Player Project Overview, Kinxori's Music Media Player Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
       property: "og:title",
       content: "Music Media Player - Project",
     },
