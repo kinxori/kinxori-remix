@@ -22,13 +22,13 @@ export default function ContactsManager() {
         <div className="mb-10">
           <h3 className="text-[30px] font-bold ">
             <b>Contacts Manager</b> 📔
-            <i className="text-white/50 font-light text-[14px]">#TechnicalChallenge</i>
           </h3>
+          <i className="text-white/50 font-light text-[14px]">#TechnicalChallenge</i>
         </div>
         <div className="flex flex-col gap-5">
           <img className="rounded-[10px]" src={elDiablito13Asset} />
           <div className="flex flex-col">
-            <p className="text-justify mt-5">
+            <p className="text-justify">
               Discover the very essence that fuels its existence, delve into its unique features,
               and immerse yourself in the intricacies of this remarkable project. From concept to
               creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
@@ -36,14 +36,14 @@ export default function ContactsManager() {
             <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
                 variant="secButton"
-                href="https://github.com/kinxori/el-diablito-13"
+                href="https://github.com/kinxori/technical-test-1"
                 target="_blank"
               >
                 Github Repo
               </AnchorButton>
               <AnchorButton
                 variant="mainButton"
-                href="https://el-diablito-13-b8034.firebaseapp.com/"
+                href="https://kinxori.github.io/technical-test-1/ "
                 target="_blank"
               >
                 Live Page
@@ -51,7 +51,6 @@ export default function ContactsManager() {
             </div>
           </div>
         </div>
-
         <hr className="border-white/50 my-10"></hr>
       </div>
       <ScrollTopButton />
