@@ -1,5 +1,7 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
+import NavBar from "~/components/NavBar/NavBar";
+
 import kinxoriAboutIcon from "~/assets/Logos/kinxori-about-route-logo.png";
 import dogoCodingAsset from "~/assets/Dog-Using-Laptop.jpg";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
@@ -80,6 +82,7 @@ export default function AboutMeRoute() {
           Gustavo Q.O. / 15th of August, 2023 / México
         </i>
       </div>
+      <NavBar />
       <ScrollTopButton />
       <FooterPage />
     </section>

@@ -1,5 +1,6 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useState } from "react";
+import NavBar from "~/components/NavBar/NavBar";
 import kinxoriContactIcon from "~/assets/Logos/kinxori-contact-route-logo.png";
 import EmailSender from "~/components/EmailSender/EmailSender";
 import Footer from "~/components/Pages/FooterPage";
@@ -88,6 +89,7 @@ export default function ContactRoute() {
         <hr className="border-white/50 my-10"></hr>
         <EmailSender />
       </div>
+      <NavBar />
       <ScrollTopButton />
       <Footer />
     </section>

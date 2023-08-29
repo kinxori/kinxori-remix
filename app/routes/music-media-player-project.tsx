@@ -1,4 +1,5 @@
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
+import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
@@ -183,6 +184,7 @@ export default function MusicMediaPlayer() {
           </div>
         </article>
       </div>
+      <NavBar />
       <ScrollTopButton />
       <Footer />
     </section>

@@ -1,5 +1,6 @@
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
+import NavBar from "~/components/NavBar/NavBar";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
@@ -185,6 +186,7 @@ export default function ContactsManager() {
           </div>
         </article>
       </div>
+      <NavBar />
       <ScrollTopButton />
       <Footer />
     </section>

@@ -1,4 +1,5 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import NavBar from "~/components/NavBar/NavBar";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
@@ -319,6 +320,7 @@ export default function ElDiablito13() {
           </div>
         </article>
       </div>
+      <NavBar />
       <ScrollTopButton />
       <Footer />
     </section>
