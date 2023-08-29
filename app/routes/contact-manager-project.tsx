@@ -1,8 +1,9 @@
+import { useState } from "react";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import NavBar from "~/components/NavBar/NavBar";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
-import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
@@ -11,12 +12,8 @@ import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
-import { useState } from "react";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import contactManagerAsset from "~/assets/technical-test-1-ss.png";
-
-import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
-import diablitoDesignAsset from "~/assets/diablito-13-design-and-experience-asset.png";
 
 export default function ContactsManager() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -131,7 +128,7 @@ export default function ContactsManager() {
                 <img
                   alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
-                  src={elDiablito13Asset}
+                  src={contactManagerAsset}
                 />
               </div>
             )}

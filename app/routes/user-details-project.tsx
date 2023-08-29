@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";

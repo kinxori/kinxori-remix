@@ -1,11 +1,11 @@
+import { useState } from "react";
+import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
-import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
-import { useState } from "react";
 import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
