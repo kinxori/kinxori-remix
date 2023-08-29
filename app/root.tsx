@@ -1,7 +1,6 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import stylesheet from "~/tailwind.css";
-import NavBar from "~/components/NavBar/NavBar";
 
 export default function App() {
   return (
@@ -13,7 +12,6 @@ export default function App() {
         <Links />
       </head>
       <body id="root" className="bg-bgColor overflow-x-hidden overflow-y-scroll scroll-smooth">
-        <NavBar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

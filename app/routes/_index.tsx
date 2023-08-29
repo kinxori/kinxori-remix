@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import NavBar from "~/components/NavBar/NavBar";
 import kinxoriHomeIcon from "~/assets/Logos/kinxori-home-route-logo.png";
 import LandingPage from "~/components/Pages/LandingPage";
 import AboutMePage from "~/components/Pages/AboutMePage";
@@ -59,6 +60,7 @@ export default function Index() {
 
   return (
     <article className="relative flex flex-col gap-10">
+      <NavBar />
       <LandingPage id="landingPageID" isObserved="observe" isActive={isLandingPage} />
       <AboutMePage id="aboutMePageID" isObserved="observe" isActive={isAboutMePage} />
       <ExperiencePage id="experiencePageID" isObserved="observe" />
