@@ -106,7 +106,7 @@ export default function MobileNav() {
             onClick={handleSlide}
           >
             El Diablito 13 Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
+            <i className="text-[24px] fa-solid fa-paintbrush"></i>
           </Link>
           <Link
             prefetch="intent"
@@ -115,7 +115,7 @@ export default function MobileNav() {
             onClick={handleSlide}
           >
             Music Media Player Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
+            <i className="text-[24px] fa-solid fa-music"></i>
           </Link>
           <Link
             prefetch="intent"
@@ -124,7 +124,7 @@ export default function MobileNav() {
             onClick={handleSlide}
           >
             Contact Manager Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-briefcase"></i>
+            <i className="text-[24px] fa-solid fa-address-book"></i>
           </Link>
           <Link
             prefetch="intent"
@@ -132,7 +132,7 @@ export default function MobileNav() {
             to="/user-details-project"
             onClick={handleSlide}
           >
-            User Details Project&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
+            User Details Project&#160;&#160;<i className="text-[24px] fa-solid fa-id-card"></i>
           </Link>
         </div>
         <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>
