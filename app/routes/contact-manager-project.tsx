@@ -13,6 +13,8 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import { useState } from "react";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
+import contactManagerAsset from "~/assets/technical-test-1-ss.png";
+
 import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
 import diablitoDesignAsset from "~/assets/diablito-13-design-and-experience-asset.png";
 
@@ -32,7 +34,7 @@ export default function ContactsManager() {
           <i className="text-white/50 font-light text-[14px]">#TechnicalChallenge</i>
         </div>
         <div className="flex flex-col gap-5">
-          <img className="rounded-[10px]" src={elDiablito13Asset} />
+          <img className="rounded-[10px]" src={contactManagerAsset} />
           <div className="flex flex-col">
             <p className="text-justify">
               Discover the very essence that fuels its existence, delve into its unique features,
