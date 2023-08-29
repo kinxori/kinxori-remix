@@ -10,9 +10,12 @@ export default function UserDetails() {
     <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className=" bg-bgColor flex-col flex p-10 box-border">
         <div className="flex flex-col">
-          <h3 className="text-[30px] font-bold  ">
-            <b>User Details</b> 🗂
-          </h3>
+          <div className="mb-10">
+            <h3 className="text-[30px] font-bold">
+              <b>User Filter Feature</b> 🗂
+            </h3>
+            <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
+          </div>
           <p className="text-justify mt-5">
             Discover the very essence that fuels its existence, delve into its unique features, and
             immerse yourself in the intricacies of this remarkable project. From concept to
