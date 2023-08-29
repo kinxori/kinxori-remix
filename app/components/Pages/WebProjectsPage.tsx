@@ -51,7 +51,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           <ElDiablito13 />
           <MusicMediaPlayer />
           <ContactManager />
-          <UserDetails />
+          <UserFilter />
         </section>
       </div>
     </section>
@@ -243,7 +243,7 @@ function ContactManager() {
   );
 }
 
-function UserDetails() {
+function UserFilter() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -261,7 +261,7 @@ function UserDetails() {
         </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
-          <Link to="/user-details-project" className="underline italic text-mainColor ">
+          <Link to="/user-filter-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>

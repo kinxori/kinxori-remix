@@ -12,7 +12,7 @@ export default function UserDetails() {
         <div className="flex flex-col">
           <div className="mb-10">
             <h3 className="text-[30px] font-bold">
-              <b>User Filter Feature</b> 🗂
+              <b>User Filter</b> 🗂
             </h3>
             <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
           </div>
