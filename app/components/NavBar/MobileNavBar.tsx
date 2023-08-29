@@ -105,7 +105,7 @@ export default function MobileNav() {
             to="/el-diablito-13-project"
             onClick={handleSlide}
           >
-            Project - El Diablito 13&#160;&#160;
+            El Diablito 13 Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-briefcase"></i>
           </Link>
           <Link
@@ -114,7 +114,7 @@ export default function MobileNav() {
             to="/music-media-player-project"
             onClick={handleSlide}
           >
-            Project - Music Media Player&#160;&#160;
+            Music Media Player Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-briefcase"></i>
           </Link>
           <Link
@@ -123,7 +123,7 @@ export default function MobileNav() {
             to="/contact-manager-project"
             onClick={handleSlide}
           >
-            Project - Contact Manager&#160;&#160;
+            Contact Manager Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-briefcase"></i>
           </Link>
           <Link
@@ -132,7 +132,7 @@ export default function MobileNav() {
             to="/user-details-project"
             onClick={handleSlide}
           >
-            Project - User Details&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
+            User Details Project&#160;&#160;<i className="text-[24px] fa-solid fa-briefcase"></i>
           </Link>
         </div>
         <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>
