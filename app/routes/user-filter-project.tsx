@@ -12,8 +12,7 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
-import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
-import elDiablitoHornsLogo from "~/assets/Logos/kinxori-diablito-horns-logo.png";
+import userFilterIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 
 export default function UserFilter() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -196,7 +195,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: elDiablitoHornsLogo,
+      href: userFilterIcon,
       type: "image/png",
       sizes: "100x100",
     },
