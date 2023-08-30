@@ -135,7 +135,24 @@ export default function MusicMediaPlayer() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Features and Functionality</b>
                 </h3>
-                <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
+                <p>
+                  This project is a practice project focused on developing a music media player
+                  application. The website simulates a music playback interface and incorporates
+                  interactive elements to enhance the user experience.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">Music Playback Interface</h4>
+                <p>
+                  The website features a fully functional music playback interface that allows users
+                  to play, pause, and control the audio playback of a selected song.
+                </p>
+                <p>
+                  Play controls are prominently displayed, enabling users to start and stop the
+                  music as desired.
+                </p>
+                <p>
+                  Users can adjust the volume using an interactive volume slider, providing a
+                  customizable listening experience.
+                </p>
                 <VideoLoader
                   className="rounded-[10px]"
                   autoPlay
