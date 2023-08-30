@@ -3,7 +3,6 @@ import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
-import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import Button from "~/components/CustomButton/Button";
@@ -13,6 +12,7 @@ import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
+import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 
 export default function MusicMediaPlayer() {
   const [selectedSubject, setSelectedSubject] = useState(1);

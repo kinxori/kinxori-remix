@@ -3,7 +3,6 @@ import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import NavBar from "~/components/NavBar/NavBar";
-import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
@@ -28,7 +27,7 @@ export default function ContactsManager() {
           <h3 className="text-[30px] font-bold ">
             <b>Contacts Manager</b> 📔
           </h3>
-          <i className="text-white/50 font-light text-[14px]">#TechnicalChallenge</i>
+          <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
         </div>
         <div className="flex flex-col gap-5">
           <img className="rounded-[10px]" src={contactManagerAsset} />
