@@ -1,8 +1,9 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { useState } from "react";
 import NavBar from "~/components/NavBar/NavBar";
-import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
+import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
@@ -11,10 +12,10 @@ import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
-import { useState } from "react";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
 import diablitoDesignAsset from "~/assets/diablito-13-design-and-experience-asset.png";
+import elDiablitoHornsLogo from "~/assets/Logos/kinxori-diablito-horns-logo.png";
 
 export default function ElDiablito13() {
   const [selectedSubject, setSelectedSubject] = useState(1);
