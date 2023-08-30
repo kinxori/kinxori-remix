@@ -3,7 +3,6 @@ import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import NavBar from "~/components/NavBar/NavBar";
-import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
@@ -13,6 +12,7 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import contactManagerAsset from "~/assets/technical-test-1-ss.png";
+import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 
 export default function ContactsManager() {
   const [selectedSubject, setSelectedSubject] = useState(1);

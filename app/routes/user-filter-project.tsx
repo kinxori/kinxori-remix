@@ -12,6 +12,7 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
+import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
 
 export default function UserFilter() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -189,3 +190,14 @@ export default function UserFilter() {
     </section>
   );
 }
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "icon",
+      href: elDiablitoLogo,
+      type: "image/png",
+      sizes: "100x100",
+    },
+  ];
+};
