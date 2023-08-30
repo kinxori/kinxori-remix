@@ -103,31 +103,23 @@ export default function MusicMediaPlayer() {
                 </p>
                 <p>
                   The primary purpose of this project is to simulate the development of a music
-                  media player from scratch. Through this project, the developer aimed to learn and
-                  apply essential concepts in frontend development, such as state management, user
+                  media player from scratch. Through this project, I aimed to learn and apply
+                  essential concepts in frontend development, such as state management, user
                   interface design, event handling, and integrating media elements.
                 </p>
                 <p>
                   While this project does not have a commercial purpose, it offers valuable learning
-                  opportunities. By building this project, the developer gained insights into audio
+                  opportunities. By building this project, I gained insights into audio
                   manipulation, UI/UX design principles, and how to create an interactive and
                   responsive user interface. Additionally, the project allowed for experimentation
                   with different features, such as play controls, volume adjustment, and playlist
                   management.
                 </p>
                 <p>
-                  The absence of a commercial aspect allowed the developer to focus solely on honing
-                  their technical skills and exploring the intricacies of building a music media
-                  player. By practicing with real code and implementing features like play/pause,
-                  skip, shuffle, and repeat functionalities, the developer gained hands-on
-                  experience that can be applied to more complex projects in the future.
-                </p>
-                <p>
                   In conclusion, this project was developed as a practice exercise to delve into
                   frontend web development and create a music media player application. The project
-                  allowed the developer to gain practical experience, experiment with interactive
-                  features, and enhance their programming skills in a controlled and educational
-                  environment.
+                  allowed me to gain practical experience, experiment with interactive features, and
+                  enhance their programming skills in a controlled and educational environment.
                 </p>
                 <VideoLoader
                   className="rounded-[10px]"
