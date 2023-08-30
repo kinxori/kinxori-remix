@@ -204,7 +204,7 @@ export const links: LinksFunction = () => {
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "Contact Manager - Project" },
+    { title: "User Filter - Project" },
     {
       name: "description",
       content: "Generic - FIX 👺",
@@ -216,7 +216,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:title",
-      content: "Contact Manager - Project",
+      content: "User Filter - Project",
     },
     {
       property: "og:description",
@@ -228,7 +228,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:url",
-      content: "https://kinxori.com/contact-manager-project",
+      content: "https://kinxori.com/user-filter-project",
     },
     {
       property: "og:type",
@@ -248,7 +248,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:title",
-      content: "Contact Manager - Project",
+      content: "User Filter - Project",
     },
     {
       name: "twitter:description",
