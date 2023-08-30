@@ -3,7 +3,9 @@ import { useState } from "react";
 import NavBar from "~/components/NavBar/NavBar";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
-import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
+import uppercaseDIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
+import treceIcon from "~/assets/Logos/kinxori-13-route-logo.png";
+import hornsIcon from "~/assets/Logos/kinxori-diablito-horns-logo.png";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
@@ -15,7 +17,6 @@ import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import diablitoBrand from "~/assets/diablito-13-about-collage.jpg";
 import diablitoDesignAsset from "~/assets/diablito-13-design-and-experience-asset.png";
-import elDiablitoHornsLogo from "~/assets/Logos/kinxori-diablito-horns-logo.png";
 
 export default function ElDiablito13() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -332,7 +333,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: elDiablitoLogo,
+      href: treceIcon,
       type: "image/png",
       sizes: "100x100",
     },
