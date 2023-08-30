@@ -153,6 +153,31 @@ export default function MusicMediaPlayer() {
                   Users can adjust the volume using an interactive volume slider, providing a
                   customizable listening experience.
                 </p>
+                <h4 className="text-[16px] font-bold text-left ">Visual Presentation</h4>
+                <p>
+                  The project emphasizes user interface design and visual presentation, reflecting
+                  the developer's focus on creating an aesthetically pleasing application.
+                </p>
+                <p>
+                  Album covers and track information are prominently showcased, giving users a
+                  visual representation of the currently playing song.
+                </p>
+                <p>
+                  The layout is carefully designed to maintain a clean and organized appearance,
+                  contributing to an intuitive user interface.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">Playlist Management</h4>
+                <p>
+                  The application features a playlist of songs, demonstrating the ability to manage
+                  and switch between multiple tracks seamlessly.
+                </p>
+                <p>Users can navigate through the playlist and select different songs to play.</p>
+                <p>
+                  The playlist layout ensures easy access to track information, fostering a
+                  user-friendly experience.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">Interactive Elements</h4>
+
                 <VideoLoader
                   className="rounded-[10px]"
                   autoPlay
