@@ -13,9 +13,9 @@ export default {
       },
     },
     screens: {
-      tScreen: "601px",
-      lScreen: "781px",
-      dScreen: "1080px",
+      ms: "601px",
+      ls: "781px",
+      xls: "1080px",
     },
   },
   plugins: [
@@ -54,7 +54,7 @@ export default {
         ".ghostButton": {
           backgroundColor: "transparent",
           border: `2px solid transparent`,
-          padding: "10px 20px",
+          padding: "10px 0px 10px 20px",
           borderRadius: "10px",
           fontWeight: "bold",
           fontFamily: "inter",

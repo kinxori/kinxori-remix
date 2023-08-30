@@ -75,7 +75,7 @@ export default function MusicMediaPlayer() {
               2. Features and Functionality
             </Button>
             <Button
-              className="hover:text-mainColor"
+              className="hover:text-mainColor "
               variant="ghostButton"
               onClick={() => handleSubject(3)}
             >
