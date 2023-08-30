@@ -212,7 +212,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "Kinxori's Contact Manager Live Project URL, Kinxori's Contact Manager Technical Implementation, Kinxori's Contact Manager Design and User Experience, Kinxori's Contact Manager Features and Functionality, Kinxori's Contact Manager Github Repository URL, Kinxori's Contact Manager Project Overview, Kinxori's Contact Manager Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "Kinxori's User Filter Live Project URL, Kinxori's User Filter Project Technical Implementation, Kinxori's User Filter Project Design and User Experience, Kinxori's User Filter Project Features and Functionality, Kinxori's User Filter Project Github Repository URL, Kinxori's User Filter Project Project Overview, Kinxori's User Filter Project Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:title",
