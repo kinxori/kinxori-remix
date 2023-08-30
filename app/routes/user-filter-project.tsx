@@ -201,3 +201,62 @@ export const links: LinksFunction = () => {
     },
   ];
 };
+
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: "Contact Manager - Project" },
+    {
+      name: "description",
+      content: "Generic - FIX 👺",
+    },
+    {
+      name: "keywords",
+      content:
+        "Kinxori's Contact Manager Live Project URL, Kinxori's Contact Manager Technical Implementation, Kinxori's Contact Manager Design and User Experience, Kinxori's Contact Manager Features and Functionality, Kinxori's Contact Manager Github Repository URL, Kinxori's Contact Manager Project Overview, Kinxori's Contact Manager Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+    },
+    {
+      property: "og:title",
+      content: "Contact Manager - Project",
+    },
+    {
+      property: "og:description",
+      content: "Generic - FIX 👺",
+    },
+    {
+      property: "og:image",
+      content: "Generic - FIX 👺",
+    },
+    {
+      property: "og:url",
+      content: "https://kinxori.com/contact-manager-project",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:site_name",
+      content: "Kinxori",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@kinxori",
+    },
+    {
+      name: "twitter:title",
+      content: "Contact Manager - Project",
+    },
+    {
+      name: "twitter:description",
+      content: "Generic - FIX 👺",
+    },
+    {
+      name: "twitter:image",
+      content: "Generic - FIX 👺",
+    },
+  ];
+};
