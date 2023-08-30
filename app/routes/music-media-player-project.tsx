@@ -4,7 +4,7 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
-import elDiablitoLogo from "~/assets/Logos/kinxori-diablito-route-logo.png";
+import musicProjectIcon from "~/assets/Logos/kinxori-music-project-logo.png";
 import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
@@ -195,7 +195,7 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "icon",
-      href: elDiablitoLogo,
+      href: musicProjectIcon,
       type: "image/png",
       sizes: "100x100",
     },
