@@ -12,7 +12,7 @@ import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
-import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
+import musicProjectMainAsset from "~/assets/music-media-player-practice-ss.png";
 
 export default function MusicMediaPlayer() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -30,7 +30,7 @@ export default function MusicMediaPlayer() {
           <i className="text-white/50 font-light text-[14px]">#Practice</i>
         </div>
         <div className="flex flex-col gap-5">
-          <img className="rounded-[10px] mt-5" src={elDiablito13Asset} />
+          <img className="rounded-[10px] mt-5" src={musicProjectMainAsset} />
           <div className="flex flex-col">
             <p className="text-justify mt-5">
               Discover the very essence that fuels its existence, delve into its unique features,
@@ -127,7 +127,7 @@ export default function MusicMediaPlayer() {
                 <img
                   alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
-                  src={elDiablito13Asset}
+                  src={musicProjectMainAsset}
                 />
               </div>
             )}
