@@ -290,6 +290,10 @@ export default function MusicMediaPlayer() {
                   JavaScript was utilized to implement the interactive behavior of the application,
                   including audio playback controls and user interactions.
                 </p>
+                <span>
+                  🛑 Probably let's just add some code snippets with each tech logo. Muted video
+                  16:9 🛑
+                </span>
                 <h4 className="text-[16px] font-bold text-left ">Frameworks and Libraries:</h4>
                 <p>
                   The React framework facilitated the creation of reusable UI components and managed
@@ -303,6 +307,10 @@ export default function MusicMediaPlayer() {
                   TypeScript was employed to add static typing to JavaScript, improving code
                   readability and catching potential errors.
                 </p>
+                <span>
+                  🛑 Probably a screen recording each technology and add hypertext links for each
+                  technology. Muted video 16:9 🛑
+                </span>
                 <h4 className="text-[16px] font-bold text-left ">Challenges and Solutions:</h4>
                 <p>
                   One challenge encountered was managing the synchronization between audio playback
@@ -314,6 +322,10 @@ export default function MusicMediaPlayer() {
                     and update time displays accordingly, ensuring accurate representation.
                   </li>
                 </ul>
+                <span>
+                  🛑 Let's add a close view of progress bar and audio time display. Muted video 16:9
+                  🛑
+                </span>
                 <p>
                   Another challenge was implementing the shuffle feature, which required reordering
                   the playlist randomly without duplication.
@@ -324,6 +336,7 @@ export default function MusicMediaPlayer() {
                     the tracks randomly while avoiding duplication.
                   </li>
                 </ul>
+                <span>🛑 Probably just a code snippet. Muted video 16:9 🛑</span>
                 <p>
                   Ensuring a smooth user experience on various devices and screen sizes presented
                   the challenge of responsive design.
@@ -335,6 +348,9 @@ export default function MusicMediaPlayer() {
                     experience.
                   </li>
                 </ul>
+                <span>
+                  🛑 Probably just a code snippet for tailwind modules. Muted video 16:9 🛑
+                </span>
                 <p>
                   Handling audio events, such as playback end and time updates, required careful
                   event management to prevent memory leaks.
@@ -345,6 +361,10 @@ export default function MusicMediaPlayer() {
                     lifecycle phases to prevent memory leaks and optimize performance.
                   </li>
                 </ul>
+                <span>
+                  🛑 Probably just a code snippet for useEffects and event listeners. Muted video
+                  16:9 🛑
+                </span>
                 <p>
                   In summary, this project utilized React, HTML, CSS, and JavaScript, with the
                   support of frameworks like FontAwesome and TypeScript. Challenges related to audio
