@@ -275,48 +275,18 @@ export default function MusicMediaPlayer() {
                   media player application.
                 </p>
                 <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
-                <ul className="list-disc pl-5">
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={reactLogo}
-                      alt="react js logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={javascriptLogo}
-                      alt="javascript logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;HTML5
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={htmlLogo}
-                      alt="html5 logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;CSS3
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={cssLogo}
-                      alt="CSS3 logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Github
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={githubLogo}
-                      alt="github logo"
-                    />
-                  </li>
-                </ul>
+                <p>
+                  The project was primarily built using React, a popular JavaScript library for
+                  building user interfaces.
+                </p>
+                <p>
+                  HTML and CSS were used for structuring the content and styling the user interface,
+                  respectively.
+                </p>
+                <p>
+                  JavaScript was utilized to implement the interactive behavior of the application,
+                  including audio playback controls and user interactions.
+                </p>
               </div>
             )}
           </div>
