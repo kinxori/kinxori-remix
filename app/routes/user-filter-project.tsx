@@ -9,7 +9,6 @@ import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
-import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import userFilterIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";

@@ -4,7 +4,6 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
 import NavBar from "~/components/NavBar/NavBar";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
-import Button from "~/components/CustomButton/Button";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
@@ -60,34 +59,34 @@ export default function ContactsManager() {
           <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
-            <Button
-              className="hover:text-mainColor"
-              variant="ghostButton"
+            <button
+              className={` w-full p-1 pl-5 my-2 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
+              ${selectedSubject === 1 && "bg-bgColor/10"}`}
               onClick={() => handleSubject(1)}
             >
               1. Project Overview
-            </Button>
-            <Button
-              className="hover:text-mainColor"
-              variant="ghostButton"
+            </button>
+            <button
+              className={` w-full p-1 pl-5 my-2 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
+              ${selectedSubject === 2 && "bg-bgColor/10"}`}
               onClick={() => handleSubject(2)}
             >
               2. Features and Functionality
-            </Button>
-            <Button
-              className="hover:text-mainColor"
-              variant="ghostButton"
+            </button>
+            <button
+              className={` w-full p-1 pl-5 my-2 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
+              ${selectedSubject === 3 && "bg-bgColor/10"}`}
               onClick={() => handleSubject(3)}
             >
               3. Design and User Experience
-            </Button>
-            <Button
-              className="hover:text-mainColor"
-              variant="ghostButton"
+            </button>
+            <button
+              className={` w-full p-1 pl-5 my-2 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
+              ${selectedSubject === 4 && "bg-bgColor/10"}`}
               onClick={() => handleSubject(4)}
             >
               4. Technical Implementation
-            </Button>
+            </button>
           </div>
           <div className="my-10">
             {selectedSubject === 1 && (
