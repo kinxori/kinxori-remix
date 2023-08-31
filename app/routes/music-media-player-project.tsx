@@ -153,19 +153,6 @@ export default function MusicMediaPlayer() {
                   Users can adjust the volume using an interactive volume slider, providing a
                   customizable listening experience.
                 </p>
-                <h4 className="text-[16px] font-bold text-left ">Visual Presentation</h4>
-                <p>
-                  The project emphasizes user interface design and visual presentation, reflecting
-                  the developer's focus on creating an aesthetically pleasing application.
-                </p>
-                <p>
-                  Album covers and track information are prominently showcased, giving users a
-                  visual representation of the currently playing song.
-                </p>
-                <p>
-                  The layout is carefully designed to maintain a clean and organized appearance,
-                  contributing to an intuitive user interface.
-                </p>
                 <h4 className="text-[16px] font-bold text-left ">Playlist Management</h4>
                 <p>
                   The application features a playlist of songs, demonstrating the ability to manage
@@ -175,28 +162,6 @@ export default function MusicMediaPlayer() {
                 <p>
                   The playlist layout ensures easy access to track information, fostering a
                   user-friendly experience.
-                </p>
-                <h4 className="text-[16px] font-bold text-left ">Interactive Elements</h4>
-                <p>
-                  Interactive elements have been integrated to make the website engaging and
-                  user-centric.
-                </p>
-                <p>
-                  The play/pause button changes its appearance based on the audio playback status,
-                  providing visual feedback to users.
-                </p>
-                <p>
-                  Smooth animations accompany certain interactions, enhancing the overall aesthetics
-                  and making the website more enjoyable to use.
-                </p>
-                <h4 className="text-[16px] font-bold text-left ">Scrolling Effects</h4>
-                <p>
-                  Scrolling effects are implemented to guide users through different sections of the
-                  website.
-                </p>
-                <p>
-                  Smooth scrolling transitions create a seamless movement between sections,
-                  contributing to a polished and modern user experience.
                 </p>
                 <h4 className="text-[16px] font-bold text-left ">User Interaction</h4>
                 <p>
@@ -217,7 +182,6 @@ export default function MusicMediaPlayer() {
                   offering insights into best practices for building React applications.
                 </p>
                 <h4 className="text-[16px] font-bold text-left ">Responsiveness</h4>
-
                 <p>
                   The website is designed to be responsive across different devices and screen
                   sizes.
