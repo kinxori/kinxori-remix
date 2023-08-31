@@ -181,15 +181,6 @@ export default function MusicMediaPlayer() {
                   The project showcases state management, event handling, and component composition,
                   offering insights into best practices for building React applications.
                 </p>
-                <h4 className="text-[16px] font-bold text-left ">Responsiveness</h4>
-                <p>
-                  The website is designed to be responsive across different devices and screen
-                  sizes.
-                </p>
-                <p>
-                  The layout adapts to various screen resolutions, ensuring a consistent and
-                  user-friendly experience on both desktop and mobile platforms.
-                </p>
                 <p>
                   In summary, this project provides an interactive and educational practice platform
                   for developing a music media player application. Through its features, visual
@@ -278,7 +269,12 @@ export default function MusicMediaPlayer() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Technical Implementation</b>
                 </h3>
-                <p>In the creation of this project, five main technologies took center stage: :</p>
+                <p>
+                  The "ReactTunes" project was developed using a combination of modern technologies,
+                  tools, and programming languages to create a functional and interactive music
+                  media player application.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
                 <ul className="list-disc pl-5">
                   <li className="relative">
                     &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
