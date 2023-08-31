@@ -376,7 +376,8 @@ export const meta: V2_MetaFunction = () => {
     { title: "Music Media Player - Project" },
     {
       name: "description",
-      content: "Generic - FIX 👺",
+      content:
+        " Dive into this music media player, a practice project offering interactive music playback. Experience user-friendly controls, responsive design, and modern aesthetics. Learn React, TypeScript, and audio manipulation through this engaging media player.",
     },
     {
       name: "keywords",
@@ -389,7 +390,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:description",
-      content: "Generic - FIX 👺",
+      content:
+        " Dive into this music media player, a practice project offering interactive music playback. Experience user-friendly controls, responsive design, and modern aesthetics. Learn React, TypeScript, and audio manipulation through this engaging media player.",
     },
     {
       property: "og:image",
@@ -422,7 +424,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:description",
-      content: "Generic - FIX 👺",
+      content:
+        " Dive into this music media player, a practice project offering interactive music playback. Experience user-friendly controls, responsive design, and modern aesthetics. Learn React, TypeScript, and audio manipulation through this engaging media player.",
     },
     {
       name: "twitter:image",
