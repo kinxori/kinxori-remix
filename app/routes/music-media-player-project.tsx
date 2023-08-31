@@ -211,11 +211,31 @@ export default function MusicMediaPlayer() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Design and User Experience</b>
                 </h3>
+                <p>
+                  The design and user experience of the "ReactTunes" project were meticulously
+                  crafted to ensure a visually appealing, user-friendly, and seamless interaction
+                  for users.
+                </p>
                 <img
                   alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
                   src={musicProjectMainAsset}
                 />
+                <h4 className="text-[16px] font-bold text-left ">
+                  Visual Appeal and User-Friendly Design
+                </h4>
+                <p>
+                  The project places a strong emphasis on design principles that contribute to a
+                  visually pleasing aesthetic.
+                </p>
+                <p>
+                  Attention was given to color palettes, typography, and visual elements to create
+                  an engaging and harmonious visual experience.
+                </p>
+                <p>
+                  User interface (UI) components were thoughtfully designed to promote ease of use
+                  and navigation.
+                </p>
               </div>
             )}
             {selectedSubject === 4 && (
