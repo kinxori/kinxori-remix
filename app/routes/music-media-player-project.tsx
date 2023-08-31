@@ -3,10 +3,9 @@ import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
+import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import musicProjectIcon from "~/assets/Logos/kinxori-music-project-logo.png";
-import Button from "~/components/CustomButton/Button";
-import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
@@ -30,12 +29,12 @@ export default function MusicMediaPlayer() {
           <i className="text-white/50 font-light text-[14px]">#Practice</i>
         </div>
         <div className="flex flex-col gap-5">
-          <img className="rounded-[10px] mt-5" src={musicProjectMainAsset} />
+          <img className="rounded-[10px]" src={musicProjectMainAsset} />
           <div className="flex flex-col">
-            <p className="text-justify mt-5">
-              Discover the very essence that fuels its existence, delve into its unique features,
-              and immerse yourself in the intricacies of this remarkable project. From concept to
-              creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
+            <p className="text-justify">
+              Dive into this music media player, a practice project offering interactive music
+              playback. Experience user-friendly controls, responsive design, and modern aesthetics.
+              Learn React, TypeScript, and audio manipulation through this engaging media player.
             </p>
             <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
