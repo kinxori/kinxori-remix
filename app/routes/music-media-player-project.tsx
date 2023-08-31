@@ -148,6 +148,10 @@ export default function MusicMediaPlayer() {
                   Users can adjust the volume using an interactive volume slider, providing a
                   customizable listening experience.
                 </p>
+                <span>
+                  🛑 Let's add a quick tour of the interface, showing both modals, it's buttons and
+                  playlist (no interaction yet), muted video 16:9 🛑
+                </span>
                 <h4 className="text-[16px] font-bold text-left ">Playlist Management</h4>
                 <p>
                   The application features a playlist of songs, demonstrating the ability to manage
@@ -158,6 +162,10 @@ export default function MusicMediaPlayer() {
                   The playlist layout ensures easy access to track information, fostering a
                   user-friendly experience.
                 </p>
+                <span>
+                  🛑 Let's add a tour for the playlist, showing how it works, playing, pausing,
+                  scrolling, selecting songs. Muted video 16:9 🛑
+                </span>
                 <h4 className="text-[16px] font-bold text-left ">User Interaction</h4>
                 <p>
                   User interaction is a core aspect of the project, allowing users to interact with
@@ -167,15 +175,10 @@ export default function MusicMediaPlayer() {
                   Clickable buttons, sliders, and track selections provide an interactive
                   environment where users can control and manipulate audio playback.
                 </p>
-                <h4 className="text-[16px] font-bold text-left ">Educational Focus</h4>
-                <p>
-                  This project serves as a learning tool, demonstrating the developer's ability to
-                  implement React concepts in a practical setting.
-                </p>
-                <p>
-                  The project showcases state management, event handling, and component composition,
-                  offering insights into best practices for building React applications.
-                </p>
+                <span>
+                  🛑 Let's add a tour for the media modal, showing how it works, playing, pausing,
+                  shuffling, time range and volume. Muted video 16:9 🛑
+                </span>
                 <p>
                   In summary, this project provides an interactive and educational practice platform
                   for developing a music media player application. Through its features, visual
@@ -183,13 +186,6 @@ export default function MusicMediaPlayer() {
                   frontend development and offers valuable insights into creating engaging and
                   functional web applications.
                 </p>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
-                />
               </div>
             )}
             {selectedSubject === 3 && (
