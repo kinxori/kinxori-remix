@@ -100,12 +100,14 @@ export default function MusicMediaPlayer() {
                   building user interfaces. This project serves as a practice exercise to develop
                   programming skills and gain hands-on experience in web development.
                 </p>
+                <span>🛑 Let's add something related to education, maybe a gif in 16:9 🛑</span>
                 <p>
                   The primary purpose of this project is to simulate the development of a music
                   media player from scratch. Through this project, I aimed to learn and apply
                   essential concepts in frontend development, such as state management, user
                   interface design, event handling, and integrating media elements.
                 </p>
+
                 <p>
                   While this project does not have a commercial purpose, it offers valuable learning
                   opportunities. By building this project, I gained insights into audio
@@ -114,19 +116,13 @@ export default function MusicMediaPlayer() {
                   with different features, such as play controls, volume adjustment, and playlist
                   management.
                 </p>
+                <span>🛑 Let's add something related based on coding, maybe a gif in 16:9 🛑</span>
                 <p>
                   In conclusion, this project was developed as a practice exercise to delve into
                   frontend web development and create a music media player application. The project
                   allowed me to gain practical experience, experiment with interactive features, and
                   enhance their programming skills in a controlled and educational environment.
                 </p>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-overview-project-asset.mp4?alt=media&token=f8dfd4cc-4fc4-4a00-b9d9-a66297626b38"
-                />
               </div>
             )}
             {selectedSubject === 2 && (
