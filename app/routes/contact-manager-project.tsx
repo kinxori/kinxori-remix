@@ -195,19 +195,22 @@ export default function ContactsManager() {
                   engaging visual experience.
                 </p>
                 <span>
-                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
+                  16:9 🛑
                 </span>
-                <h4 className="text-[16px] font-bold text-left ">Visual Design and Presentation</h4>
+                <h4 className="text-[16px] font-bold text-left ">Optimized User Interface (UI)</h4>
                 <p>
-                  The project's visual design is visually appealing, with careful consideration
-                  given to typography, spacing, and contrast. While the project is a technical test
-                  submission, its layout and design choices could easily be extended to showcase the
-                  developer's portfolio, demonstrating their skills and creativity.
+                  The user interface of the Contact Manager project is meticulously optimized to
+                  enhance user interactions and facilitate easy navigation. The placement of
+                  elements, such as the filtering and sorting buttons, is strategically chosen to be
+                  easily accessible while not overwhelming the user. A consistent and intuitive
+                  layout enables users to swiftly comprehend the application's features and
+                  functionalities, making contact management a seamless task.
                 </p>
                 <span>
-                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                  🛑 Let's how the user will have a clear navigation, distance from buttons to add,
+                  sort and remove elements. Must be in 16:9 🛑
                 </span>
-                <h4 className="text-[16px] font-bold text-left ">Emphasis on Design Principles</h4>
               </div>
             )}
             {selectedSubject === 4 && (
