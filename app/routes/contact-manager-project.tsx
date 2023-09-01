@@ -142,7 +142,8 @@ export default function ContactsManager() {
                   accuracy during input.
                 </p>
                 <span>
-                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                  🛑 Let's have a tour of the app but without adding new data, just showing how all
+                  buttons. Must be in 16:9 🛑
                 </span>
                 <h4 className="text-[16px] font-bold text-left ">Dynamic Sorting and Filtering</h4>
                 <p>
@@ -151,7 +152,8 @@ export default function ContactsManager() {
                   "A-Z" button. This feature streamlines navigation and access to specific contacts.
                 </p>
                 <span>
-                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                  🛑 Let's focus on the sorting buttons, with existing data for now. Must be in 16:9
+                  🛑
                 </span>
                 <h4 className="text-[16px] font-bold text-left ">User-Friendly Card System</h4>
                 <p>
@@ -160,7 +162,8 @@ export default function ContactsManager() {
                   to manage contacts. The "Remove" button on each card enables easy contact removal.
                 </p>
                 <span>
-                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                  🛑 Let's show how the "remove" button works as well as adding contacts for both
+                  kinds. Must be in 16:9 🛑
                 </span>
                 <h4 className="text-[16px] font-bold text-left ">
                   Interactive and Smooth User Experience
@@ -170,6 +173,26 @@ export default function ContactsManager() {
                   button colors, provide immediate feedback on user selections. Additionally, smooth
                   scrolling effects contribute to a seamless and enjoyable navigation experience
                   through the contact list.
+                </p>
+                <span>
+                  🛑 Let's focus on buttons visual feedback, scrolling contact list. Must be in 16:9
+                  🛑
+                </span>
+              </div>
+            )}
+            {selectedSubject === 3 && (
+              <div className="flex flex-col gap-5 text-justify">
+                <h3 className="text-[20px] font-bold text-left ">
+                  <b>Design and User Experience</b>
+                </h3>
+                <h4 className="text-[16px] font-bold text-left ">Emphasis on Design Principles</h4>
+                <p>
+                  The Contact Manager project prioritizes design principles to craft a visually
+                  captivating and user-friendly website. Through a harmonious blend of typography,
+                  color schemes, and spacing, the design evokes a sense of professionalism and
+                  aesthetic appeal. Careful attention to detail ensures that the user interface (UI)
+                  not only communicates information effectively but also offers a pleasant and
+                  engaging visual experience.
                 </p>
                 <span>
                   🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
@@ -184,18 +207,7 @@ export default function ContactsManager() {
                 <span>
                   🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
                 </span>
-              </div>
-            )}
-            {selectedSubject === 3 && (
-              <div className="flex flex-col gap-5 text-justify">
-                <h3 className="text-[20px] font-bold text-left ">
-                  <b>Design and User Experience</b>
-                </h3>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-                  className="rounded-[10px]"
-                  src={contactManagerAsset}
-                />
+                <h4 className="text-[16px] font-bold text-left ">Emphasis on Design Principles</h4>
               </div>
             )}
             {selectedSubject === 4 && (
