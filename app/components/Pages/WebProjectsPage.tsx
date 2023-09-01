@@ -195,9 +195,7 @@ function ContactManager() {
       <div className="my-5 flex flex-col gap-5">
         <div>
           <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-          <h3 className="text-mainColor font-bold text-[20px] text-left">
-            Contact Manager Feature
-          </h3>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">Contact Manager</h3>
         </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
@@ -257,7 +255,7 @@ function UserFilter() {
       <div className="my-5 flex flex-col gap-5">
         <div>
           <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-          <h3 className="text-mainColor font-bold text-[20px] text-left">User Details Feature</h3>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">User Details</h3>
         </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
