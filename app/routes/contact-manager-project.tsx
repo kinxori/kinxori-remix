@@ -224,49 +224,67 @@ export default function ContactsManager() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Technical Implementation</b>
                 </h3>
-                <p>In the creation of this project, five main technologies took center stage: :</p>
-                <ul className="list-disc pl-5">
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={reactLogo}
-                      alt="react js logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={javascriptLogo}
-                      alt="javascript logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;HTML5
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={htmlLogo}
-                      alt="html5 logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;CSS3
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={cssLogo}
-                      alt="CSS3 logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Github
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={githubLogo}
-                      alt="github logo"
-                    />
-                  </li>
-                </ul>
+                <h4 className="text-[16px] font-bold text-left ">Technologies and Tools</h4>
+                <p>
+                  The Contact Manager project was meticulously developed using a combination of
+                  cutting-edge technologies and industry-standard tools. React, a popular JavaScript
+                  library, served as the foundation for building the project's frontend. The state
+                  management capabilities of React's useState hook facilitated real-time data
+                  updates, enabling dynamic rendering of contacts and interactions.
+                </p>
+                <span>
+                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
+                  16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">
+                  Programming Languages and Frameworks
+                </h4>
+                <p>
+                  JavaScript was the primary programming language employed to bring the Contact
+                  Manager to life. React's component-based architecture facilitated the creation of
+                  modular and reusable UI elements. The project leveraged CSS for styling,
+                  implementing design principles that shaped the visual aspects of the application.
+                </p>
+                <span>
+                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
+                  16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">
+                  Libraries for Enhanced Functionality
+                </h4>
+                <p>
+                  React's ecosystem was enriched by the integration of various libraries to enhance
+                  functionality. For instance, the project utilized the "useState" hook for managing
+                  state, ensuring seamless data flow and updates. Additionally, the application's
+                  dynamic sorting feature was implemented using JavaScript's "sort" method to
+                  arrange contacts alphabetically.
+                </p>
+                <span>
+                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
+                  16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">
+                  Overcoming Development Challenges
+                </h4>
+                <p>
+                  During the development of the Contact Manager, a notable challenge was encountered
+                  when implementing the dynamic sorting and filtering features. Ensuring the correct
+                  interaction between state changes, user selections, and rendering updates required
+                  careful consideration. By thoroughly studying React's documentation and seeking
+                  guidance from online communities, the development team was able to implement a
+                  robust solution that provided a seamless user experience.
+                </p>
+                <span>
+                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
+                  16:9 🛑
+                </span>
+                <p>
+                  In conclusion, the Contact Manager project demonstrates a robust technical
+                  implementation through the integration of JavaScript, React, and various
+                  libraries. Challenges were met with a combination of thorough research,
+                  collaborative problem-solving, and a commitment to creating an efficient and
+                  user-friendly contact management solution.
+                </p>
               </div>
             )}
           </div>
