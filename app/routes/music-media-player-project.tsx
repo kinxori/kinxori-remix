@@ -20,8 +20,8 @@ export default function MusicMediaPlayer() {
   };
   // console.log("number", selectedSubject);
   return (
-    <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
-      <div className=" bg-bgColor flex-col flex p-10 box-border">
+    <section className="font-[inter] pt-[60px] w-[100vw] flex flex-col text-white">
+      <div className="p-10 box-border">
         <div className="mb-10">
           <h3 className="text-[30px] font-bold  ">
             <b>Music Media Player</b> 💽
