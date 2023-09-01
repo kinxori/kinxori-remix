@@ -132,14 +132,58 @@ export default function ContactsManager() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Features and Functionality</b>
                 </h3>
-                <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
-                />
+                <h4 className="text-[16px] font-bold text-left ">
+                  Comprehensive Contact Management
+                </h4>
+                <p>
+                  The Contact Manager project provides users with a user-friendly platform for
+                  efficiently managing their contacts. Users can effortlessly add new contacts,
+                  specifying personal or company associations. Real-time validation ensures data
+                  accuracy during input.
+                </p>
+                <span>
+                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">Dynamic Sorting and Filtering</h4>
+                <p>
+                  A standout feature is the dynamic sorting and filtering options. Users can easily
+                  toggle between personal and company contacts and sort them alphabetically with the
+                  "A-Z" button. This feature streamlines navigation and access to specific contacts.
+                </p>
+                <span>
+                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">User-Friendly Card System</h4>
+                <p>
+                  The website employs an elegant card system to showcase contact information. These
+                  cards present clear overviews of names and numbers, offering a straightforward way
+                  to manage contacts. The "Remove" button on each card enables easy contact removal.
+                </p>
+                <span>
+                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">
+                  Interactive and Smooth User Experience
+                </h4>
+                <p>
+                  Interactive elements enhance the user experience. Visual cues, like changing
+                  button colors, provide immediate feedback on user selections. Additionally, smooth
+                  scrolling effects contribute to a seamless and enjoyable navigation experience
+                  through the contact list.
+                </p>
+                <span>
+                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                </span>
+                <h4 className="text-[16px] font-bold text-left ">Visual Design and Presentation</h4>
+                <p>
+                  The project's visual design is visually appealing, with careful consideration
+                  given to typography, spacing, and contrast. While the project is a technical test
+                  submission, its layout and design choices could easily be extended to showcase the
+                  developer's portfolio, demonstrating their skills and creativity.
+                </p>
+                <span>
+                  🛑 Let's add a high resolution img focusing on the application. Must be in 16:9 🛑
+                </span>
               </div>
             )}
             {selectedSubject === 3 && (
