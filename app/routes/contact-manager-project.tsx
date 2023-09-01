@@ -208,9 +208,15 @@ export default function ContactsManager() {
                   functionalities, making contact management a seamless task.
                 </p>
                 <span>
-                  🛑 Let's how the user will have a clear navigation, distance from buttons to add,
-                  sort and remove elements. Must be in 16:9 🛑
+                  🛑 Let's add how the user will have a clear navigation, distance from buttons to
+                  add, sort and remove elements. Must be in 16:9 🛑
                 </span>
+                <p>
+                  In summary, the Contact Manager project thrives on design principles that combine
+                  aesthetics with usability. The UI optimization, responsive design, and intuitive
+                  interactions together create a website that not only looks impressive but also
+                  ensures a smooth and delightful user experience.
+                </p>
               </div>
             )}
             {selectedSubject === 4 && (
