@@ -233,8 +233,9 @@ export default function ContactsManager() {
                   updates, enabling dynamic rendering of contacts and interactions.
                 </p>
                 <span>
-                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
-                  16:9 🛑
+                  🛑 Let's add a custom crafted motion graphics video showing each tech and each
+                  brief description. For this will be about React and useState hook. Must be in 16:9
+                  🛑
                 </span>
                 <h4 className="text-[16px] font-bold text-left ">
                   Programming Languages and Frameworks
@@ -246,8 +247,9 @@ export default function ContactsManager() {
                   implementing design principles that shaped the visual aspects of the application.
                 </p>
                 <span>
-                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
-                  16:9 🛑
+                  🛑Let's add a custom crafted motion graphics video showing each tech and each
+                  brief description. For this will be about Javascript and tailwind. Maybe just show
+                  how this project is reusable as it's own component. Must be in 16:9 🛑
                 </span>
                 <h4 className="text-[16px] font-bold text-left ">
                   Libraries for Enhanced Functionality
@@ -259,10 +261,7 @@ export default function ContactsManager() {
                   dynamic sorting feature was implemented using JavaScript's "sort" method to
                   arrange contacts alphabetically.
                 </p>
-                <span>
-                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
-                  16:9 🛑
-                </span>
+                <span>🛑 Let's add code snippets. Must be in 16:9 🛑</span>
                 <h4 className="text-[16px] font-bold text-left ">
                   Overcoming Development Challenges
                 </h4>
@@ -274,10 +273,7 @@ export default function ContactsManager() {
                   guidance from online communities, the development team was able to implement a
                   robust solution that provided a seamless user experience.
                 </p>
-                <span>
-                  🛑 Let's show color contrast (maybe ranking from browser) and fonts. Must be in
-                  16:9 🛑
-                </span>
+                <span>🛑 Let's add code snippets. Must be in 16:9 🛑</span>
                 <p>
                   In conclusion, the Contact Manager project demonstrates a robust technical
                   implementation through the integration of JavaScript, React, and various
