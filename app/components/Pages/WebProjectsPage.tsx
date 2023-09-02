@@ -51,7 +51,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           className="overflow-x-scroll w-[100vw] p-10 flex gap-5 items-start"
         >
           <ElDiablito13 />
-          <MusicMediaPlayer />
+          <MusicPlayer />
           <ContactManager />
           <UserFilter />
         </section>
@@ -123,7 +123,7 @@ function ElDiablito13() {
   );
 }
 
-function MusicMediaPlayer() {
+function MusicPlayer() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -141,7 +141,7 @@ function MusicMediaPlayer() {
         </div>
         <p className="text-[14px] ">
           Creating a music media player.&#xa0;
-          <Link to="/music-media-player-project" className="underline italic text-mainColor ">
+          <Link to="/music-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>

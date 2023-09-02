@@ -111,10 +111,10 @@ export default function MobileNav() {
           <Link
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/music-media-player-project"
+            to="/music-player-project"
             onClick={handleSlide}
           >
-            Music Media Player Project&#160;&#160;
+            Music Player Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-music"></i>
           </Link>
           <Link

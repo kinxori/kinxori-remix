@@ -24,7 +24,7 @@ export default function MusicMediaPlayer() {
       <div className="p-10 box-border">
         <div className="mb-10">
           <h3 className="text-[30px] font-bold  ">
-            <b>Music Media Player</b> 💽
+            <b>Music Player</b> 💽
           </h3>
           <i className="text-white/50 font-light text-[14px]">#Practice</i>
         </div>
@@ -424,7 +424,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:url",
-      content: "https://kinxori.com/music-media-player-project",
+      content: "https://kinxori.com/music-player-project",
     },
     {
       property: "og:type",
