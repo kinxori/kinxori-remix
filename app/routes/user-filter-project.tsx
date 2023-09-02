@@ -224,7 +224,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:image",
-      content: "Generic - FIX 👺",
+      content: "NO IMAGE - FIX 👀",
     },
     {
       property: "og:url",
@@ -256,7 +256,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:image",
-      content: "Generic - FIX 👺",
+      content: "NO IMAGE - FIX 👀",
     },
   ];
 };

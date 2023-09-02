@@ -32,9 +32,11 @@ export default function ContactsManager() {
           <img className="rounded-[10px]" src={contactManagerAsset} />
           <div className="flex flex-col">
             <p className="text-justify">
-              Discover the very essence that fuels its existence, delve into its unique features,
-              and immerse yourself in the intricacies of this remarkable project. From concept to
-              creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
+              This Contact Manager project, developed as a technical test for a Junior Frontend
+              Developer role, showcases a user-friendly contact management solution. Using React,
+              JavaScript, and Tailwind, it enables easy contact organization, sorting, and
+              filtering. With a strong emphasis on intuitive interactions, it highlights Kinxori's
+              frontend development skills.
             </p>
             <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
@@ -309,7 +311,8 @@ export const meta: V2_MetaFunction = () => {
     { title: "Contact Manager - Project" },
     {
       name: "description",
-      content: "Generic - FIX 👺",
+      content:
+        "This Contact Manager project, developed as a technical test for a Junior Frontend Developer role, showcases a user-friendly contact management solution. Using React, JavaScript, and Tailwind, it enables easy contact organization, sorting, and filtering. With a strong emphasis on intuitive interactions, it highlights Kinxori's frontend development skills.",
     },
     {
       name: "keywords",
@@ -322,11 +325,13 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:description",
-      content: "Generic - FIX 👺",
+      content:
+        "This Contact Manager project, developed as a technical test for a Junior Frontend Developer role, showcases a user-friendly contact management solution. Using React, JavaScript, and Tailwind, it enables easy contact organization, sorting, and filtering. With a strong emphasis on intuitive interactions, it highlights Kinxori's frontend development skills.",
     },
     {
       property: "og:image",
-      content: "Generic - FIX 👺",
+      content:
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-1-ss.png?alt=media&token=dbbe7a74-04b6-4595-951b-183b7c7371c4",
     },
     {
       property: "og:url",
@@ -354,11 +359,13 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:description",
-      content: "Generic - FIX 👺",
+      content:
+        "This Contact Manager project, developed as a technical test for a Junior Frontend Developer role, showcases a user-friendly contact management solution. Using React, JavaScript, and Tailwind, it enables easy contact organization, sorting, and filtering. With a strong emphasis on intuitive interactions, it highlights Kinxori's frontend development skills.",
     },
     {
       name: "twitter:image",
-      content: "Generic - FIX 👺",
+      content:
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-1-ss.png?alt=media&token=dbbe7a74-04b6-4595-951b-183b7c7371c4",
     },
   ];
 };

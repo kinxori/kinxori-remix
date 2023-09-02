@@ -420,7 +420,7 @@ export const meta: V2_MetaFunction = () => {
     {
       property: "og:image",
       content:
-        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=8a6209ae-f768-4216-94d6-4f573efe386a",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=691a7261-bba1-429c-a059-1f8d81725d7b",
     },
     {
       property: "og:url",
@@ -454,7 +454,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "twitter:image",
       content:
-        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=8a6209ae-f768-4216-94d6-4f573efe386a",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/music-media-player-practice-ss.png?alt=media&token=691a7261-bba1-429c-a059-1f8d81725d7b",
     },
   ];
 };
