@@ -4,6 +4,8 @@ import projectsAsset from "~/assets/projects-asset.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import musicMediaPlayerAsset from "~/assets/music-media-player-practice-ss.png";
+import contactManagerAsset from "~/assets/technical-test-1-ss.png";
+import userFilterAsset from "~/assets/technical-test-2-ss.png";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import typescriptLogo from "~/assets/Logos/typescript-color-logo.png";
@@ -17,7 +19,7 @@ import restAPILogo from "~/assets/Logos/rest-api-color-logo.png";
 import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
-import contactManagerAsset from "~/assets/technical-test-1-ss.png";
+
 import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
 
 export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
@@ -66,7 +68,7 @@ function ElDiablito13() {
     >
       <img
         alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
-        className="rounded-[10px]"
+        className="rounded-[10px] min-h-[150px] object-cover"
         src={elDiablito13Asset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -129,7 +131,7 @@ function MusicMediaPlayer() {
     >
       <img
         alt="Screenshot of Kinxori's project named Music Media Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
-        className="rounded-[10px]"
+        className="rounded-[10px] min-h-[150px] object-cover"
         src={musicMediaPlayerAsset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -189,7 +191,7 @@ function ContactManager() {
     >
       <img
         alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
-        className="rounded-[10px]"
+        className="rounded-[10px] min-h-[150px] object-cover"
         src={contactManagerAsset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -249,8 +251,8 @@ function UserFilter() {
     >
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
-        className="rounded-[10px]"
-        src={contactManagerAsset}
+        className="rounded-[10px] min-h-[150px] object-cover"
+        src={userFilterAsset}
       />
       <div className="my-5 flex flex-col gap-5">
         <div>

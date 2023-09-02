@@ -12,6 +12,7 @@ import githubLogo from "~/assets/Logos/github-white-logo.png";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import userFilterIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
+import userFilterAsset from "~/assets/technical-test-2-ss.png";
 
 export default function UserFilter() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -29,7 +30,7 @@ export default function UserFilter() {
           <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
         </div>
         <div className="flex flex-col gap-5">
-          <img className="rounded-[10px]" src={elDiablito13Asset} />
+          <img className="rounded-[10px]" src={userFilterAsset} />
           <div className="flex flex-col">
             <p className="text-justify">
               Discover the very essence that fuels its existence, delve into its unique features,
