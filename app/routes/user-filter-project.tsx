@@ -33,21 +33,22 @@ export default function UserFilter() {
           <img className="rounded-[10px]" src={userFilterAsset} />
           <div className="flex flex-col">
             <p className="text-justify">
-              Discover the very essence that fuels its existence, delve into its unique features,
-              and immerse yourself in the intricacies of this remarkable project. From concept to
-              creation, join me as I unveil the story behind El Diablito 13 and its creative allure.
+              Explore the breakdown of my second technical test for a job, where I created this
+              project focusing on optimizing data, tracking call counts, and sorting contacts.
+              Discover the practical application of frontend skills and gain insights into
+              communication patterns."
             </p>
             <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
                 variant="secButton"
-                href="https://github.com/kinxori/technical-test-1"
+                href="https://github.com/kinxori/technical-test-2"
                 target="_blank"
               >
                 Github Repo
               </AnchorButton>
               <AnchorButton
                 variant="mainButton"
-                href="https://kinxori.github.io/technical-test-1/ "
+                href="https://kinxori.github.io/technical-test-2/ "
                 target="_blank"
               >
                 Live Page
@@ -207,7 +208,8 @@ export const meta: V2_MetaFunction = () => {
     { title: "User Filter - Project" },
     {
       name: "description",
-      content: "Generic - FIX 👺",
+      content:
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
     },
     {
       name: "keywords",
@@ -220,7 +222,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:description",
-      content: "Generic - FIX 👺",
+      content:
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
     },
     {
       property: "og:image",
@@ -252,7 +255,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:description",
-      content: "Generic - FIX 👺",
+      content:
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
     },
     {
       name: "twitter:image",
