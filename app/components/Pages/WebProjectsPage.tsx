@@ -64,7 +64,7 @@ function ElDiablito13() {
   return (
     <article
       className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+      border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <img
         alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
@@ -127,20 +127,20 @@ function MusicPlayer() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <img
-        alt="Screenshot of Kinxori's project named Music Media Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
+        alt="Screenshot of Kinxori's project named Music Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
         className="rounded-[10px] min-h-[150px] object-cover"
         src={musicMediaPlayerAsset}
       />
       <div className="my-5 flex flex-col gap-5">
         <div>
           <i className="text-[12px] text-mainColor">#Practice</i>
-          <h3 className="text-mainColor font-bold text-[20px] text-left">Music Media Player</h3>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">Music Player</h3>
         </div>
         <p className="text-[14px] ">
-          Creating a music media player.&#xa0;
+          Creating a music player.&#xa0;
           <Link to="/music-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
@@ -171,7 +171,7 @@ function MusicPlayer() {
       </div>
       <AnchorButton
         className="mt-5 ml-auto"
-        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        ariaLabel="Hyperlink to visit Kinxori's webapp practice Music Player."
         href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
         target="_blank"
         variant="mainButton"
@@ -187,7 +187,7 @@ function ContactManager() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <img
         alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
@@ -231,7 +231,7 @@ function ContactManager() {
       </div>
       <AnchorButton
         className="mt-5 ml-auto"
-        ariaLabel="Hyperlink to visit El Diablito 13's official website."
+        ariaLabel="Hyperlink to visit Kinxori's webpage about the first technical test for a frontend jr position."
         href="https://kinxori.github.io/technical-test-1/"
         target="_blank"
         variant="mainButton"
@@ -247,7 +247,7 @@ function UserFilter() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
+    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start"
     >
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
@@ -291,8 +291,8 @@ function UserFilter() {
       </div>
       <AnchorButton
         className="mt-5 ml-auto"
-        ariaLabel="Hyperlink to visit El Diablito 13's official website."
-        href="https://kinxori.github.io/technical-test-1/"
+        ariaLabel="Hyperlink to visit Kinxori's webpage about the second technical test for a frontend jr position."
+        href="https://kinxori.github.io/technical-test-2/"
         target="_blank"
         variant="mainButton"
       >
