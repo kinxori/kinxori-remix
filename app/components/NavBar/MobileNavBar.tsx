@@ -129,7 +129,7 @@ export default function MobileNav() {
           <Link
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/user-filter-project"
+            to="/call-history-filter-project"
             onClick={handleSlide}
           >
             User Details Project&#160;&#160;<i className="text-[24px] fa-solid fa-id-card"></i>

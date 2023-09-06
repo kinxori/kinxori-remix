@@ -5,7 +5,7 @@ import AnchorButton from "~/components/CustomButton/AnchorButton";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import musicMediaPlayerAsset from "~/assets/music-media-player-practice-ss.png";
 import contactManagerAsset from "~/assets/technical-test-1-ss.png";
-import userFilterAsset from "~/assets/technical-test-2-ss.png";
+import callHistoryFilterAsset from "~/assets/technical-test-2-ss.png";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import typescriptLogo from "~/assets/Logos/typescript-color-logo.png";
@@ -53,7 +53,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           <ElDiablito13 />
           <MusicPlayer />
           <ContactManager />
-          <UserFilter />
+          <CallHistoryFilter />
         </section>
       </div>
     </section>
@@ -243,7 +243,7 @@ function ContactManager() {
   );
 }
 
-function UserFilter() {
+function CallHistoryFilter() {
   return (
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -252,16 +252,16 @@ function UserFilter() {
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
         className="rounded-[10px] min-h-[150px] object-cover"
-        src={userFilterAsset}
+        src={callHistoryFilterAsset}
       />
       <div className="my-5 flex flex-col gap-5">
         <div>
           <i className="text-[12px] text-mainColor">#TechnicalTest</i>
-          <h3 className="text-mainColor font-bold text-[20px] text-left">User Details</h3>
+          <h3 className="text-mainColor font-bold text-[20px] text-left">Call History Filter</h3>
         </div>
         <p className="text-[14px] ">
           Technical test for a Frontend Jr role.&#xa0;
-          <Link to="/user-filter-project" className="underline italic text-mainColor ">
+          <Link to="/call-history-filter-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
         </p>
