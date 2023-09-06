@@ -25,7 +25,7 @@ export default function UserFilter() {
       <div className="p-10 box-border">
         <div className="mb-10">
           <h3 className="text-[30px] font-bold">
-            <b>User Filter</b> 🗂
+            <b>Call History Filter</b> 🗂
           </h3>
           <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
         </div>
@@ -205,7 +205,7 @@ export const links: LinksFunction = () => {
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "User Filter - Project" },
+    { title: "Call History Filter - Project" },
     {
       name: "description",
       content:
@@ -214,11 +214,11 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "Kinxori's User Filter Live Project URL, Kinxori's User Filter Project Technical Implementation, Kinxori's User Filter Project Design and User Experience, Kinxori's User Filter Project Features and Functionality, Kinxori's User Filter Project Github Repository URL, Kinxori's User Filter Project Project Overview, Kinxori's User Filter Project Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
+        "Kinxori's Call History Filter Live Project URL, Kinxori's Call History Filter Project Technical Implementation, Kinxori's Call History Filter Project Design and User Experience, Kinxori's Call History Filter Project Features and Functionality, Kinxori's Call History Filter Project Github Repository URL, Kinxori's Call History Filter Project Project Overview, Kinxori's Call History Filter Project Project, Personal Website, Portfolio, Web developer, React developer, Front-end developer, Javascript developer, CSS developer, HTML5 developer, Remix developer, Frontend freelancer, Kinxori, Gustavo Quiroz",
     },
     {
       property: "og:title",
-      content: "User Filter - Project",
+      content: "Call History Filter - Project",
     },
     {
       property: "og:description",
@@ -252,7 +252,7 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:title",
-      content: "User Filter - Project",
+      content: "Call History Filter - Project",
     },
     {
       name: "twitter:description",
