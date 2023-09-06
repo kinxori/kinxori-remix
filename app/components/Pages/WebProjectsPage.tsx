@@ -110,7 +110,7 @@ function ElDiablito13() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 ml-auto"
+        className="mt-auto ml-auto"
         ariaLabel="Hyperlink to visit El Diablito 13's official website."
         href="https://el-diablito-13-b8034.firebaseapp.com/"
         target="_blank"
@@ -140,7 +140,7 @@ function MusicPlayer() {
           <h3 className="text-mainColor font-bold text-[20px] text-left">Music Player</h3>
         </div>
         <p className="text-[14px] ">
-          Creating a music player.&#xa0;
+          Creating a music player application.&#xa0;
           <Link to="/music-player-project" className="underline italic text-mainColor ">
             Read more.
           </Link>
@@ -170,7 +170,7 @@ function MusicPlayer() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 ml-auto"
+        className="mt-auto ml-auto"
         ariaLabel="Hyperlink to visit Kinxori's webapp practice Music Player."
         href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
         target="_blank"
@@ -230,7 +230,7 @@ function ContactManager() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 ml-auto"
+        className="mt-auto ml-auto"
         ariaLabel="Hyperlink to visit Kinxori's webpage about the first technical test for a frontend jr position."
         href="https://kinxori.github.io/technical-test-1/"
         target="_blank"
@@ -290,7 +290,7 @@ function UserFilter() {
         </div>
       </div>
       <AnchorButton
-        className="mt-5 ml-auto"
+        className="mt-auto ml-auto"
         ariaLabel="Hyperlink to visit Kinxori's webpage about the second technical test for a frontend jr position."
         href="https://kinxori.github.io/technical-test-2/"
         target="_blank"
