@@ -227,7 +227,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       property: "og:image",
-      content: "NO IMAGE - FIX 👀",
+      content:
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=db57d88a-2f07-4054-8487-edf335d82c27",
     },
     {
       property: "og:url",
@@ -260,7 +261,8 @@ export const meta: V2_MetaFunction = () => {
     },
     {
       name: "twitter:image",
-      content: "NO IMAGE - FIX 👀",
+      content:
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=db57d88a-2f07-4054-8487-edf335d82c27",
     },
   ];
 };
