@@ -14,7 +14,7 @@ import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import userFilterIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 import userFilterAsset from "~/assets/technical-test-2-ss.png";
 
-export default function UserFilter() {
+export default function CallHistoryFilter() {
   const [selectedSubject, setSelectedSubject] = useState(1);
   const handleSubject = (subject: number) => {
     selectedSubject !== subject ? setSelectedSubject(subject) : null;
@@ -96,13 +96,18 @@ export default function UserFilter() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Project Overview</b>
                 </h3>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-overview-project-asset.mp4?alt=media&token=f8dfd4cc-4fc4-4a00-b9d9-a66297626b38"
-                />
+                <p>
+                  The Call History Filter project is a dynamic and user-friendly web application
+                  designed to streamline the organization and analysis of call history data. It
+                  offers an efficient solution for managing and displaying call records with key
+                  insights into callers and their contact history.
+                </p>
+                <p>
+                  The Call History Filter project was meticulously crafted as a technical test by a
+                  junior front-end developer applying for a coveted role in the industry. The
+                  challenge presented a unique opportunity to showcase skills and creativity while
+                  addressing a real-world problem.
+                </p>
               </div>
             )}
             {selectedSubject === 2 && (
