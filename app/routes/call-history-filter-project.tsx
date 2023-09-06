@@ -115,14 +115,37 @@ export default function CallHistoryFilter() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Features and Functionality</b>
                 </h3>
-                <h4 className="text-[16px] font-bold text-left ">Navigation Bar</h4>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/el-diablito-13-intro-page-asset.mp4?alt=media&token=c73edb49-6506-4628-b58d-3466f4307134"
-                />
+                <h4 className="text-[16px] font-bold text-left ">
+                  1. Comprehensive Call History Management:
+                </h4>
+                <p>
+                  The Call History Filter website excels in providing users with comprehensive call
+                  history management. It intelligently aggregates call records, reducing redundancy
+                  and ensuring a clutter-free experience. Users can effortlessly track their
+                  communication with contacts, gaining valuable insights into their interactions.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">2. Intuitive User Interface:</h4>
+                <p>
+                  The website's user interface is designed with simplicity and clarity in mind. The
+                  call history is presented in an organized and visually appealing table format,
+                  making it easy for users to grasp their communication patterns at a glance.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">
+                  3. Candidate Portfolio Showcase:
+                </h4>
+                <p>
+                  While primarily developed for a technical test, the website also serves as an
+                  excellent showcase of the candidate's front-end development skills. It
+                  demonstrates the ability to transform a concept into a functional and visually
+                  appealing web application.
+                </p>
+                <p>
+                  In summary, the Call History Filter website offers a powerful set of features for
+                  efficient call history management. Its user-centric design, responsive layout, and
+                  interactive elements contribute to an enhanced user experience. Additionally, it
+                  doubles as a testament to the candidate's expertise in web development, showcasing
+                  their ability to craft functional and aesthetically pleasing websites.
+                </p>
               </div>
             )}
             {selectedSubject === 3 && (
