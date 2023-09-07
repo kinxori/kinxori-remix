@@ -255,7 +255,7 @@ export const meta: V2_MetaFunction = () => {
     {
       property: "og:image",
       content:
-        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=db57d88a-2f07-4054-8487-edf335d82c27",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=efebafd3-d8a9-4999-8ed9-f6729e558176",
     },
     {
       property: "og:url",
@@ -289,7 +289,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "twitter:image",
       content:
-        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=db57d88a-2f07-4054-8487-edf335d82c27",
+        "https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/technical-test-2-ss.png?alt=media&token=efebafd3-d8a9-4999-8ed9-f6729e558176",
     },
   ];
 };
