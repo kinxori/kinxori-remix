@@ -132,7 +132,8 @@ export default function MobileNav() {
             to="/call-history-filter-project"
             onClick={handleSlide}
           >
-            User Details Project&#160;&#160;<i className="text-[24px] fa-solid fa-id-card"></i>
+            Call History Filter Project&#160;&#160;
+            <i className="text-[24px] fa-solid fa-id-card"></i>
           </Link>
         </div>
         <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>

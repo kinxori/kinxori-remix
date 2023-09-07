@@ -25,6 +25,7 @@ export default function InputForm() {
     fetchEmojiData();
   }, []);
 
+  // escape keydown to close pop-up
   useEffect(() => {
     const exitEsc = (event: KeyboardEvent) => {
       if (event.key === "Escape") {

@@ -95,17 +95,40 @@ export default function CallHistoryFilter() {
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Project Overview</b>
                 </h3>
+                <p>Project Name: Call History Filter</p>
+                <h4 className="text-[16px] font-bold text-left ">Purpose:</h4>
                 <p>
-                  The Call History Filter project is a dynamic and user-friendly web application
-                  designed to streamline the organization and analysis of call history data. It
-                  offers an efficient solution for managing and displaying call records with key
-                  insights into callers and their contact history.
+                  The primary objective of the Call History Filter project was to leverage
+                  JavaScript Array Methods to efficiently process and analyze call history data.
                 </p>
+                <h4 className="text-[16px] font-bold text-left ">Target Audience:</h4>
                 <p>
-                  The Call History Filter project was meticulously crafted as a technical test by a
-                  junior front-end developer applying for a coveted role in the industry. The
-                  challenge presented a unique opportunity to showcase skills and creativity while
-                  addressing a real-world problem.
+                  While initially developed as a technical challenge, the Call History Filter
+                  project has a broad potential audience, including:
+                </p>
+                <ul className="list-disc pl-5 flex flex-col gap-5">
+                  <li>
+                    Junior Frontend Developers seeking to enhance their skills in JavaScript and
+                    React.
+                  </li>
+                  <li>
+                    Technical interview candidates looking to demonstrate their problem-solving
+                    abilities and technical prowess.
+                  </li>
+                  <li>
+                    Businesses and professionals interested in a solution for efficient call history
+                    data analysis.
+                  </li>
+                </ul>
+                <h4 className="text-[16px] font-bold text-left ">The Problem:</h4>
+                <p>
+                  Many professionals and businesses accumulate extensive call history data, making
+                  it challenging to extract meaningful insights.
+                </p>
+                <h4 className="text-[16px] font-bold text-left ">The Solution:</h4>
+                <p>
+                  The Call History Filter addresses this challenge by providing tools to eliminate
+                  duplicate users, count call frequency, and sort users based on call activity.
                 </p>
               </div>
             )}
@@ -121,7 +144,7 @@ export default function CallHistoryFilter() {
                   The Call History Filter website excels in providing users with comprehensive call
                   history management. It intelligently aggregates call records, reducing redundancy
                   and ensuring a clutter-free experience. Users can effortlessly track their
-                  communication with contacts, gaining valuable insights into their interactions.
+                  communication with users, gaining valuable insights into their interactions.
                 </p>
                 <h4 className="text-[16px] font-bold text-left ">2. Intuitive User Interface:</h4>
                 <p>
@@ -155,7 +178,7 @@ export default function CallHistoryFilter() {
                 <img
                   alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
-                  src={elDiablito13Asset}
+                  src={userFilterAsset}
                 />
               </div>
             )}
