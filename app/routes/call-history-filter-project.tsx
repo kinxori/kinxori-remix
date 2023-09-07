@@ -34,9 +34,8 @@ export default function CallHistoryFilter() {
           <div className="flex flex-col">
             <p className="text-justify">
               Explore the breakdown of my second technical test for a job, where I created this
-              project focusing on optimizing data, tracking call counts, and sorting contacts.
-              Discover the practical application of frontend skills and gain insights into
-              communication patterns."
+              project focusing on optimizing data, tracking call counts, and sorting users. Explore
+              my web development experience and skills with this project.
             </p>
             <div className="mt-5 ml-auto flex gap-2">
               <AnchorButton
@@ -237,7 +236,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "description",
       content:
-        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting users. Explore my web development experience and skills with this project",
     },
     {
       name: "keywords",
@@ -251,7 +250,7 @@ export const meta: V2_MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting users. Explore my web development experience and skills with this project",
     },
     {
       property: "og:image",
@@ -285,7 +284,7 @@ export const meta: V2_MetaFunction = () => {
     {
       name: "twitter:description",
       content:
-        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting contacts. Discover the practical application of frontend skills and gain insights into communication patterns.",
+        "Explore the breakdown of my second technical test for a job, where I created this project focusing on optimizing data, tracking call counts, and sorting users. Explore my web development experience and skills with this project",
     },
     {
       name: "twitter:image",
