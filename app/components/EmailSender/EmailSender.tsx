@@ -8,7 +8,7 @@ export default function InputForm() {
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
-  const [isPopUp, setPopUp] = useState(false);
+  const [isPopUp, setPopUp] = useState(true);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -23,6 +23,16 @@ export default function InputForm() {
       setRandomEmojiGenerated(emoji);
     };
     fetchEmojiData();
+  }, []);
+
+  useEffect(() => {
+    const exitEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handlePopUp(false);
+      }
+    };
+    document.addEventListener("keydown", exitEsc);
+    return () => document.removeEventListener("keydown", exitEsc);
   }, []);
 
   const handleSubmit = async (event: any) => {
