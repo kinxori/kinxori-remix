@@ -7,13 +7,12 @@ import AnchorButton from "~/components/CustomButton/AnchorButton";
 import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
-import cssLogo from "~/assets/Logos/css-color-logo.png";
 import tailwindLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
-import githubLogo from "~/assets/Logos/github-white-logo.png";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
-import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
 import userFilterIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 import userFilterAsset from "~/assets/technical-test-2-ss.png";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 export default function CallHistoryFilter() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -21,6 +20,30 @@ export default function CallHistoryFilter() {
     selectedSubject !== subject ? setSelectedSubject(subject) : null;
   };
   // console.log("number", selectedSubject);
+
+  const dataProcessingCode = `
+  const uniqueContacts = data.reduce((acc, contact) => {
+    const existingContact = acc.find((c) => c.phoneNumber === contact.phoneNumber);
+    if (!existingContact) {
+      // Add a new contact if it doesn't exist.
+      // ...
+    } else {
+      // Update call count for existing contact.
+      // ...
+    }
+    return acc;
+  }, []);
+  `;
+
+  const userInteractionCode = `
+  const handleExpandRow = (item) => {
+    setExpandRow((prevState) => ({
+      ...prevState,
+      [item.phoneNumber]: !prevState[item.phoneNumber],
+    }));
+  };  
+  `;
+
   return (
     <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
       <div className="p-10 box-border">
@@ -107,7 +130,7 @@ export default function CallHistoryFilter() {
                   While initially developed as a technical challenge, the Call History Filter
                   project has a broad potential audience, including:
                 </p>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     Junior Frontend Developers seeking to enhance their skills in JavaScript and
                     React.
@@ -139,7 +162,7 @@ export default function CallHistoryFilter() {
                   <b>Features and Functionality</b>
                 </h3>
                 <h4 className="text-[16px] font-bold text-left ">Feature Overview:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     The "Call History Filter" project is a dynamic tool designed to analyze and
                     manage call history data efficiently.
@@ -150,7 +173,7 @@ export default function CallHistoryFilter() {
                   </li>
                 </ul>
                 <h4 className="text-[16px] font-bold text-left ">Project Presentation:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>Project is presented in a clean and organized layout.</li>
                   <li>
                     This project demonstrates practical JavaScript and React skills applied to
@@ -158,7 +181,7 @@ export default function CallHistoryFilter() {
                   </li>
                 </ul>
                 <h4 className="text-[16px] font-bold text-left ">Interactivity:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     The table allows users to sort contacts by call frequency in descending order,
                     making it easy to identify the most active contacts.
@@ -176,7 +199,7 @@ export default function CallHistoryFilter() {
                   <b>Design and User Experience</b>
                 </h3>
                 <h4 className="text-[16px] font-bold text-left ">Visual Appeal:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     The component follows a clean and modern design, ensuring a visually appealing
                     presentation of call history data.
@@ -192,7 +215,7 @@ export default function CallHistoryFilter() {
                   src={userFilterAsset}
                 />
                 <h4 className="text-[16px] font-bold text-left ">User-Friendly UI:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     The user interface (UI) is designed with user-friendliness in mind, featuring a
                     straightforward layout that allows users to quickly understand and interact with
@@ -209,7 +232,7 @@ export default function CallHistoryFilter() {
                   src={userFilterAsset}
                 />
                 <h4 className="text-[16px] font-bold text-left ">Optimized Navigation:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     Users can easily navigate through the call history data using interactive
                     elements.
@@ -225,7 +248,7 @@ export default function CallHistoryFilter() {
                   src={userFilterAsset}
                 />
                 <h4 className="text-[16px] font-bold text-left ">Transitions and Effects:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     Smooth transition effects are applied to expand and collapse call history
                     details, creating a visually pleasing and polished user interaction.
@@ -304,18 +327,23 @@ export default function CallHistoryFilter() {
                     duplicates and calculating call counts. This was overcome by using JavaScript
                     Array Methods and React state management.
                   </li>
+                  <div className="border-[2px] border-white overflow-hidden rounded-[10px]">
+                    <SyntaxHighlighter showLineNumbers style={dracula} language="javascript">
+                      {dataProcessingCode}
+                    </SyntaxHighlighter>
+                  </div>
                   <li>
                     <span className="font-bold">User Interaction:</span> Implementing smooth
                     transitions and interactive features for expanding and collapsing call history
                     details posed a challenge. This was addressed through CSS animations and state
                     management in React.
                   </li>
+                  <div className="border-[2px] border-white overflow-hidden rounded-[10px]">
+                    <SyntaxHighlighter showLineNumbers style={dracula} language="javascript">
+                      {userInteractionCode}
+                    </SyntaxHighlighter>
+                  </div>
                 </ul>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-                  className="rounded-[10px]"
-                  src={userFilterAsset}
-                />
               </div>
             )}
           </div>
