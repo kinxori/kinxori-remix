@@ -8,6 +8,7 @@ import reactLogo from "~/assets/Logos/react-color-logo.png";
 import javascriptLogo from "~/assets/Logos/javascript-color-logo.png";
 import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
+import tailwindLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
 import elDiablito13Asset from "~/assets/music-media-player-practice-ss.png";
@@ -247,7 +248,7 @@ export default function CallHistoryFilter() {
                   <b>Technical Implementation</b>
                 </h3>
                 <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-5">
+                <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
                     Smooth transition effects are applied to expand and collapse call history
                     details, creating a visually pleasing and polished user interaction.
@@ -262,51 +263,53 @@ export default function CallHistoryFilter() {
                   className="rounded-[10px]"
                   src={userFilterAsset}
                 />
-                <ul className="list-disc pl-5 flex flex-col gap-5 ">
+                <ul className="list-disc pl-5 flex flex-col gap-3 ">
                   <li className="relative ">
                     <span className="font-bold">
-                      &#xa0;
                       <img
                         className="absolute bottom-0 top-0 w-[20px]"
                         src={reactLogo}
                         alt="react js logo"
                       />
-                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs:
+                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs:
                     </span>{" "}
                     The component is developed using the React library, allowing for efficient
                     building of user interfaces and dynamic components.
                   </li>
                   <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={javascriptLogo}
-                      alt="javascript logo"
-                    />
+                    <span className="font-bold">
+                      <img
+                        className="absolute bottom-0 top-0 w-[20px]"
+                        src={javascriptLogo}
+                        alt="javascript logo"
+                      />
+                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript:
+                    </span>{" "}
+                    JavaScript is extensively used to manipulate and process call history data.
                   </li>
                   <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;HTML5
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={htmlLogo}
-                      alt="html5 logo"
-                    />
+                    <span className="font-bold">
+                      <img
+                        className="absolute bottom-0 top-0 w-[20px]"
+                        src={htmlLogo}
+                        alt="html5 logo"
+                      />
+                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;HTML5:
+                    </span>{" "}
+                    HTML is used to structure the content and create a semantic markup.
                   </li>
+
                   <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;CSS3
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={cssLogo}
-                      alt="CSS3 logo"
-                    />
-                  </li>
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Github
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={githubLogo}
-                      alt="github logo"
-                    />
+                    <span className="font-bold">
+                      <img
+                        className="absolute bottom-0 top-0 w-[20px]"
+                        src={tailwindLogo}
+                        alt="Tailwind logo"
+                      />
+                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;TailwindCss:
+                    </span>{" "}
+                    TailwindCSS is applied to style and layout the component for a visually
+                    appealing presentation.
                   </li>
                 </ul>
               </div>
