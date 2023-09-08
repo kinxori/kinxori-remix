@@ -118,10 +118,33 @@ export default function CallHistoryFilter() {
           <div className="my-10">
             {selectedSubject === 1 && (
               <div className="flex flex-col gap-5 ">
+                <h1>1920x720</h1>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset.mp4?alt=media&token=16116567-ec11-4d76-8170-aea727aafe9d"
+                />
+                <h1>854x480</h1>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset2.mp4?alt=media&token=a94f204e-b312-4a38-85b5-d01a38869656"
+                />
+                <h1>640x360</h1>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset2.mp4?alt=media&token=a94f204e-b312-4a38-85b5-d01a38869656"
+                />
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Project Overview</b>
                 </h3>
-                <p>Project Name: Call History Filter</p>
                 <h4 className="text-[16px] font-bold text-left ">Purpose:</h4>
                 <p>
                   The primary objective of the Call History Filter project was to leverage
@@ -156,6 +179,11 @@ export default function CallHistoryFilter() {
                   The Call History Filter addresses this challenge by providing tools to eliminate
                   duplicate users, count call frequency, and sort users based on call activity.
                 </p>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
               </div>
             )}
             {selectedSubject === 2 && (
@@ -174,6 +202,11 @@ export default function CallHistoryFilter() {
                     frequency, and sorting users by call activity.
                   </li>
                 </ul>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
                 <h4 className="text-[16px] font-bold text-left ">Project Presentation:</h4>
                 <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>Project is presented in a clean and organized layout.</li>
@@ -182,6 +215,11 @@ export default function CallHistoryFilter() {
                     real-world data processing challenges.
                   </li>
                 </ul>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
                 <h4 className="text-[16px] font-bold text-left ">Interactivity:</h4>
                 <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
@@ -193,6 +231,11 @@ export default function CallHistoryFilter() {
                     dates, by expanding the corresponding row.
                   </li>
                 </ul>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
               </div>
             )}
             {selectedSubject === 3 && (
@@ -329,7 +372,7 @@ export default function CallHistoryFilter() {
                     duplicates and calculating call counts. This was overcome by using JavaScript
                     Array Methods and React state management.
                   </li>
-                  <div className="border-[2px] border-white overflow-hidden rounded-[10px]">
+                  <div className="border-[2px] border-white my-5 overflow-hidden rounded-[10px]">
                     <SyntaxHighlighter showLineNumbers style={dracula} language="javascript">
                       {dataProcessingCode}
                     </SyntaxHighlighter>
@@ -340,7 +383,7 @@ export default function CallHistoryFilter() {
                     details posed a challenge. This was addressed through CSS animations and state
                     management in React.
                   </li>
-                  <div className="border-[2px] border-white overflow-hidden rounded-[10px]">
+                  <div className="border-[2px] border-white my-5 overflow-hidden rounded-[10px]">
                     <SyntaxHighlighter showLineNumbers style={dracula} language="javascript">
                       {userInteractionCode}
                     </SyntaxHighlighter>
