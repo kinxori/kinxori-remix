@@ -160,12 +160,7 @@ export default function CallHistoryFilter() {
                   autoPlay
                   muted
                   loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset.mp4?alt=media&token=16116567-ec11-4d76-8170-aea727aafe9d"
-                />
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-                  className="rounded-[10px]"
-                  src={userFilterAsset}
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-app-project-overview-asset.mp4?alt=media&token=14ef5786-4c53-4811-87a8-5b55e5960c2c"
                 />
               </div>
             )}
