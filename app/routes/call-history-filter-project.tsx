@@ -118,30 +118,6 @@ export default function CallHistoryFilter() {
           <div className="my-10">
             {selectedSubject === 1 && (
               <div className="flex flex-col gap-5 ">
-                <h1>1920x720</h1>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset.mp4?alt=media&token=16116567-ec11-4d76-8170-aea727aafe9d"
-                />
-                <h1>854x480</h1>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset2.mp4?alt=media&token=a94f204e-b312-4a38-85b5-d01a38869656"
-                />
-                <h1>640x360</h1>
-                <VideoLoader
-                  className="rounded-[10px]"
-                  autoPlay
-                  muted
-                  loop
-                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset2.mp4?alt=media&token=a94f204e-b312-4a38-85b5-d01a38869656"
-                />
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Project Overview</b>
                 </h3>
@@ -179,6 +155,13 @@ export default function CallHistoryFilter() {
                   The Call History Filter addresses this challenge by providing tools to eliminate
                   duplicate users, count call frequency, and sort users based on call activity.
                 </p>
+                <VideoLoader
+                  className="rounded-[10px]"
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-project-overview-asset.mp4?alt=media&token=16116567-ec11-4d76-8170-aea727aafe9d"
+                />
                 <img
                   alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
                   className="rounded-[10px]"
