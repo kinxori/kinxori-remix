@@ -26,6 +26,8 @@ export default function CallHistoryFilter() {
     const existingContact = acc.find((c) => c.phoneNumber === contact.phoneNumber);
     if (!existingContact) {
       // Add a new contact if it doesn't exist.
+      // Create new key-value with formatted date.
+      // Create object storing history calls per user.
       // ...
     } else {
       // Update call count for existing contact.
