@@ -180,10 +180,12 @@ export default function CallHistoryFilter() {
                     frequency, and sorting users by call activity.
                   </li>
                 </ul>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                <VideoLoader
                   className="rounded-[10px]"
-                  src={userFilterAsset}
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-feature-overview-asset.mp4?alt=media&token=1dcb9f32-cc16-49b9-9ade-c98b1580bf93"
                 />
                 <h4 className="text-[16px] font-bold text-left ">Project Presentation:</h4>
                 <ul className="list-disc pl-5 flex flex-col gap-3">
@@ -193,26 +195,23 @@ export default function CallHistoryFilter() {
                     real-world data processing challenges.
                   </li>
                 </ul>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-                  className="rounded-[10px]"
-                  src={userFilterAsset}
-                />
                 <h4 className="text-[16px] font-bold text-left ">Interactivity:</h4>
                 <ul className="list-disc pl-5 flex flex-col gap-3">
                   <li>
-                    The table allows users to sort contacts by call frequency in descending order,
-                    making it easy to identify the most active contacts.
+                    The table sorts users by call frequency in descending order, making it easy to
+                    identify the most active users.
                   </li>
                   <li>
-                    Users can explore the call history of each contact, including call IDs and
-                    dates, by expanding the corresponding row.
+                    Explore the call history of each user, including call IDs and dates, by
+                    expanding the corresponding row.
                   </li>
                 </ul>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                <VideoLoader
                   className="rounded-[10px]"
-                  src={userFilterAsset}
+                  autoPlay
+                  muted
+                  loop
+                  src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-presentation-asset.mp4?alt=media&token=e7f92b84-dde2-47f7-bd44-bc849c0c21c3"
                 />
               </div>
             )}
