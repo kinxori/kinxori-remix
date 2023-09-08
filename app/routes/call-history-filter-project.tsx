@@ -32,7 +32,7 @@ export default function CallHistoryFilter() {
         <div className="flex flex-col gap-5">
           <img className="rounded-[10px]" src={userFilterAsset} />
           <div className="flex flex-col">
-            <p className="text-justify">
+            <p className="">
               Explore the breakdown of my second technical test for a job, where I created this
               project focusing on optimizing data, tracking call counts, and sorting users. Explore
               my web development experience and skills with this project.
@@ -91,7 +91,7 @@ export default function CallHistoryFilter() {
           </div>
           <div className="my-10">
             {selectedSubject === 1 && (
-              <div className="flex flex-col gap-5 text-justify">
+              <div className="flex flex-col gap-5 ">
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Project Overview</b>
                 </h3>
@@ -133,7 +133,7 @@ export default function CallHistoryFilter() {
               </div>
             )}
             {selectedSubject === 2 && (
-              <div className="flex flex-col gap-5 text-justify">
+              <div className="flex flex-col gap-5 ">
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Features and Functionality</b>
                 </h3>
@@ -170,7 +170,7 @@ export default function CallHistoryFilter() {
               </div>
             )}
             {selectedSubject === 3 && (
-              <div className="flex flex-col gap-5 text-justify">
+              <div className="flex flex-col gap-5 ">
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Design and User Experience</b>
                 </h3>
@@ -242,19 +242,39 @@ export default function CallHistoryFilter() {
               </div>
             )}
             {selectedSubject === 4 && (
-              <div className="flex flex-col gap-5 text-justify">
+              <div className="flex flex-col gap-5 ">
                 <h3 className="text-[20px] font-bold text-left ">
                   <b>Technical Implementation</b>
                 </h3>
-                <p>In the creation of this project, five main technologies took center stage: :</p>
-                <ul className="list-disc pl-5">
-                  <li className="relative">
-                    &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs
-                    <img
-                      className="absolute left-0 top-[50%] translate-y-[-50%] h-4 w-4"
-                      src={reactLogo}
-                      alt="react js logo"
-                    />
+                <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
+                <ul className="list-disc pl-5 flex flex-col gap-5">
+                  <li>
+                    Smooth transition effects are applied to expand and collapse call history
+                    details, creating a visually pleasing and polished user interaction.
+                  </li>
+                  <li>
+                    Hover effects on clickable elements provide visual feedback, enhancing the
+                    overall user experience.
+                  </li>
+                </ul>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
+                <ul className="list-disc pl-5 flex flex-col gap-5 ">
+                  <li className="relative ">
+                    <span className="font-bold">
+                      &#xa0;
+                      <img
+                        className="absolute bottom-0 top-0 w-[20px]"
+                        src={reactLogo}
+                        alt="react js logo"
+                      />
+                      &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;ReactJs:
+                    </span>{" "}
+                    The component is developed using the React library, allowing for efficient
+                    building of user interfaces and dynamic components.
                   </li>
                   <li className="relative">
                     &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;JavaScript
