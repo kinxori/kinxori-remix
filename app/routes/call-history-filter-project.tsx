@@ -248,21 +248,6 @@ export default function CallHistoryFilter() {
                   <b>Technical Implementation</b>
                 </h3>
                 <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
-                <ul className="list-disc pl-5 flex flex-col gap-3">
-                  <li>
-                    Smooth transition effects are applied to expand and collapse call history
-                    details, creating a visually pleasing and polished user interaction.
-                  </li>
-                  <li>
-                    Hover effects on clickable elements provide visual feedback, enhancing the
-                    overall user experience.
-                  </li>
-                </ul>
-                <img
-                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-                  className="rounded-[10px]"
-                  src={userFilterAsset}
-                />
                 <ul className="list-disc pl-5 flex flex-col gap-3 ">
                   <li className="relative ">
                     <span className="font-bold">
@@ -298,7 +283,6 @@ export default function CallHistoryFilter() {
                     </span>{" "}
                     HTML is used to structure the content and create a semantic markup.
                   </li>
-
                   <li className="relative">
                     <span className="font-bold">
                       <img
@@ -312,6 +296,26 @@ export default function CallHistoryFilter() {
                     appealing presentation.
                   </li>
                 </ul>
+                <h4 className="text-[16px] font-bold text-left ">Challenges and Solutions:</h4>
+                <ul className="list-disc pl-5 flex flex-col gap-3">
+                  <li>
+                    <span className="font-bold">Data Processing:</span> One challenge was
+                    efficiently processing and organizing call history data, including eliminating
+                    duplicates and calculating call counts. This was overcome by using JavaScript
+                    Array Methods and React state management.
+                  </li>
+                  <li>
+                    <span className="font-bold">User Interaction:</span> Implementing smooth
+                    transitions and interactive features for expanding and collapsing call history
+                    details posed a challenge. This was addressed through CSS animations and state
+                    management in React.
+                  </li>
+                </ul>
+                <img
+                  alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+                  className="rounded-[10px]"
+                  src={userFilterAsset}
+                />
               </div>
             )}
           </div>
