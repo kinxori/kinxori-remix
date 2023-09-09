@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
@@ -15,11 +15,33 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 export default function CallHistoryFilter() {
-  const [selectedSubject, setSelectedSubject] = useState(1);
-  const handleSubject = (subject: number) => {
-    selectedSubject !== subject ? setSelectedSubject(subject) : null;
-  };
+  // const [selectedSubject, setSelectedSubject] = useState(1);
+  // const handleSubject = (subject: number) => {
+  //   if (selectedSubject !== subject) {
+  //     setSelectedSubject(subject);
+  //   } else null;
+  // };
   // console.log("number", selectedSubject);
+
+  const [selectedSubject, setSelectedSubject] = useState(() => {
+    if (typeof localStorage !== "undefined") {
+      const storedSubject = localStorage.getItem("selectedSubject");
+      return storedSubject ? parseInt(storedSubject, 10) : 1;
+    } else {
+      // Fallback to a default value if localStorage is not available
+      return 1;
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("selectedSubject", selectedSubject.toString());
+  }, [selectedSubject]);
+
+  const handleSubject = (subject: number) => {
+    if (selectedSubject !== subject) {
+      setSelectedSubject(subject);
+    } else null;
+  };
 
   const dataProcessingCode = `
   const uniqueContacts = data.reduce((acc, contact) => {
