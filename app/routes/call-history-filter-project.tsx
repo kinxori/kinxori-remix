@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import Footer from "~/components/Pages/FooterPage";
@@ -23,15 +24,12 @@ export default function CallHistoryFilter() {
   // };
   // console.log("number", selectedSubject);
 
-  const [selectedSubject, setSelectedSubject] = useState(() => {
-    if (typeof localStorage !== "undefined") {
-      const storedSubject = localStorage.getItem("selectedSubject");
-      return storedSubject ? parseInt(storedSubject, 10) : 1;
-    } else {
-      // Fallback to a default value if localStorage is not available
-      return 1;
-    }
-  });
+  const initialSubject =
+    typeof window !== "undefined"
+      ? parseInt(localStorage.getItem("selectedSubject") || "1", 10)
+      : 1;
+
+  const [selectedSubject, setSelectedSubject] = useState(initialSubject);
 
   useEffect(() => {
     localStorage.setItem("selectedSubject", selectedSubject.toString());
