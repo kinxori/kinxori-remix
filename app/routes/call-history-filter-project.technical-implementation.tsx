@@ -24,12 +24,20 @@ export default function CallHistoryTechnicalImplementation() {
     `;
 
   const userInteractionCode = `
+    // useState
+    const [expandRow, setExpandRow] = useState({});
+
+    // Javascript
     const handleExpandRow = (item) => {
       setExpandRow((prevState) => ({
         ...prevState,
         [item.phoneNumber]: !prevState[item.phoneNumber],
       }));
     };  
+
+    // JSX
+    <div className={transition-all duration-[.4s] ease-in overflow-hidden 
+      #$#{expandRow[item.phoneNumber] ? "max-h-[300px]" : "max-h-0"}} >
     `;
 
   return (
@@ -94,7 +102,7 @@ export default function CallHistoryTechnicalImplementation() {
         <li>
           <span className="font-bold">User Interaction:</span> Implementing smooth transitions and
           interactive features for expanding and collapsing call history details posed a challenge.
-          This was addressed through CSS animations and state management in React.
+          This was addressed through transitions using TailwindCSS and state management in React.
         </li>
         <div className="border-[2px] border-white my-5 overflow-hidden rounded-[10px]">
           <SyntaxHighlighter showLineNumbers style={dracula} language="javascript">
