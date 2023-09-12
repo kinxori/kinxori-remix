@@ -55,7 +55,7 @@ export default function CallHistoryFilter() {
         </div>
         <hr className="border-white/50 my-10"></hr>
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between ">
-          <div className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor">
+          <div className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor block ls:sticky ls:top-0">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
             <Link
@@ -99,7 +99,7 @@ export default function CallHistoryFilter() {
               4. Technical Implementation
             </Link>
           </div>
-          <div className="my-10 ls:w-[50%] ">
+          <div className="my-10 ls:w-[60%]">
             <Outlet />
           </div>
         </article>

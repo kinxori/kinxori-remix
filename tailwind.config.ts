@@ -14,8 +14,8 @@ export default {
     },
     screens: {
       ms: "601px",
-      ls: "781px",
-      xls: "1080px",
+      ls: "1080px",
+      xls: "1440px",
     },
   },
   plugins: [
