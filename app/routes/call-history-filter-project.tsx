@@ -19,23 +19,23 @@ export default function CallHistoryFilter() {
   }, [location]);
 
   return (
-    <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
+    <section className="font-[inter] pt-[60px] overflow-y-auto w-[100vw] h-screen flex flex-col text-white">
       <div className="p-10 box-border ms:px-[15%] ms:py-[10%] ls:px-[10%]">
-        <div className="mb-10">
-          <h3 className="text-[30px] font-bold">
+        <div className="mb-10 ls:mb-20">
+          <h3 className="text-[30px] font-bold ls:text-[50px]  ">
             <b>Call History Filter</b> 🗂
           </h3>
-          <i className="text-white/50 font-light text-[14px]">#TechnicalTest</i>
+          <i className="text-white/50 font-light text-[14px] ls:text-[16px] ">#TechnicalTest</i>
         </div>
-        <div className="flex flex-col gap-5">
-          <img className="rounded-[10px]" src={userFilterAsset} />
+        <div className="flex flex-col gap-5 ls:flex-row ls:gap-[5%]  ">
+          <img className="rounded-[10px] ls:w-[50%]   " src={userFilterAsset} />
           <div className="flex flex-col">
             <p className="">
               Explore the breakdown of my second technical test for a job, where I created this
               project focusing on optimizing data, tracking call counts, and sorting users. Explore
               my web development experience and skills with this project.
             </p>
-            <div className="mt-5 ml-auto flex gap-2">
+            <div className="mt-5 justify-end flex gap-2 ls:justify-start">
               <AnchorButton
                 variant="secButton"
                 href="https://github.com/kinxori/technical-test-2"
@@ -53,9 +53,9 @@ export default function CallHistoryFilter() {
             </div>
           </div>
         </div>
-        <hr className="border-white/50 my-10"></hr>
+        <hr className="border-white/50 my-10 ls:my-20"></hr>
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between ">
-          <div className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor block ls:sticky ls:top-0">
+          <div className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor ls:sticky ls:top-[80px]">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
             <Link
@@ -99,7 +99,7 @@ export default function CallHistoryFilter() {
               4. Technical Implementation
             </Link>
           </div>
-          <div className="my-10 ls:w-[60%]">
+          <div className="my-10 ls:w-[60%] ls:my-0">
             <Outlet />
           </div>
         </article>

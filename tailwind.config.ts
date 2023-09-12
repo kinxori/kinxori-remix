@@ -13,8 +13,8 @@ export default {
       },
     },
     screens: {
-      ms: "601px",
-      ls: "1080px",
+      ms: "768px",
+      ls: "1021px",
       xls: "1440px",
     },
   },

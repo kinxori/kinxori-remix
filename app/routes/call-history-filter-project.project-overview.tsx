@@ -3,7 +3,7 @@ import VideoLoader from "~/components/VideoLoader/VideoLoader";
 export default function CallHistoryProjectOverview() {
   return (
     <article className="flex flex-col gap-5 ">
-      <h3 className="text-[20px] font-bold text-left ">
+      <h3 className="text-[20px] font-bold text-left">
         <b>Project Overview</b>
       </h3>
       <h4 className="text-[16px] font-bold text-left ">Purpose:</h4>
