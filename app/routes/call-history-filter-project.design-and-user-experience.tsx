@@ -68,10 +68,12 @@ export default function CallHistoryDesignAndUserExperience() {
           experience.
         </li>
       </ul>
-      <img
-        alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+      <VideoLoader
         className="rounded-[10px]"
-        src={userFilterAsset}
+        autoPlay
+        muted
+        loop
+        src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-transtions-and-effects-asset.mp4?alt=media&token=04df7a0a-c1b8-4537-b11d-e9e124c3b16c"
       />
     </article>
   );
