@@ -1,5 +1,6 @@
 import userFilterAsset from "~/assets/technical-test-2-ss.png";
 import VideoLoader from "~/components/VideoLoader/VideoLoader";
+import visualAppealAsset from "~/assets/call-history-visual-appeal-assets.png";
 
 export default function CallHistoryDesignAndUserExperience() {
   return (
@@ -19,9 +20,9 @@ export default function CallHistoryDesignAndUserExperience() {
         </li>
       </ul>
       <img
-        alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+        alt="Static image showing the overall design of the project Call History Filter. A tablet with purple and white colors. Texts in black. Showing 5 main columns, first is blank to have a button, second is name, third is amount of calls, fourth is date of last call and last is phone number. Then its a expandable row for each main row. This second row is showing the call history of each user with and ID and a date of each call."
         className="rounded-[10px]"
-        src={userFilterAsset}
+        src={visualAppealAsset}
       />
       <h4 className="text-[16px] font-bold text-left ">User-Friendly UI:</h4>
       <ul className="list-disc pl-5 flex flex-col gap-3">
