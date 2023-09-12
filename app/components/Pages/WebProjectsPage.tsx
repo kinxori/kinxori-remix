@@ -68,7 +68,7 @@ function ElDiablito13() {
     >
       <img
         alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
-        className="rounded-[10px] min-h-[150px] object-cover"
+        className="rounded-[10px] h-full object-cover"
         src={elDiablito13Asset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -82,7 +82,7 @@ function ElDiablito13() {
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 flex-wrap w-[70%]">
+        <div className="flex gap-2 flex-wrap w-[90%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -131,7 +131,7 @@ function MusicPlayer() {
     >
       <img
         alt="Screenshot of Kinxori's project named Music Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
-        className="rounded-[10px] min-h-[150px] object-cover"
+        className="rounded-[10px] h-full object-cover"
         src={musicMediaPlayerAsset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -145,7 +145,7 @@ function MusicPlayer() {
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 flex-wrap w-[70%]">
+        <div className="flex gap-2 flex-wrap w-[90%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -191,7 +191,7 @@ function ContactManager() {
     >
       <img
         alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
-        className="rounded-[10px] min-h-[150px] object-cover"
+        className="rounded-[10px] h-full object-cover"
         src={contactManagerAsset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -205,7 +205,7 @@ function ContactManager() {
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 flex-wrap w-[70%]">
+        <div className="flex gap-2 flex-wrap w-[90%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
@@ -251,7 +251,7 @@ function CallHistoryFilter() {
     >
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
-        className="rounded-[10px] min-h-[150px] object-cover"
+        className="rounded-[10px] h-full object-cover"
         src={callHistoryFilterAsset}
       />
       <div className="my-5 flex flex-col gap-5">
@@ -265,7 +265,7 @@ function CallHistoryFilter() {
             Read more.
           </Link>
         </p>
-        <div className="flex gap-2 flex-wrap w-[70%]">
+        <div className="flex gap-2 flex-wrap w-[90%]">
           <div className="h-8 w-8 overflow-hidden rounded-full bg-bgColor box-border p-[7px] ">
             <img src={reactLogo} alt="react js logo" />
           </div>
