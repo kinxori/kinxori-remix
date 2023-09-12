@@ -4,7 +4,7 @@ import visualAppealAsset from "~/assets/call-history-visual-appeal-assets.png";
 
 export default function CallHistoryDesignAndUserExperience() {
   return (
-    <article className="flex flex-col gap-5 ">
+    <article className="flex flex-col gap-5">
       <h3 className="text-[20px] font-bold text-left ">
         <b>Design and User Experience</b>
       </h3>
