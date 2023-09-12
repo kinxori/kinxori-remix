@@ -35,10 +35,12 @@ export default function CallHistoryDesignAndUserExperience() {
           history details.
         </li>
       </ul>
-      <img
-        alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+      <VideoLoader
         className="rounded-[10px]"
-        src={userFilterAsset}
+        autoPlay
+        muted
+        loop
+        src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-user-friendly-ui-asset.mp4?alt=media&token=15cee9d2-453c-48f1-94da-10543e2fa1eb"
       />
       <h4 className="text-[16px] font-bold text-left ">Optimized Navigation:</h4>
       <ul className="list-disc pl-5 flex flex-col gap-3">
@@ -48,10 +50,12 @@ export default function CallHistoryDesignAndUserExperience() {
           data analysis.
         </li>
       </ul>
-      <img
-        alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
+      <VideoLoader
         className="rounded-[10px]"
-        src={userFilterAsset}
+        autoPlay
+        muted
+        loop
+        src="https://firebasestorage.googleapis.com/v0/b/myportfolio-70cb1.appspot.com/o/call-history-project-optimized-navigation-asset.mp4?alt=media&token=a3e0a184-d145-43dd-b662-fc49382706c6"
       />
       <h4 className="text-[16px] font-bold text-left ">Transitions and Effects:</h4>
       <ul className="list-disc pl-5 flex flex-col gap-3">
