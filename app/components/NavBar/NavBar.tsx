@@ -8,7 +8,7 @@ export default function NavBar() {
   useEffect(() => {
     const handleRezise = () => {
       const screenWidth = window.innerWidth;
-      if (screenWidth <= 1180) {
+      if (screenWidth <= 1021) {
         setIsNavComponent(<MobileNavBar />);
       } else {
         setIsNavComponent(<DesktopNavBar />);
