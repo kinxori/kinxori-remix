@@ -17,6 +17,7 @@ export default function LandingPage({
           src={mainAboutMeAsset}
           alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
           className={`h-[100%] object-cover z-[-10] transition-all duration-[1s] delay-[1s]
+          ls:mx-auto
           ${isActive ? "opacity-[5%]" : "pl-[100%] opacity-[0%]"}`}
         />
       </div>
@@ -24,8 +25,11 @@ export default function LandingPage({
         <div
           className={`absolute text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
           delay-[1.2s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          ms:text-[70px] ls:text-[280px]
           ${
-            isActive ? "gap-2 top-[50%] translate-y-[-140%]" : "gap-0 top-[50%] translate-y-[-50%]"
+            isActive
+              ? "gap-2 top-[50%] translate-y-[-140%] ls:translate-y-[-50%] ls:justify-evenly "
+              : "gap-0 top-[50%] translate-y-[-50%]"
           }`}
         >
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
@@ -50,9 +54,12 @@ export default function LandingPage({
             I
           </h1>
         </div>
-        <div className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]">
+        <div
+          className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]
+        ms:gap-8 ls:gap-5 ls:translate-y-[150%] "
+        >
           <p
-            className={`text-[16px] w-[90%] text-center text-white 
+            className={`text-[16px] font-[inter] w-[90%] text-center text-white 
           delay-[1.2s] transition-[opacity, transalate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
         ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px] "}`}
           >

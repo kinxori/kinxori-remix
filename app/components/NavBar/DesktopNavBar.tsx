@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, useLocation } from "@remix-run/react";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import diablitoIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import musicPlayerIcon from "~/assets/Logos/kinxori-music-project-logo.png";
@@ -6,8 +6,12 @@ import contactManagerIcon from "~/assets/Logos/kinxori-contact-route-logo.png";
 import callHistoryIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 
 export default function DesktopNav() {
+  const location = useLocation();
   return (
-    <nav className="fixed z-[1000] top-0 h-[80px] bg-bgColor border-b-[2px] border-mainColor w-screen flex justify-between items-center px-5 box-border ">
+    <nav
+      className={`fixed z-[1000] top-0 h-[80px] bg-bgColor border-b-[2px] border-mainColor w-screen flex justify-between items-center px-5 box-border 
+      ${location.pathname !== "/" ? "" : "animate-[introNavBar_1s_1.2s_backwards]"} `}
+    >
       <Link to="/" className="font-[rubik] text-[50px] font-bold    ">
         <h1>Kinxori</h1>
       </Link>

@@ -26,7 +26,7 @@ export default function ScrollTopButton() {
   return (
     <div
       className={`transition-all ease-in-out duration-[.5s] fixed right-0 bottom-0 m-5 z-[100]
-        ${isScrolled ? "opacity-100" : "opacity-0"}`}
+        ${isScrolled ? "opacity-0" : "opacity-100"}`}
     >
       <button
         className="hover:text-mainColor w-[50px] h-[50px] text-black rounded-[100%] bg-white text-[30px] border-black border-[2px] transition-all ease-in-out duration-[.3s] hover:border-mainColor ts:w-[60px] ts:h-[60px] ts:text-[35px] ts:border-[3px] "
