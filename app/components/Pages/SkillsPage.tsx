@@ -21,22 +21,32 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
       className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
       <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
-        <h2 className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left">
-          Skills
+        <h2
+          className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-right
+        ms:text-[60px]"
+        >
+          Hard Skills
         </h2>
         <img
           alt="A purple and green bulb running to the left in a fast way giving the illusion of light-speed."
           src={skillsAsset}
-          className="opacity-30 z-[0] absolute right-[-5%] bottom-[-20%] h-[250px] "
+          className="opacity-30 z-[0] absolute left-[-5%] bottom-[-20%] h-[250px]
+          ms:h-[350px] "
         />
       </div>
-      <div className="box-border p-10 flex flex-col">
-        <p className="text-justify">
+      <div
+        className="box-border p-10 flex flex-col
+      ms:px-[15%] ms:py-[10%]"
+      >
+        <p>
           Throughout my journey in web development, I've been continuously refining my toolkit to
           create impactful and efficient web projects.
         </p>
         <hr className="my-10 border-white/50"></hr>
-        <article className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly">
+        <article
+          className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly
+          ms:gap-10"
+        >
           <div className="hover:scale-105 transition-all duration-25 ease-in-out gap-1 flex flex-col justify-center items-center h-[80px] w-[70px] ">
             <img src={reactLogo} alt="reactjs Logo" className="h-[50px] object-contain " />
             <span>React</span>

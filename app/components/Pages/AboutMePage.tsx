@@ -22,7 +22,10 @@ export default function AboutMe({
         className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center
       ms:p-10"
       >
-        <div className="m-10 w-[70%] relative aspect-square rounded-full hover:border-mainColor border-white border-[5px] overflow-hidden transition-all duration-[.3s] ease-in-out    ">
+        <div
+          className="m-10 w-[70%] relative aspect-square rounded-full hover:border-mainColor border-white border-[5px] overflow-hidden transition-all duration-[.3s] ease-in-out 
+        ms:w-[60%]  "
+        >
           <img
             className="top-[-30px] absolute"
             src={imgAssetPFP}
