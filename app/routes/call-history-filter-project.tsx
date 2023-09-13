@@ -72,7 +72,7 @@ export default function CallHistoryFilter() {
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between ">
           <div
             className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
-          ls:w-[28%] ls:sticky ls:top-[80px]"
+         ms:p-10 ls:w-[28%] ls:sticky ls:top-[80px]"
           >
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
