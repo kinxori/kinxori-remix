@@ -35,21 +35,21 @@ export default function Skills({ id, isObserved }: { id?: string; isObserved?: s
           alt="A purple and green bulb running to the left in a fast way giving the illusion of light-speed."
           src={skillsAsset}
           className="opacity-30 z-[0] absolute left-[-5%] bottom-[-20%] h-[250px]
-          ms:h-[350px] ls:h-[450px] ls:left-[0%]  "
+          ms:h-[350px] ls:h-[450px] ls:left-[5%]  "
         />
       </div>
       <div
         className="box-border p-10 flex flex-col
-      ms:px-[15%] ms:py-[10%] ls:px-[20%]"
+      ms:px-[15%] ms:py-[10%] "
       >
-        <p>
+        {/* <p>
           Throughout my journey in web development, I've been continuously refining my toolkit to
           create impactful and efficient web projects.
         </p>
         <hr
           className="my-10 border-white/50 
         ls:my-20"
-        ></hr>
+        ></hr> */}
         <article
           className="text-[12px] font-bold underline decoration-mainColor gap-5 flex flex-wrap justify-evenly
           ms:gap-10  "

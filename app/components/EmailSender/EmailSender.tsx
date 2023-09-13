@@ -135,15 +135,20 @@ export default function InputForm() {
           }}
           className=" z-[2000] top-0 left-0 fixed bg-bgColor/80 h-screen w-screen flex justify-center items-center "
         >
-          <div className="gap-4 box-border p-5 justify-center items-center flex flex-col overflow-hidden w-[60%] h-[300px]  bg-white rounded-[10px] border-[2px] border-mainColor ">
+          <div
+            className="box-border p-5 gap-5 justify-evenly items-center flex flex-col overflow-hidden w-[50%] h-min bg-white rounded-[10px] border-[2px] border-mainColor 
+           ms:p-10 ls:w-[35%]
+          "
+          >
             <img
               src={emailPopUpAsset}
-              className="object-contain w-[60%] hover:scale-[1.02] 
+              className="object-contain w-[50%] hover:scale-[1.02] ms:w-[40%]
               transition-all duration-35 ease-in-out"
               alt="A purple cup of coffee riding a scooter with a backpack delivering emails"
             ></img>
             <h2 className="text-[20px] font-bold text-bgColor text-center ">
-              Message sent succesfully! 👨‍💻
+              Message sent succesfully. <br />
+              Kinxori will be in touch with you very soon! 👨‍💻
             </h2>
             <Button variant="mainButton" onClick={() => handlePopUp(false)}>
               Close

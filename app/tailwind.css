@@ -13,9 +13,9 @@
   -webkit-text-fill-color: #181818;
 }
 
-#carrouselProjects::-webkit-scrollbar {
+/* #carrouselProjects::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 @keyframes introNavBar {
   from {
