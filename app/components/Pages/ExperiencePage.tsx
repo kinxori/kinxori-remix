@@ -14,37 +14,44 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       >
         <h2
           className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left
-        ms:text-[60px]"
+        ms:text-[60px] ls:text-[80px]   "
         >
           Experience
         </h2>
         <img
           src={projectsAsset}
           className="opacity-30 z-[0] absolute right-[-5%] bottom-[-35%] h-[300px] 
-          ms:h-[400px]"
+          ms:h-[400px] ls:h-[600px]  "
         />
       </div>
       <div
         className="box-border p-10 flex flex-col w-[100vw]
-      ms:px-[15%] ms:py-[10%] "
+      ms:px-[15%] ms:py-[10%] ls:py-[5%] ls:px-[20%] ls:flex-row-reverse ls:gap-10 "
       >
-        <div className="font-normal flex flex-col gap-5 ">
+        <div
+          className="font-normal flex flex-col gap-5 
+          ls:w-[40%]
+        "
+        >
           <p>
             During my journey from Motion Designer to Web Developer, I've had the privilege of
             diving into a vibrant array of projects. My path has led me to collaborate with local
             and international teams, engage directly with clients in sales, and craft captivating
             video ads from the comfort of my own home.
           </p>
-          {/* <p>My top 5 best soft skills:</p>
+          <p>My top 5 best soft skills:</p>
           <ul className="list-disc pl-5">
             <li>Communication</li>
             <li>Problem-solving</li>
             <li>Adaptability</li>
             <li>Team Work</li>
             <li>Time Management</li>
-          </ul> */}
+          </ul>
         </div>
-        <hr className="my-10 border-white/50"></hr>
+        <hr
+          className="my-10 border-white/50 
+        ls:hidden"
+        ></hr>
         <article
           className=" box-border p-5 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor text-justify text-bgColor bg-white border-[2px] rounded-[10px] flex flex-col gap-5 justify-center items-center
          ms:p-10 "
