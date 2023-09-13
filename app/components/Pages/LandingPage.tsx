@@ -56,7 +56,7 @@ export default function LandingPage({
         </div>
         <div
           className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]
-        ms:gap-8 ls:gap-5 ls:translate-y-[150%] "
+        ms:gap-8 ls:gap-5 ls:translate-y-[200%] "
         >
           <p
             className={`text-[16px] font-[inter] w-[90%] text-center text-white 

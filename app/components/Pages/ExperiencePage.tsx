@@ -7,7 +7,11 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       id={id}
       className={`relative font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
-      <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden">
+      <div
+        className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden
+      ms:px-[15%]
+      "
+      >
         <h2
           className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left
         ms:text-[60px]"
@@ -31,14 +35,14 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
             and international teams, engage directly with clients in sales, and craft captivating
             video ads from the comfort of my own home.
           </p>
-          <p>My top 5 best soft skills:</p>
+          {/* <p>My top 5 best soft skills:</p>
           <ul className="list-disc pl-5">
             <li>Communication</li>
             <li>Problem-solving</li>
             <li>Adaptability</li>
             <li>Team Work</li>
             <li>Time Management</li>
-          </ul>
+          </ul> */}
         </div>
         <hr className="my-10 border-white/50"></hr>
         <article

@@ -22,7 +22,11 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       id={id}
       className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
     >
-      <div className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden ">
+      <div
+        className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden 
+       ms:px-[15%]
+      "
+      >
         <h2
           className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left
         ms:text-[60px]"
