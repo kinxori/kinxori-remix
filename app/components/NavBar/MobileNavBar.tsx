@@ -25,7 +25,7 @@ export default function MobileNav() {
       className={`z-[1000] fixed top-0 left-0 w-[100vw] 
       ${location.pathname !== "/" ? "" : "animate-[introNavBar_1s_1.2s_backwards]"}`}
     >
-      <div className="flex h-[60px] w-[100%] border-b-[2px] border-mainColor mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ">
+      <div className="flex h-[60px] w-[100%] border-b-[2px] border-mainColor mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ms:h-[70px]">
         <Link
           prefetch="intent"
           to="/"
@@ -39,7 +39,7 @@ export default function MobileNav() {
         </Link>
         <div
           onClick={handleSlide}
-          className={`hover:scale-[1.05] w-[30px] z-[1000] h-[25px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
+          className={`hover:scale-[1.05] w-[30px] z-[1000] h-[25px] ms:w-[35px] ms:h-[30px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
           transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
         >
           <hr
