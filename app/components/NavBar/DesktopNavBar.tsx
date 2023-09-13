@@ -1,7 +1,10 @@
 import { Link } from "@remix-run/react";
+import { useState } from "react";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import diablitoIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
-import { useState } from "react";
+import musicPlayerIcon from "~/assets/Logos/kinxori-music-project-logo.png";
+import contactManagerIcon from "~/assets/Logos/kinxori-contact-route-logo.png";
+import callHistoryIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 
 export default function DesktopNav() {
   const [isClicked, setClicked] = useState(false);
@@ -26,17 +29,13 @@ export default function DesktopNav() {
           Contact
         </LinkButton>
         <button
-          className="font-bold text-[14px] pl-[20px] py-[10px] h-full relative flex items-center"
+          className="group font-bold text-[14px] pl-[20px] py-[10px] h-full relative flex items-center"
           onClick={handleProjectsButton}
         >
           Projects&#160;&#160;
-          <i
-            className={`fa-solid fa-chevron-down transition-all 
-            ${isClicked ? "rotate-0" : "rotate-180"}`}
-          ></i>
+          <i className={`fa-solid fa-chevron-down transition-all group-hover:rotate-180`}></i>
           <div
-            className={`absolute top-[80px] transition-all right-0 text-right bg-bgColor border-b-[2px] border-l-[2px] border-r-[2px] border-mainColor rounded-b-[10px] overflow-hidden  min-w-[250px] 
-            ${isClicked ? "p-0 h-[0px] opacity-0 " : "p-5 h-[220px] "} `}
+            className={`group-hover:p-5 group-hover:h-[220px] group-hover:opacity-100 absolute top-[80px] p-0 h-[0px] opacity-0 flex flex-col transition-all right-0 text-right bg-bgColor border-b-[2px] border-l-[2px] border-r-[2px] border-mainColor rounded-b-[10px] overflow-hidden w-max  `}
           >
             <LinkButton variant="ghostButton" to="/el-diablito-13-project">
               <span className="relative block">
@@ -46,19 +45,19 @@ export default function DesktopNav() {
             </LinkButton>
             <LinkButton variant="ghostButton" to="/music-player-project">
               <span className="relative block">
-                <img src={diablitoIcon} className="object-contain w-5 absolute right-0 " />
+                <img src={musicPlayerIcon} className="object-contain w-5 absolute right-0 " />
               </span>
               Music Player&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
             </LinkButton>
             <LinkButton variant="ghostButton" to="/contact-manager-project">
               <span className="relative block">
-                <img src={diablitoIcon} className="object-contain w-5 absolute right-0 " />
+                <img src={contactManagerIcon} className="object-contain w-5 absolute right-0 " />
               </span>
               Contact Manager&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
             </LinkButton>
             <LinkButton variant="ghostButton" to="/call-history-filter-project">
               <span className="relative block">
-                <img src={diablitoIcon} className="object-contain w-5 absolute right-0 " />
+                <img src={callHistoryIcon} className="object-contain w-5 absolute right-0 " />
               </span>
               Call History Filter&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
             </LinkButton>
