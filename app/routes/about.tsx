@@ -22,27 +22,47 @@ export default function AboutMeRoute() {
   };
 
   return (
-    <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
-      <div className="relative overflow-hidden box-border p-10 ">
-        <h2 className=" z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
+    <section
+      className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white 
+    ms:pt-[70px] ls:pt-[80px] "
+    >
+      <div
+        className="relative overflow-hidden box-border p-10
+      ms:px-[15%] "
+      >
+        <h2
+          className=" z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]
+        ms:text-[60px] ls:text-[80px]
+        "
+        >
           About
         </h2>
         <img
           src={cowDesktopAsset}
           alt="A purple cow sitting in a chair in a chill way watching something in the computer in front."
-          className="opacity-30 z-[0] absolute right-[0] bottom-[-70%] h-[300px] "
+          className="opacity-30 z-[0] absolute right-[0] bottom-[-70%] h-[300px] 
+          ms:h-[400px] ms:bottom-[-100%] ls:h-[600px] ls:bottom-[-150%]
+          "
         />
       </div>
-      <div className=" bg-bgColor flex-col flex p-10 box-border">
-        <div className="flex flex-col gap-5">
+      <div
+        className=" bg-bgColor flex-col flex p-10 box-border
+      ms:px-[15%] ms:py-[10%] ls:py-[5%] ls:px-[20%] ls:flex-row-reverse ls:gap-10 ls:justify-between
+      "
+      >
+        <div
+          className="flex flex-col gap-5 
+        ls:w-[30%] "
+        >
           <h3 className="text-[30px] font-bold ">
             Hi, <b>I am Kinxori!</b> ✌️
           </h3>
-          <p className="text-justify ">
+          <p>
             My name is Gustavo. From Motion Design to Web Development. Now, I'm figuring out how to
             code without dying in the process. I tend to enjoy a lot of activities and topics, but
             once I get passionate about it. I can turn into a total nerd (no regrets). 👀
           </p>
+
           <div className="w-[100%] min-h-[300px] overflow-hidden rounded-[10px] relative justify-center flex">
             <img
               alt="Gustavo Quiroz PFP - Kinxori.com"
@@ -51,9 +71,16 @@ export default function AboutMeRoute() {
             />
             <img className="absolute z-0 min-h-[100%] object-cover top-0 " src={bgAsset} />
           </div>
+          <i className=" text-white/50 text-[12px] ml-auto ls: mr-auto ">
+            Gustavo Q.O. / 15th of August, 2023 / México
+          </i>
         </div>
-        <hr className="border-white/50 my-10"></hr>
-        <article className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[700px] relative overflow-hidden flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px] ">
+        <hr className="border-white/50 my-10 ls:hidden"></hr>
+        <article
+          className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[700px] relative overflow-hidden flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px]
+        ms:p-10 ms:min-h-[750px] ls:w-[60%] 
+        "
+        >
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}
           {pageNumber >= 1 && pageNumber <= 3 && <Personality pageNumber={pageNumber} />}
           {pageNumber >= 2 && pageNumber <= 4 && <Career1 pageNumber={pageNumber} />}
@@ -62,7 +89,7 @@ export default function AboutMeRoute() {
           {pageNumber >= 5 && <Aspirations pageNumber={pageNumber} />}
           <div className="flex justify-between items-center mt-auto">
             <span>Page {pageNumber} of 6</span>
-            <div className="flex gap-1">
+            <div className="flex gap-2 ms:gap-3">
               {pageNumber > 1 && (
                 <Button
                   onClick={handlePageSubstraction}
@@ -78,9 +105,6 @@ export default function AboutMeRoute() {
             </div>
           </div>
         </article>
-        <i className="my-10 text-white/50 text-[12px] mx-auto ">
-          Gustavo Q.O. / 15th of August, 2023 / México
-        </i>
       </div>
       <NavBar />
       <ScrollTopButton />
@@ -93,6 +117,7 @@ function WhereIComeFrom({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
       ${pageNumber === 1 ? "translate-x-[0%] opacity-100 " : "translate-x-[-120%] opacity-0"}
       `}
     >
@@ -124,6 +149,7 @@ function Personality({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
       ${
         pageNumber < 2
           ? "translate-x-[120%] opacity-0 "
@@ -158,6 +184,7 @@ function Career1({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
       ${
         pageNumber < 3
           ? "translate-x-[120%] opacity-0"
@@ -190,6 +217,7 @@ function Career2({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col gap-5 transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
       ${
         pageNumber < 4
           ? "translate-x-[120%] opacity-0"
@@ -213,6 +241,7 @@ function Hobbies({ pageNumber }: { pageNumber: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
     ${
       pageNumber < 5
         ? "translate-x-[120%] opacity-0"
@@ -245,6 +274,7 @@ function Aspirations({ pageNumber }: { pageNumber?: number }) {
   return (
     <div
       className={`left-0 top-0 box-border p-5 w-[100%] absolute text-justify flex flex-col transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]
+      ms:p-10
     ${pageNumber === 6 ? "translate-x-[0%] opacity-100" : "translate-x-[120%] opacity-0"} `}
     >
       <h4 className="text-mainColor mb-5 text-[28px] font-bold text-left ">Aspirations? ⏳</h4>

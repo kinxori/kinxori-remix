@@ -28,7 +28,10 @@ export default function CallHistoryFilter() {
           className="mb-10 
         ls:mb-20"
         >
-          <h3 className="text-[30px] font-bold ls:text-[50px]  ">
+          <h3
+            className="text-[30px] font-bold 
+          ls:text-[50px]  "
+          >
             <b>Call History Filter</b> 🗂
           </h3>
           <i className="text-white/50 font-light text-[14px] ls:text-[16px] ">#TechnicalTest</i>
