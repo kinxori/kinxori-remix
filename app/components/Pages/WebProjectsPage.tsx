@@ -29,32 +29,32 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
       >
         <h2
           className="z-[10] customTextShadowMainColor1 relative font-[rubik] font-bold text-[50px] text-left
-        ms:text-[60px]"
+        ms:text-[60px] ls:text-[80px] "
         >
           Projects
         </h2>
         <img
           src={projectsAsset}
           className="opacity-30 z-[0] absolute right-[-20%] bottom-[-100%] h-[400px] 
-          ms:right-[-10%] ms:h-[500px] ms:bottom-[-120%] "
+          ms:right-[-10%] ms:h-[500px] ms:bottom-[-120%] ls:h-[600px] ls:right-[0%] "
         />
       </div>
       <div className="w-[100vw] flex flex-col">
         <div
           className="box-border p-10 pb-0
-        ms:px-[15%] py-[10%]"
+        ms:px-[15%] py-[10%] ls:px-[20%] "
         >
           <p>
             Explore a collection of my web projects and delve into the world of my development
             practices. From crafting engaging user interfaces to crafting elegant code, these
             projects showcase my journey as a web developer.
           </p>
-          <hr className="mt-10 border-white/50"></hr>
+          <hr className="mt-10 border-white/50 ls:mt-20"></hr>
         </div>
         <section
           id="carrouselProjects"
           className="overflow-x-scroll w-[100vw] p-10 flex gap-5 items-start
-          ms:px-[15%]  "
+          ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
           <ElDiablito13 />
           <MusicPlayer />
@@ -71,7 +71,7 @@ function ElDiablito13() {
     <article
       className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-       ms:p-10 ms:min-h-[590px]
+       ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
        "
     >
       <img
@@ -136,7 +136,7 @@ function MusicPlayer() {
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
-    ms:p-10 ms:min-h-[590px]
+    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
     "
     >
       <img
@@ -198,7 +198,7 @@ function ContactManager() {
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-    ms:p-10 ms:min-h-[590px]
+    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
     "
     >
       <img
@@ -260,7 +260,8 @@ function CallHistoryFilter() {
     <article
       className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
-    ms:p-10 ms:min-h-[590px] "
+    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+    "
     >
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
