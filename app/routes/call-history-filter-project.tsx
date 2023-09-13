@@ -22,8 +22,7 @@ export default function CallHistoryFilter() {
     <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white relative">
       <div
         className="p-10 box-border 
-      ms:px-[15%] ms:py-[10%] 
-      ls:px-[10%]"
+      ms:px-[15%] ms:py-[10%] ls:px-[10%]"
       >
         <div
           className="mb-10 
