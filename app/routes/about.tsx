@@ -47,12 +47,12 @@ export default function AboutMeRoute() {
       </div>
       <div
         className=" bg-bgColor flex-col flex p-10 box-border
-      ms:px-[15%] ms:py-[10%] ls:py-[5%] ls:px-[20%] ls:flex-row-reverse ls:gap-10 ls:justify-between
+      ms:px-[15%] ms:py-[10%]  ls:flex-row-reverse ls:justify-between
       "
       >
         <div
           className="flex flex-col gap-5 
-        ls:w-[30%] "
+        ls:w-[40%] "
         >
           <h3 className="text-[30px] font-bold ">
             Hi, <b>I am Kinxori!</b> ✌️
@@ -71,14 +71,14 @@ export default function AboutMeRoute() {
             />
             <img className="absolute z-0 min-h-[100%] object-cover top-0 " src={bgAsset} />
           </div>
-          <i className=" text-white/50 text-[12px] ml-auto ls: mr-auto ">
+          <i className=" text-white/50 text-[12px] ml-auto ls:ml-0 ls:mr-auto ">
             Gustavo Q.O. / 15th of August, 2023 / México
           </i>
         </div>
         <hr className="border-white/50 my-10 ls:hidden"></hr>
         <article
           className="hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3] justify-between min-h-[700px] relative overflow-hidden flex flex-col text-bgColor box-border p-5 bg-white border-[2px] border-mainColor rounded-[10px]
-        ms:p-10 ms:min-h-[750px] ls:w-[60%] 
+        ms:p-10 ms:min-h-[750px] ls:w-[50%] 
         "
         >
           {pageNumber >= 1 && pageNumber <= 2 && <WhereIComeFrom pageNumber={pageNumber} />}

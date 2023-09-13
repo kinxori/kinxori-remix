@@ -18,19 +18,37 @@ export default function ContactRoute() {
   };
 
   return (
-    <section className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white">
-      <div className="box-border p-10 relative overflow-hidden">
-        <h2 className="z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]">
+    <section
+      className="font-[inter] bg-mainColor pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white
+    ms:pt-[70px] ls:pt-[80px]
+    "
+    >
+      <div
+        className="box-border p-10 relative overflow-hidden 
+      ms:px-[15%] 
+      "
+      >
+        <h2
+          className="z-[10] customTextShadowMainColor1 relative text-white font-[rubik] font-bold text-[50px]
+         ms:text-[60px] ls:text-[80px]
+        "
+        >
           Contact
         </h2>
         <img
           alt="purple box mail smiling with a cellphone in its right hand with a email notification"
           src={contactAsset}
-          className="opacity-30 z-[0] absolute right-[-10%] bottom-[-60%] h-[300px] "
+          className="opacity-30 z-[0] absolute right-[-10%] bottom-[-60%] h-[300px]
+          ms:h-[400px] ms:right-[0%] ms:bottom-[-80%] ls:bottom-[-120%] ls:h-[600px]
+          "
         />
       </div>
-      <div className=" bg-bgColor flex-col flex p-10 box-border">
-        <div className="flex flex-col">
+      <div
+        className=" bg-bgColor flex-col flex p-10 box-border
+      ms:px-[15%] ms:py-[10%] ls:flex-row ls:justify-between
+      "
+      >
+        <div className="flex flex-col ls:w-[40%]">
           <h3 className="text-[30px] font-bold  ">
             Hey there! <b>Let's grab a virtual coffee.</b> ☕️
           </h3>
@@ -86,7 +104,7 @@ export default function ContactRoute() {
             </a>
           </div>
         </div>
-        <hr className="border-white/50 my-10"></hr>
+        <hr className="border-white/50 my-10 ls:hidden "></hr>
         <EmailSender />
       </div>
       <NavBar />

@@ -8,7 +8,7 @@ export default function InputForm() {
   const [subjectInput, setSubjectInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [randomEmojiGenerated, setRandomEmojiGenerated] = useState("");
-  const [isPopUp, setPopUp] = useState(true);
+  const [isPopUp, setPopUp] = useState(false);
 
   const EmojiAPI =
     "https://emoji-api.com/emojis?access_key=0485af6bad82b18a33db25fe3e292cf0e790dc72";
@@ -76,13 +76,14 @@ export default function InputForm() {
       <article
         className={`${
           isPopUp && "pointer-events-none"
-        } hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px]
+        } hover:customShadowMainColor2 hover:scale-[1.01] w-[100%] bg-white p-5 box-border rounded-[10px] border-mainColor border-[2px] overflow-hidden
+        ms:p-10 ls:w-[50%]
       transition-all duration-[.3s] ease-in-out`}
       >
-        <Form onSubmit={handleSubmit} className="flex flex-col font-[inter]">
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-col gap-2">
-              <label className="gap-1 flex flex-col font-bold text-bgColor ">
+        <Form onSubmit={handleSubmit} className="flex flex-col font-[inter] ">
+          <div className="flex flex-col gap-2 ms:gap-3 ls:gap-5">
+            <div className="flex flex-col gap-2 ms:gap-3 ls:flex-row ls:gap-5 ls:justify-between ">
+              <label className="gap-1 flex flex-col font-bold text-bgColor ls:w-[50%]">
                 <span>Email:</span>
                 <input
                   id="emailSenderEmailID"
@@ -95,7 +96,7 @@ export default function InputForm() {
                   required={true}
                 />
               </label>
-              <label className="gap-1 flex flex-col font-bold text-bgColor">
+              <label className="gap-1 flex flex-col font-bold text-bgColor ls:w-[50%]">
                 <span>Subject:</span>
                 <input
                   className="focus:outline-none text-[14px] bg-bgColor/10 text-bgColor border-none font-normal font-[inter] pl-2 h-9 rounded-[10px]"
@@ -121,7 +122,7 @@ export default function InputForm() {
               />
             </label>
           </div>
-          <Button type="submit" variant="mainButton" className="flex mt-5 justify-center">
+          <Button type="submit" variant="mainButton" className="flex mt-5 justify-center ms:mt-10 ">
             Submit
           </Button>
         </Form>
