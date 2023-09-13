@@ -18,30 +18,26 @@ export default function CallHistoryFilter() {
     }
   }, [location]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      console.log("scrollY:", scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] h-[100vh] flex flex-col text-white relative">
-      <div className="p-10 box-border ms:px-[15%] ms:py-[10%] ls:px-[10%]">
-        <div className="mb-10 ls:mb-20">
+    <section className="font-[inter] pt-[60px] overflow-y-scroll w-[100vw] flex flex-col text-white relative">
+      <div
+        className="p-10 box-border 
+      ms:px-[15%] ms:py-[10%] 
+      ls:px-[10%]"
+      >
+        <div
+          className="mb-10 
+        ls:mb-20"
+        >
           <h3 className="text-[30px] font-bold ls:text-[50px]  ">
             <b>Call History Filter</b> 🗂
           </h3>
           <i className="text-white/50 font-light text-[14px] ls:text-[16px] ">#TechnicalTest</i>
         </div>
-        <div className="flex flex-col gap-5 ls:flex-row ls:gap-[5%]  ">
+        <div
+          className="flex flex-col gap-5 
+        ls:flex-row ls:gap-[5%]  "
+        >
           <img className="rounded-[10px] ls:w-[50%]   " src={userFilterAsset} />
           <div className="flex flex-col">
             <p className="">
@@ -67,9 +63,15 @@ export default function CallHistoryFilter() {
             </div>
           </div>
         </div>
-        <hr className="border-white/50 my-10 ls:my-20"></hr>
+        <hr
+          className="border-white/50 my-10 
+        ls:my-20"
+        ></hr>
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between ">
-          <div className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor ls:sticky ls:top-[80px]">
+          <div
+            className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
+          ls:w-[28%] ls:sticky ls:top-[80px]"
+          >
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
             <Link
@@ -113,7 +115,10 @@ export default function CallHistoryFilter() {
               4. Technical Implementation
             </Link>
           </div>
-          <div className="my-10 ls:w-[60%] ls:my-0">
+          <div
+            className="my-10 
+          ls:w-[60%] ls:my-0"
+          >
             <Outlet />
           </div>
         </article>
