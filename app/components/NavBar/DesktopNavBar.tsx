@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react";
-import { useState } from "react";
 import LinkButton from "~/components/CustomButton/LinkButton";
 import diablitoIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import musicPlayerIcon from "~/assets/Logos/kinxori-music-project-logo.png";
@@ -7,12 +6,6 @@ import contactManagerIcon from "~/assets/Logos/kinxori-contact-route-logo.png";
 import callHistoryIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
 
 export default function DesktopNav() {
-  const [isClicked, setClicked] = useState(false);
-
-  const handleProjectsButton = () => {
-    setClicked((prev) => !prev);
-  };
-
   return (
     <nav className="fixed z-[1000] top-0 h-[80px] bg-bgColor border-b-[2px] border-mainColor w-screen flex justify-between items-center px-5 box-border ">
       <Link to="/" className="font-[rubik] text-[50px] font-bold    ">
@@ -28,10 +21,7 @@ export default function DesktopNav() {
         <LinkButton variant="ghostButton" to="/contact">
           Contact
         </LinkButton>
-        <button
-          className="group font-bold text-[14px] pl-[20px] py-[10px] h-full relative flex items-center"
-          onClick={handleProjectsButton}
-        >
+        <button className="group font-bold text-[14px] pl-[20px] py-[10px] h-full relative flex items-center">
           Projects&#160;&#160;
           <i className={`fa-solid fa-chevron-down transition-all group-hover:rotate-180`}></i>
           <div
