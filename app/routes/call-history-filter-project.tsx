@@ -38,11 +38,11 @@ export default function CallHistoryFilter() {
         </div>
         <div
           className="flex flex-col gap-5 
-        ls:flex-row ls:gap-[5%]  "
+        ls:flex-row ls:justify-between  "
         >
           <img className="rounded-[10px] ls:w-[50%]   " src={userFilterAsset} />
-          <div className="flex flex-col">
-            <p className="">
+          <div className="flex flex-col ls:w-[40%]">
+            <p>
               Explore the breakdown of my second technical test for a job, where I created this
               project focusing on optimizing data, tracking call counts, and sorting users. Explore
               my web development experience and skills with this project.
@@ -72,7 +72,7 @@ export default function CallHistoryFilter() {
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between ">
           <div
             className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
-         ms:p-10 ls:w-[28%] ls:sticky ls:top-[80px]"
+           ms:p-10 ls:flex-row-reverse ls:justify-between  "
           >
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>

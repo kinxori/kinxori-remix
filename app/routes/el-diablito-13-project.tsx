@@ -22,25 +22,37 @@ export default function ElDiablito13() {
 
   return (
     <section className="font-[inter] pt-[60px] w-[100vw] flex flex-col text-white">
-      <div className="p-10 box-border ">
-        <div className="mb-10">
-          <h3 className="text-[30px] font-bold">
+      <div
+        className="p-10 box-border 
+      ms:px-[15%] ms:py-[10%] ls:px-[10%]"
+      >
+        <div
+          className="mb-10
+        ls:mb-20"
+        >
+          <h3
+            className="text-[30px] font-bold
+          ls:text-[50px] "
+          >
             <b>El Diablito 13</b> 👹
           </h3>
-          <i className="text-white/50 font-light text-[14px]">#Project</i>
+          <i className="text-white/50 font-light text-[14px] ls:text-[16px]">#Project</i>
         </div>
-        <div className="flex flex-col gap-5">
+        <div
+          className="flex flex-col gap-5
+        ls:flex-row ls:justify-between "
+        >
           <img
-            className="rounded-[10px]"
+            className="rounded-[10px] ls:w-[50%]"
             src={elDiablito13Asset}
             alt="el diablito trece landing page screenshot"
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col ls:w-[40%]">
             <p className="text-justify">
               Discover the creation process, purpose, decision-making, significance, and tools
               employed in this project.
             </p>
-            <div className="mt-5 ml-auto flex gap-2">
+            <div className="mt-5 justify-end flex gap-2 ls:justify-start">
               <AnchorButton
                 variant="secButton"
                 href="https://github.com/kinxori/el-diablito-13"
@@ -58,9 +70,12 @@ export default function ElDiablito13() {
             </div>
           </div>
         </div>
-        <hr className="border-white/50 my-10 "></hr>
-        <article className="flex flex-col">
-          <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
+        <hr className="border-white/50 my-10 ls:my-20"></hr>
+        <article className="flex flex-col ls:flex-row-reverse ls:justify-between">
+          <div
+            className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor 
+            ms:p-10 ls:flex-row-reverse ls:justify-between"
+          >
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
             <Link
@@ -113,7 +128,10 @@ export default function ElDiablito13() {
               5. Technical Implementation
             </Link>
           </div>
-          <div className="my-10">
+          <div
+            className="my-10
+          ls:w-[60%] ls:my-0"
+          >
             <Outlet />
           </div>
         </article>
