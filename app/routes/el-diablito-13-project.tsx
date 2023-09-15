@@ -73,7 +73,7 @@ export default function ElDiablito13() {
         <hr className="border-white/50 my-10 ls:my-20"></hr>
         <article className="flex flex-col ls:flex-row-reverse ls:justify-between">
           <div
-            className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor 
+            className="text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
             ms:p-10 ls:flex-row-reverse ls:justify-between"
           >
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>

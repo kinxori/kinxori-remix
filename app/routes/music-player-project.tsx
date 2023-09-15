@@ -12,6 +12,7 @@ import htmlLogo from "~/assets/Logos/html-color-logo.png";
 import cssLogo from "~/assets/Logos/css-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import musicProjectMainAsset from "~/assets/music-media-player-practice-ss.png";
+import { Link } from "@remix-run/react";
 
 export default function MusicMediaPlayer() {
   const [selectedSubject, setSelectedSubject] = useState(1);
@@ -59,6 +60,16 @@ export default function MusicMediaPlayer() {
           <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
             <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
             <hr className="border-bgColor/50 my-3 "></hr>
+            <Link
+              className={`block w-full p-1 pl-5 my-3 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
+              ${
+                location.pathname === "/call-history-filter-project/project-overview" &&
+                "bg-bgColor/10"
+              }`}
+              to="project-overview"
+            >
+              1. Project Overview
+            </Link>
             <button
               className={` w-full p-1 pl-5 my-2 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
               ${selectedSubject === 1 && "bg-bgColor/10"}`}
