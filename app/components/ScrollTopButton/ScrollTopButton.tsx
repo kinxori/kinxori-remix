@@ -9,7 +9,7 @@ export default function ScrollTopButton() {
   const handleScroll = () => {
     const scrollHeigth = window.scrollY;
     const screenHeigth = window.innerHeight;
-    setScrolled(scrollHeigth < screenHeigth / 2);
+    setScrolled(scrollHeigth > screenHeigth / 2);
   };
 
   useEffect(() => {
@@ -21,19 +21,16 @@ export default function ScrollTopButton() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // console.log(scroll);
+  console.log(isScrolled);
 
   return (
-    <div
-      className={`transition-all ease-in-out duration-[.5s] fixed right-0 bottom-0 m-5 z-[100]
-        ${isScrolled ? "opacity-0" : "opacity-100"}`}
+    <button
+      className={`hover:text-mainColor w-[50px] h-[50px] text-black rounded-[100%] bg-white text-[30px] border-black border-[2px] hover:border-mainColor transition-all ease-in-out duration-[.5s] fixed right-0 bottom-0 m-5 z-[100]
+      ts:w-[60px] ts:h-[60px] ts:text-[35px] ts:border-[3px]
+        ${isScrolled ? "opacity-100" : "opacity-0"}`}
+      onClick={handleClick}
     >
-      <button
-        className="hover:text-mainColor w-[50px] h-[50px] text-black rounded-[100%] bg-white text-[30px] border-black border-[2px] transition-all ease-in-out duration-[.3s] hover:border-mainColor ts:w-[60px] ts:h-[60px] ts:text-[35px] ts:border-[3px] "
-        onClick={handleClick}
-      >
-        <i className=" fa-solid fa-arrow-up"></i>
-      </button>
-    </div>
+      <i className=" fa-solid fa-arrow-up"></i>
+    </button>
   );
 }
