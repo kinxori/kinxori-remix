@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "@remix-run/react";
 import kinxoriLogo from "~/assets/Logos/kinxori-logo-100x100.png";
 
 export default function MobileNav() {
   const [isSlideActive, setSlideActive] = useState(false);
   const [isClipboardCopied, setClipboardCopy] = useState(false);
+
+  const location = useLocation();
 
   const handleSlide = () => {
     setSlideActive((current) => (current ? false : true));
@@ -18,7 +20,16 @@ export default function MobileNav() {
     }, 3000);
   };
 
-  const location = useLocation();
+  // escape keydown to close slider
+  useEffect(() => {
+    const exitEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handleSlide();
+      }
+    };
+    document.addEventListener("keydown", exitEsc);
+    return () => document.removeEventListener("keydown", exitEsc);
+  }, []);
 
   return (
     <nav
