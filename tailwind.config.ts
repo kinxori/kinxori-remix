@@ -25,7 +25,7 @@ export default {
           color: "inherit",
           fontFamily: "inherit",
           fontWeight: "bold",
-          textDecoration: `underline ${theme("colors.mainColor")}`,
+          // textDecoration: `underline ${theme("colors.mainColor")}`,
         },
       });
       addUtilities({

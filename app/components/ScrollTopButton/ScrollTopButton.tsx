@@ -21,7 +21,7 @@ export default function ScrollTopButton() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  console.log(isScrolled);
+  // console.log(isScrolled);
 
   return (
     <button
