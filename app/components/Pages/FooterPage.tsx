@@ -19,19 +19,19 @@ export default function FooterPage({ id, isObserved }: { id?: string; isObserved
       className={` box-border p-10 bg-black w-[100vw] flex flex-col gap-7 justify-center items-center ${isObserved} `}
     >
       <div className="text-[12px] w-[100%] gap-3 justify-center font-light flex-wrap flex items-center">
-        <LinkButton to="/" variant="linkButton">
+        <LinkButton to="/" variant="ghostButton">
           Home
         </LinkButton>
-        <LinkButton to="/about" variant="linkButton">
+        <LinkButton to="/about" variant="ghostButton">
           About
         </LinkButton>
-        <LinkButton to="/contact" variant="linkButton">
+        <LinkButton to="/contact" variant="ghostButton">
           Contact
         </LinkButton>
         <AnchorButton
           target="_blank"
           href="https://calendly.com/gustavoq26/30min"
-          variant="linkButton"
+          variant="ghostButton"
         >
           Schedule a Meeting&#160;&#160;
           <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
