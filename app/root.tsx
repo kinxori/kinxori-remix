@@ -1,6 +1,33 @@
 import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import stylesheet from "~/tailwind.css";
+import NavBar from "~/components/NavBar/NavBar";
+import Footer from "~/components/Pages/FooterPage";
+import Error404Page from "~/components/Pages/Error404Page";
+
+export function ErrorBoundary({ error }: ErrorEvent) {
+  console.error(error);
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <Error404Page />
+        <Footer />
+        <NavBar />
+        <Scripts />
+        <script
+          defer
+          src="https://kit.fontawesome.com/71cfa127b4.js"
+          crossOrigin="anonymous"
+        ></script>
+      </body>
+    </html>
+  );
+}
 
 export default function App() {
   return (
