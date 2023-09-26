@@ -6,11 +6,11 @@ import Footer from "~/components/Pages/FooterPage";
 import Error404Page from "~/components/Pages/Error404Page";
 
 export function ErrorBoundary({ error }: ErrorEvent) {
-  console.error(error);
+  console.error("404 not found 🥲", error);
   return (
     <html>
       <head>
-        <title>Oh no!</title>
+        <title>404 Not Found!</title>
         <Meta />
         <Links />
       </head>
