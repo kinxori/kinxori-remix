@@ -4,6 +4,7 @@ import diablitoIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import musicPlayerIcon from "~/assets/Logos/kinxori-music-project-logo.png";
 import contactManagerIcon from "~/assets/Logos/kinxori-contact-route-logo.png";
 import callHistoryIcon from "~/assets/Logos/kinxori-user-filter-project-logo.png";
+import AnchorButton from "~/components/CustomButton/AnchorButton";
 
 export default function DesktopNav() {
   const location = useLocation();
@@ -60,6 +61,16 @@ export default function DesktopNav() {
         <LinkButton variant="ghostButton" to="/resumePDF" download={true} target="_blank">
           Download CV
         </LinkButton>
+        <AnchorButton
+          variant="mainButton"
+          href="https://calendly.com/gustavoq26/30min"
+          className="ml-5"
+          download={true}
+          target="_blank"
+        >
+          Schedule a Meeting&#160;&#160;
+          <i className="fa-regular fa-calendar-days"></i>
+        </AnchorButton>
       </div>
     </nav>
   );
