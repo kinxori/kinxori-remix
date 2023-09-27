@@ -15,18 +15,42 @@ import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.p
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
-import { useState } from "react";
+import { ReactEventHandler, useEffect, useState } from "react";
 
 export default function WebProjectsPage() {
   const [pageNumber, setPageNumber] = useState(1);
-  const handlePageAddition = () => {
-    pageNumber <= 3 ? setPageNumber((current) => current + 1) : null;
+  const [startX, setStartX] = useState(null);
+  const [deltaX, setDeltaX] = useState(0);
+
+  // Function to handle touch start event
+  const onTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
   };
+
+  // Function to handle touch move event and calculate deltaX
+  const onTouchMove = (e) => {
+    if (startX !== null) {
+      const currentX = e.touches[0].clientX;
+      const newDeltaX = currentX - startX;
+      setDeltaX(newDeltaX);
+    }
+  };
+
+  // Function to handle touch end event
+  const onTouchEnd = () => {
+    setStartX(null);
+    setDeltaX(0);
+  };
+
   const handlePageSubstraction = () => {
     pageNumber > 1 ? setPageNumber((current) => current - 1) : null;
   };
+  const handlePageAddition = () => {
+    pageNumber <= 3 ? setPageNumber((current) => current + 1) : null;
+  };
 
   console.log("number??", pageNumber);
+  console.log("scrolled??", deltaX);
   return (
     <section className={`font-[inter] w-[100vw] flex flex-col justify-center items-center`}>
       <div
@@ -59,14 +83,20 @@ export default function WebProjectsPage() {
           <hr className="mt-10 border-white/50 ls:mt-20"></hr>
         </div>
         <section
-          className="w-[100vw] h-[600px] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
-          ms:px-[15%] ls:px-[20%] ls:py-20 "
+          className="w-[100vw] h-[600px] p-10 pb-[15%] flex items-start overflow-hidden relative
+          ms:px-[15%] ms:h-[720px] ls:px-[20%] ls:py-20"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
         >
-          {pageNumber >= 1 && pageNumber <= 2 && <ElDiablito13 pageNumber={pageNumber} />}
-          {pageNumber >= 1 && pageNumber <= 3 && <MusicPlayer pageNumber={pageNumber} />}
-          {pageNumber >= 2 && pageNumber <= 4 && <ContactManager pageNumber={pageNumber} />}
-          {pageNumber >= 3 && pageNumber <= 5 && <CallHistoryFilter pageNumber={pageNumber} />}
-          <div className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
+          <ElDiablito13 pageNumber={pageNumber} scrolled={deltaX} />
+          <MusicPlayer pageNumber={pageNumber} scrolled={deltaX} />
+          <ContactManager pageNumber={pageNumber} scrolled={deltaX} />
+          <CallHistoryFilter pageNumber={pageNumber} scrolled={deltaX} />
+          <div
+            className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5  w-full left-0
+          ms:px-[12%]"
+          >
             {pageNumber > 1 && (
               <button
                 onClick={handlePageSubstraction}
@@ -84,7 +114,7 @@ export default function WebProjectsPage() {
               </button>
             )}
           </div>
-          <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0">
+          <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0 ms:gap-2">
             <span
               className={`w-2 h-2 rounded-full
               ${pageNumber === 1 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
@@ -108,13 +138,14 @@ export default function WebProjectsPage() {
   );
 }
 
-function ElDiablito13({ pageNumber }: { pageNumber: number }) {
+function ElDiablito13({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
+  const translateXValue = pageNumber === 1 ? "0%" : `${scrolled}%`;
+
   return (
     <article
-      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-110%]"}
-      border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-       ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] translate-x-[${translateXValue}] 
+      border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+       ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
        `}
     >
       <img
@@ -174,19 +205,19 @@ function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   );
 }
 
-function MusicPlayer({ pageNumber }: { pageNumber: number }) {
+function MusicPlayer({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
   return (
     <article
-      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 2
-          ? "translate-x-[110%]  "
+          ? "translate-x-[105%]  "
           : pageNumber === 2
           ? " translate-x-[0%] "
-          : pageNumber > 2 && "translate-x-[-110%] "
+          : pageNumber > 2 && "translate-x-[-105%] "
       }
-    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+    border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
      `}
     >
       <img
@@ -243,19 +274,19 @@ function MusicPlayer({ pageNumber }: { pageNumber: number }) {
   );
 }
 
-function ContactManager({ pageNumber }: { pageNumber: number }) {
+function ContactManager({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
   return (
     <article
-      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 3
-          ? "translate-x-[110%]"
+          ? "translate-x-[105%]"
           : pageNumber === 3
           ? " translate-x-[0%]"
-          : pageNumber > 3 && "translate-x-[-110%]"
+          : pageNumber > 3 && "translate-x-[-105%]"
       }
-    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+    border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
      `}
     >
       <img
@@ -312,19 +343,19 @@ function ContactManager({ pageNumber }: { pageNumber: number }) {
   );
 }
 
-function CallHistoryFilter({ pageNumber }: { pageNumber: number }) {
+function CallHistoryFilter({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
   return (
     <article
-      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 4
-          ? "translate-x-[110%]"
+          ? "translate-x-[105%]"
           : pageNumber === 4
           ? " translate-x-[0%]"
-          : pageNumber > 4 && "translate-x-[-110%]"
+          : pageNumber > 4 && "translate-x-[-105%]"
       }
-    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+    border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
      `}
     >
       <img
