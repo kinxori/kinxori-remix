@@ -56,13 +56,19 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           className="w-[100vw] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
           ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
-          <div className="absolute flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0 ">
+          <div className="absolute flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
             <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
               <i className="fa-solid fa-arrow-left"></i>
             </button>
             <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
               <i className="fa-solid fa-arrow-right"></i>
             </button>
+          </div>
+          <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0">
+            <span>😅</span>
+            <span>😅</span>
+            <span>😅</span>
+            <span>😅</span>
           </div>
           <ElDiablito13 />
           <MusicPlayer />
