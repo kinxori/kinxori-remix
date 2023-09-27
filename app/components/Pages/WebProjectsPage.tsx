@@ -77,10 +77,22 @@ export default function WebProjectsPage() {
             </button>
           </div>
           <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0">
-            <span className="bg-white w-2 h-2 rounded-full"></span>
-            <span className="bg-white w-2 h-2 rounded-full"></span>
-            <span className="bg-white w-2 h-2 rounded-full"></span>
-            <span className="bg-white w-2 h-2 rounded-full"></span>
+            <span
+              className={`w-2 h-2 rounded-full
+              ${pageNumber === 1 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+            ></span>
+            <span
+              className={`w-2 h-2 rounded-full
+              ${pageNumber === 2 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+            ></span>
+            <span
+              className={`w-2 h-2 rounded-full
+              ${pageNumber === 3 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+            ></span>
+            <span
+              className={`w-2 h-2 rounded-full
+              ${pageNumber === 4 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+            ></span>
           </div>
           {pageNumber >= 1 && pageNumber <= 2 && <ElDiablito13 pageNumber={pageNumber} />}
           {/* <MusicPlayer />
