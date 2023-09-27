@@ -53,9 +53,13 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </div>
         <section
           id="carrouselProjects"
-          className="overflow-x-scroll w-[100vw] p-10 flex gap-5 items-start
+          className="w-[100vw] p-10 flex gap-5 items-start overflow-hidden relative
           ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
+          <div className="absolute flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0 ">
+            <button className="bg-black text-white">Next</button>
+            <button className="bg-black text-white">Go Back</button>
+          </div>
           <ElDiablito13 />
           <MusicPlayer />
           <ContactManager />
