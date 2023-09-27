@@ -5,7 +5,7 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
   return (
     <section
       id={id}
-      className={`relative font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
+      className={`relative font-[inter] w-[100vw] flex flex-col justify-center items-center`}
     >
       <div
         className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden

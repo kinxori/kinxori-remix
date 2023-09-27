@@ -48,21 +48,18 @@ export default function WebProjectsPage() {
           ms:right-[-10%] ms:h-[500px] ms:bottom-[-120%] ls:h-[600px] ls:right-[0%] "
         />
       </div>
-      <div className="w-[100vw] flex flex-col">
-        <div
-          className="box-border p-10 pb-0
-        ms:px-[15%] py-[10%] ls:px-[20%] "
-        >
+      <div className="w-[100vw] flex flex-col ls:flex-row-reverse ls:justify-between ls:px-[15%] ls:py-[10%]">
+        <div className="font-normal flex flex-col box-border p-10 pb-0 ms:px-[15%] ms:py-[10%] ms:pb-0 ls:p-0 ls:w-[40%] ">
           <p>
             Explore a collection of my web projects and delve into the world of my development
             practices. From crafting engaging user interfaces to crafting elegant code, these
             projects showcase my journey as a web developer.
           </p>
-          <hr className="mt-10 border-white/50 ls:mt-20"></hr>
+          <hr className="mt-10 border-white/50 ls:hidden"></hr>
         </div>
         <section
-          className="w-[100vw] h-[600px] p-10 pb-[15%] flex items-start overflow-hidden relative
-          ms:px-[15%] ms:h-[720px] ls:px-[20%] ls:py-20"
+          className="w-[100vw] h-[600px] p-10 pb-[15%] flex justify-center overflow-hidden relative
+          ms:h-[720px] ms:px-[15%] ls:p-0 ls:w-[50%] ls:h-[640px] "
         >
           <ElDiablito13 pageNumber={pageNumber} />
           <MusicPlayer pageNumber={pageNumber} />
@@ -70,8 +67,8 @@ export default function WebProjectsPage() {
           <CallHistoryFilter pageNumber={pageNumber} />
 
           <div
-            className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5  w-full left-0
-          ms:px-[12%]"
+            className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5 w-full left-0
+          ms:px-[12%] ls:px-0"
           >
             {pageNumber > 1 && (
               <button
@@ -124,7 +121,7 @@ function ElDiablito13({ pageNumber }: { pageNumber: number }) {
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-105%] opacity-0"}
       border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-       ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
+       ms:p-10 ms:min-h-[620px] ms:w-[70%] ls:min-h-[580px] ls:w-[90%]
        `}
     >
       <img
@@ -196,7 +193,7 @@ function MusicPlayer({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 2 && "translate-x-[-105%] opacity-0"
       }
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[580px] ls:w-[90%]
      `}
     >
       <img
@@ -265,7 +262,7 @@ function ContactManager({ pageNumber }: { pageNumber: number }) {
           : pageNumber > 3 && "translate-x-[-105%] opacity-0"
       }
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[580px] ls:w-[90%]
      `}
     >
       <img
@@ -326,15 +323,9 @@ function CallHistoryFilter({ pageNumber }: { pageNumber: number }) {
   return (
     <article
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      ${
-        pageNumber < 4
-          ? "translate-x-[105%] opacity-0"
-          : pageNumber === 4
-          ? " translate-x-[0%]"
-          : pageNumber > 4 && "translate-x-[-105%] opacity-0"
-      }
+      ${pageNumber < 4 ? "translate-x-[105%] opacity-0" : " translate-x-[0%]"}
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[580px] ls:w-[90%]
      `}
     >
       <img
