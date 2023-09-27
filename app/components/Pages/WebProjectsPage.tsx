@@ -62,19 +62,27 @@ export default function WebProjectsPage() {
           className="w-[100vw] h-[600px] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
           ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
-          <div className="absolute z-10 flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
-            <button
-              onClick={handlePageSubstraction}
-              className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
-            >
-              <i className="fa-solid fa-arrow-left"></i>
-            </button>
-            <button
-              onClick={handlePageAddition}
-              className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
-            >
-              <i className="fa-solid fa-arrow-right"></i>
-            </button>
+          {pageNumber >= 1 && pageNumber <= 2 && <ElDiablito13 pageNumber={pageNumber} />}
+          {pageNumber >= 1 && pageNumber <= 3 && <MusicPlayer pageNumber={pageNumber} />}
+          {pageNumber >= 2 && pageNumber <= 4 && <ContactManager pageNumber={pageNumber} />}
+          {pageNumber >= 3 && pageNumber <= 5 && <CallHistoryFilter pageNumber={pageNumber} />}
+          <div className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
+            {pageNumber > 1 && (
+              <button
+                onClick={handlePageSubstraction}
+                className="bg-white/80 text-bgColor p-2 mr-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+              >
+                <i className="fa-solid fa-arrow-left"></i>
+              </button>
+            )}
+            {pageNumber < 4 && (
+              <button
+                onClick={handlePageAddition}
+                className="bg-white/80 text-bgColor p-2 ml-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+              >
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            )}
           </div>
           <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0">
             <span
@@ -94,10 +102,6 @@ export default function WebProjectsPage() {
               ${pageNumber === 4 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
             ></span>
           </div>
-          {pageNumber >= 1 && pageNumber <= 2 && <ElDiablito13 pageNumber={pageNumber} />}
-          {/* <MusicPlayer />
-          <ContactManager />
-          <CallHistoryFilter /> */}
         </section>
       </div>
     </section>
@@ -107,10 +111,11 @@ export default function WebProjectsPage() {
 function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className="absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-110%]"}
       border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
        ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
-       "
+       `}
     >
       <img
         alt="Screenshot of El Diablito 13 landing page website. At the left side of the screen you have the main copy of the landing page. Below that you have 2 call to action buttons. At the right side you have a drawing of a devil smoking a cigar with long hair."
@@ -169,13 +174,20 @@ function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   );
 }
 
-function MusicPlayer() {
+function MusicPlayer({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
-    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
-    "
+      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      ${
+        pageNumber < 2
+          ? "translate-x-[110%]  "
+          : pageNumber === 2
+          ? " translate-x-[0%] "
+          : pageNumber > 2 && "translate-x-[-110%] "
+      }
+    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+     `}
     >
       <img
         alt="Screenshot of Kinxori's project named Music Player. There's 2 panels, one showing the current song playing and a bunch of buttons to interact with the media. The second panel is displaying a list of songs as a playlist."
@@ -231,13 +243,20 @@ function MusicPlayer() {
   );
 }
 
-function ContactManager() {
+function ContactManager({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
-    "
+      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      ${
+        pageNumber < 3
+          ? "translate-x-[110%]"
+          : pageNumber === 3
+          ? " translate-x-[0%]"
+          : pageNumber > 3 && "translate-x-[-110%]"
+      }
+    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+     `}
     >
       <img
         alt="Screenshot of Kinxori's project named Contact Manager Feature, which was a technical test for a Frontend Jr role where the main challenge was to have a feature to add, remove and filter user entries based of the type of contact."
@@ -293,13 +312,20 @@ function ContactManager() {
   );
 }
 
-function CallHistoryFilter() {
+function CallHistoryFilter({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-    border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
-    ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
-    "
+      className={`absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      ${
+        pageNumber < 4
+          ? "translate-x-[110%]"
+          : pageNumber === 4
+          ? " translate-x-[0%]"
+          : pageNumber > 4 && "translate-x-[-110%]"
+      }
+    border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
+     `}
     >
       <img
         alt="Screenshot of Kinxori's project named User's Details Modal, which was a technical test for a Frontend Jr role displaying an array of contacts filtered in a specific way."
