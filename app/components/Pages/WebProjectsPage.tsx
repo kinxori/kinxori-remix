@@ -76,7 +76,7 @@ export default function WebProjectsPage() {
             {pageNumber > 1 && (
               <button
                 onClick={handlePageSubstraction}
-                className="bg-white/80 text-bgColor p-2 mr-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+                className="bg-white customShadowMainColor2 text-bgColor p-2 mr-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
               >
                 <i className="fa-solid fa-arrow-left"></i>
               </button>
@@ -84,28 +84,32 @@ export default function WebProjectsPage() {
             {pageNumber < 4 && (
               <button
                 onClick={handlePageAddition}
-                className="bg-white/80 text-bgColor p-2 ml-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+                className="bg-white customShadowMainColor2 text-bgColor p-2 ml-auto rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
               >
                 <i className="fa-solid fa-arrow-right"></i>
               </button>
             )}
           </div>
-          <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0 ms:gap-2">
+          <div className="absolute flex gap-2 left-0 justify-center pb-5 w-full bottom-0 ms:gap-3">
             <span
+              onClick={() => setPageNumber(1)}
               className={`w-2 h-2 rounded-full
-              ${pageNumber === 1 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+              ${pageNumber === 1 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
+              onClick={() => setPageNumber(2)}
               className={`w-2 h-2 rounded-full
-              ${pageNumber === 2 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+              ${pageNumber === 2 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
+              onClick={() => setPageNumber(3)}
               className={`w-2 h-2 rounded-full
-              ${pageNumber === 3 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+              ${pageNumber === 3 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
+              onClick={() => setPageNumber(4)}
               className={`w-2 h-2 rounded-full
-              ${pageNumber === 4 ? "bg-white scale-[1.1]" : "bg-white/80"}`}
+              ${pageNumber === 4 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
           </div>
         </section>
@@ -118,9 +122,9 @@ function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   return (
     <article
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-105%]"}
+      ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-105%] opacity-0"}
       border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-       ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
+       ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
        `}
     >
       <img
@@ -186,13 +190,13 @@ function MusicPlayer({ pageNumber }: { pageNumber: number }) {
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 2
-          ? "translate-x-[105%]  "
+          ? "translate-x-[105%] opacity-0  "
           : pageNumber === 2
-          ? " translate-x-[0%] "
-          : pageNumber > 2 && "translate-x-[-105%] "
+          ? " translate-x-[0%]"
+          : pageNumber > 2 && "translate-x-[-105%] opacity-0"
       }
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
      `}
     >
       <img
@@ -255,13 +259,13 @@ function ContactManager({ pageNumber }: { pageNumber: number }) {
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 3
-          ? "translate-x-[105%]"
+          ? "translate-x-[105%] opacity-0"
           : pageNumber === 3
           ? " translate-x-[0%]"
-          : pageNumber > 3 && "translate-x-[-105%]"
+          : pageNumber > 3 && "translate-x-[-105%] opacity-0"
       }
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
      `}
     >
       <img
@@ -324,13 +328,13 @@ function CallHistoryFilter({ pageNumber }: { pageNumber: number }) {
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
       ${
         pageNumber < 4
-          ? "translate-x-[105%]"
+          ? "translate-x-[105%] opacity-0"
           : pageNumber === 4
           ? " translate-x-[0%]"
-          : pageNumber > 4 && "translate-x-[-105%]"
+          : pageNumber > 4 && "translate-x-[-105%] opacity-0"
       }
     border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
-     ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
+     ms:p-10 ms:min-h-[620px] ms:w-[70%]  ls:min-h-[610px] ls:w-[60%]
      `}
     >
       <img
