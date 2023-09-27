@@ -15,13 +15,20 @@ import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.p
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
+import { useState } from "react";
 
-export default function WebProjectsPage({ id, isObserved }: { id?: string; isObserved?: string }) {
+export default function WebProjectsPage() {
+  const [pageNumber, setPageNumber] = useState(1);
+  const handlePageAddition = () => {
+    pageNumber <= 3 ? setPageNumber((current) => current + 1) : null;
+  };
+  const handlePageSubstraction = () => {
+    pageNumber > 1 ? setPageNumber((current) => current - 1) : null;
+  };
+
+  console.log("number??", pageNumber);
   return (
-    <section
-      id={id}
-      className={`font-[inter] w-[100vw] flex flex-col justify-center items-center ${isObserved}`}
-    >
+    <section className={`font-[inter] w-[100vw] flex flex-col justify-center items-center`}>
       <div
         className="bg-mainColor box-border p-10 w-[100%] relative overflow-hidden 
        ms:px-[15%]
@@ -52,39 +59,44 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
           <hr className="mt-10 border-white/50 ls:mt-20"></hr>
         </div>
         <section
-          id="carrouselProjects"
-          className="w-[100vw] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
+          className="w-[100vw] h-[600px] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
           ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
-          <div className="absolute flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
-            <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
+          <div className="absolute z-10 flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0">
+            <button
+              onClick={handlePageSubstraction}
+              className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+            >
               <i className="fa-solid fa-arrow-left"></i>
             </button>
-            <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
+            <button
+              onClick={handlePageAddition}
+              className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center"
+            >
               <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
           <div className="absolute flex gap-1 left-0 justify-center pb-5 w-full bottom-0">
-            <span>😅</span>
-            <span>😅</span>
-            <span>😅</span>
-            <span>😅</span>
+            <span className="bg-white w-2 h-2 rounded-full"></span>
+            <span className="bg-white w-2 h-2 rounded-full"></span>
+            <span className="bg-white w-2 h-2 rounded-full"></span>
+            <span className="bg-white w-2 h-2 rounded-full"></span>
           </div>
-          <ElDiablito13 />
-          <MusicPlayer />
+          {pageNumber >= 1 && pageNumber <= 2 && <ElDiablito13 pageNumber={pageNumber} />}
+          {/* <MusicPlayer />
           <ContactManager />
-          <CallHistoryFilter />
+          <CallHistoryFilter /> */}
         </section>
       </div>
     </section>
   );
 }
 
-function ElDiablito13() {
+function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className="flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
-      border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
+      className="absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      border-mainColor w-[80%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
        ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
        "
     >
@@ -148,7 +160,7 @@ function ElDiablito13() {
 function MusicPlayer() {
   return (
     <article
-      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
     "
@@ -210,7 +222,7 @@ function MusicPlayer() {
 function ContactManager() {
   return (
     <article
-      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
     "
@@ -272,7 +284,7 @@ function ContactManager() {
 function CallHistoryFilter() {
   return (
     <article
-      className="  flex-shrink-0 hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      className="  absolute hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
     border-mainColor w-[100%] min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start 
     ms:p-10 ms:min-h-[590px] ms:w-[80%] ls:w-[60%] ls:min-h-[610px]
     "

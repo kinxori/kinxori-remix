@@ -65,7 +65,7 @@ export default function Index() {
       <AboutMePage id="aboutMePageID" isObserved="observe" isActive={isAboutMePage} />
       <ExperiencePage id="experiencePageID" isObserved="observe" />
       {/* <SkillsPage id="skillsPageID" isObserved="observe" /> */}
-      <WebProjectsPage id="webProjectsPageID" isObserved="observe" />
+      <WebProjectsPage />
       <FooterPage id="footerPageID" isObserved="observe" />
       <ScrollTopButton />
     </article>
