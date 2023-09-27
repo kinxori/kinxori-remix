@@ -15,32 +15,10 @@ import tailwindcssLogo from "~/assets/Logos/tailwindcss-png-logo-500x500-white.p
 import viteJslogo from "~/assets/Logos/vite-js-color-logo.png";
 import githubLogo from "~/assets/Logos/github-white-logo.png";
 import nodejsLogo from "~/assets/Logos/nodejs-color-logo.png";
-import { ReactEventHandler, useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function WebProjectsPage() {
   const [pageNumber, setPageNumber] = useState(1);
-  const [startX, setStartX] = useState(null);
-  const [deltaX, setDeltaX] = useState(0);
-
-  // Function to handle touch start event
-  const onTouchStart = (e) => {
-    setStartX(e.touches[0].clientX);
-  };
-
-  // Function to handle touch move event and calculate deltaX
-  const onTouchMove = (e) => {
-    if (startX !== null) {
-      const currentX = e.touches[0].clientX;
-      const newDeltaX = currentX - startX;
-      setDeltaX(newDeltaX);
-    }
-  };
-
-  // Function to handle touch end event
-  const onTouchEnd = () => {
-    setStartX(null);
-    setDeltaX(0);
-  };
 
   const handlePageSubstraction = () => {
     pageNumber > 1 ? setPageNumber((current) => current - 1) : null;
@@ -50,7 +28,7 @@ export default function WebProjectsPage() {
   };
 
   console.log("number??", pageNumber);
-  console.log("scrolled??", deltaX);
+
   return (
     <section className={`font-[inter] w-[100vw] flex flex-col justify-center items-center`}>
       <div
@@ -85,14 +63,12 @@ export default function WebProjectsPage() {
         <section
           className="w-[100vw] h-[600px] p-10 pb-[15%] flex items-start overflow-hidden relative
           ms:px-[15%] ms:h-[720px] ls:px-[20%] ls:py-20"
-          onTouchStart={onTouchStart}
-          onTouchMove={onTouchMove}
-          onTouchEnd={onTouchEnd}
         >
-          <ElDiablito13 pageNumber={pageNumber} scrolled={deltaX} />
-          <MusicPlayer pageNumber={pageNumber} scrolled={deltaX} />
-          <ContactManager pageNumber={pageNumber} scrolled={deltaX} />
-          <CallHistoryFilter pageNumber={pageNumber} scrolled={deltaX} />
+          <ElDiablito13 pageNumber={pageNumber} />
+          <MusicPlayer pageNumber={pageNumber} />
+          <ContactManager pageNumber={pageNumber} />
+          <CallHistoryFilter pageNumber={pageNumber} />
+
           <div
             className="absolute z-10 flex top-[50%] translate-y-[-50%] box-border px-5  w-full left-0
           ms:px-[12%]"
@@ -138,12 +114,11 @@ export default function WebProjectsPage() {
   );
 }
 
-function ElDiablito13({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
-  const translateXValue = pageNumber === 1 ? "0%" : `${scrolled}%`;
-
+function ElDiablito13({ pageNumber }: { pageNumber: number }) {
   return (
     <article
-      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] translate-x-[${translateXValue}] 
+      className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
+      ${pageNumber === 1 ? "translate-x-[0%]" : "translate-x-[-105%]"}
       border-mainColor w-[80%] absolute min-h-[510px] text-bgColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-start
        ms:p-10 ms:min-h-[620px] ls:min-h-[610px]
        `}
@@ -205,7 +180,7 @@ function ElDiablito13({ pageNumber, scrolled }: { pageNumber: number; scrolled: 
   );
 }
 
-function MusicPlayer({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
+function MusicPlayer({ pageNumber }: { pageNumber: number }) {
   return (
     <article
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -274,7 +249,7 @@ function MusicPlayer({ pageNumber, scrolled }: { pageNumber: number; scrolled: n
   );
 }
 
-function ContactManager({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
+function ContactManager({ pageNumber }: { pageNumber: number }) {
   return (
     <article
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
@@ -343,7 +318,7 @@ function ContactManager({ pageNumber, scrolled }: { pageNumber: number; scrolled
   );
 }
 
-function CallHistoryFilter({ pageNumber, scrolled }: { pageNumber: number; scrolled: number }) {
+function CallHistoryFilter({ pageNumber }: { pageNumber: number }) {
   return (
     <article
       className={` hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] 
