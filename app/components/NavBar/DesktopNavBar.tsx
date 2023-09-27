@@ -65,7 +65,6 @@ export default function DesktopNav() {
           variant="mainButton"
           href="https://calendly.com/gustavoq26/30min"
           className="ml-5"
-          download={true}
           target="_blank"
         >
           Schedule a Meeting&#160;&#160;

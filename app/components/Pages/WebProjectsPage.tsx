@@ -53,12 +53,16 @@ export default function WebProjectsPage({ id, isObserved }: { id?: string; isObs
         </div>
         <section
           id="carrouselProjects"
-          className="w-[100vw] p-10 flex gap-5 items-start overflow-hidden relative
+          className="w-[100vw] p-10 pb-[15%] flex gap-5 items-start overflow-hidden relative
           ms:px-[15%] ls:px-[20%] ls:py-20 "
         >
           <div className="absolute flex justify-between top-[50%] translate-y-[-50%] box-border px-5  w-full left-0 ">
-            <button className="bg-black text-white">Next</button>
-            <button className="bg-black text-white">Go Back</button>
+            <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
+              <i className="fa-solid fa-arrow-left"></i>
+            </button>
+            <button className="bg-white/80 text-bgColor p-2 rounded-full h-10 w-10 text-[22px] flex justify-center items-center">
+              <i className="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
           <ElDiablito13 />
           <MusicPlayer />
