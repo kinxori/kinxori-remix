@@ -8,8 +8,8 @@ export default function MobileNav() {
 
   const location = useLocation();
 
-  const handleSlide = () => {
-    setSlideActive((current) => (current ? false : true));
+  const handleSlide = (current: boolean) => {
+    setSlideActive(current);
   };
 
   const handleClipboardState = () => {
@@ -24,7 +24,7 @@ export default function MobileNav() {
   useEffect(() => {
     const exitEsc = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        handleSlide();
+        handleSlide(false);
       }
     };
     document.addEventListener("keydown", exitEsc);
@@ -49,7 +49,7 @@ export default function MobileNav() {
           />
         </Link>
         <div
-          onClick={handleSlide}
+          onClick={() => handleSlide(!isSlideActive)}
           className={`hover:scale-[1.05] w-[30px] z-[1000] h-[25px] ms:w-[35px] ms:h-[30px] flex flex-col justify-center items-center absolute top-[50%] translate-y-[-50%] mr-[5%] gap-[6px] right-0 
           transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] hover:cursor-pointer `}
         >
@@ -80,7 +80,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             Home Page&#160;&#160;<i className="fa-solid fa-house text-[24px] "></i>
           </Link>
@@ -88,7 +88,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/about"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             About Page&#160;&#160;<i className="fa-solid fa-user text-[24px]"></i>
           </Link>
@@ -96,7 +96,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/contact"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             Contact Page&#160;&#160;<i className="fa-solid fa-at text-[24px]"></i>
           </Link>
@@ -104,7 +104,7 @@ export default function MobileNav() {
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             target="_blank"
             href="https://calendly.com/gustavoq26/30min"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
             &#160;&#160;Schedule a Meeting&#160;&#160;
@@ -114,7 +114,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/el-diablito-13-project"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             El Diablito 13 Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-paintbrush"></i>
@@ -123,7 +123,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/music-player-project"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             Music Player Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-music"></i>
@@ -132,7 +132,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/contact-manager-project"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             Contact Manager Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-address-book"></i>
@@ -141,7 +141,7 @@ export default function MobileNav() {
             prefetch="intent"
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
             to="/call-history-filter-project"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
           >
             Call History Filter Project&#160;&#160;
             <i className="text-[24px] fa-solid fa-id-card"></i>
@@ -153,7 +153,7 @@ export default function MobileNav() {
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             href="https://linkedin.com/in/quinchori"
             target="_blank"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
             aria-label="You can visit my linkedin.com profile clicking this button."
           >
             <i className="fa-brands fa-linkedin-in"></i>
@@ -162,7 +162,7 @@ export default function MobileNav() {
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             href="https://github.com/kinxori"
             target="_blank"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
             aria-label="You can visit my github.com profile clicking this button."
           >
             <i className="fa-brands fa-github"></i>
@@ -171,7 +171,7 @@ export default function MobileNav() {
             className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
             href="https://twitter.com/kinxori"
             target="_blank"
-            onClick={handleSlide}
+            onClick={() => handleSlide(false)}
             aria-label="You can visit my twitter.com profile clicking this button."
           >
             <i className="fa-brands fa-twitter"></i>
