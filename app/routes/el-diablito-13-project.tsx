@@ -14,11 +14,11 @@ export default function ElDiablito13() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (location.pathname === "/el-diablito-13-project") {
-      navigate("/el-diablito-13-project/project-overview");
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location.pathname === "/el-diablito-13-project") {
+  //     navigate("/el-diablito-13-project/project-overview");
+  //   }
+  // }, [location]);
 
   return (
     <section className="font-[inter] pt-[60px] w-[100vw] flex flex-col text-white">
