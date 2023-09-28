@@ -23,13 +23,13 @@ export default function LandingPage({
       </div>
       <div className="relative h-[100%] w-[100%] flex justify-center">
         <div
-          className={`absolute text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
-          delay-[1.2s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
+          className={`absolute top-[50%]  text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
+          delay-[.2s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
           ms:text-[70px] ls:text-[280px]
           ${
             isActive
-              ? "gap-2 top-[50%] translate-y-[-140%] ls:translate-y-[-50%] ls:justify-evenly "
-              : "gap-0 top-[50%] translate-y-[-50%]"
+              ? "gap-0 translate-y-[-140%] opacity-100 ls:translate-y-[-50%] "
+              : "gap-5 translate-y-[-50%] opacity-0"
           }`}
         >
           <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
