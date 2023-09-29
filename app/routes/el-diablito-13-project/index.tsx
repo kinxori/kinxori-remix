@@ -7,18 +7,17 @@ import uppercaseDIcon from "~/assets/Logos/kinxori-diablito-route-logo.png";
 import treceIcon from "~/assets/Logos/kinxori-13-route-logo.png";
 import elDiablito13Asset from "~/assets/el-diablito-13-website-ss.png";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
-
 import { Link, Outlet, useLocation, useNavigate } from "@remix-run/react";
 
 export default function ElDiablito13() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (location.pathname === "/el-diablito-13-project") {
-      navigate("/el-diablito-13-project/project-overview");
-    }
-  }, [location]);
+  // useEffect(() => {
+  //   if (location.pathname === "/el-diablito-13-project") {
+  //     navigate("/el-diablito-13-project/project-overview");
+  //   }
+  // }, [location]);
 
   return (
     <section className="font-[inter] pt-[60px] w-[100vw] flex flex-col text-white">
