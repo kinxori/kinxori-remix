@@ -12,7 +12,7 @@ export default function Error404Page() {
   return (
     <section className=" box-border pt-[60px] ">
       <div className="m-10 flex flex-col justify-center items-center">
-        <img src={img404} alt="" className="object-contain w-[70%] my-10" />
+        <img src={img404} alt="" className="object-contain w-[60%] my-10 ms:w-[40%] ls:w-[20%]" />
         <h2 className="font-bold">Oops! Something went wrong 😔</h2>
         <LinkButton onClick={handleGoBack} to="" variant="mainButton" className="my-5">
           <i className="fa-solid fa-arrow-left"></i>&#160;&#160;Go Back
