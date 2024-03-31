@@ -36,16 +36,16 @@ export default function MobileNav() {
       className={`z-[1000] fixed top-0 left-0 w-[100vw] 
       ${location.pathname !== "/" ? "" : "animate-[introNavBar_1s_1.2s_backwards]"}`}
     >
-      <div className="flex h-[60px] w-[100%] border-b-[2px] border-mainColor mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ms:h-[70px]">
+      <div className='flex h-[60px] w-[100%] border-b-[2px] border-mainColor mx-auto box-border px-[5%] py-[10px] relative bg-bgColor ms:h-[70px]'>
         <Link
-          prefetch="intent"
-          to="/"
-          className="h-[100%] hover:scale-[1.05] transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]"
+          prefetch='intent'
+          to='/'
+          className='h-[100%] hover:scale-[1.05] transition-all duration-[.2s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)]'
         >
           <img
             className={`h-[100%] w-[100%]`}
             src={kinxoriLogo}
-            alt="Kinxori Logo for mobile devices"
+            alt='Kinxori Logo for mobile devices'
           />
         </Link>
         <div
@@ -72,112 +72,112 @@ export default function MobileNav() {
         transition-all duration-[.5s] ease-[cubic-bezier(0.68, 0.64, 0.4, 0.95)] 
         ${isSlideActive ? "right-0 opacity-1" : "right-[-110%] opacity-0"}`}
       >
-        <h2 className="decoration-mainColor font-bold text-[50px] font-[rubik] text-white underline ">
+        <h2 className='decoration-mainColor font-bold text-[50px] font-[rubik] text-white underline '>
           Welcome!
         </h2>
-        <div className="my-5 flex flex-col gap-3 items-end text-[16px] font-normal   ">
+        <div className='my-5 flex flex-col gap-3 items-end text-[16px] font-normal   '>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/"
+            to='/'
             onClick={() => handleSlide(false)}
           >
-            Home Page&#160;&#160;<i className="fa-solid fa-house text-[24px] "></i>
+            Home Page&#160;&#160;<i className='fa-solid fa-house text-[24px] '></i>
           </Link>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/about"
+            to='/about'
             onClick={() => handleSlide(false)}
           >
-            About Page&#160;&#160;<i className="fa-solid fa-user text-[24px]"></i>
+            About Page&#160;&#160;<i className='fa-solid fa-user text-[24px]'></i>
           </Link>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/contact"
+            to='/contact'
             onClick={() => handleSlide(false)}
           >
-            Contact Page&#160;&#160;<i className="fa-solid fa-at text-[24px]"></i>
+            Contact Page&#160;&#160;<i className='fa-solid fa-at text-[24px]'></i>
           </Link>
           <a
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            target="_blank"
-            href="https://calendly.com/gustavoq26/30min"
+            target='_blank'
+            href='https://calendly.com/gustavoq26/30min'
             onClick={() => handleSlide(false)}
           >
-            <i className="fa-solid fa-arrow-up-right-from-square text-[12px]"></i>
+            <i className='fa-solid fa-arrow-up-right-from-square text-[12px]'></i>
             &#160;&#160;Schedule a Meeting&#160;&#160;
-            <i className="fa-regular fa-calendar-days text-[24px]"></i>
+            <i className='fa-regular fa-calendar-days text-[24px]'></i>
           </a>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/el-diablito-13-project"
+            to='/el-diablito-trece-project'
             onClick={() => handleSlide(false)}
           >
-            El Diablito 13 Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-paintbrush"></i>
+            El Diablito Trece Project&#160;&#160;
+            <i className='text-[24px] fa-solid fa-paintbrush'></i>
           </Link>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/music-player-project"
+            to='/music-player-project'
             onClick={() => handleSlide(false)}
           >
             Music Player Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-music"></i>
+            <i className='text-[24px] fa-solid fa-music'></i>
           </Link>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/contact-manager-project"
+            to='/contact-manager-project'
             onClick={() => handleSlide(false)}
           >
             Contact Manager Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-address-book"></i>
+            <i className='text-[24px] fa-solid fa-address-book'></i>
           </Link>
           <Link
-            prefetch="intent"
+            prefetch='intent'
             className={`hover:decoration-mainColor hover:underline text-white font-[inter] hover:text-mainColor transition-all duration-25 ease-in-out `}
-            to="/call-history-filter-project"
+            to='/call-history-filter-project'
             onClick={() => handleSlide(false)}
           >
             Call History Filter Project&#160;&#160;
-            <i className="text-[24px] fa-solid fa-id-card"></i>
+            <i className='text-[24px] fa-solid fa-id-card'></i>
           </Link>
         </div>
-        <hr className="mb-5 mt-auto w-[100%] border-white/50"></hr>
-        <div className="flex gap-3 text-bgColor ">
+        <hr className='mb-5 mt-auto w-[100%] border-white/50'></hr>
+        <div className='flex gap-3 text-bgColor '>
           <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://linkedin.com/in/quinchori"
-            target="_blank"
+            className='w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         '
+            href='https://linkedin.com/in/quinchori'
+            target='_blank'
             onClick={() => handleSlide(false)}
-            aria-label="You can visit my linkedin.com profile clicking this button."
+            aria-label='You can visit my linkedin.com profile clicking this button.'
           >
-            <i className="fa-brands fa-linkedin-in"></i>
+            <i className='fa-brands fa-linkedin-in'></i>
           </a>
           <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://github.com/kinxori"
-            target="_blank"
+            className='w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         '
+            href='https://github.com/kinxori'
+            target='_blank'
             onClick={() => handleSlide(false)}
-            aria-label="You can visit my github.com profile clicking this button."
+            aria-label='You can visit my github.com profile clicking this button.'
           >
-            <i className="fa-brands fa-github"></i>
+            <i className='fa-brands fa-github'></i>
           </a>
           <a
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
-            href="https://twitter.com/kinxori"
-            target="_blank"
+            className='w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         '
+            href='https://twitter.com/kinxori'
+            target='_blank'
             onClick={() => handleSlide(false)}
-            aria-label="You can visit my twitter.com profile clicking this button."
+            aria-label='You can visit my twitter.com profile clicking this button.'
           >
-            <i className="fa-brands fa-twitter"></i>
+            <i className='fa-brands fa-twitter'></i>
           </a>
           <button
-            className="w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         "
+            className='w-[40px] h-[40px] text-[20px] bg-white rounded-full flex justify-center items-center hover:scale-[1.1] hover:text-mainColor transition-all duration-25 ease-in-out         '
             onClick={handleClipboardState}
             aria-label={
               isClipboardCopied
@@ -186,9 +186,9 @@ export default function MobileNav() {
             }
           >
             {isClipboardCopied ? (
-              <i className="fa-solid fa-check"></i>
+              <i className='fa-solid fa-check'></i>
             ) : (
-              <i className="fa-regular fa-envelope"></i>
+              <i className='fa-regular fa-envelope'></i>
             )}
           </button>
         </div>

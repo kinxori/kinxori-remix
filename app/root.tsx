@@ -21,8 +21,8 @@ export function ErrorBoundary({ error }: ErrorEvent) {
         <Scripts />
         <script
           defer
-          src="https://kit.fontawesome.com/71cfa127b4.js"
-          crossOrigin="anonymous"
+          src='https://kit.fontawesome.com/71cfa127b4.js'
+          crossOrigin='anonymous'
         ></script>
       </body>
     </html>
@@ -31,22 +31,22 @@ export function ErrorBoundary({ error }: ErrorEvent) {
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width,initial-scale=1' />
         <Meta />
         <Links />
       </head>
-      <body id="root" className="bg-bgColor overflow-x-hidden overflow-y-scroll scroll-smooth">
+      <body id='root' className='bg-bgColor overflow-x-hidden overflow-y-scroll scroll-smooth'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
         <script
           defer
-          src="https://kit.fontawesome.com/71cfa127b4.js"
-          crossOrigin="anonymous"
+          src='https://kit.fontawesome.com/71cfa127b4.js'
+          crossOrigin='anonymous'
         ></script>
       </body>
     </html>

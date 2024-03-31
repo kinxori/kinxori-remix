@@ -13,8 +13,8 @@ export default {
       },
     },
     screens: {
-      ms: "768px",
-      ls: "1021px",
+      ms: "700px",
+      ls: "1024px",
       xls: "1440px",
     },
   },
@@ -26,6 +26,9 @@ export default {
           fontFamily: "inherit",
           fontWeight: "bold",
           // textDecoration: `underline ${theme("colors.mainColor")}`,
+        },
+        html: {
+          scrollBehavior: "smooth",
         },
       });
       addUtilities({
@@ -131,6 +134,10 @@ export default {
         },
         ".customTextShadowMainColor2": {
           textShadow: `0px 3px 5px ${theme("colors.mainColor2")}`,
+        },
+        ".maxWidth": {
+          maxWidth: "1440px",
+          margin: "0 auto",
         },
       });
     }),

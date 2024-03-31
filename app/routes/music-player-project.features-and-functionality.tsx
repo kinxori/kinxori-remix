@@ -2,8 +2,8 @@ import musicProjectMainAsset from "~/assets/music-media-player-practice-ss.png";
 
 export default function MusicPlayerFeaturesAndFunctionality() {
   return (
-    <article className="flex flex-col gap-5 text-justify">
-      <h3 className="text-[20px] font-bold text-left ">
+    <article className='flex flex-col gap-5 text-justify'>
+      <h3 className='text-[20px] font-bold text-left '>
         <b>Design and User Experience</b>
       </h3>
       <p>
@@ -11,11 +11,11 @@ export default function MusicPlayerFeaturesAndFunctionality() {
         visually appealing, user-friendly, and seamless interaction for users.
       </p>
       <img
-        alt="Picture with some of the most important characteristics of El Diablito 13's webpage. Showing the primary colors and fonts used for this project."
-        className="rounded-[10px]"
+        alt="Picture with some of the most important characteristics of El Diablito Trece's webpage. Showing the primary colors and fonts used for this project."
+        className='rounded-[10px]'
         src={musicProjectMainAsset}
       />
-      <h4 className="text-[16px] font-bold text-left ">Visual Appeal and User-Friendly Design</h4>
+      <h4 className='text-[16px] font-bold text-left '>Visual Appeal and User-Friendly Design</h4>
       <p>
         The project places a strong emphasis on design principles that contribute to a visually
         pleasing aesthetic.
@@ -32,7 +32,7 @@ export default function MusicPlayerFeaturesAndFunctionality() {
         🛑 Let's focus on design aspects, roundness, buttons, animations, hovers, playlist
         selection. Muted video 16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">Optimized UI for Intuitive Interactions</h4>
+      <h4 className='text-[16px] font-bold text-left '>Optimized UI for Intuitive Interactions</h4>
       <p>
         The user interface was designed with the goal of providing an intuitive and effortless
         interaction for users.
@@ -49,7 +49,7 @@ export default function MusicPlayerFeaturesAndFunctionality() {
         🛑 Let's focus on sections, such as audio control, buttons layout, playlist etc. Muted video
         16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">
+      <h4 className='text-[16px] font-bold text-left '>
         Responsive Design for Multi-Device Experience
       </h4>
       <p>
