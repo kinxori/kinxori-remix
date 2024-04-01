@@ -1,7 +1,7 @@
 export default function MusicPlayerProjectOverview() {
   return (
-    <article className="flex flex-col gap-5 text-justify">
-      <h3 className="text-[20px] font-bold text-left ">
+    <article id='project-overview' className='flex flex-col gap-5 text-justify'>
+      <h3 className='text-[20px] font-bold text-left '>
         <b>Project Overview</b>
       </h3>
       <p>

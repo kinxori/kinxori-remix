@@ -1,7 +1,7 @@
 export default function MusicPlayerDesignAndUserExperience() {
   return (
-    <article className="flex flex-col gap-5 text-justify">
-      <h3 className="text-[20px] font-bold text-left ">
+    <article id='design-and-user-experience' className='flex flex-col gap-5 text-justify'>
+      <h3 className='text-[20px] font-bold text-left '>
         <b>Features and Functionality</b>
       </h3>
       <p>
@@ -9,7 +9,7 @@ export default function MusicPlayerDesignAndUserExperience() {
         The website simulates a music playback interface and incorporates interactive elements to
         enhance the user experience.
       </p>
-      <h4 className="text-[16px] font-bold text-left ">Music Playback Interface</h4>
+      <h4 className='text-[16px] font-bold text-left '>Music Playback Interface</h4>
       <p>
         The website features a fully functional music playback interface that allows users to play,
         pause, and control the audio playback of a selected song.
@@ -26,7 +26,7 @@ export default function MusicPlayerDesignAndUserExperience() {
         🛑 Let's add a quick tour of the interface, showing both modals, it's buttons and playlist
         (no interaction yet), muted video 16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">Playlist Management</h4>
+      <h4 className='text-[16px] font-bold text-left '>Playlist Management</h4>
       <p>
         The application features a playlist of songs, demonstrating the ability to manage and switch
         between multiple tracks seamlessly.
@@ -40,7 +40,7 @@ export default function MusicPlayerDesignAndUserExperience() {
         🛑 Let's add a tour for the playlist, showing how it works, playing, pausing, scrolling,
         selecting songs. Muted video 16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">User Interaction</h4>
+      <h4 className='text-[16px] font-bold text-left '>User Interaction</h4>
       <p>
         User interaction is a core aspect of the project, allowing users to interact with various
         elements of the music player.

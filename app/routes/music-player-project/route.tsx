@@ -5,99 +5,114 @@ import NavBar from "~/components/NavBar/NavBar";
 import Footer from "~/components/Pages/FooterPage";
 import AnchorButton from "~/components/CustomButton/AnchorButton";
 import musicProjectIcon from "~/assets/Logos/kinxori-music-project-logo.png";
-import { Link, Outlet, useLocation, useNavigate } from "@remix-run/react";
+import { Link, useLocation, useNavigate } from "@remix-run/react";
 import musicProjectMainAsset from "~/assets/music-media-player-practice-ss.png";
+import Overview from "~/routes/music-player-project/ProjectOverview";
+import FeaturesAndFunctionality from "~/routes/music-player-project/FeaturesAndFunctionality";
+import DesignAndUserExperience from "~/routes/music-player-project/DesignAndUserExperience";
+import TechnicalImplementation from "~/routes/music-player-project/TechnicalImplementation";
 
 export default function MusicMediaPlayer() {
   const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (location.pathname === "/music-player-project") {
-      navigate("/music-player-project/project-overview");
-    }
-  }, [location]);
 
   return (
-    <section className="font-[inter] pt-[60px] w-[100vw] flex flex-col text-white">
-      <div className="p-10 box-border">
-        <div className="mb-10">
-          <h3 className="text-[30px] font-bold  ">
+    <section className='font-[inter] pt-[60px] w-[100vw] flex flex-col text-white maxWidth'>
+      <div
+        className='p-10 box-border 
+      ms:px-[15%] ms:py-[10%] ls:px-[10%] '
+      >
+        <div
+          className='mb-10
+        ls:mb-20'
+        >
+          <h3
+            className='text-[30px] font-bold
+          ls:text-[50px] '
+          >
             <b>Music Player</b> 💽
           </h3>
-          <i className="text-white/50 font-light text-[14px]">#Practice</i>
+          <i className='text-white/50 font-light text-[14px] ls:text-[16px]'>#Practice</i>
         </div>
-        <div className="flex flex-col gap-5">
-          <img className="rounded-[10px]" src={musicProjectMainAsset} />
-          <div className="flex flex-col">
-            <p className="text-justify">
+        <div
+          className='flex flex-col gap-5
+        ls:flex-row ls:justify-between '
+        >
+          <img className='rounded-[10px] ls:w-[50%]' src={musicProjectMainAsset} />
+          <div className='flex flex-col ls:w-[40%]'>
+            <p className='text-justify'>
               Dive into this music media player, a practice project offering interactive music
               playback. Experience user-friendly controls, responsive design, and modern aesthetics.
               Learn React, TypeScript, and audio manipulation through this engaging media player.
             </p>
-            <div className="mt-5 ml-auto flex gap-2">
+            <div className='mt-5 justify-end flex gap-2 ls:justify-start'>
               <AnchorButton
-                variant="secButton"
-                href="https://github.com/kinxori/Music-Media-Player-PRACTICE"
-                target="_blank"
+                variant='secButton'
+                href='https://github.com/kinxori/Music-Media-Player-PRACTICE'
+                target='_blank'
               >
                 Github Repo
               </AnchorButton>
               <AnchorButton
-                variant="mainButton"
-                href="https://kinxori.github.io/Music-Media-Player-PRACTICE/"
-                target="_blank"
+                variant='mainButton'
+                href='https://kinxori.github.io/Music-Media-Player-PRACTICE/'
+                target='_blank'
               >
                 Live Page
               </AnchorButton>
             </div>
           </div>
         </div>
-        <hr className="border-white/50 my-10"></hr>
-        <article className="flex flex-col">
-          <div className="text-bgColor box-border p-5 bg-white min-h-[200px] rounded-[10px] border-[2px] border-mainColor ">
-            <h3 className="font-bold text-[20px] underline decoration-mainColor ">Explore:</h3>
-            <hr className="border-bgColor/50 my-3 "></hr>
+        <hr className='border-white/50 my-10 ls:my-20'></hr>
+        <article className='flex flex-col ls:flex-row-reverse ls:justify-between relative'>
+          <div
+            className='ls:sticky text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
+            ms:p-5'
+          >
+            <h3 className='font-bold text-[20px] underline decoration-mainColor '>Explore:</h3>
+            <hr className='border-bgColor/50 my-3 '></hr>
             <Link
               className={`block w-full p-1 pl-5 my-3 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
-              ${location.pathname === "/music-player-project/project-overview" && "bg-bgColor/10"}`}
-              to="project-overview"
+              ${location.pathname === "/music-player-project#project-overview" && "bg-bgColor/10"}`}
+              to='#project-overview'
             >
               1. Project Overview
             </Link>
             <Link
               className={`block w-full p-1 pl-5 my-3 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
               ${
-                location.pathname === "/music-player-project/features-and-functionality" &&
+                location.pathname === "/music-player-project#features-and-functionality" &&
                 "bg-bgColor/10"
               }`}
-              to="features-and-functionality"
+              to='#features-and-functionality'
             >
               2. Features and Functionality
             </Link>
             <Link
               className={`block w-full p-1 pl-5 my-3 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
               ${
-                location.pathname === "/music-player-project/design-and-user-experience" &&
+                location.pathname === "/music-player-project#design-and-user-experience" &&
                 "bg-bgColor/10"
               }`}
-              to="design-and-user-experience"
+              to='#design-and-user-experience'
             >
               3. Design and User Experience
             </Link>
             <Link
               className={`block w-full p-1 pl-5 my-3 rounded-[10px] font-bold text-[14px] text-left hover:text-mainColor hover:scale-[1.01] transition-all
               ${
-                location.pathname === "/music-player-project/technical-implementation" &&
+                location.pathname === "/music-player-project#technical-implementation" &&
                 "bg-bgColor/10"
               }`}
-              to="technical-implementation"
+              to='#technical-implementation'
             >
               4. Technical Implementation
             </Link>
           </div>
-          <div className="my-10">
-            <Outlet />
+          <div className='my-10 ls:w-[60%] ls:my-0 xls:w-[70%]'>
+            <Overview />
+            <FeaturesAndFunctionality />
+            <DesignAndUserExperience />
+            <TechnicalImplementation />
           </div>
         </article>
       </div>

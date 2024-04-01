@@ -1,14 +1,14 @@
 export default function MusicTechnicalImplementation() {
   return (
-    <article className="flex flex-col gap-5 text-justify">
-      <h3 className="text-[20px] font-bold text-left ">
+    <article id='technical-implementation' className='flex flex-col gap-5 text-justify'>
+      <h3 className='text-[20px] font-bold text-left '>
         <b>Technical Implementation</b>
       </h3>
       <p>
         This project was developed using a combination of modern technologies, tools, and
         programming languages to create a functional and interactive music media player application.
       </p>
-      <h4 className="text-[16px] font-bold text-left ">Technologies and Tools:</h4>
+      <h4 className='text-[16px] font-bold text-left '>Technologies and Tools:</h4>
       <p>
         The project was primarily built using React, a popular JavaScript library for building user
         interfaces.
@@ -24,7 +24,7 @@ export default function MusicTechnicalImplementation() {
       <span>
         🛑 Probably let's just add some code snippets with each tech logo. Muted video 16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">Frameworks and Libraries:</h4>
+      <h4 className='text-[16px] font-bold text-left '>Frameworks and Libraries:</h4>
       <p>
         The React framework facilitated the creation of reusable UI components and managed the
         application's state efficiently.
@@ -40,12 +40,12 @@ export default function MusicTechnicalImplementation() {
         🛑 Probably a screen recording each technology and add hypertext links for each technology.
         Muted video 16:9 🛑
       </span>
-      <h4 className="text-[16px] font-bold text-left ">Challenges and Solutions:</h4>
+      <h4 className='text-[16px] font-bold text-left '>Challenges and Solutions:</h4>
       <p>
         One challenge encountered was managing the synchronization between audio playback and the
         displayed time durations.
       </p>
-      <ul className="list-disc pl-5">
+      <ul className='list-disc pl-5'>
         <li>
           Solution: The project employed event listeners to track audio playback progress and update
           time displays accordingly, ensuring accurate representation.
@@ -58,7 +58,7 @@ export default function MusicTechnicalImplementation() {
         Another challenge was implementing the shuffle feature, which required reordering the
         playlist randomly without duplication.
       </p>
-      <ul className="list-disc pl-5">
+      <ul className='list-disc pl-5'>
         <li>
           Solution: A clone of the playlist was created, and the shuffle algorithm sorted the tracks
           randomly while avoiding duplication.
@@ -69,7 +69,7 @@ export default function MusicTechnicalImplementation() {
         Ensuring a smooth user experience on various devices and screen sizes presented the
         challenge of responsive design.
       </p>
-      <ul className="list-disc pl-5">
+      <ul className='list-disc pl-5'>
         <li>
           Solution: Media queries and responsive design techniques were applied to adapt the layout
           and styles for different screen resolutions, ensuring a consistent experience.
@@ -80,7 +80,7 @@ export default function MusicTechnicalImplementation() {
         Handling audio events, such as playback end and time updates, required careful event
         management to prevent memory leaks.
       </p>
-      <ul className="list-disc pl-5">
+      <ul className='list-disc pl-5'>
         <li>
           Solution: Event listeners were properly attached and removed during component lifecycle
           phases to prevent memory leaks and optimize performance.

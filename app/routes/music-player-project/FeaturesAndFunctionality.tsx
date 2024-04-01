@@ -2,7 +2,7 @@ import musicProjectMainAsset from "~/assets/music-media-player-practice-ss.png";
 
 export default function MusicPlayerFeaturesAndFunctionality() {
   return (
-    <article className='flex flex-col gap-5 text-justify'>
+    <article id='features-and-functionality' className='flex flex-col gap-5 text-justify'>
       <h3 className='text-[20px] font-bold text-left '>
         <b>Design and User Experience</b>
       </h3>

@@ -9,14 +9,13 @@ import ScrollTopButton from "~/components/ScrollTopButton/ScrollTopButton";
 import BrandIdentifyAndConcept from "~/routes/el-diablito-trece-project/BrandIdentifyAndConcept";
 import DesignAndUserExperience from "~/routes/el-diablito-trece-project/DesignAndUserExperience";
 import FeaturesAndFunctionality from "~/routes/el-diablito-trece-project/FeaturesAndFunctionality";
-import Overview from "~/routes/el-diablito-trece-project/Overview";
+import Overview from "~/routes/el-diablito-trece-project/ProjectOverview";
 import TechnicalImplementation from "~/routes/el-diablito-trece-project/TechnicalImplementation";
 
 export default function ElDiablito13Index() {
   return (
     <>
       <section className='font-[inter] pt-[60px] w-[100vw] flex flex-col text-white maxWidth'>
-        []
         <div
           className='p-10 box-border 
       ms:px-[15%] ms:py-[10%] ls:px-[10%] '
@@ -57,7 +56,7 @@ export default function ElDiablito13Index() {
                 </AnchorButton>
                 <AnchorButton
                   variant='mainButton'
-                  href='https://el-diablito-trece.com/'
+                  href='https://eldiablitotrece.com/'
                   target='_blank'
                 >
                   Live Page
@@ -66,7 +65,7 @@ export default function ElDiablito13Index() {
             </div>
           </div>
           <hr className='border-white/50 my-10 ls:my-20'></hr>
-          <article className='flex flex-col ls:flex-row-reverse ls:justify-between bg-blue-200 relative'>
+          <article className='flex flex-col ls:flex-row-reverse ls:justify-between relative'>
             <div
               className='ls:sticky text-bgColor box-border p-5 bg-white h-fit rounded-[10px] border-[2px] border-mainColor 
             ms:p-5'
