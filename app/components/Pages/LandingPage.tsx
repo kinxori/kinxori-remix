@@ -12,51 +12,51 @@ export default function LandingPage({
 }) {
   return (
     <section id={id} className={`font-[inter] relative h-[100vh] w-[100vw] ${isObserved}`}>
-      <div className=" h-screen w-screen flex items-end absolute bottom-0">
+      <div className=' h-screen w-screen flex items-end absolute bottom-0'>
         <img
           src={mainAboutMeAsset}
-          alt="Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com"
+          alt='Cup of coffee with glasses riding a scooter in its way to deliver a coffee shipping - Kinxori.com'
           className={`h-[100%] object-cover z-[-10] transition-all duration-[1s] delay-[1s]
           ls:mx-auto
           ${isActive ? "opacity-[5%]" : "pl-[100%] opacity-[0%]"}`}
         />
       </div>
-      <div className="relative h-[100%] w-[100%] flex justify-center">
+      <div className='relative h-[100%] w-[100%] flex justify-center'>
         <div
           className={`absolute top-[50%]  text-white leading-none font-extrabold text-[60px] justify-center font-[rubik] flex w-[100%] 
           delay-[.2s] transition-[gap, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
-          ms:text-[70px] ls:text-[280px]
+          ms:text-[70px] ls:text-[220px]
           ${
             isActive
               ? "gap-0 translate-y-[-140%] opacity-100 ls:translate-y-[-50%] "
               : "gap-5 translate-y-[-50%] opacity-0"
           }`}
         >
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             K
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             I
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             N
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             X
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             O
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             R
           </h1>
-          <h1 className="hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out">
+          <h1 className='hover:text-mainColor hover:scale-[1.05] transition-all duration-[.5s] ease-in-out'>
             I
           </h1>
         </div>
         <div
-          className="absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]
-        ms:gap-8 ls:gap-10 ls:translate-y-[100%] "
+          className='absolute flex flex-col w-[80%] items-center gap-5 top-[50%] translate-y-[-50%]
+        ms:gap-8 ls:gap-10 ls:translate-y-[100%] '
         >
           <p
             className={`text-[16px] font-[inter] w-[90%] text-center text-white 
@@ -68,9 +68,9 @@ export default function LandingPage({
           <LinkButton
             className={`delay-[1.2s] transition-[opacity, translate] duration-[1s] ease-[cubic-bezier(0.86, 0.21, 0.66, 0.97)]
           ${isActive ? "opacity-1 translate-y-[40px]" : "opacity-0 translate-y-[80px]"}`}
-            prefetch="intent"
-            variant="mainButton"
-            to="/contact"
+            prefetch='intent'
+            variant='mainButton'
+            to='/contact'
           >
             Contact Me
           </LinkButton>

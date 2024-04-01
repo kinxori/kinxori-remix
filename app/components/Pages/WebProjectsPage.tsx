@@ -87,25 +87,25 @@ export default function WebProjectsPage() {
               </button>
             )}
           </div>
-          <div className='absolute flex gap-2 left-0 justify-center pb-5 w-full bottom-0 ms:gap-3'>
+          <div className='absolute flex gap-2 left-0 justify-center pb-5 w-full bottom-0 ms:gap-3 ms:pb-0 ls:pb-5'>
             <span
               onClick={() => setPageNumber(1)}
-              className={`w-2 h-2 rounded-full
+              className={`w-2 h-2 rounded-full cursor-pointer
               ${pageNumber === 1 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
               onClick={() => setPageNumber(2)}
-              className={`w-2 h-2 rounded-full
+              className={`w-2 h-2 rounded-full cursor-pointer
               ${pageNumber === 2 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
               onClick={() => setPageNumber(3)}
-              className={`w-2 h-2 rounded-full
+              className={`w-2 h-2 rounded-full cursor-pointer
               ${pageNumber === 3 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
             <span
               onClick={() => setPageNumber(4)}
-              className={`w-2 h-2 rounded-full
+              className={`w-2 h-2 rounded-full cursor-pointer
               ${pageNumber === 4 ? "bg-white scale-[1.2]" : "bg-white/60"}`}
             ></span>
           </div>
