@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { LinksFunction, MetaFunction } from "@remix-run/node";
 import NavBar from "~/components/NavBar/NavBar";
 import kinxoriHomeIcon from "~/assets/Logos/kinxori-home-route-logo.png";
 import LandingPage from "~/components/Pages/LandingPage";
@@ -82,7 +82,7 @@ export const links: LinksFunction = () => {
   ];
 };
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return [
     { title: "Kinxori" },
     {
