@@ -1,4 +1,4 @@
-import imgAssetPFP from "~/assets/new-pfp-for-social-network.jpg";
+import imgAssetPFP from "~/assets/another-PFP-social-media.png";
 import LinkButton from "~/components/CustomButton/LinkButton";
 
 export default function AboutMe({ id }: { id: string }) {
@@ -9,20 +9,20 @@ export default function AboutMe({ id }: { id: string }) {
       ms:px-[15%] ms:py-[10%] ls:px-[20%] `}
     >
       <div
-        className='hover:customShadowMainColor2 hover:scale-[1.01] transition-all duration-[.3s] border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center
-      ms:p-10 ls:flex-row ls:gap-10  '
+        className='hover:customShadowMainColor2 hover:scale-[1.01] transition-[shadow, scale] duration-[.3s] mx-auto border-mainColor bg-white border-[2px] rounded-[10px] box-border p-5 flex flex-col justify-center items-center
+      ms:p-10 ls:flex-row  max-w-[800px] '
       >
         <div
-          className='m-10 w-[70%] relative aspect-square rounded-full  border-white border-[5px] overflow-hidden 
-        ms:w-[60%] ls:w-full ls:m-0'
+          className='m-10 w-[50%] aspect-square rounded-full overflow-hidden 
+        ms:w-[50%] ls:w-[35%] ls:m-0 ls:mr-10  '
         >
           <img
-            className='top-[-30px] absolute'
+            className='scale-125 pointer-events-none'
             src={imgAssetPFP}
             alt='Picture of Gustavo Quiroz / Kinxori'
           ></img>
         </div>
-        <div className='flex flex-col gap-5 '>
+        <div className='flex flex-col gap-5 w-auto ls:w-[65%] '>
           <h2
             className=' font-[rubik] font-bold text-[28px] text-center text-mainColor 
           ls:text-left'
@@ -31,10 +31,15 @@ export default function AboutMe({ id }: { id: string }) {
           </h2>
           <div className='text-justify text-[16px] text-bgColor '>
             <p>
-              I am Gustavo, <b>web developer, motion designer and 3D artist.</b> With a passion for
-              creating things and solving problems, after{" "}
-              <b>4 years of background experience so far</b>, now I'm focusing my knowledge in quite
-              a few areas to find solutions for my clents. Talk about e-commerce
+              I am Gustavo,{" "}
+              <b>web developer, motion designer, and soon, a cybersecurity analyst.</b> With a
+              passion for creating things and solving problems, after{" "}
+              <b>a total of 4 years of experience</b>, now I'm focusing my knowledge on several
+              areas to find solutions for my clients and achieve my professional goals.{" "}
+              <b>
+                Working to improve in e-commerce development, cybersecurity, and occasionally in
+                motion design projects.
+              </b>
             </p>
           </div>
           <LinkButton
