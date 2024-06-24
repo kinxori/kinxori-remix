@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  color-scheme: dark;
+}
+
+#emailSenderEmailID:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #e7e7e7 inset;
+  -webkit-text-fill-color: #181818;
+}
+
+/* #carrouselProjects::-webkit-scrollbar {
+  width: 0;
+} */
+
+@keyframes introNavBar {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* This is the same as the tailwind modules inside plugins
+
+@layer base {
+  b {
+    @apply text-mainColor font-bold;
+  }
+} 
+
+ @layer utilities {
+  .mainButton {
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .secButton {
+    background-color: var(--mainColor);
+  }
+  .ghostButton {
+    background-color: var(--mainColor);
+  }
+  .linkButton {
+    background-color: var(--mainColor);
+  }
+} 
+
+*/
